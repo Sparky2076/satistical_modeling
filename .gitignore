@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+Desktop.ini
