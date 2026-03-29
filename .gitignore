@@ -13,6 +13,7 @@ venv/
 Thumbs.db
 Desktop.ini
 
-# 仅跟踪思路 PDF，避免误提交其它资料
+# 仅跟踪指定 PDF，避免误提交其它资料
 *.pdf
 !zero2one.pdf
+!人工智能、职业技能结构与产业结构转型_潘珊.pdf
