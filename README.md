@@ -27,18 +27,30 @@ cd D:\GitHub_Code
 git clone https://github.com/Sparky2076/satistical_modeling.git
 ```
 
-已在本地配置 `origin`，日常推送可用 **Git Bash**：
+已在本地配置 `origin`，日常推送用 **PowerShell**：
 
-```bash
-cd /d/GitHub_Code/satistical_modeling
-bash push.sh "你的提交说明"
+```powershell
+cd D:\GitHub_Code\satistical_modeling
+.\push.ps1 -Message "你的提交说明"
+```
+
+不写 `-Message` 时默认提交信息为 `update`：
+
+```powershell
+.\push.ps1
 ```
 
 或手写：
 
-```bash
-cd /d/GitHub_Code/satistical_modeling
+```powershell
+cd D:\GitHub_Code\satistical_modeling
 git add .
 git commit -m "你的说明"
 git push origin main
+```
+
+若提示「无法加载，因为在此系统上禁止运行脚本」，可先执行（当前用户即可）：
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
