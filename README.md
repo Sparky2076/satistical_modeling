@@ -27,10 +27,17 @@ cd D:\GitHub_Code
 git clone https://github.com/Sparky2076/satistical_modeling.git
 ```
 
-已在本地配置 `origin`，日常推送：
+已在本地配置 `origin`，日常推送可用 **Git Bash**：
 
-```powershell
-cd D:\GitHub_Code\satistical_modeling
+```bash
+cd /d/GitHub_Code/satistical_modeling
+bash push.sh "你的提交说明"
+```
+
+或手写：
+
+```bash
+cd /d/GitHub_Code/satistical_modeling
 git add .
 git commit -m "你的说明"
 git push origin main
