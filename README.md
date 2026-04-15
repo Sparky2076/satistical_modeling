@@ -54,3 +54,20 @@ git push origin main
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
+
+## 当前数据状态（2026-04-15）
+
+已在本地仓库生成并保存：
+
+- `data/processed/occupation_exposure.csv`
+- `data/processed/occupation_code_mapping.csv`
+- `data/raw/jobs/jobs_micro_raw.csv`（最近一年招聘快照）
+
+对应脚本：
+
+- `src/build_occupation_exposure.py`
+- `src/build_occupation_code_mapping.py`
+- `src/fetch_jobs_micro_raw.py`
+- `src/download_anthropic_economic_index.py`
+
+说明：**CFPS（你消息中写作 CPFS）个体面板数据仍在申请中，尚未并入仓库。**

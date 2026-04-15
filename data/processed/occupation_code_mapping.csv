@@ -1,0 +1,1334 @@
+﻿soc_major_group,soc_minor_group,soc_broad_occupation,soc_detailed_occupation,soc_code,soc_title,isco08_code,gbt_occ_code,cfps_occ_code,mapping_method,confidence
+,,,,11-1011.03,Chief Sustainability Officers,,,,soc_structure_base,unmapped
+,,,,11-3013.01,Security Managers,,,,soc_structure_base,unmapped
+,,,,11-3031.01,Treasurers and Controllers,,,,soc_structure_base,unmapped
+,,,,11-3031.03,Investment Fund Managers,,,,soc_structure_base,unmapped
+,,,,11-3051.01,Quality Control Systems Managers,,,,soc_structure_base,unmapped
+,,,,11-3051.02,Geothermal Production Managers,,,,soc_structure_base,unmapped
+,,,,11-3051.03,Biofuels Production Managers,,,,soc_structure_base,unmapped
+,,,,11-3051.04,Biomass Power Plant Managers,,,,soc_structure_base,unmapped
+,,,,11-3051.06,Hydroelectric Production Managers,,,,soc_structure_base,unmapped
+,,,,11-3071.04,Supply Chain Managers,,,,soc_structure_base,unmapped
+,,,,11-9041.01,Biofuels/Biodiesel Technology and Product Development Managers,,,,soc_structure_base,unmapped
+,,,,11-9121.01,Clinical Research Coordinators,,,,soc_structure_base,unmapped
+,,,,11-9121.02,Water Resource Specialists,,,,soc_structure_base,unmapped
+,,,,11-9179.01,Fitness and Wellness Coordinators,,,,soc_structure_base,unmapped
+,,,,11-9179.02,Spa Managers,,,,soc_structure_base,unmapped
+,,,,11-9199.01,Regulatory Affairs Managers,,,,soc_structure_base,unmapped
+,,,,11-9199.02,Compliance Managers,,,,soc_structure_base,unmapped
+,,,,11-9199.08,Loss Prevention Managers,,,,soc_structure_base,unmapped
+,,,,11-9199.09,Wind Energy Operations Managers,,,,soc_structure_base,unmapped
+,,,,11-9199.10,Wind Energy Development Managers,,,,soc_structure_base,unmapped
+,,,,11-9199.11,Brownfield Redevelopment Specialists and Site Managers,,,,soc_structure_base,unmapped
+,,,,13-1041.01,Environmental Compliance Inspectors,,,,soc_structure_base,unmapped
+,,,,13-1041.03,Equal Opportunity Representatives and Officers,,,,soc_structure_base,unmapped
+,,,,13-1041.04,Government Property Inspectors and Investigators,,,,soc_structure_base,unmapped
+,,,,13-1041.06,Coroners,,,,soc_structure_base,unmapped
+,,,,13-1041.07,Regulatory Affairs Specialists,,,,soc_structure_base,unmapped
+,,,,13-1041.08,Customs Brokers,,,,soc_structure_base,unmapped
+,,,,13-1081.01,Logistics Engineers,,,,soc_structure_base,unmapped
+,,,,13-1081.02,Logistics Analysts,,,,soc_structure_base,unmapped
+,,,,13-1161.01,Search Marketing Strategists,,,,soc_structure_base,unmapped
+,,,,13-1199.04,Business Continuity Planners,,,,soc_structure_base,unmapped
+,,,,13-1199.05,Sustainability Specialists,,,,soc_structure_base,unmapped
+,,,,13-1199.06,Online Merchants,,,,soc_structure_base,unmapped
+,,,,13-1199.07,Security Management Specialists,,,,soc_structure_base,unmapped
+,,,,13-2099.01,Financial Quantitative Analysts,,,,soc_structure_base,unmapped
+,,,,13-2099.04,"Fraud Examiners, Investigators and Analysts",,,,soc_structure_base,unmapped
+,,,,15-1211.01,Health Informatics Specialists,,,,soc_structure_base,unmapped
+,,,,15-1241.01,Telecommunications Engineering Specialists,,,,soc_structure_base,unmapped
+,,,,15-1243.01,Data Warehousing Specialists,,,,soc_structure_base,unmapped
+,,,,15-1255.01,Video Game Designers,,,,soc_structure_base,unmapped
+,,,,15-1299.01,Web Administrators,,,,soc_structure_base,unmapped
+,,,,15-1299.02,Geographic Information Systems Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,,15-1299.03,Document Management Specialists,,,,soc_structure_base,unmapped
+,,,,15-1299.04,Penetration Testers,,,,soc_structure_base,unmapped
+,,,,15-1299.05,Information Security Engineers,,,,soc_structure_base,unmapped
+,,,,15-1299.06,Digital Forensics Analysts,,,,soc_structure_base,unmapped
+,,,,15-1299.07,Blockchain Engineers,,,,soc_structure_base,unmapped
+,,,,15-1299.08,Computer Systems Engineers/Architects,,,,soc_structure_base,unmapped
+,,,,15-1299.09,Information Technology Project Managers,,,,soc_structure_base,unmapped
+,,,,15-2041.01,Biostatisticians,,,,soc_structure_base,unmapped
+,,,,15-2051.01,Business Intelligence Analysts,,,,soc_structure_base,unmapped
+,,,,15-2051.02,Clinical Data Managers,,,,soc_structure_base,unmapped
+,,,,15-2099.01,Bioinformatics Technicians,,,,soc_structure_base,unmapped
+,,,,17-1022.01,Geodetic Surveyors,,,,soc_structure_base,unmapped
+,,,,17-2051.01,Transportation Engineers,,,,soc_structure_base,unmapped
+,,,,17-2051.02,Water/Wastewater Engineers,,,,soc_structure_base,unmapped
+,,,,17-2072.01,Radio Frequency Identification Device Specialists,,,,soc_structure_base,unmapped
+,,,,17-2111.02,Fire-Prevention and Protection Engineers,,,,soc_structure_base,unmapped
+,,,,17-2112.01,Human Factors Engineers and Ergonomists,,,,soc_structure_base,unmapped
+,,,,17-2112.02,Validation Engineers,,,,soc_structure_base,unmapped
+,,,,17-2112.03,Manufacturing Engineers,,,,soc_structure_base,unmapped
+,,,,17-2141.01,Fuel Cell Engineers,,,,soc_structure_base,unmapped
+,,,,17-2141.02,Automotive Engineers,,,,soc_structure_base,unmapped
+,,,,17-2199.03,"Energy Engineers, Except Wind and Solar",,,,soc_structure_base,unmapped
+,,,,17-2199.05,Mechatronics Engineers,,,,soc_structure_base,unmapped
+,,,,17-2199.06,Microsystems Engineers,,,,soc_structure_base,unmapped
+,,,,17-2199.07,Photonics Engineers,,,,soc_structure_base,unmapped
+,,,,17-2199.08,Robotics Engineers,,,,soc_structure_base,unmapped
+,,,,17-2199.09,Nanosystems Engineers,,,,soc_structure_base,unmapped
+,,,,17-2199.10,Wind Energy Engineers,,,,soc_structure_base,unmapped
+,,,,17-2199.11,Solar Energy Systems Engineers,,,,soc_structure_base,unmapped
+,,,,17-3024.01,Robotics Technicians,,,,soc_structure_base,unmapped
+,,,,17-3026.01,Nanotechnology Engineering Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,,17-3027.01,Automotive Engineering Technicians,,,,soc_structure_base,unmapped
+,,,,17-3029.01,Non-Destructive Testing Specialists,,,,soc_structure_base,unmapped
+,,,,17-3029.08,Photonics Technicians,,,,soc_structure_base,unmapped
+,,,,19-1029.01,Bioinformatics Scientists,,,,soc_structure_base,unmapped
+,,,,19-1029.02,Molecular and Cellular Biologists,,,,soc_structure_base,unmapped
+,,,,19-1029.03,Geneticists,,,,soc_structure_base,unmapped
+,,,,19-1029.04,Biologists,,,,soc_structure_base,unmapped
+,,,,19-1031.02,Range Managers,,,,soc_structure_base,unmapped
+,,,,19-1031.03,Park Naturalists,,,,soc_structure_base,unmapped
+,,,,19-2041.01,Climate Change Policy Analysts,,,,soc_structure_base,unmapped
+,,,,19-2041.02,Environmental Restoration Planners,,,,soc_structure_base,unmapped
+,,,,19-2041.03,Industrial Ecologists,,,,soc_structure_base,unmapped
+,,,,19-2099.01,Remote Sensing Scientists and Technologists,,,,soc_structure_base,unmapped
+,,,,19-3011.01,Environmental Economists,,,,soc_structure_base,unmapped
+,,,,19-3039.02,Neuropsychologists,,,,soc_structure_base,unmapped
+,,,,19-3039.03,Clinical Neuropsychologists,,,,soc_structure_base,unmapped
+,,,,19-3099.01,Transportation Planners,,,,soc_structure_base,unmapped
+,,,,19-4012.01,Precision Agriculture Technicians,,,,soc_structure_base,unmapped
+,,,,19-4051.02,Nuclear Monitoring Technicians,,,,soc_structure_base,unmapped
+,,,,19-4099.01,Quality Control Analysts,,,,soc_structure_base,unmapped
+,,,,19-4099.03,Remote Sensing Technicians,,,,soc_structure_base,unmapped
+,,,,25-2059.01,Adapted Physical Education Specialists,,,,soc_structure_base,unmapped
+,,,,27-2012.03,Media Programming Directors,,,,soc_structure_base,unmapped
+,,,,27-2012.04,Talent Directors,,,,soc_structure_base,unmapped
+,,,,27-2012.05,Media Technical Directors/Managers,,,,soc_structure_base,unmapped
+,,,,27-3043.05,"Poets, Lyricists and Creative Writers",,,,soc_structure_base,unmapped
+,,,,29-1071.01,Anesthesiologist Assistants,,,,soc_structure_base,unmapped
+,,,,29-1122.01,"Low Vision Therapists, Orientation and Mobility Specialists, and Vision Rehabilitation Therapists",,,,soc_structure_base,unmapped
+,,,,29-1129.01,Art Therapists,,,,soc_structure_base,unmapped
+,,,,29-1129.02,Music Therapists,,,,soc_structure_base,unmapped
+,,,,29-1141.01,Acute Care Nurses,,,,soc_structure_base,unmapped
+,,,,29-1141.02,Advanced Practice Psychiatric Nurses,,,,soc_structure_base,unmapped
+,,,,29-1141.03,Critical Care Nurses,,,,soc_structure_base,unmapped
+,,,,29-1141.04,Clinical Nurse Specialists,,,,soc_structure_base,unmapped
+,,,,29-1229.01,Allergists and Immunologists,,,,soc_structure_base,unmapped
+,,,,29-1229.02,Hospitalists,,,,soc_structure_base,unmapped
+,,,,29-1229.03,Urologists,,,,soc_structure_base,unmapped
+,,,,29-1229.04,Physical Medicine and Rehabilitation Physicians,,,,soc_structure_base,unmapped
+,,,,29-1229.05,Preventive Medicine Physicians,,,,soc_structure_base,unmapped
+,,,,29-1229.06,Sports Medicine Physicians,,,,soc_structure_base,unmapped
+,,,,29-1299.01,Naturopathic Physicians,,,,soc_structure_base,unmapped
+,,,,29-1299.02,Orthoptists,,,,soc_structure_base,unmapped
+,,,,29-2011.01,Cytogenetic Technologists,,,,soc_structure_base,unmapped
+,,,,29-2011.02,Cytotechnologists,,,,soc_structure_base,unmapped
+,,,,29-2011.04,Histotechnologists,,,,soc_structure_base,unmapped
+,,,,29-2012.01,Histology Technicians,,,,soc_structure_base,unmapped
+,,,,29-2099.01,Neurodiagnostic Technologists,,,,soc_structure_base,unmapped
+,,,,29-2099.05,Ophthalmic Medical Technologists,,,,soc_structure_base,unmapped
+,,,,29-2099.08,Patient Representatives,,,,soc_structure_base,unmapped
+,,,,29-9099.01,Midwives,,,,soc_structure_base,unmapped
+,,,,31-9099.01,Speech-Language Pathology Assistants,,,,soc_structure_base,unmapped
+,,,,31-9099.02,Endoscopy Technicians,,,,soc_structure_base,unmapped
+,,,,33-3021.02,Police Identification and Records Officers,,,,soc_structure_base,unmapped
+,,,,33-3021.06,Intelligence Analysts,,,,soc_structure_base,unmapped
+,,,,33-3051.04,Customs and Border Protection Officers,,,,soc_structure_base,unmapped
+,,,,33-9099.02,Retail Loss Prevention Specialists,,,,soc_structure_base,unmapped
+,,,,35-3023.01,Baristas,,,,soc_structure_base,unmapped
+,,,,39-9011.01,Nannies,,,,soc_structure_base,unmapped
+,,,,41-4011.07,Solar Sales Representatives and Assessors,,,,soc_structure_base,unmapped
+,,,,43-5011.01,Freight Forwarders,,,,soc_structure_base,unmapped
+,,,,47-1011.03,Solar Energy Installation Managers,,,,soc_structure_base,unmapped
+,,,,47-2152.04,Solar Thermal Installers and Technicians,,,,soc_structure_base,unmapped
+,,,,47-4011.01,Energy Auditors,,,,soc_structure_base,unmapped
+,,,,47-4099.03,Weatherization Installers and Technicians,,,,soc_structure_base,unmapped
+,,,,49-9099.01,Geothermal Technicians,,,,soc_structure_base,unmapped
+,,,,51-8013.03,Biomass Plant Technicians,,,,soc_structure_base,unmapped
+,,,,51-8013.04,Hydroelectric Plant Technicians,,,,soc_structure_base,unmapped
+,,,,51-8099.01,Biofuels Processing Technicians,,,,soc_structure_base,unmapped
+,,,,51-9071.06,Gem and Diamond Workers,,,,soc_structure_base,unmapped
+,,,,51-9195.03,"Stone Cutters and Carvers, Manufacturing",,,,soc_structure_base,unmapped
+,,,,51-9195.04,"Glass Blowers, Molders, Benders, and Finishers",,,,soc_structure_base,unmapped
+,,,,51-9195.05,"Potters, Manufacturing",,,,soc_structure_base,unmapped
+,,,,53-1042.01,Recycling Coordinators,,,,soc_structure_base,unmapped
+,,,,53-6051.01,Aviation Inspectors,,,,soc_structure_base,unmapped
+,,,,53-6051.07,"Transportation Vehicle, Equipment and Systems Inspectors, Except Aviation",,,,soc_structure_base,unmapped
+,,,,53-7062.04,Recycling and Reclamation Workers,,,,soc_structure_base,unmapped
+,,43-9080,,nan,Proofreaders and Copy Markers,,,,soc_structure_base,unmapped
+,,47-4030,,nan,Fence Erectors,,,,soc_structure_base,unmapped
+,,43-9030,,nan,Desktop Publishers,,,,soc_structure_base,unmapped
+,,47-4070,,nan,Septic Tank Servicers and Sewer Pipe Cleaners,,,,soc_structure_base,unmapped
+,,43-9060,,nan,"Office Clerks, General",,,,soc_structure_base,unmapped
+,,47-4040,,nan,Hazardous Materials Removal Workers,,,,soc_structure_base,unmapped
+,,47-4060,,nan,Rail-Track Laying and Maintenance Equipment Operators,,,,soc_structure_base,unmapped
+,,,43-9022,nan,Word Processors and Typists,,,,soc_structure_base,unmapped
+,,43-9050,,nan,"Mail Clerks and Mail Machine Operators, Except Postal Service",,,,soc_structure_base,unmapped
+,,43-9040,,nan,Insurance Claims and Policy Processing Clerks,,,,soc_structure_base,unmapped
+,,43-9070,,nan,"Office Machine Operators, Except Computer",,,,soc_structure_base,unmapped
+,,47-4050,,nan,Highway Maintenance Workers,,,,soc_structure_base,unmapped
+,,47-2130,,nan,Insulation Workers,,,,soc_structure_base,unmapped
+,,,47-4091,nan,Segmental Pavers,,,,soc_structure_base,unmapped
+,,,43-5032,nan,"Dispatchers, Except Police, Fire, and Ambulance",,,,soc_structure_base,unmapped
+,,43-5040,,nan,"Meter Readers, Utilities",,,,soc_structure_base,unmapped
+,,,47-5044,nan,"Loading and Moving Machine Operators, Underground Mining",,,,soc_structure_base,unmapped
+,,,47-5043,nan,"Roof Bolters, Mining",,,,soc_structure_base,unmapped
+,,,47-5041,nan,Continuous Mining Machine Operators,,,,soc_structure_base,unmapped
+,,43-5050,,nan,Postal Service Workers,,,,soc_structure_base,unmapped
+,,,43-5051,nan,Postal Service Clerks,,,,soc_structure_base,unmapped
+,,,43-5052,nan,Postal Service Mail Carriers,,,,soc_structure_base,unmapped
+,,,43-5053,nan,"Postal Service Mail Sorters, Processors, and Processing Machine Operators",,,,soc_structure_base,unmapped
+,,47-5040,,nan,Underground Mining Machine Operators,,,,soc_structure_base,unmapped
+,,47-5030,,nan,"Explosives Workers, Ordnance Handling Experts, and Blasters",,,,soc_structure_base,unmapped
+,,43-5060,,nan,"Production, Planning, and Expediting Clerks",,,,soc_structure_base,unmapped
+,,,47-5023,nan,"Earth Drillers, Except Oil and Gas",,,,soc_structure_base,unmapped
+,,43-5070,,nan,"Shipping, Receiving, and Inventory Clerks",,,,soc_structure_base,unmapped
+,,,47-5022,nan,"Excavating and Loading Machine and Dragline Operators, Surface Mining",,,,soc_structure_base,unmapped
+,,43-5110,,nan,"Weighers, Measurers, Checkers, and Samplers, Recordkeeping",,,,soc_structure_base,unmapped
+,43-6000,,,nan,Secretaries and Administrative Assistants,,,,soc_structure_base,unmapped
+,,,47-4099,nan,"Construction and Related Workers, All Other",,,,soc_structure_base,unmapped
+,47-5000,,,nan,Extraction Workers,,,,soc_structure_base,unmapped
+,,47-5010,,nan,"Derrick, Rotary Drill, and Service Unit Operators, Oil and Gas",,,,soc_structure_base,unmapped
+,,,47-5011,nan,"Derrick Operators, Oil and Gas",,,,soc_structure_base,unmapped
+,,,47-5012,nan,"Rotary Drill Operators, Oil and Gas",,,,soc_structure_base,unmapped
+,,,47-5013,nan,"Service Unit Operators, Oil and Gas",,,,soc_structure_base,unmapped
+,,47-4090,,nan,Miscellaneous Construction and Related Workers,,,,soc_structure_base,unmapped
+,,,43-9021,nan,Data Entry Keyers,,,,soc_structure_base,unmapped
+,43-9000,,,nan,Other Office and Administrative Support Workers,,,,soc_structure_base,unmapped
+,,,43-6014,nan,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",,,,soc_structure_base,unmapped
+,,,43-6013,nan,Medical Secretaries and Administrative Assistants,,,,soc_structure_base,unmapped
+,,,43-6012,nan,Legal Secretaries and Administrative Assistants,,,,soc_structure_base,unmapped
+,,,43-6011,nan,Executive Secretaries and Executive Administrative Assistants,,,,soc_structure_base,unmapped
+,,47-5020,,nan,Surface Mining Machine Operators and Earth Drillers,,,,soc_structure_base,unmapped
+,,43-9020,,nan,Data Entry and Information Processing Workers,,,,soc_structure_base,unmapped
+,,47-4020,,nan,Elevator and Escalator Installers and Repairers,,,,soc_structure_base,unmapped
+,,45-2010,,nan,Agricultural Inspectors,,,,soc_structure_base,unmapped
+,,43-9190,,nan,Miscellaneous Office and Administrative Support Workers,,,,soc_structure_base,unmapped
+,,47-2050,,nan,"Cement Masons, Concrete Finishers, and Terrazzo Workers",,,,soc_structure_base,unmapped
+,,,47-2044,nan,Tile and Stone Setters,,,,soc_structure_base,unmapped
+,,47-2160,,nan,Plasterers and Stucco Masons,,,,soc_structure_base,unmapped
+,,47-2170,,nan,Reinforcing Iron and Rebar Workers,,,,soc_structure_base,unmapped
+,,,47-2043,nan,Floor Sanders and Finishers,,,,soc_structure_base,unmapped
+,,,47-2042,nan,"Floor Layers, Except Carpet, Wood, and Hard Tiles",,,,soc_structure_base,unmapped
+,,,47-2152,nan,"Plumbers, Pipefitters, and Steamfitters",,,,soc_structure_base,unmapped
+,,,47-2041,nan,Carpet Installers,,,,soc_structure_base,unmapped
+,,47-2030,,nan,Carpenters,,,,soc_structure_base,unmapped
+,,,47-2022,nan,Stonemasons,,,,soc_structure_base,unmapped
+,,,47-2021,nan,Brickmasons and Blockmasons,,,,soc_structure_base,unmapped
+,,47-2020,,nan,"Brickmasons, Blockmasons, and Stonemasons",,,,soc_structure_base,unmapped
+,,47-2010,,nan,Boilermakers,,,,soc_structure_base,unmapped
+,47-2000,,,nan,Construction Trades Workers,,,,soc_structure_base,unmapped
+,,47-2040,,nan,"Carpet, Floor, and Tile Installers and Finishers",,,,soc_structure_base,unmapped
+,,,47-2051,nan,Cement Masons and Concrete Finishers,,,,soc_structure_base,unmapped
+,,,47-2053,nan,Terrazzo Workers and Finishers,,,,soc_structure_base,unmapped
+,,47-2060,,nan,Construction Laborers,,,,soc_structure_base,unmapped
+,,,47-2131,nan,"Insulation Workers, Floor, Ceiling, and Wall",,,,soc_structure_base,unmapped
+,,,47-2132,nan,"Insulation Workers, Mechanical",,,,soc_structure_base,unmapped
+,,47-2140,,nan,Painters and Paperhangers,,,,soc_structure_base,unmapped
+,,,47-2141,nan,"Painters, Construction and Maintenance",,,,soc_structure_base,unmapped
+,,,47-2142,nan,Paperhangers,,,,soc_structure_base,unmapped
+,,47-2110,,nan,Electricians,,,,soc_structure_base,unmapped
+,,,47-2082,nan,Tapers,,,,soc_structure_base,unmapped
+,,,47-2081,nan,Drywall and Ceiling Tile Installers,,,,soc_structure_base,unmapped
+,,47-2080,,nan,"Drywall Installers, Ceiling Tile Installers, and Tapers",,,,soc_structure_base,unmapped
+,,,47-2073,nan,Operating Engineers and Other Construction Equipment Operators,,,,soc_structure_base,unmapped
+,,47-2150,,nan,"Pipelayers, Plumbers, Pipefitters, and Steamfitters",,,,soc_structure_base,unmapped
+,,,47-2151,nan,Pipelayers,,,,soc_structure_base,unmapped
+,,,47-2072,nan,Pile Driver Operators,,,,soc_structure_base,unmapped
+,,,47-2071,nan,"Paving, Surfacing, and Tamping Equipment Operators",,,,soc_structure_base,unmapped
+,,47-2070,,nan,Construction Equipment Operators,,,,soc_structure_base,unmapped
+,,47-1010,,nan,First-Line Supervisors of Construction Trades and Extraction Workers,,,,soc_structure_base,unmapped
+,,43-9110,,nan,Statistical Assistants,,,,soc_structure_base,unmapped
+,47-1000,,,nan,Supervisors of Construction and Extraction Workers,,,,soc_structure_base,unmapped
+,,47-2210,,nan,Sheet Metal Workers,,,,soc_structure_base,unmapped
+,,,47-3015,nan,"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters",,,,soc_structure_base,unmapped
+,,,47-3016,nan,Helpers--Roofers,,,,soc_structure_base,unmapped
+,,45-2090,,nan,Miscellaneous Agricultural Workers,,,,soc_structure_base,unmapped
+,,45-2040,,nan,"Graders and Sorters, Agricultural Products",,,,soc_structure_base,unmapped
+,,45-2020,,nan,Animal Breeders,,,,soc_structure_base,unmapped
+,,,47-3019,nan,"Helpers, Construction Trades, All Other",,,,soc_structure_base,unmapped
+,,,47-3014,nan,"Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons",,,,soc_structure_base,unmapped
+,,47-2120,,nan,Glaziers,,,,soc_structure_base,unmapped
+,,47-4010,,nan,Construction and Building Inspectors,,,,soc_structure_base,unmapped
+,45-2000,,,nan,Agricultural Workers,,,,soc_structure_base,unmapped
+,,45-1010,,nan,"First-Line Supervisors of Farming, Fishing, and Forestry Workers",,,,soc_structure_base,unmapped
+,45-1000,,,nan,"Supervisors of Farming, Fishing, and Forestry Workers",,,,soc_structure_base,unmapped
+45-0000,,,,nan,"Farming, Fishing, and Forestry Occupations",,,,soc_structure_base,unmapped
+,,,43-9199,nan,"Office and Administrative Support Workers, All Other",,,,soc_structure_base,unmapped
+,47-4000,,,nan,Other Construction and Related Workers,,,,soc_structure_base,unmapped
+,,,47-3013,nan,Helpers--Electricians,,,,soc_structure_base,unmapped
+,,,47-3012,nan,Helpers--Carpenters,,,,soc_structure_base,unmapped
+,,,47-3011,nan,"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",,,,soc_structure_base,unmapped
+,,,45-4029,nan,"Logging Workers, All Other",,,,soc_structure_base,unmapped
+,,47-2220,,nan,Structural Iron and Steel Workers,,,,soc_structure_base,unmapped
+,,,45-4023,nan,Log Graders and Scalers,,,,soc_structure_base,unmapped
+,,,45-4022,nan,Logging Equipment Operators,,,,soc_structure_base,unmapped
+,,,45-4021,nan,Fallers,,,,soc_structure_base,unmapped
+,,47-2230,,nan,Solar Photovoltaic Installers,,,,soc_structure_base,unmapped
+,47-3000,,,nan,"Helpers, Construction Trades",,,,soc_structure_base,unmapped
+,,45-4020,,nan,Logging Workers,,,,soc_structure_base,unmapped
+,,45-4010,,nan,Forest and Conservation Workers,,,,soc_structure_base,unmapped
+,45-4000,,,nan,"Forest, Conservation, and Logging Workers",,,,soc_structure_base,unmapped
+,45-3000,,,nan,Fishing and Hunting Workers,,,,soc_structure_base,unmapped
+,,,45-2099,nan,"Agricultural Workers, All Other",,,,soc_structure_base,unmapped
+,,,45-2093,nan,"Farmworkers, Farm, Ranch, and Aquacultural Animals",,,,soc_structure_base,unmapped
+,,,45-2092,nan,"Farmworkers and Laborers, Crop, Nursery, and Greenhouse",,,,soc_structure_base,unmapped
+,,,45-2091,nan,Agricultural Equipment Operators,,,,soc_structure_base,unmapped
+,,47-2180,,nan,Roofers,,,,soc_structure_base,unmapped
+47-0000,,,,nan,Construction and Extraction Occupations,,,,soc_structure_base,unmapped
+11-0000,,,,nan,Management Occupations,,,,soc_structure_base,unmapped
+,,43-5030,,nan,Dispatchers,,,,soc_structure_base,unmapped
+,,39-5090,,nan,Miscellaneous Personal Appearance Workers,,,,soc_structure_base,unmapped
+,,,39-5012,nan,"Hairdressers, Hairstylists, and Cosmetologists",,,,soc_structure_base,unmapped
+,,,39-5011,nan,Barbers,,,,soc_structure_base,unmapped
+,,39-5010,,nan,"Barbers, Hairdressers, Hairstylists and Cosmetologists",,,,soc_structure_base,unmapped
+,39-5000,,,nan,Personal Appearance Workers,,,,soc_structure_base,unmapped
+,,39-4030,,nan,"Morticians, Undertakers, and Funeral Arrangers",,,,soc_structure_base,unmapped
+,,,39-5091,nan,"Makeup Artists, Theatrical and Performance",,,,soc_structure_base,unmapped
+,,39-4020,,nan,Funeral Attendants,,,,soc_structure_base,unmapped
+,,,39-4011,nan,Embalmers,,,,soc_structure_base,unmapped
+,,39-4010,,nan,Embalmers and Crematory Operators,,,,soc_structure_base,unmapped
+,39-4000,,,nan,Funeral Service Workers,,,,soc_structure_base,unmapped
+,,,39-3099,nan,"Entertainment Attendants and Related Workers, All Other",,,,soc_structure_base,unmapped
+,,,39-3093,nan,"Locker Room, Coatroom, and Dressing Room Attendants",,,,soc_structure_base,unmapped
+,,,39-3092,nan,Costume Attendants,,,,soc_structure_base,unmapped
+,,,39-4012,nan,Crematory Operators,,,,soc_structure_base,unmapped
+,,,39-5092,nan,Manicurists and Pedicurists,,,,soc_structure_base,unmapped
+,,,39-5093,nan,Shampooers,,,,soc_structure_base,unmapped
+,,,39-5094,nan,Skincare Specialists,,,,soc_structure_base,unmapped
+41-0000,,,,nan,Sales and Related Occupations,,,,soc_structure_base,unmapped
+,,,39-9099,nan,"Personal Care and Service Workers, All Other",,,,soc_structure_base,unmapped
+,,39-9090,,nan,Miscellaneous Personal Care and Service Workers,,,,soc_structure_base,unmapped
+,,39-9040,,nan,Residential Advisors,,,,soc_structure_base,unmapped
+,,,39-9032,nan,Recreation Workers,,,,soc_structure_base,unmapped
+,,,39-9031,nan,Exercise Trainers and Group Fitness Instructors,,,,soc_structure_base,unmapped
+,,39-9030,,nan,Recreation and Fitness Workers,,,,soc_structure_base,unmapped
+,,39-9010,,nan,Childcare Workers,,,,soc_structure_base,unmapped
+,39-9000,,,nan,Other Personal Care and Service Workers,,,,soc_structure_base,unmapped
+,,,39-7012,nan,Travel Guides,,,,soc_structure_base,unmapped
+,,,39-7011,nan,Tour Guides and Escorts,,,,soc_structure_base,unmapped
+,39-7000,,,nan,Tour and Travel Guides,,,,soc_structure_base,unmapped
+,,,39-6012,nan,Concierges,,,,soc_structure_base,unmapped
+,,,39-6011,nan,Baggage Porters and Bellhops,,,,soc_structure_base,unmapped
+,39-6000,,,nan,"Baggage Porters, Bellhops, and Concierges",,,,soc_structure_base,unmapped
+,,,39-3091,nan,Amusement and Recreation Attendants,,,,soc_structure_base,unmapped
+,41-1000,,,nan,Supervisors of Sales Workers,,,,soc_structure_base,unmapped
+,,39-3090,,nan,Miscellaneous Entertainment Attendants and Related Workers,,,,soc_structure_base,unmapped
+,,39-3020,,nan,Motion Picture Projectionists,,,,soc_structure_base,unmapped
+,,37-2020,,nan,Pest Control Workers,,,,soc_structure_base,unmapped
+,,,37-2019,nan,"Building Cleaning Workers, All Other",,,,soc_structure_base,unmapped
+,,,37-2012,nan,Maids and Housekeeping Cleaners,,,,soc_structure_base,unmapped
+,,,37-2011,nan,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",,,,soc_structure_base,unmapped
+,,37-2010,,nan,Building Cleaning Workers,,,,soc_structure_base,unmapped
+,37-2000,,,nan,Building Cleaning and Pest Control Workers,,,,soc_structure_base,unmapped
+,37-3000,,,nan,Grounds Maintenance Workers,,,,soc_structure_base,unmapped
+,,,37-1012,nan,"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",,,,soc_structure_base,unmapped
+,,37-1010,,nan,First-Line Supervisors of Building and Grounds Cleaning and Maintenance Workers,,,,soc_structure_base,unmapped
+,37-1000,,,nan,Supervisors of Building and Grounds Cleaning and Maintenance Workers,,,,soc_structure_base,unmapped
+37-0000,,,,nan,Building and Grounds Cleaning and Maintenance Occupations,,,,soc_structure_base,unmapped
+,,,35-9099,nan,"Food Preparation and Serving Related Workers, All Other",,,,soc_structure_base,unmapped
+,,35-9090,,nan,Miscellaneous Food Preparation and Serving Related Workers,,,,soc_structure_base,unmapped
+,,35-9030,,nan,"Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",,,,soc_structure_base,unmapped
+,,,37-1011,nan,First-Line Supervisors of Housekeeping and Janitorial Workers,,,,soc_structure_base,unmapped
+,,,37-3011,nan,Landscaping and Groundskeeping Workers,,,,soc_structure_base,unmapped
+,,,37-3012,nan,"Pesticide Handlers, Sprayers, and Applicators, Vegetation",,,,soc_structure_base,unmapped
+,,,37-3013,nan,Tree Trimmers and Pruners,,,,soc_structure_base,unmapped
+,,,39-3019,nan,"Gambling Service Workers, All Other",,,,soc_structure_base,unmapped
+,,,39-3012,nan,Gambling and Sports Book Writers and Runners,,,,soc_structure_base,unmapped
+,,,39-3011,nan,Gambling Dealers,,,,soc_structure_base,unmapped
+,,39-3010,,nan,Gambling Services Workers,,,,soc_structure_base,unmapped
+,39-3000,,,nan,Entertainment Attendants and Related Workers,,,,soc_structure_base,unmapped
+,,39-2020,,nan,Animal Caretakers,,,,soc_structure_base,unmapped
+,,39-2010,,nan,Animal Trainers,,,,soc_structure_base,unmapped
+,39-2000,,,nan,Animal Care and Service Workers,,,,soc_structure_base,unmapped
+,,39-1020,,nan,First-Line Supervisors of Personal Service Workers,,,,soc_structure_base,unmapped
+,,,39-1014,nan,"First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Services",,,,soc_structure_base,unmapped
+,,,39-1013,nan,First-Line Supervisors of Gambling Services Workers,,,,soc_structure_base,unmapped
+,,39-1010,,nan,First-Line Supervisors of Entertainment and Recreation Workers,,,,soc_structure_base,unmapped
+,39-1000,,,nan,Supervisors of Personal Care and Service Workers,,,,soc_structure_base,unmapped
+39-0000,,,,nan,Personal Care and Service Occupations,,,,soc_structure_base,unmapped
+,,,37-3019,nan,"Grounds Maintenance Workers, All Other",,,,soc_structure_base,unmapped
+,,39-3030,,nan,"Ushers, Lobby Attendants, and Ticket Takers",,,,soc_structure_base,unmapped
+,,,43-5031,nan,Public Safety Telecommunicators,,,,soc_structure_base,unmapped
+,,41-1010,,nan,First-Line Supervisors of Sales Workers,,,,soc_structure_base,unmapped
+,,,41-1012,nan,First-Line Supervisors of Non-Retail Sales Workers,,,,soc_structure_base,unmapped
+,,43-4020,,nan,Correspondence Clerks,,,,soc_structure_base,unmapped
+,,43-4010,,nan,Brokerage Clerks,,,,soc_structure_base,unmapped
+,43-4000,,,nan,Information and Record Clerks,,,,soc_structure_base,unmapped
+,,,47-5049,nan,"Underground Mining Machine Operators, All Other",,,,soc_structure_base,unmapped
+,,,43-3099,nan,"Financial Clerks, All Other",,,,soc_structure_base,unmapped
+,,43-3090,,nan,Miscellaneous Financial Clerks,,,,soc_structure_base,unmapped
+,,43-4030,,nan,"Court, Municipal, and License Clerks",,,,soc_structure_base,unmapped
+,,43-3070,,nan,Tellers,,,,soc_structure_base,unmapped
+,,43-3050,,nan,Payroll and Timekeeping Clerks,,,,soc_structure_base,unmapped
+,,43-3040,,nan,Gambling Cage Workers,,,,soc_structure_base,unmapped
+,,43-3030,,nan,"Bookkeeping, Accounting, and Auditing Clerks",,,,soc_structure_base,unmapped
+,,43-3020,,nan,Billing and Posting Clerks,,,,soc_structure_base,unmapped
+,,43-3010,,nan,Bill and Account Collectors,,,,soc_structure_base,unmapped
+,43-3000,,,nan,Financial Clerks,,,,soc_structure_base,unmapped
+,,43-3060,,nan,Procurement Clerks,,,,soc_structure_base,unmapped
+,,43-4040,,nan,"Credit Authorizers, Checkers, and Clerks",,,,soc_structure_base,unmapped
+,,43-4050,,nan,Customer Service Representatives,,,,soc_structure_base,unmapped
+,,43-4060,,nan,"Eligibility Interviewers, Government Programs",,,,soc_structure_base,unmapped
+,,43-5020,,nan,Couriers and Messengers,,,,soc_structure_base,unmapped
+,,43-5010,,nan,Cargo and Freight Agents,,,,soc_structure_base,unmapped
+,43-5000,,,nan,"Material Recording, Scheduling, Dispatching, and Distributing Workers",,,,soc_structure_base,unmapped
+,,,43-4199,nan,"Information and Record Clerks, All Other",,,,soc_structure_base,unmapped
+,,43-4190,,nan,Miscellaneous Information and Record Clerks,,,,soc_structure_base,unmapped
+,,43-4180,,nan,Reservation and Transportation Ticket Agents and Travel Clerks,,,,soc_structure_base,unmapped
+,,43-4170,,nan,Receptionists and Information Clerks,,,,soc_structure_base,unmapped
+,,43-4160,,nan,"Human Resources Assistants, Except Payroll and Timekeeping",,,,soc_structure_base,unmapped
+,,43-4150,,nan,Order Clerks,,,,soc_structure_base,unmapped
+,,43-4140,,nan,New Accounts Clerks,,,,soc_structure_base,unmapped
+,,43-4130,,nan,Loan Interviewers and Clerks,,,,soc_structure_base,unmapped
+,,43-4120,,nan,"Library Assistants, Clerical",,,,soc_structure_base,unmapped
+,,43-4110,,nan,"Interviewers, Except Eligibility and Loan",,,,soc_structure_base,unmapped
+,,43-4080,,nan,"Hotel, Motel, and Resort Desk Clerks",,,,soc_structure_base,unmapped
+,,43-4070,,nan,File Clerks,,,,soc_structure_base,unmapped
+,,,43-2099,nan,"Communications Equipment Operators, All Other",,,,soc_structure_base,unmapped
+,,,41-1011,nan,First-Line Supervisors of Retail Sales Workers,,,,soc_structure_base,unmapped
+,,43-2090,,nan,Miscellaneous Communications Equipment Operators,,,,soc_structure_base,unmapped
+,,43-2010,,nan,"Switchboard Operators, Including Answering Service",,,,soc_structure_base,unmapped
+,,,41-3091,nan,"Sales Representatives of Services, Except Advertising, Insurance, Financial Services, and Travel",,,,soc_structure_base,unmapped
+,,41-3090,,nan,"Miscellaneous Sales Representatives, Services",,,,soc_structure_base,unmapped
+,,41-3040,,nan,Travel Agents,,,,soc_structure_base,unmapped
+,,41-3030,,nan,"Securities, Commodities, and Financial Services Sales Agents",,,,soc_structure_base,unmapped
+,,41-3020,,nan,Insurance Sales Agents,,,,soc_structure_base,unmapped
+,,41-3010,,nan,Advertising Sales Agents,,,,soc_structure_base,unmapped
+,41-4000,,,nan,"Sales Representatives, Wholesale and Manufacturing",,,,soc_structure_base,unmapped
+,41-3000,,,nan,"Sales Representatives, Services",,,,soc_structure_base,unmapped
+,,,41-2022,nan,Parts Salespersons,,,,soc_structure_base,unmapped
+,,,41-2021,nan,Counter and Rental Clerks,,,,soc_structure_base,unmapped
+,,41-2020,,nan,Counter and Rental Clerks and Parts Salespersons,,,,soc_structure_base,unmapped
+,,,41-2012,nan,Gambling Change Persons and Booth Cashiers,,,,soc_structure_base,unmapped
+,,41-2010,,nan,Cashiers,,,,soc_structure_base,unmapped
+,41-2000,,,nan,Retail Sales Workers,,,,soc_structure_base,unmapped
+,,41-2030,,nan,Retail Salespersons,,,,soc_structure_base,unmapped
+,,,41-4011,nan,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",,,,soc_structure_base,unmapped
+,,,41-4012,nan,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",,,,soc_structure_base,unmapped
+,41-9000,,,nan,Other Sales and Related Workers,,,,soc_structure_base,unmapped
+,43-2000,,,nan,Communications Equipment Operators,,,,soc_structure_base,unmapped
+,,43-1010,,nan,First-Line Supervisors of Office and Administrative Support Workers,,,,soc_structure_base,unmapped
+,43-1000,,,nan,Supervisors of Office and Administrative Support Workers,,,,soc_structure_base,unmapped
+43-0000,,,,nan,Office and Administrative Support Occupations,,,,soc_structure_base,unmapped
+,,,41-9099,nan,"Sales and Related Workers, All Other",,,,soc_structure_base,unmapped
+,,,41-9091,nan,"Door-to-Door Sales Workers, News and Street Vendors, and Related Workers",,,,soc_structure_base,unmapped
+,,41-9090,,nan,Miscellaneous Sales and Related Workers,,,,soc_structure_base,unmapped
+,,41-9040,,nan,Telemarketers,,,,soc_structure_base,unmapped
+,,41-9030,,nan,Sales Engineers,,,,soc_structure_base,unmapped
+,,,41-9022,nan,Real Estate Sales Agents,,,,soc_structure_base,unmapped
+,,,41-9021,nan,Real Estate Brokers,,,,soc_structure_base,unmapped
+,,41-9020,,nan,Real Estate Brokers and Sales Agents,,,,soc_structure_base,unmapped
+,,,41-9012,nan,Models,,,,soc_structure_base,unmapped
+,,,41-9011,nan,Demonstrators and Product Promoters,,,,soc_structure_base,unmapped
+,,41-9010,,nan,"Models, Demonstrators, and Product Promoters",,,,soc_structure_base,unmapped
+,,43-2020,,nan,Telephone Operators,,,,soc_structure_base,unmapped
+,,47-5050,,nan,"Rock Splitters, Quarry",,,,soc_structure_base,unmapped
+,,,49-9051,nan,Electrical Power-Line Installers and Repairers,,,,soc_structure_base,unmapped
+,,47-5080,,nan,Helpers--Extraction Workers,,,,soc_structure_base,unmapped
+,,,51-9197,nan,Tire Builders,,,,soc_structure_base,unmapped
+,,,51-9196,nan,"Paper Goods Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-9195,nan,"Molders, Shapers, and Casters, Except Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-9194,nan,Etchers and Engravers,,,,soc_structure_base,unmapped
+,,,51-9193,nan,Cooling and Freezing Equipment Operators and Tenders,,,,soc_structure_base,unmapped
+,,,51-9192,nan,"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",,,,soc_structure_base,unmapped
+,,,51-9191,nan,Adhesive Bonding Machine Operators and Tenders,,,,soc_structure_base,unmapped
+,,51-9190,,nan,Miscellaneous Production Workers,,,,soc_structure_base,unmapped
+,,,51-9162,nan,Computer Numerically Controlled Tool Programmers,,,,soc_structure_base,unmapped
+,,,51-9161,nan,Computer Numerically Controlled Tool Operators,,,,soc_structure_base,unmapped
+,,51-9160,,nan,Computer Numerically Controlled Tool Operators and Programmers,,,,soc_structure_base,unmapped
+,,51-9150,,nan,Photographic Process Workers and Processing Machine Operators,,,,soc_structure_base,unmapped
+,,51-9140,,nan,Semiconductor Processing Technicians,,,,soc_structure_base,unmapped
+,,,51-9124,nan,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-9123,nan,"Painting, Coating, and Decorating Workers",,,,soc_structure_base,unmapped
+,,,51-9198,nan,Helpers--Production Workers,,,,soc_structure_base,unmapped
+,,,51-9199,nan,"Production Workers, All Other",,,,soc_structure_base,unmapped
+53-0000,,,,nan,Transportation and Material Moving Occupations,,,,soc_structure_base,unmapped
+,53-1000,,,nan,Supervisors of Transportation and Material Moving Workers,,,,soc_structure_base,unmapped
+,,53-3010,,nan,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians",,,,soc_structure_base,unmapped
+,53-3000,,,nan,Motor Vehicle Operators,,,,soc_structure_base,unmapped
+,,53-2030,,nan,Flight Attendants,,,,soc_structure_base,unmapped
+,,,53-2022,nan,Airfield Operations Specialists,,,,soc_structure_base,unmapped
+,,,53-2021,nan,Air Traffic Controllers,,,,soc_structure_base,unmapped
+,,53-2020,,nan,Air Traffic Controllers and Airfield Operations Specialists,,,,soc_structure_base,unmapped
+,,,53-2012,nan,Commercial Pilots,,,,soc_structure_base,unmapped
+,,51-9120,,nan,Painting Workers,,,,soc_structure_base,unmapped
+,,,53-2011,nan,"Airline Pilots, Copilots, and Flight Engineers",,,,soc_structure_base,unmapped
+,53-2000,,,nan,Air Transportation Workers,,,,soc_structure_base,unmapped
+,,,53-1049,nan,"First-Line Supervisors of Transportation Workers, All Other",,,,soc_structure_base,unmapped
+,,,53-1044,nan,First-Line Supervisors of Passenger Attendants,,,,soc_structure_base,unmapped
+,,,53-1043,nan,First-Line Supervisors of Material-Moving Machine and Vehicle Operators,,,,soc_structure_base,unmapped
+,,,53-1042,nan,"First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand",,,,soc_structure_base,unmapped
+,,,53-1041,nan,Aircraft Cargo Handling Supervisors,,,,soc_structure_base,unmapped
+,,53-1040,,nan,First-Line Supervisors of Transportation and Material Moving Workers,,,,soc_structure_base,unmapped
+,,53-2010,,nan,Aircraft Pilots and Flight Engineers,,,,soc_structure_base,unmapped
+,,53-3030,,nan,Driver/Sales Workers and Truck Drivers,,,,soc_structure_base,unmapped
+,,51-9110,,nan,Packaging and Filling Machine Operators and Tenders,,,,soc_structure_base,unmapped
+,,,51-9082,nan,Medical Appliance Technicians,,,,soc_structure_base,unmapped
+,,,51-8091,nan,Chemical Plant and System Operators,,,,soc_structure_base,unmapped
+,,51-8090,,nan,Miscellaneous Plant and System Operators,,,,soc_structure_base,unmapped
+,,51-8030,,nan,Water and Wastewater Treatment Plant and System Operators,,,,soc_structure_base,unmapped
+,,51-8020,,nan,Stationary Engineers and Boiler Operators,,,,soc_structure_base,unmapped
+,,,51-8013,nan,Power Plant Operators,,,,soc_structure_base,unmapped
+,,,51-8012,nan,Power Distributors and Dispatchers,,,,soc_structure_base,unmapped
+,,,51-8011,nan,Nuclear Power Reactor Operators,,,,soc_structure_base,unmapped
+,,51-8010,,nan,"Power Plant Operators, Distributors, and Dispatchers",,,,soc_structure_base,unmapped
+,51-8000,,,nan,Plant and System Operators,,,,soc_structure_base,unmapped
+,,,51-7099,nan,"Woodworkers, All Other",,,,soc_structure_base,unmapped
+,,51-7090,,nan,Miscellaneous Woodworkers,,,,soc_structure_base,unmapped
+,,,51-7042,nan,"Woodworking Machine Setters, Operators, and Tenders, Except Sawing",,,,soc_structure_base,unmapped
+,,,51-7041,nan,"Sawing Machine Setters, Operators, and Tenders, Wood",,,,soc_structure_base,unmapped
+,,51-7040,,nan,"Woodworking Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-7032,nan,"Patternmakers, Wood",,,,soc_structure_base,unmapped
+,,,51-8092,nan,Gas Plant Operators,,,,soc_structure_base,unmapped
+,,,51-8093,nan,"Petroleum Pump System Operators, Refinery Operators, and Gaugers",,,,soc_structure_base,unmapped
+,,,51-8099,nan,"Plant and System Operators, All Other",,,,soc_structure_base,unmapped
+,51-9000,,,nan,Other Production Occupations,,,,soc_structure_base,unmapped
+,,,51-9081,nan,Dental Laboratory Technicians,,,,soc_structure_base,unmapped
+,,51-9080,,nan,Dental and Ophthalmic Laboratory Technicians and Medical Appliance Technicians,,,,soc_structure_base,unmapped
+,,51-9070,,nan,Jewelers and Precious Stone and Metal Workers,,,,soc_structure_base,unmapped
+,,51-9060,,nan,"Inspectors, Testers, Sorters, Samplers, and Weighers",,,,soc_structure_base,unmapped
+,,51-9050,,nan,"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",,,,soc_structure_base,unmapped
+,,51-9040,,nan,"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-9032,nan,"Cutting and Slicing Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-9083,nan,Ophthalmic Laboratory Technicians,,,,soc_structure_base,unmapped
+,,,51-9031,nan,"Cutters and Trimmers, Hand",,,,soc_structure_base,unmapped
+,,,51-9023,nan,"Mixing and Blending Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-9022,nan,"Grinding and Polishing Workers, Hand",,,,soc_structure_base,unmapped
+,,,51-9021,nan,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,51-9020,,nan,"Crushing, Grinding, Polishing, Mixing, and Blending Workers",,,,soc_structure_base,unmapped
+,,,51-9012,nan,"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-9011,nan,Chemical Equipment Operators and Tenders,,,,soc_structure_base,unmapped
+,,51-9010,,nan,"Chemical Processing Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,51-9030,,nan,Cutting Workers,,,,soc_structure_base,unmapped
+,,,51-7031,nan,"Model Makers, Wood",,,,soc_structure_base,unmapped
+,,,53-3031,nan,Driver/Sales Workers,,,,soc_structure_base,unmapped
+,,,53-3033,nan,Light Truck Drivers,,,,soc_structure_base,unmapped
+55-0000,,,,nan,Military Specific Occupations,,,,soc_structure_base,unmapped
+,,,53-7199,nan,"Material Moving Workers, All Other",,,,soc_structure_base,unmapped
+,,53-7190,,nan,Miscellaneous Material Moving Workers,,,,soc_structure_base,unmapped
+,,53-7120,,nan,"Tank Car, Truck, and Ship Loaders",,,,soc_structure_base,unmapped
+,,53-7080,,nan,Refuse and Recyclable Material Collectors,,,,soc_structure_base,unmapped
+,,,53-7073,nan,Wellhead Pumpers,,,,soc_structure_base,unmapped
+,,,53-7072,nan,"Pump Operators, Except Wellhead Pumpers",,,,soc_structure_base,unmapped
+,,,53-7071,nan,Gas Compressor and Gas Pumping Station Operators,,,,soc_structure_base,unmapped
+,,53-7070,,nan,Pumping Station Operators,,,,soc_structure_base,unmapped
+,,,53-7065,nan,Stockers and Order Fillers,,,,soc_structure_base,unmapped
+,,,53-7064,nan,"Packers and Packagers, Hand",,,,soc_structure_base,unmapped
+,,,53-7063,nan,Machine Feeders and Offbearers,,,,soc_structure_base,unmapped
+,,,53-7062,nan,"Laborers and Freight, Stock, and Material Movers, Hand",,,,soc_structure_base,unmapped
+,,,53-7061,nan,Cleaners of Vehicles and Equipment,,,,soc_structure_base,unmapped
+,,53-7060,,nan,Laborers and Material Movers,,,,soc_structure_base,unmapped
+,55-1000,,,nan,Military Officer Special and Tactical Operations Leaders,,,,soc_structure_base,unmapped
+,,,55-1011,nan,Air Crew Officers,,,,soc_structure_base,unmapped
+,,,55-1012,nan,Aircraft Launch and Recovery Officers,,,,soc_structure_base,unmapped
+,,,55-1013,nan,Armored Assault Vehicle Officers,,,,soc_structure_base,unmapped
+,,,55-3016,nan,Infantry,,,,soc_structure_base,unmapped
+,,,55-3015,nan,Command and Control Center Specialists,,,,soc_structure_base,unmapped
+,,,55-3014,nan,Artillery and Missile Crew Members,,,,soc_structure_base,unmapped
+,,,55-3013,nan,Armored Assault Vehicle Crew Members,,,,soc_structure_base,unmapped
+,,,55-3012,nan,Aircraft Launch and Recovery Specialists,,,,soc_structure_base,unmapped
+,,,55-3011,nan,Air Crew Members,,,,soc_structure_base,unmapped
+,55-3000,,,nan,Military Enlisted Tactical Operations and Air/Weapons Specialists and Crew Members,,,,soc_structure_base,unmapped
+,,53-7050,,nan,Industrial Truck and Tractor Operators,,,,soc_structure_base,unmapped
+,,,55-2013,nan,First-Line Supervisors of All Other Tactical Operations Specialists,,,,soc_structure_base,unmapped
+,,,55-2011,nan,First-Line Supervisors of Air Crew Members,,,,soc_structure_base,unmapped
+,55-2000,,,nan,First-Line Enlisted Military Supervisors,,,,soc_structure_base,unmapped
+,,,55-1019,nan,"Military Officer Special and Tactical Operations Leaders, All Other",,,,soc_structure_base,unmapped
+,,,55-1017,nan,Special Forces Officers,,,,soc_structure_base,unmapped
+,,,55-1016,nan,Infantry Officers,,,,soc_structure_base,unmapped
+,,,55-1015,nan,Command and Control Center Officers,,,,soc_structure_base,unmapped
+,,,55-1014,nan,Artillery and Missile Officers,,,,soc_structure_base,unmapped
+,,,55-2012,nan,First-Line Supervisors of Weapons Specialists/Crew Members,,,,soc_structure_base,unmapped
+,,,53-3032,nan,Heavy and Tractor-Trailer Truck Drivers,,,,soc_structure_base,unmapped
+,,53-7040,,nan,Hoist and Winch Operators,,,,soc_structure_base,unmapped
+,,53-7020,,nan,Crane and Tower Operators,,,,soc_structure_base,unmapped
+,,53-4090,,nan,Miscellaneous Rail Transportation Workers,,,,soc_structure_base,unmapped
+,,53-4040,,nan,Subway and Streetcar Operators,,,,soc_structure_base,unmapped
+,,53-4030,,nan,Railroad Conductors and Yardmasters,,,,soc_structure_base,unmapped
+,,53-4020,,nan,"Railroad Brake, Signal, and Switch Operators and Locomotive Firers",,,,soc_structure_base,unmapped
+,,,53-4013,nan,"Rail Yard Engineers, Dinkey Operators, and Hostlers",,,,soc_structure_base,unmapped
+,,,53-4011,nan,Locomotive Engineers,,,,soc_structure_base,unmapped
+,,53-4010,,nan,Locomotive Engineers and Operators,,,,soc_structure_base,unmapped
+,53-4000,,,nan,Rail Transportation Workers,,,,soc_structure_base,unmapped
+,,,53-3099,nan,"Motor Vehicle Operators, All Other",,,,soc_structure_base,unmapped
+,,53-3090,,nan,Miscellaneous Motor Vehicle Operators,,,,soc_structure_base,unmapped
+,,,53-3054,nan,Taxi Drivers,,,,soc_structure_base,unmapped
+,,,53-3053,nan,Shuttle Drivers and Chauffeurs,,,,soc_structure_base,unmapped
+,,,53-3052,nan,"Bus Drivers, Transit and Intercity",,,,soc_structure_base,unmapped
+,,,53-3051,nan,"Bus Drivers, School",,,,soc_structure_base,unmapped
+,,53-3050,,nan,Passenger Vehicle Drivers,,,,soc_structure_base,unmapped
+,,,53-4099,nan,"Rail Transportation Workers, All Other",,,,soc_structure_base,unmapped
+,53-5000,,,nan,Water Transportation Workers,,,,soc_structure_base,unmapped
+,,53-5010,,nan,Sailors and Marine Oilers,,,,soc_structure_base,unmapped
+,,53-5020,,nan,Ship and Boat Captains and Operators,,,,soc_structure_base,unmapped
+,,53-7010,,nan,Conveyor Operators and Tenders,,,,soc_structure_base,unmapped
+,53-7000,,,nan,Material Moving Workers,,,,soc_structure_base,unmapped
+,,,53-6099,nan,"Transportation Workers, All Other",,,,soc_structure_base,unmapped
+,,53-6090,,nan,Miscellaneous Transportation Workers,,,,soc_structure_base,unmapped
+,,53-6060,,nan,Passenger Attendants,,,,soc_structure_base,unmapped
+,,53-6050,,nan,Transportation Inspectors,,,,soc_structure_base,unmapped
+,,53-6040,,nan,Traffic Technicians,,,,soc_structure_base,unmapped
+,,53-7030,,nan,Dredge Operators,,,,soc_structure_base,unmapped
+,,,53-6032,nan,Aircraft Service Attendants,,,,soc_structure_base,unmapped
+,,53-6030,,nan,Transportation Service Attendants,,,,soc_structure_base,unmapped
+,,53-6020,,nan,Parking Attendants,,,,soc_structure_base,unmapped
+,,53-6010,,nan,Bridge and Lock Tenders,,,,soc_structure_base,unmapped
+,53-6000,,,nan,Other Transportation Workers,,,,soc_structure_base,unmapped
+,,53-5030,,nan,Ship Engineers,,,,soc_structure_base,unmapped
+,,,53-5022,nan,Motorboat Operators,,,,soc_structure_base,unmapped
+,,,53-5021,nan,"Captains, Mates, and Pilots of Water Vessels",,,,soc_structure_base,unmapped
+,,,53-6031,nan,Automotive and Watercraft Service Attendants,,,,soc_structure_base,unmapped
+,,51-7030,,nan,"Model Makers and Patternmakers, Wood",,,,soc_structure_base,unmapped
+,,51-7020,,nan,Furniture Finishers,,,,soc_structure_base,unmapped
+,,51-7010,,nan,Cabinetmakers and Bench Carpenters,,,,soc_structure_base,unmapped
+,,,49-9061,nan,Camera and Photographic Equipment Repairers,,,,soc_structure_base,unmapped
+,,49-9060,,nan,Precision Instrument and Equipment Repairers,,,,soc_structure_base,unmapped
+,,,49-9052,nan,Telecommunications Line Installers and Repairers,,,,soc_structure_base,unmapped
+,,35-9020,,nan,Dishwashers,,,,soc_structure_base,unmapped
+,,49-9050,,nan,Line Installers and Repairers,,,,soc_structure_base,unmapped
+,,,49-9045,nan,"Refractory Materials Repairers, Except Brickmasons",,,,soc_structure_base,unmapped
+,,,49-9044,nan,Millwrights,,,,soc_structure_base,unmapped
+,,,49-9043,nan,"Maintenance Workers, Machinery",,,,soc_structure_base,unmapped
+,,,49-9041,nan,Industrial Machinery Mechanics,,,,soc_structure_base,unmapped
+,,49-9040,,nan,"Industrial Machinery Installation, Repair, and Maintenance Workers",,,,soc_structure_base,unmapped
+,,49-9030,,nan,Home Appliance Repairers,,,,soc_structure_base,unmapped
+,,49-9020,,nan,"Heating, Air Conditioning, and Refrigeration Mechanics and Installers",,,,soc_structure_base,unmapped
+,,,49-9012,nan,"Control and Valve Installers and Repairers, Except Mechanical Door",,,,soc_structure_base,unmapped
+,,,49-9011,nan,Mechanical Door Repairers,,,,soc_structure_base,unmapped
+,,49-9010,,nan,Control and Valve Installers and Repairers,,,,soc_structure_base,unmapped
+,,,49-9062,nan,Medical Equipment Repairers,,,,soc_structure_base,unmapped
+,,,49-9063,nan,Musical Instrument Repairers and Tuners,,,,soc_structure_base,unmapped
+,,,49-9064,nan,Watch and Clock Repairers,,,,soc_structure_base,unmapped
+,,,49-9069,nan,"Precision Instrument and Equipment Repairers, All Other",,,,soc_structure_base,unmapped
+,,51-2010,,nan,"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",,,,soc_structure_base,unmapped
+,51-2000,,,nan,Assemblers and Fabricators,,,,soc_structure_base,unmapped
+,,51-1010,,nan,First-Line Supervisors of Production and Operating Workers,,,,soc_structure_base,unmapped
+,51-1000,,,nan,Supervisors of Production Workers,,,,soc_structure_base,unmapped
+51-0000,,,,nan,Production Occupations,,,,soc_structure_base,unmapped
+,,,49-9099,nan,"Installation, Maintenance, and Repair Workers, All Other",,,,soc_structure_base,unmapped
+,,,49-9098,nan,"Helpers--Installation, Maintenance, and Repair Workers",,,,soc_structure_base,unmapped
+,49-9000,,,nan,"Other Installation, Maintenance, and Repair Occupations",,,,soc_structure_base,unmapped
+,,,49-9097,nan,Signal and Track Switch Repairers,,,,soc_structure_base,unmapped
+,,,49-9095,nan,Manufactured Building and Mobile Home Installers,,,,soc_structure_base,unmapped
+,,,49-9094,nan,Locksmiths and Safe Repairers,,,,soc_structure_base,unmapped
+,,,49-9092,nan,Commercial Divers,,,,soc_structure_base,unmapped
+,,,49-9091,nan,"Coin, Vending, and Amusement Machine Servicers and Repairers",,,,soc_structure_base,unmapped
+,,49-9090,,nan,"Miscellaneous Installation, Maintenance, and Repair Workers",,,,soc_structure_base,unmapped
+,,49-9080,,nan,Wind Turbine Service Technicians,,,,soc_structure_base,unmapped
+,,49-9070,,nan,"Maintenance and Repair Workers, General",,,,soc_structure_base,unmapped
+,,,49-9096,nan,Riggers,,,,soc_structure_base,unmapped
+,,51-2020,,nan,"Electrical, Electronics, and Electromechanical Assemblers",,,,soc_structure_base,unmapped
+,,,49-3093,nan,Tire Repairers and Changers,,,,soc_structure_base,unmapped
+,,,49-3091,nan,Bicycle Repairers,,,,soc_structure_base,unmapped
+,,,49-2094,nan,"Electrical and Electronics Repairers, Commercial and Industrial Equipment",,,,soc_structure_base,unmapped
+,,,49-2093,nan,"Electrical and Electronics Installers and Repairers, Transportation Equipment",,,,soc_structure_base,unmapped
+,,,49-2092,nan,"Electric Motor, Power Tool, and Related Repairers",,,,soc_structure_base,unmapped
+,,,49-2091,nan,Avionics Technicians,,,,soc_structure_base,unmapped
+,,49-2090,,nan,"Miscellaneous Electrical and Electronic Equipment Mechanics, Installers, and Repairers",,,,soc_structure_base,unmapped
+,,,49-2022,nan,"Telecommunications Equipment Installers and Repairers, Except Line Installers",,,,soc_structure_base,unmapped
+,,,49-2021,nan,"Radio, Cellular, and Tower Equipment Installers and Repairers",,,,soc_structure_base,unmapped
+,,49-2020,,nan,Radio and Telecommunications Equipment Installers and Repairers,,,,soc_structure_base,unmapped
+,,49-2010,,nan,"Computer, Automated Teller, and Office Machine Repairers",,,,soc_structure_base,unmapped
+,49-2000,,,nan,"Electrical and Electronic Equipment Mechanics, Installers, and Repairers",,,,soc_structure_base,unmapped
+,,49-1010,,nan,"First-Line Supervisors of Mechanics, Installers, and Repairers",,,,soc_structure_base,unmapped
+,49-1000,,,nan,"Supervisors of Installation, Maintenance, and Repair Workers",,,,soc_structure_base,unmapped
+49-0000,,,,nan,"Installation, Maintenance, and Repair Occupations",,,,soc_structure_base,unmapped
+,,,47-5099,nan,"Extraction Workers, All Other",,,,soc_structure_base,unmapped
+,,47-5090,,nan,Miscellaneous Extraction Workers,,,,soc_structure_base,unmapped
+,,,49-2095,nan,"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",,,,soc_structure_base,unmapped
+,,,49-2096,nan,"Electronic Equipment Installers and Repairers, Motor Vehicles",,,,soc_structure_base,unmapped
+,,,49-2097,nan,Audiovisual Equipment Installers and Repairers,,,,soc_structure_base,unmapped
+,,,49-2098,nan,Security and Fire Alarm Systems Installers,,,,soc_structure_base,unmapped
+,,49-3090,,nan,"Miscellaneous Vehicle and Mobile Equipment Mechanics, Installers, and Repairers",,,,soc_structure_base,unmapped
+,,,49-3053,nan,Outdoor Power Equipment and Other Small Engine Mechanics,,,,soc_structure_base,unmapped
+,,,49-3052,nan,Motorcycle Mechanics,,,,soc_structure_base,unmapped
+,,,49-3051,nan,Motorboat Mechanics and Service Technicians,,,,soc_structure_base,unmapped
+,,49-3050,,nan,Small Engine Mechanics,,,,soc_structure_base,unmapped
+,,,49-3043,nan,Rail Car Repairers,,,,soc_structure_base,unmapped
+,,,49-3042,nan,"Mobile Heavy Equipment Mechanics, Except Engines",,,,soc_structure_base,unmapped
+,,,49-3092,nan,Recreational Vehicle Service Technicians,,,,soc_structure_base,unmapped
+,,,49-3041,nan,Farm Equipment Mechanics and Service Technicians,,,,soc_structure_base,unmapped
+,,49-3030,,nan,Bus and Truck Mechanics and Diesel Engine Specialists,,,,soc_structure_base,unmapped
+,,,49-3023,nan,Automotive Service Technicians and Mechanics,,,,soc_structure_base,unmapped
+,,,49-3022,nan,Automotive Glass Installers and Repairers,,,,soc_structure_base,unmapped
+,,,49-3021,nan,Automotive Body and Related Repairers,,,,soc_structure_base,unmapped
+,,49-3020,,nan,Automotive Technicians and Repairers,,,,soc_structure_base,unmapped
+,,49-3010,,nan,Aircraft Mechanics and Service Technicians,,,,soc_structure_base,unmapped
+,49-3000,,,nan,"Vehicle and Mobile Equipment Mechanics, Installers, and Repairers",,,,soc_structure_base,unmapped
+,,49-3040,,nan,Heavy Vehicle and Mobile Equipment Service Technicians and Mechanics,,,,soc_structure_base,unmapped
+,,,51-2021,nan,"Coil Winders, Tapers, and Finishers",,,,soc_structure_base,unmapped
+,,,51-2022,nan,Electrical and Electronic Equipment Assemblers,,,,soc_structure_base,unmapped
+,,,51-2023,nan,Electromechanical Equipment Assemblers,,,,soc_structure_base,unmapped
+,51-6000,,,nan,"Textile, Apparel, and Furnishings Workers",,,,soc_structure_base,unmapped
+,,,51-5113,nan,Print Binding and Finishing Workers,,,,soc_structure_base,unmapped
+,,,51-5112,nan,Printing Press Operators,,,,soc_structure_base,unmapped
+,,,51-5111,nan,Prepress Technicians and Workers,,,,soc_structure_base,unmapped
+,51-5100,,,nan,Printing Workers,,,,soc_structure_base,unmapped
+,,,51-4199,nan,"Metal Workers and Plastic Workers, All Other",,,,soc_structure_base,unmapped
+,,,51-4194,nan,"Tool Grinders, Filers, and Sharpeners",,,,soc_structure_base,unmapped
+,,,51-4193,nan,"Plating Machine Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4192,nan,"Layout Workers, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4191,nan,"Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,51-4190,,nan,Miscellaneous Metal Workers and Plastic Workers,,,,soc_structure_base,unmapped
+,,,51-4122,nan,"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-4121,nan,"Welders, Cutters, Solderers, and Brazers",,,,soc_structure_base,unmapped
+,,51-4120,,nan,"Welding, Soldering, and Brazing Workers",,,,soc_structure_base,unmapped
+,,51-4110,,nan,Tool and Die Makers,,,,soc_structure_base,unmapped
+,,51-6010,,nan,Laundry and Dry-Cleaning Workers,,,,soc_structure_base,unmapped
+,,51-6020,,nan,"Pressers, Textile, Garment, and Related Materials",,,,soc_structure_base,unmapped
+,,51-6030,,nan,Sewing Machine Operators,,,,soc_structure_base,unmapped
+,,51-6040,,nan,Shoe and Leather Workers,,,,soc_structure_base,unmapped
+,51-7000,,,nan,Woodworkers,,,,soc_structure_base,unmapped
+,,,51-6099,nan,"Textile, Apparel, and Furnishings Workers, All Other",,,,soc_structure_base,unmapped
+,,,51-6093,nan,Upholsterers,,,,soc_structure_base,unmapped
+,,,51-6092,nan,Fabric and Apparel Patternmakers,,,,soc_structure_base,unmapped
+,,,51-6091,nan,"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",,,,soc_structure_base,unmapped
+,,51-6090,,nan,"Miscellaneous Textile, Apparel, and Furnishings Workers",,,,soc_structure_base,unmapped
+,,,51-6064,nan,"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,51-4080,,nan,"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-6063,nan,"Textile Knitting and Weaving Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-6061,nan,Textile Bleaching and Dyeing Machine Operators and Tenders,,,,soc_structure_base,unmapped
+,,51-6060,,nan,"Textile Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-6052,nan,"Tailors, Dressmakers, and Custom Sewers",,,,soc_structure_base,unmapped
+,,,51-6051,nan,"Sewers, Hand",,,,soc_structure_base,unmapped
+,,51-6050,,nan,"Tailors, Dressmakers, and Sewers",,,,soc_structure_base,unmapped
+,,,51-6042,nan,Shoe Machine Operators and Tenders,,,,soc_structure_base,unmapped
+,,,51-6041,nan,Shoe and Leather Workers and Repairers,,,,soc_structure_base,unmapped
+,,,51-6062,nan,"Textile Cutting Machine Setters, Operators, and Tenders",,,,soc_structure_base,unmapped
+,,,51-4072,nan,"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4071,nan,Foundry Mold and Coremakers,,,,soc_structure_base,unmapped
+,,51-4070,,nan,"Molders and Molding Machine Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-3092,nan,Food Batchmakers,,,,soc_structure_base,unmapped
+,,,51-3091,nan,"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",,,,soc_structure_base,unmapped
+,,51-3090,,nan,Miscellaneous Food Processing Workers,,,,soc_structure_base,unmapped
+,,,51-3023,nan,Slaughterers and Meat Packers,,,,soc_structure_base,unmapped
+,,,51-3022,nan,"Meat, Poultry, and Fish Cutters and Trimmers",,,,soc_structure_base,unmapped
+,,,51-3021,nan,Butchers and Meat Cutters,,,,soc_structure_base,unmapped
+,,51-3020,,nan,"Butchers and Other Meat, Poultry, and Fish Processing Workers",,,,soc_structure_base,unmapped
+,,,51-3093,nan,Food Cooking Machine Operators and Tenders,,,,soc_structure_base,unmapped
+,,51-3010,,nan,Bakers,,,,soc_structure_base,unmapped
+,,,51-2099,nan,"Assemblers and Fabricators, All Other",,,,soc_structure_base,unmapped
+,,,51-2092,nan,Team Assemblers,,,,soc_structure_base,unmapped
+,,51-2090,,nan,Miscellaneous Assemblers and Fabricators,,,,soc_structure_base,unmapped
+,,51-2060,,nan,Timing Device Assemblers and Adjusters,,,,soc_structure_base,unmapped
+,,51-2050,,nan,Fiberglass Laminators and Fabricators,,,,soc_structure_base,unmapped
+,,51-2040,,nan,Structural Metal Fabricators and Fitters,,,,soc_structure_base,unmapped
+,,51-2030,,nan,Engine and Other Machine Assemblers,,,,soc_structure_base,unmapped
+,51-3000,,,nan,Food Processing Workers,,,,soc_structure_base,unmapped
+,,47-5070,,nan,"Roustabouts, Oil and Gas",,,,soc_structure_base,unmapped
+,,,51-3099,nan,"Food Processing Workers, All Other",,,,soc_structure_base,unmapped
+,,51-4020,,nan,"Forming Machine Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4062,nan,"Patternmakers, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4061,nan,"Model Makers, Metal and Plastic",,,,soc_structure_base,unmapped
+,,51-4060,,nan,"Model Makers and Patternmakers, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4052,nan,"Pourers and Casters, Metal",,,,soc_structure_base,unmapped
+,,,51-4051,nan,Metal-Refining Furnace Operators and Tenders,,,,soc_structure_base,unmapped
+,,51-4050,,nan,"Metal Furnace Operators, Tenders, Pourers, and Casters",,,,soc_structure_base,unmapped
+,,51-4040,,nan,Machinists,,,,soc_structure_base,unmapped
+,51-4000,,,nan,Metal Workers and Plastic Workers,,,,soc_structure_base,unmapped
+,,,51-4035,nan,"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4033,nan,"Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4032,nan,"Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4031,nan,"Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,51-4030,,nan,"Machine Tool Cutting Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4023,nan,"Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4022,nan,"Forging Machine Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4021,nan,"Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,,51-4034,nan,"Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",,,,soc_structure_base,unmapped
+,,35-9010,,nan,Dining Room and Cafeteria Attendants and Bartender Helpers,,,,soc_structure_base,unmapped
+,,,31-9096,nan,Veterinary Assistants and Laboratory Animal Caretakers,,,,soc_structure_base,unmapped
+,,35-3040,,nan,"Food Servers, Nonrestaurant",,,,soc_structure_base,unmapped
+,,,19-2041,nan,"Environmental Scientists and Specialists, Including Health",,,,soc_structure_base,unmapped
+,,19-2040,,nan,Environmental Scientists and Geoscientists,,,,soc_structure_base,unmapped
+,,,19-2032,nan,Materials Scientists,,,,soc_structure_base,unmapped
+,,,19-2031,nan,Chemists,,,,soc_structure_base,unmapped
+,,19-2030,,nan,Chemists and Materials Scientists,,,,soc_structure_base,unmapped
+,,19-2020,,nan,Atmospheric and Space Scientists,,,,soc_structure_base,unmapped
+,,,19-2042,nan,"Geoscientists, Except Hydrologists and Geographers",,,,soc_structure_base,unmapped
+,,,19-2012,nan,Physicists,,,,soc_structure_base,unmapped
+,,19-2010,,nan,Astronomers and Physicists,,,,soc_structure_base,unmapped
+,19-2000,,,nan,Physical Scientists,,,,soc_structure_base,unmapped
+,,,19-1099,nan,"Life Scientists, All Other",,,,soc_structure_base,unmapped
+,,19-1090,,nan,Miscellaneous Life Scientists,,,,soc_structure_base,unmapped
+,,,19-1042,nan,"Medical Scientists, Except Epidemiologists",,,,soc_structure_base,unmapped
+,,,19-1041,nan,Epidemiologists,,,,soc_structure_base,unmapped
+,,,19-2011,nan,Astronomers,,,,soc_structure_base,unmapped
+,,,19-2043,nan,Hydrologists,,,,soc_structure_base,unmapped
+,,19-2090,,nan,Miscellaneous Physical Scientists,,,,soc_structure_base,unmapped
+,,,19-2099,nan,"Physical Scientists, All Other",,,,soc_structure_base,unmapped
+,,,19-3094,nan,Political Scientists,,,,soc_structure_base,unmapped
+,,,19-3093,nan,Historians,,,,soc_structure_base,unmapped
+,,,19-3092,nan,Geographers,,,,soc_structure_base,unmapped
+,,,19-3091,nan,Anthropologists and Archeologists,,,,soc_structure_base,unmapped
+,,19-3090,,nan,Miscellaneous Social Scientists and Related Workers,,,,soc_structure_base,unmapped
+,,19-3050,,nan,Urban and Regional Planners,,,,soc_structure_base,unmapped
+,,19-3040,,nan,Sociologists,,,,soc_structure_base,unmapped
+,,,19-3039,nan,"Psychologists, All Other",,,,soc_structure_base,unmapped
+,,,19-3034,nan,School Psychologists,,,,soc_structure_base,unmapped
+,,,19-3033,nan,Clinical and Counseling Psychologists,,,,soc_structure_base,unmapped
+,,,19-3032,nan,Industrial-Organizational Psychologists,,,,soc_structure_base,unmapped
+,,19-3030,,nan,Psychologists,,,,soc_structure_base,unmapped
+,,19-3020,,nan,Survey Researchers,,,,soc_structure_base,unmapped
+,,19-3010,,nan,Economists,,,,soc_structure_base,unmapped
+,19-3000,,,nan,Social Scientists and Related Workers,,,,soc_structure_base,unmapped
+,,19-1040,,nan,Medical Scientists,,,,soc_structure_base,unmapped
+,,,19-1032,nan,Foresters,,,,soc_structure_base,unmapped
+,,,19-1031,nan,Conservation Scientists,,,,soc_structure_base,unmapped
+,,19-1030,,nan,Conservation Scientists and Foresters,,,,soc_structure_base,unmapped
+,,,17-3022,nan,Civil Engineering Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,17-3021,nan,Aerospace Engineering and Operations Technologists and Technicians,,,,soc_structure_base,unmapped
+,,17-3020,,nan,"Engineering Technologists and Technicians, Except Drafters",,,,soc_structure_base,unmapped
+,,,17-3019,nan,"Drafters, All Other",,,,soc_structure_base,unmapped
+,,,17-3013,nan,Mechanical Drafters,,,,soc_structure_base,unmapped
+,,,17-3012,nan,Electrical and Electronics Drafters,,,,soc_structure_base,unmapped
+,,,17-3011,nan,Architectural and Civil Drafters,,,,soc_structure_base,unmapped
+,,17-3010,,nan,Drafters,,,,soc_structure_base,unmapped
+,17-3000,,,nan,"Drafters, Engineering Technicians, and Mapping Technicians",,,,soc_structure_base,unmapped
+,,,17-2199,nan,"Engineers, All Other",,,,soc_structure_base,unmapped
+,,17-2190,,nan,Miscellaneous Engineers,,,,soc_structure_base,unmapped
+,,17-2170,,nan,Petroleum Engineers,,,,soc_structure_base,unmapped
+,,17-2160,,nan,Nuclear Engineers,,,,soc_structure_base,unmapped
+,,17-2150,,nan,"Mining and Geological Engineers, Including Mining Safety Engineers",,,,soc_structure_base,unmapped
+,,17-2140,,nan,Mechanical Engineers,,,,soc_structure_base,unmapped
+,,,17-3023,nan,Electrical and Electronic Engineering Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,19-3099,nan,"Social Scientists and Related Workers, All Other",,,,soc_structure_base,unmapped
+,,,17-3024,nan,Electro-Mechanical and Mechatronics Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,17-3026,nan,Industrial Engineering Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,19-1029,nan,"Biological Scientists, All Other",,,,soc_structure_base,unmapped
+,,,19-1023,nan,Zoologists and Wildlife Biologists,,,,soc_structure_base,unmapped
+,,,19-1022,nan,Microbiologists,,,,soc_structure_base,unmapped
+,,,19-1021,nan,Biochemists and Biophysicists,,,,soc_structure_base,unmapped
+,,19-1020,,nan,Biological Scientists,,,,soc_structure_base,unmapped
+,,,19-1013,nan,Soil and Plant Scientists,,,,soc_structure_base,unmapped
+,,,19-1012,nan,Food Scientists and Technologists,,,,soc_structure_base,unmapped
+,,,19-1011,nan,Animal Scientists,,,,soc_structure_base,unmapped
+,,19-1010,,nan,Agricultural and Food Scientists,,,,soc_structure_base,unmapped
+,19-1000,,,nan,Life Scientists,,,,soc_structure_base,unmapped
+19-0000,,,,nan,"Life, Physical, and Social Science Occupations",,,,soc_structure_base,unmapped
+,,17-3030,,nan,Surveying and Mapping Technicians,,,,soc_structure_base,unmapped
+,,,17-3029,nan,"Engineering Technologists and Technicians, Except Drafters, All Other",,,,soc_structure_base,unmapped
+,,,17-3028,nan,Calibration Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,17-3027,nan,Mechanical Engineering Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,17-3025,nan,Environmental Engineering Technologists and Technicians,,,,soc_structure_base,unmapped
+,,17-2130,,nan,Materials Engineers,,,,soc_structure_base,unmapped
+,19-4000,,,nan,"Life, Physical, and Social Science Technicians",,,,soc_structure_base,unmapped
+,,,19-4012,nan,Agricultural Technicians,,,,soc_structure_base,unmapped
+,,23-2010,,nan,Paralegals and Legal Assistants,,,,soc_structure_base,unmapped
+,23-2000,,,nan,Legal Support Workers,,,,soc_structure_base,unmapped
+,,,23-1023,nan,"Judges, Magistrate Judges, and Magistrates",,,,soc_structure_base,unmapped
+,,,23-1022,nan,"Arbitrators, Mediators, and Conciliators",,,,soc_structure_base,unmapped
+,,,23-1021,nan,"Administrative Law Judges, Adjudicators, and Hearing Officers",,,,soc_structure_base,unmapped
+,,23-1020,,nan,"Judges, Magistrates, and Other Judicial Workers",,,,soc_structure_base,unmapped
+,,23-2090,,nan,Miscellaneous Legal Support Workers,,,,soc_structure_base,unmapped
+,,,23-1012,nan,Judicial Law Clerks,,,,soc_structure_base,unmapped
+,,23-1010,,nan,Lawyers and Judicial Law Clerks,,,,soc_structure_base,unmapped
+,23-1000,,,nan,"Lawyers, Judges, and Related Workers",,,,soc_structure_base,unmapped
+23-0000,,,,nan,Legal Occupations,,,,soc_structure_base,unmapped
+,,,21-2099,nan,"Religious Workers, All Other",,,,soc_structure_base,unmapped
+,,21-2090,,nan,Miscellaneous Religious Workers,,,,soc_structure_base,unmapped
+,,21-2020,,nan,"Directors, Religious Activities and Education",,,,soc_structure_base,unmapped
+,,,23-1011,nan,Lawyers,,,,soc_structure_base,unmapped
+,,,23-2093,nan,"Title Examiners, Abstractors, and Searchers",,,,soc_structure_base,unmapped
+,,,23-2099,nan,"Legal Support Workers, All Other",,,,soc_structure_base,unmapped
+25-0000,,,,nan,Educational Instruction and Library Occupations,,,,soc_structure_base,unmapped
+,,,25-1052,nan,"Chemistry Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1051,nan,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1050,,nan,"Physical Sciences Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1043,nan,"Forestry and Conservation Science Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1042,nan,"Biological Science Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1041,nan,"Agricultural Sciences Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1040,,nan,"Life Sciences Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1032,nan,"Engineering Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1031,nan,"Architecture Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1030,,nan,"Engineering and Architecture Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1022,nan,"Mathematical Science Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1021,nan,"Computer Science Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1020,,nan,"Math and Computer Science Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1010,,nan,"Business Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,25-1000,,,nan,Postsecondary Teachers,,,,soc_structure_base,unmapped
+,,21-2010,,nan,Clergy,,,,soc_structure_base,unmapped
+,21-2000,,,nan,Religious Workers,,,,soc_structure_base,unmapped
+,,,21-1099,nan,"Community and Social Service Specialists, All Other",,,,soc_structure_base,unmapped
+,,,21-1094,nan,Community Health Workers,,,,soc_structure_base,unmapped
+,,,19-5011,nan,Occupational Health and Safety Specialists,,,,soc_structure_base,unmapped
+,19-5000,,,nan,Occupational Health and Safety Specialists and Technicians,,,,soc_structure_base,unmapped
+,,,19-4099,nan,"Life, Physical, and Social Science Technicians, All Other",,,,soc_structure_base,unmapped
+,,,19-4092,nan,Forensic Science Technicians,,,,soc_structure_base,unmapped
+,,19-4090,,nan,"Miscellaneous Life, Physical, and Social Science Technicians",,,,soc_structure_base,unmapped
+,,19-4070,,nan,Forest and Conservation Technicians,,,,soc_structure_base,unmapped
+,,19-4060,,nan,Social Science Research Assistants,,,,soc_structure_base,unmapped
+,,19-4050,,nan,Nuclear Technicians,,,,soc_structure_base,unmapped
+,,,19-4044,nan,Hydrologic Technicians,,,,soc_structure_base,unmapped
+,,,19-4043,nan,"Geological Technicians, Except Hydrologic Technicians",,,,soc_structure_base,unmapped
+,,,19-4042,nan,"Environmental Science and Protection Technicians, Including Health",,,,soc_structure_base,unmapped
+,,19-4040,,nan,Environmental Science and Geoscience Technicians,,,,soc_structure_base,unmapped
+,,19-4030,,nan,Chemical Technicians,,,,soc_structure_base,unmapped
+,,19-4020,,nan,Biological Technicians,,,,soc_structure_base,unmapped
+,,,19-4013,nan,Food Science Technicians,,,,soc_structure_base,unmapped
+,,,19-5012,nan,Occupational Health and Safety Technicians,,,,soc_structure_base,unmapped
+,,19-4010,,nan,Agricultural and Food Science Technicians,,,,soc_structure_base,unmapped
+21-0000,,,,nan,Community and Social Service Occupations,,,,soc_structure_base,unmapped
+,,21-1010,,nan,Counselors,,,,soc_structure_base,unmapped
+,,,21-1093,nan,Social and Human Service Assistants,,,,soc_structure_base,unmapped
+,,,21-1092,nan,Probation Officers and Correctional Treatment Specialists,,,,soc_structure_base,unmapped
+,,,21-1091,nan,Health Education Specialists,,,,soc_structure_base,unmapped
+,,21-1090,,nan,Miscellaneous Community and Social Service Specialists,,,,soc_structure_base,unmapped
+,,,21-1029,nan,"Social Workers, All Other",,,,soc_structure_base,unmapped
+,,,21-1023,nan,Mental Health and Substance Abuse Social Workers,,,,soc_structure_base,unmapped
+,,,21-1022,nan,Healthcare Social Workers,,,,soc_structure_base,unmapped
+,,,21-1021,nan,"Child, Family, and School Social Workers",,,,soc_structure_base,unmapped
+,,21-1020,,nan,Social Workers,,,,soc_structure_base,unmapped
+,,,21-1019,nan,"Counselors, All Other",,,,soc_structure_base,unmapped
+,,,21-1015,nan,Rehabilitation Counselors,,,,soc_structure_base,unmapped
+,,,21-1014,nan,Mental Health Counselors,,,,soc_structure_base,unmapped
+,,,21-1013,nan,Marriage and Family Therapists,,,,soc_structure_base,unmapped
+,,,21-1012,nan,"Educational, Guidance, and Career Counselors and Advisors",,,,soc_structure_base,unmapped
+,,,21-1011,nan,Substance Abuse and Behavioral Disorder Counselors,,,,soc_structure_base,unmapped
+,21-1000,,,nan,"Counselors, Social Workers, and Other Community and Social Service Specialists",,,,soc_structure_base,unmapped
+,,17-2120,,nan,Marine Engineers and Naval Architects,,,,soc_structure_base,unmapped
+,,,17-2112,nan,Industrial Engineers,,,,soc_structure_base,unmapped
+,,,17-2111,nan,"Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",,,,soc_structure_base,unmapped
+,,13-1010,,nan,"Agents and Business Managers of Artists, Performers, and Athletes",,,,soc_structure_base,unmapped
+,13-1000,,,nan,Business Operations Specialists,,,,soc_structure_base,unmapped
+13-0000,,,,nan,Business and Financial Operations Occupations,,,,soc_structure_base,unmapped
+,,,11-9199,nan,"Managers, All Other",,,,soc_structure_base,unmapped
+,,11-9190,,nan,Miscellaneous Managers,,,,soc_structure_base,unmapped
+,,,11-9179,nan,"Personal Service Managers, All Other",,,,soc_structure_base,unmapped
+,,13-1020,,nan,Buyers and Purchasing Agents,,,,soc_structure_base,unmapped
+,,,11-9171,nan,Funeral Home Managers,,,,soc_structure_base,unmapped
+,,11-9160,,nan,Emergency Management Directors,,,,soc_structure_base,unmapped
+,,11-9150,,nan,Social and Community Service Managers,,,,soc_structure_base,unmapped
+,,11-9140,,nan,"Property, Real Estate, and Community Association Managers",,,,soc_structure_base,unmapped
+,,11-9130,,nan,Postmasters and Mail Superintendents,,,,soc_structure_base,unmapped
+,,11-9120,,nan,Natural Sciences Managers,,,,soc_structure_base,unmapped
+,,11-9110,,nan,Medical and Health Services Managers,,,,soc_structure_base,unmapped
+,,11-9170,,nan,Personal Service Managers,,,,soc_structure_base,unmapped
+,,,13-1021,nan,"Buyers and Purchasing Agents, Farm Products",,,,soc_structure_base,unmapped
+,,,13-1022,nan,"Wholesale and Retail Buyers, Except Farm Products",,,,soc_structure_base,unmapped
+,,,13-1023,nan,"Purchasing Agents, Except Wholesale, Retail, and Farm Products",,,,soc_structure_base,unmapped
+,,13-1130,,nan,Fundraisers,,,,soc_structure_base,unmapped
+,,13-1120,,nan,"Meeting, Convention, and Event Planners",,,,soc_structure_base,unmapped
+,,13-1110,,nan,Management Analysts,,,,soc_structure_base,unmapped
+,,,13-1082,nan,Project Management Specialists,,,,soc_structure_base,unmapped
+,,,13-1081,nan,Logisticians,,,,soc_structure_base,unmapped
+,,13-1080,,nan,Logisticians and Project Management Specialists,,,,soc_structure_base,unmapped
+,,,13-1075,nan,Labor Relations Specialists,,,,soc_structure_base,unmapped
+,,,13-1074,nan,Farm Labor Contractors,,,,soc_structure_base,unmapped
+,,,13-1071,nan,Human Resources Specialists,,,,soc_structure_base,unmapped
+,,13-1070,,nan,Human Resources Workers,,,,soc_structure_base,unmapped
+,,13-1050,,nan,Cost Estimators,,,,soc_structure_base,unmapped
+,,13-1040,,nan,Compliance Officers,,,,soc_structure_base,unmapped
+,,,13-1032,nan,"Insurance Appraisers, Auto Damage",,,,soc_structure_base,unmapped
+,,,13-1031,nan,"Claims Adjusters, Examiners, and Investigators",,,,soc_structure_base,unmapped
+,,13-1030,,nan,"Claims Adjusters, Appraisers, Examiners, and Investigators",,,,soc_structure_base,unmapped
+,,11-9080,,nan,Lodging Managers,,,,soc_structure_base,unmapped
+,,,11-9072,nan,"Entertainment and Recreation Managers, Except Gambling",,,,soc_structure_base,unmapped
+,,,11-9071,nan,Gambling Managers,,,,soc_structure_base,unmapped
+,,11-9070,,nan,Entertainment and Recreation Managers,,,,soc_structure_base,unmapped
+,,,11-3012,nan,Administrative Services Managers,,,,soc_structure_base,unmapped
+,,11-3010,,nan,Administrative Services and Facilities Managers,,,,soc_structure_base,unmapped
+,11-3000,,,nan,Operations Specialties Managers,,,,soc_structure_base,unmapped
+,,,11-2033,nan,Fundraising Managers,,,,soc_structure_base,unmapped
+,,,11-2032,nan,Public Relations Managers,,,,soc_structure_base,unmapped
+,,11-2030,,nan,Public Relations and Fundraising Managers,,,,soc_structure_base,unmapped
+,,,11-2022,nan,Sales Managers,,,,soc_structure_base,unmapped
+,,,11-2021,nan,Marketing Managers,,,,soc_structure_base,unmapped
+,,11-2020,,nan,Marketing and Sales Managers,,,,soc_structure_base,unmapped
+,,11-2010,,nan,Advertising and Promotions Managers,,,,soc_structure_base,unmapped
+,11-2000,,,nan,"Advertising, Marketing, Promotions, Public Relations, and Sales Managers",,,,soc_structure_base,unmapped
+,,11-1030,,nan,Legislators,,,,soc_structure_base,unmapped
+,,11-1020,,nan,General and Operations Managers,,,,soc_structure_base,unmapped
+,,11-1010,,nan,Chief Executives,,,,soc_structure_base,unmapped
+,11-1000,,,nan,Top Executives,,,,soc_structure_base,unmapped
+,,,11-3013,nan,Facilities Managers,,,,soc_structure_base,unmapped
+,,13-1140,,nan,"Compensation, Benefits, and Job Analysis Specialists",,,,soc_structure_base,unmapped
+,,11-3020,,nan,Computer and Information Systems Managers,,,,soc_structure_base,unmapped
+,,11-3050,,nan,Industrial Production Managers,,,,soc_structure_base,unmapped
+,,11-9050,,nan,Food Service Managers,,,,soc_structure_base,unmapped
+,,11-9040,,nan,Architectural and Engineering Managers,,,,soc_structure_base,unmapped
+,,,11-9039,nan,"Education Administrators, All Other",,,,soc_structure_base,unmapped
+,,,11-9033,nan,"Education Administrators, Postsecondary",,,,soc_structure_base,unmapped
+,,,11-9032,nan,"Education Administrators, Kindergarten through Secondary",,,,soc_structure_base,unmapped
+,,,11-9031,nan,"Education and Childcare Administrators, Preschool and Daycare",,,,soc_structure_base,unmapped
+,,11-9030,,nan,Education and Childcare Administrators,,,,soc_structure_base,unmapped
+,,11-9020,,nan,Construction Managers,,,,soc_structure_base,unmapped
+,,11-9010,,nan,"Farmers, Ranchers, and Other Agricultural Managers",,,,soc_structure_base,unmapped
+,11-9000,,,nan,Other Management Occupations,,,,soc_structure_base,unmapped
+,,11-3130,,nan,Training and Development Managers,,,,soc_structure_base,unmapped
+,,11-3120,,nan,Human Resources Managers,,,,soc_structure_base,unmapped
+,,11-3110,,nan,Compensation and Benefits Managers,,,,soc_structure_base,unmapped
+,,11-3070,,nan,"Transportation, Storage, and Distribution Managers",,,,soc_structure_base,unmapped
+,,11-3060,,nan,Purchasing Managers,,,,soc_structure_base,unmapped
+,,11-3030,,nan,Financial Managers,,,,soc_structure_base,unmapped
+,,13-1150,,nan,Training and Development Specialists,,,,soc_structure_base,unmapped
+,,13-1160,,nan,Market Research Analysts and Marketing Specialists,,,,soc_structure_base,unmapped
+,,13-1190,,nan,Miscellaneous Business Operations Specialists,,,,soc_structure_base,unmapped
+17-0000,,,,nan,Architecture and Engineering Occupations,,,,soc_structure_base,unmapped
+,,,15-2099,nan,"Mathematical Science Occupations, All Other",,,,soc_structure_base,unmapped
+,,15-2090,,nan,Miscellaneous Mathematical Science Occupations,,,,soc_structure_base,unmapped
+,,15-2050,,nan,Data Scientists,,,,soc_structure_base,unmapped
+,,15-2040,,nan,Statisticians,,,,soc_structure_base,unmapped
+,,15-2030,,nan,Operations Research Analysts,,,,soc_structure_base,unmapped
+,,15-2020,,nan,Mathematicians,,,,soc_structure_base,unmapped
+,,15-2010,,nan,Actuaries,,,,soc_structure_base,unmapped
+,15-2000,,,nan,Mathematical Science Occupations,,,,soc_structure_base,unmapped
+,,,15-1299,nan,"Computer Occupations, All Other",,,,soc_structure_base,unmapped
+,,15-1290,,nan,Miscellaneous Computer Occupations,,,,soc_structure_base,unmapped
+,,,15-1255,nan,Web and Digital Interface Designers,,,,soc_structure_base,unmapped
+,,,15-1254,nan,Web Developers,,,,soc_structure_base,unmapped
+,,,15-1253,nan,Software Quality Assurance Analysts and Testers,,,,soc_structure_base,unmapped
+,,,15-1252,nan,Software Developers,,,,soc_structure_base,unmapped
+,17-1000,,,nan,"Architects, Surveyors, and Cartographers",,,,soc_structure_base,unmapped
+,,,15-1251,nan,Computer Programmers,,,,soc_structure_base,unmapped
+,,17-1010,,nan,"Architects, Except Naval",,,,soc_structure_base,unmapped
+,,,17-1012,nan,Landscape Architects,,,,soc_structure_base,unmapped
+,,17-2110,,nan,"Industrial Engineers, Including Health and Safety",,,,soc_structure_base,unmapped
+,,17-2080,,nan,Environmental Engineers,,,,soc_structure_base,unmapped
+,,,17-2072,nan,"Electronics Engineers, Except Computer",,,,soc_structure_base,unmapped
+,,,17-2071,nan,Electrical Engineers,,,,soc_structure_base,unmapped
+,,17-2070,,nan,Electrical and Electronics Engineers,,,,soc_structure_base,unmapped
+,,17-2060,,nan,Computer Hardware Engineers,,,,soc_structure_base,unmapped
+,,17-2050,,nan,Civil Engineers,,,,soc_structure_base,unmapped
+,,17-2040,,nan,Chemical Engineers,,,,soc_structure_base,unmapped
+,,17-2030,,nan,Bioengineers and Biomedical Engineers,,,,soc_structure_base,unmapped
+,,17-2020,,nan,Agricultural Engineers,,,,soc_structure_base,unmapped
+,,17-2010,,nan,Aerospace Engineers,,,,soc_structure_base,unmapped
+,17-2000,,,nan,Engineers,,,,soc_structure_base,unmapped
+,,,17-1022,nan,Surveyors,,,,soc_structure_base,unmapped
+,,,17-1021,nan,Cartographers and Photogrammetrists,,,,soc_structure_base,unmapped
+,,17-1020,,nan,"Surveyors, Cartographers, and Photogrammetrists",,,,soc_structure_base,unmapped
+,,,17-1011,nan,"Architects, Except Landscape and Naval",,,,soc_structure_base,unmapped
+,,,25-1053,nan,"Environmental Science Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,15-1250,,nan,"Software and Web Developers, Programmers, and Testers",,,,soc_structure_base,unmapped
+,,,15-1243,nan,Database Architects,,,,soc_structure_base,unmapped
+,,13-2070,,nan,Credit Counselors and Loan Officers,,,,soc_structure_base,unmapped
+,,13-2060,,nan,Financial Examiners,,,,soc_structure_base,unmapped
+,,,13-2054,nan,Financial Risk Specialists,,,,soc_structure_base,unmapped
+,,,13-2053,nan,Insurance Underwriters,,,,soc_structure_base,unmapped
+,,,13-2052,nan,Personal Financial Advisors,,,,soc_structure_base,unmapped
+,,,13-2051,nan,Financial and Investment Analysts,,,,soc_structure_base,unmapped
+,,13-2050,,nan,Financial Analysts and Advisors,,,,soc_structure_base,unmapped
+,,13-2040,,nan,Credit Analysts,,,,soc_structure_base,unmapped
+,,13-2030,,nan,Budget Analysts,,,,soc_structure_base,unmapped
+,,,13-2023,nan,Appraisers and Assessors of Real Estate,,,,soc_structure_base,unmapped
+,,,13-2022,nan,Appraisers of Personal and Business Property,,,,soc_structure_base,unmapped
+,,13-2020,,nan,Property Appraisers and Assessors,,,,soc_structure_base,unmapped
+,,13-2010,,nan,Accountants and Auditors,,,,soc_structure_base,unmapped
+,13-2000,,,nan,Financial Specialists,,,,soc_structure_base,unmapped
+,,,13-1199,nan,"Business Operations Specialists, All Other",,,,soc_structure_base,unmapped
+,,,13-2071,nan,Credit Counselors,,,,soc_structure_base,unmapped
+,,,15-1244,nan,Network and Computer Systems Administrators,,,,soc_structure_base,unmapped
+,,,13-2072,nan,Loan Officers,,,,soc_structure_base,unmapped
+,,,13-2081,nan,"Tax Examiners and Collectors, and Revenue Agents",,,,soc_structure_base,unmapped
+,,,15-1242,nan,Database Administrators,,,,soc_structure_base,unmapped
+,,,15-1241,nan,Computer Network Architects,,,,soc_structure_base,unmapped
+,,15-1240,,nan,Database and Network Administrators and Architects,,,,soc_structure_base,unmapped
+,,,15-1232,nan,Computer User Support Specialists,,,,soc_structure_base,unmapped
+,,,15-1231,nan,Computer Network Support Specialists,,,,soc_structure_base,unmapped
+,,15-1230,,nan,Computer Support Specialists,,,,soc_structure_base,unmapped
+,,15-1220,,nan,Computer and Information Research Scientists,,,,soc_structure_base,unmapped
+,,,15-1212,nan,Information Security Analysts,,,,soc_structure_base,unmapped
+,,,15-1211,nan,Computer Systems Analysts,,,,soc_structure_base,unmapped
+,,15-1210,,nan,Computer and Information Analysts,,,,soc_structure_base,unmapped
+,15-1200,,,nan,Computer Occupations,,,,soc_structure_base,unmapped
+15-0000,,,,nan,Computer and Mathematical Occupations,,,,soc_structure_base,unmapped
+,,,13-2099,nan,"Financial Specialists, All Other",,,,soc_structure_base,unmapped
+,,13-2090,,nan,Miscellaneous Financial Specialists,,,,soc_structure_base,unmapped
+,,,13-2082,nan,Tax Preparers,,,,soc_structure_base,unmapped
+,,13-2080,,nan,"Tax Examiners, Collectors and Preparers, and Revenue Agents",,,,soc_structure_base,unmapped
+,35-9000,,,nan,Other Food Preparation and Serving Related Workers,,,,soc_structure_base,unmapped
+,,,25-1054,nan,"Physics Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1061,nan,"Anthropology and Archeology Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,29-2057,nan,Ophthalmic Medical Technicians,,,,soc_structure_base,unmapped
+,,,29-2056,nan,Veterinary Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,29-2055,nan,Surgical Technologists,,,,soc_structure_base,unmapped
+,,,29-2053,nan,Psychiatric Technicians,,,,soc_structure_base,unmapped
+,,,29-2052,nan,Pharmacy Technicians,,,,soc_structure_base,unmapped
+,,,29-2051,nan,Dietetic Technicians,,,,soc_structure_base,unmapped
+,,29-2060,,nan,Licensed Practical and Licensed Vocational Nurses,,,,soc_structure_base,unmapped
+,,29-2050,,nan,Health Practitioner Support Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,29-2042,nan,Emergency Medical Technicians,,,,soc_structure_base,unmapped
+,,29-2040,,nan,Emergency Medical Technicians and Paramedics,,,,soc_structure_base,unmapped
+,,,29-2036,nan,Medical Dosimetrists,,,,soc_structure_base,unmapped
+,,,29-2035,nan,Magnetic Resonance Imaging Technologists,,,,soc_structure_base,unmapped
+,,,29-2034,nan,Radiologic Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,29-2033,nan,Nuclear Medicine Technologists,,,,soc_structure_base,unmapped
+,,,29-2043,nan,Paramedics,,,,soc_structure_base,unmapped
+,,29-2070,,nan,Medical Records Specialists,,,,soc_structure_base,unmapped
+,,29-2080,,nan,"Opticians, Dispensing",,,,soc_structure_base,unmapped
+,,29-2090,,nan,Miscellaneous Health Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,31-1122,nan,Personal Care Aides,,,,soc_structure_base,unmapped
+,,,31-1121,nan,Home Health Aides,,,,soc_structure_base,unmapped
+,,31-1120,,nan,Home Health and Personal Care Aides,,,,soc_structure_base,unmapped
+,31-1100,,,nan,"Home Health and Personal Care Aides; and Nursing Assistants, Orderlies, and Psychiatric Aides",,,,soc_structure_base,unmapped
+31-0000,,,,nan,Healthcare Support Occupations,,,,soc_structure_base,unmapped
+,,,29-9099,nan,"Healthcare Practitioners and Technical Workers, All Other",,,,soc_structure_base,unmapped
+,,,29-9093,nan,Surgical Assistants,,,,soc_structure_base,unmapped
+,,,29-9092,nan,Genetic Counselors,,,,soc_structure_base,unmapped
+,,,29-9091,nan,Athletic Trainers,,,,soc_structure_base,unmapped
+,,29-9090,,nan,Miscellaneous Health Practitioners and Technical Workers,,,,soc_structure_base,unmapped
+,,29-9020,,nan,Health Information Technologists and Medical Registrars,,,,soc_structure_base,unmapped
+,29-9000,,,nan,Other Healthcare Practitioners and Technical Occupations,,,,soc_structure_base,unmapped
+,,,29-2099,nan,"Health Technologists and Technicians, All Other",,,,soc_structure_base,unmapped
+,,,29-2092,nan,Hearing Aid Specialists,,,,soc_structure_base,unmapped
+,,,29-2091,nan,Orthotists and Prosthetists,,,,soc_structure_base,unmapped
+,,,29-2032,nan,Diagnostic Medical Sonographers,,,,soc_structure_base,unmapped
+,,,29-2031,nan,Cardiovascular Technologists and Technicians,,,,soc_structure_base,unmapped
+,,29-2030,,nan,Diagnostic Related Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,29-2012,nan,Medical and Clinical Laboratory Technicians,,,,soc_structure_base,unmapped
+,,,29-1216,nan,General Internal Medicine Physicians,,,,soc_structure_base,unmapped
+,,,29-1215,nan,Family Medicine Physicians,,,,soc_structure_base,unmapped
+,,,29-1214,nan,Emergency Medicine Physicians,,,,soc_structure_base,unmapped
+,,,29-1213,nan,Dermatologists,,,,soc_structure_base,unmapped
+,,,29-1212,nan,Cardiologists,,,,soc_structure_base,unmapped
+,,,29-1211,nan,Anesthesiologists,,,,soc_structure_base,unmapped
+,,29-1210,,nan,Physicians,,,,soc_structure_base,unmapped
+,,29-1180,,nan,Audiologists,,,,soc_structure_base,unmapped
+,,29-1170,,nan,Nurse Practitioners,,,,soc_structure_base,unmapped
+,,29-1160,,nan,Nurse Midwives,,,,soc_structure_base,unmapped
+,,29-1150,,nan,Nurse Anesthetists,,,,soc_structure_base,unmapped
+,,29-1140,,nan,Registered Nurses,,,,soc_structure_base,unmapped
+,,29-1130,,nan,Veterinarians,,,,soc_structure_base,unmapped
+,,,29-1129,nan,"Therapists, All Other",,,,soc_structure_base,unmapped
+,,,29-1128,nan,Exercise Physiologists,,,,soc_structure_base,unmapped
+,,,29-1217,nan,Neurologists,,,,soc_structure_base,unmapped
+,,31-1130,,nan,"Nursing Assistants, Orderlies, and Psychiatric Aides",,,,soc_structure_base,unmapped
+,,,29-1218,nan,Obstetricians and Gynecologists,,,,soc_structure_base,unmapped
+,,,29-1222,nan,"Physicians, Pathologists",,,,soc_structure_base,unmapped
+,,,29-2011,nan,Medical and Clinical Laboratory Technologists,,,,soc_structure_base,unmapped
+,,29-2010,,nan,Clinical Laboratory Technologists and Technicians,,,,soc_structure_base,unmapped
+,29-2000,,,nan,Health Technologists and Technicians,,,,soc_structure_base,unmapped
+,,,29-1299,nan,"Healthcare Diagnosing or Treating Practitioners, All Other",,,,soc_structure_base,unmapped
+,,,29-1292,nan,Dental Hygienists,,,,soc_structure_base,unmapped
+,,,29-1291,nan,Acupuncturists,,,,soc_structure_base,unmapped
+,,29-1290,,nan,Miscellaneous Healthcare Diagnosing or Treating Practitioners,,,,soc_structure_base,unmapped
+,,,29-1249,nan,"Surgeons, All Other",,,,soc_structure_base,unmapped
+,,,29-1243,nan,Pediatric Surgeons,,,,soc_structure_base,unmapped
+,,,29-1242,nan,"Orthopedic Surgeons, Except Pediatric",,,,soc_structure_base,unmapped
+,,,29-1241,nan,"Ophthalmologists, Except Pediatric",,,,soc_structure_base,unmapped
+,,29-1240,,nan,Surgeons,,,,soc_structure_base,unmapped
+,,,29-1229,nan,"Physicians, All Other",,,,soc_structure_base,unmapped
+,,,29-1224,nan,Radiologists,,,,soc_structure_base,unmapped
+,,,29-1223,nan,Psychiatrists,,,,soc_structure_base,unmapped
+,,,29-1221,nan,"Pediatricians, General",,,,soc_structure_base,unmapped
+,,,29-1127,nan,Speech-Language Pathologists,,,,soc_structure_base,unmapped
+,,,31-1131,nan,Nursing Assistants,,,,soc_structure_base,unmapped
+,,,31-1133,nan,Psychiatric Aides,,,,soc_structure_base,unmapped
+,,,33-9093,nan,Transportation Security Screeners,,,,soc_structure_base,unmapped
+,,,33-9092,nan,"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",,,,soc_structure_base,unmapped
+,,,33-9091,nan,Crossing Guards and Flaggers,,,,soc_structure_base,unmapped
+,,33-9090,,nan,Miscellaneous Protective Service Workers,,,,soc_structure_base,unmapped
+,,,33-9032,nan,Security Guards,,,,soc_structure_base,unmapped
+,,,33-9031,nan,Gambling Surveillance Officers and Gambling Investigators,,,,soc_structure_base,unmapped
+,,,33-9094,nan,School Bus Monitors,,,,soc_structure_base,unmapped
+,,33-9030,,nan,Security Guards and Gambling Surveillance Officers,,,,soc_structure_base,unmapped
+,,33-9010,,nan,Animal Control Workers,,,,soc_structure_base,unmapped
+,33-9000,,,nan,Other Protective Service Workers,,,,soc_structure_base,unmapped
+,,,33-3052,nan,Transit and Railroad Police,,,,soc_structure_base,unmapped
+,,,33-3051,nan,Police and Sheriff's Patrol Officers,,,,soc_structure_base,unmapped
+,,33-3050,,nan,Police Officers,,,,soc_structure_base,unmapped
+,,33-3040,,nan,Parking Enforcement Workers,,,,soc_structure_base,unmapped
+,,33-9020,,nan,Private Detectives and Investigators,,,,soc_structure_base,unmapped
+,,,33-9099,nan,"Protective Service Workers, All Other",,,,soc_structure_base,unmapped
+35-0000,,,,nan,Food Preparation and Serving Related Occupations,,,,soc_structure_base,unmapped
+,35-1000,,,nan,Supervisors of Food Preparation and Serving Workers,,,,soc_structure_base,unmapped
+,,35-3030,,nan,Waiters and Waitresses,,,,soc_structure_base,unmapped
+,,35-3020,,nan,Fast Food and Counter Workers,,,,soc_structure_base,unmapped
+,,35-3010,,nan,Bartenders,,,,soc_structure_base,unmapped
+,35-3000,,,nan,Food and Beverage Serving Workers,,,,soc_structure_base,unmapped
+,,35-2020,,nan,Food Preparation Workers,,,,soc_structure_base,unmapped
+,,,35-2019,nan,"Cooks, All Other",,,,soc_structure_base,unmapped
+,,,35-2015,nan,"Cooks, Short Order",,,,soc_structure_base,unmapped
+,,,35-2014,nan,"Cooks, Restaurant",,,,soc_structure_base,unmapped
+,,,35-2013,nan,"Cooks, Private Household",,,,soc_structure_base,unmapped
+,,,35-2012,nan,"Cooks, Institution and Cafeteria",,,,soc_structure_base,unmapped
+,,,35-2011,nan,"Cooks, Fast Food",,,,soc_structure_base,unmapped
+,,35-2010,,nan,Cooks,,,,soc_structure_base,unmapped
+,35-2000,,,nan,Cooks and Food Preparation Workers,,,,soc_structure_base,unmapped
+,,,35-1012,nan,First-Line Supervisors of Food Preparation and Serving Workers,,,,soc_structure_base,unmapped
+,,,35-1011,nan,Chefs and Head Cooks,,,,soc_structure_base,unmapped
+,,33-3030,,nan,Fish and Game Wardens,,,,soc_structure_base,unmapped
+,,33-3020,,nan,Detectives and Criminal Investigators,,,,soc_structure_base,unmapped
+,,,33-3012,nan,Correctional Officers and Jailers,,,,soc_structure_base,unmapped
+,,,33-3011,nan,Bailiffs,,,,soc_structure_base,unmapped
+,,,31-9095,nan,Pharmacy Aides,,,,soc_structure_base,unmapped
+,,,31-9094,nan,Medical Transcriptionists,,,,soc_structure_base,unmapped
+,,,31-9093,nan,Medical Equipment Preparers,,,,soc_structure_base,unmapped
+,,,31-9092,nan,Medical Assistants,,,,soc_structure_base,unmapped
+,,,31-9091,nan,Dental Assistants,,,,soc_structure_base,unmapped
+,,31-9090,,nan,Miscellaneous Healthcare Support Occupations,,,,soc_structure_base,unmapped
+,,31-9010,,nan,Massage Therapists,,,,soc_structure_base,unmapped
+,31-9000,,,nan,Other Healthcare Support Occupations,,,,soc_structure_base,unmapped
+,,,31-2022,nan,Physical Therapist Aides,,,,soc_structure_base,unmapped
+,,,31-2021,nan,Physical Therapist Assistants,,,,soc_structure_base,unmapped
+,,31-2020,,nan,Physical Therapist Assistants and Aides,,,,soc_structure_base,unmapped
+,,,31-2012,nan,Occupational Therapy Aides,,,,soc_structure_base,unmapped
+,,,31-2011,nan,Occupational Therapy Assistants,,,,soc_structure_base,unmapped
+,,31-2010,,nan,Occupational Therapy Assistants and Aides,,,,soc_structure_base,unmapped
+,31-2000,,,nan,Occupational Therapy and Physical Therapist Assistants and Aides,,,,soc_structure_base,unmapped
+,,,55-3018,nan,Special Forces,,,,soc_structure_base,unmapped
+,,,31-1132,nan,Orderlies,,,,soc_structure_base,unmapped
+,,,31-9097,nan,Phlebotomists,,,,soc_structure_base,unmapped
+33-0000,,,,nan,Protective Service Occupations,,,,soc_structure_base,unmapped
+,,33-3010,,nan,"Bailiffs, Correctional Officers, and Jailers",,,,soc_structure_base,unmapped
+,33-3000,,,nan,Law Enforcement Workers,,,,soc_structure_base,unmapped
+,,,33-2022,nan,Forest Fire Inspectors and Prevention Specialists,,,,soc_structure_base,unmapped
+,,,33-2021,nan,Fire Inspectors and Investigators,,,,soc_structure_base,unmapped
+,,33-2020,,nan,Fire Inspectors,,,,soc_structure_base,unmapped
+,,33-2010,,nan,Firefighters,,,,soc_structure_base,unmapped
+,33-2000,,,nan,Firefighting and Prevention Workers,,,,soc_structure_base,unmapped
+,,,33-1099,nan,"First-Line Supervisors of Protective Service Workers, All Other",,,,soc_structure_base,unmapped
+,,,33-1091,nan,First-Line Supervisors of Security Workers,,,,soc_structure_base,unmapped
+,,33-1090,,nan,"Miscellaneous First-Line Supervisors, Protective Service Workers",,,,soc_structure_base,unmapped
+,,33-1020,,nan,First-Line Supervisors of Firefighting and Prevention Workers,,,,soc_structure_base,unmapped
+,,,33-1012,nan,First-Line Supervisors of Police and Detectives,,,,soc_structure_base,unmapped
+,,,33-1011,nan,First-Line Supervisors of Correctional Officers,,,,soc_structure_base,unmapped
+,,33-1010,,nan,First-Line Supervisors of Law Enforcement Workers,,,,soc_structure_base,unmapped
+,33-1000,,,nan,Supervisors of Protective Service Workers,,,,soc_structure_base,unmapped
+,,,31-9099,nan,"Healthcare Support Workers, All Other",,,,soc_structure_base,unmapped
+,,,29-1126,nan,Respiratory Therapists,,,,soc_structure_base,unmapped
+,,,29-1125,nan,Recreational Therapists,,,,soc_structure_base,unmapped
+,,,29-1124,nan,Radiation Therapists,,,,soc_structure_base,unmapped
+,,25-3040,,nan,Tutors,,,,soc_structure_base,unmapped
+,,25-3030,,nan,"Substitute Teachers, Short-Term",,,,soc_structure_base,unmapped
+,,25-3020,,nan,Self-Enrichment Teachers,,,,soc_structure_base,unmapped
+,,25-3010,,nan,"Adult Basic Education, Adult Secondary Education, and English as a Second Language Instructors",,,,soc_structure_base,unmapped
+,25-3000,,,nan,Other Teachers and Instructors,,,,soc_structure_base,unmapped
+,,,25-2059,nan,"Special Education Teachers, All Other",,,,soc_structure_base,unmapped
+,,25-3090,,nan,Miscellaneous Teachers and Instructors,,,,soc_structure_base,unmapped
+,,,25-2058,nan,"Special Education Teachers, Secondary School",,,,soc_structure_base,unmapped
+,,,25-2056,nan,"Special Education Teachers, Elementary School",,,,soc_structure_base,unmapped
+,,,25-2055,nan,"Special Education Teachers, Kindergarten",,,,soc_structure_base,unmapped
+,,,25-2051,nan,"Special Education Teachers, Preschool",,,,soc_structure_base,unmapped
+,,25-2050,,nan,Special Education Teachers,,,,soc_structure_base,unmapped
+,,,25-2032,nan,"Career/Technical Education Teachers, Secondary School",,,,soc_structure_base,unmapped
+,,,25-2031,nan,"Secondary School Teachers, Except Special and Career/Technical Education",,,,soc_structure_base,unmapped
+,,,25-2057,nan,"Special Education Teachers, Middle School",,,,soc_structure_base,unmapped
+,,,25-3099,nan,"Teachers and Instructors, All Other",,,,soc_structure_base,unmapped
+,25-4000,,,nan,"Librarians, Curators, and Archivists",,,,soc_structure_base,unmapped
+,,25-4010,,nan,"Archivists, Curators, and Museum Technicians",,,,soc_structure_base,unmapped
+,,,25-9099,nan,"Educational Instruction and Library Workers, All Other",,,,soc_structure_base,unmapped
+,,25-9090,,nan,Miscellaneous Educational Instruction and Library Workers,,,,soc_structure_base,unmapped
+,,,25-9049,nan,"Teaching Assistants, All Other",,,,soc_structure_base,unmapped
+,,,25-9044,nan,"Teaching Assistants, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-9043,nan,"Teaching Assistants, Special Education",,,,soc_structure_base,unmapped
+,,,25-9042,nan,"Teaching Assistants, Preschool, Elementary, Middle, and Secondary School, Except Special Education",,,,soc_structure_base,unmapped
+,,25-9040,,nan,Teaching Assistants,,,,soc_structure_base,unmapped
+,,25-9030,,nan,Instructional Coordinators,,,,soc_structure_base,unmapped
+,,25-9020,,nan,Farm and Home Management Educators,,,,soc_structure_base,unmapped
+,25-9000,,,nan,Other Educational Instruction and Library Occupations,,,,soc_structure_base,unmapped
+,,25-4030,,nan,Library Technicians,,,,soc_structure_base,unmapped
+,,25-4020,,nan,Librarians and Media Collections Specialists,,,,soc_structure_base,unmapped
+,,,25-4013,nan,Museum Technicians and Conservators,,,,soc_structure_base,unmapped
+,,,25-4012,nan,Curators,,,,soc_structure_base,unmapped
+,,,25-4011,nan,Archivists,,,,soc_structure_base,unmapped
+,,25-2030,,nan,Secondary School Teachers,,,,soc_structure_base,unmapped
+,,,25-2023,nan,"Career/Technical Education Teachers, Middle School",,,,soc_structure_base,unmapped
+,,,25-2022,nan,"Middle School Teachers, Except Special and Career/Technical Education",,,,soc_structure_base,unmapped
+,,,25-2021,nan,"Elementary School Teachers, Except Special Education",,,,soc_structure_base,unmapped
+,,,25-1111,nan,"Criminal Justice and Law Enforcement Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1110,,nan,"Law, Criminal Justice, and Social Work Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1082,nan,"Library Science Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1081,nan,"Education Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1080,,nan,"Education and Library Science Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1072,nan,"Nursing Instructors and Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1071,nan,"Health Specialties Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1070,,nan,"Health Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1069,nan,"Social Sciences Teachers, Postsecondary, All Other",,,,soc_structure_base,unmapped
+,,,25-1067,nan,"Sociology Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1066,nan,"Psychology Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1065,nan,"Political Science Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1064,nan,"Geography Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1063,nan,"Economics Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1062,nan,"Area, Ethnic, and Cultural Studies Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1112,nan,"Law Teachers, Postsecondary",,,,soc_structure_base,unmapped
+27-0000,,,,nan,"Arts, Design, Entertainment, Sports, and Media Occupations",,,,soc_structure_base,unmapped
+,,,25-1113,nan,"Social Work Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1121,nan,"Art, Drama, and Music Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-2020,,nan,Elementary and Middle School Teachers,,,,soc_structure_base,unmapped
+,,,25-2012,nan,"Kindergarten Teachers, Except Special Education",,,,soc_structure_base,unmapped
+,,,25-2011,nan,"Preschool Teachers, Except Special Education",,,,soc_structure_base,unmapped
+,,25-2010,,nan,Preschool and Kindergarten Teachers,,,,soc_structure_base,unmapped
+,25-2000,,,nan,"Preschool, Elementary, Middle, Secondary, and Special Education Teachers",,,,soc_structure_base,unmapped
+,,,25-1199,nan,"Postsecondary Teachers, All Other",,,,soc_structure_base,unmapped
+,,,25-1194,nan,"Career/Technical Education Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1193,nan,"Recreation and Fitness Studies Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1192,nan,"Family and Consumer Sciences Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1190,,nan,Miscellaneous Postsecondary Teachers,,,,soc_structure_base,unmapped
+,,,25-1126,nan,"Philosophy and Religion Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1125,nan,"History Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1124,nan,"Foreign Language and Literature Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1123,nan,"English Language and Literature Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,25-1122,nan,"Communications Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,25-1120,,nan,"Arts, Communications, History, and Humanities Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,27-1000,,,nan,Art and Design Workers,,,,soc_structure_base,unmapped
+,,27-1010,,nan,Artists and Related Workers,,,,soc_structure_base,unmapped
+,,,27-1011,nan,Art Directors,,,,soc_structure_base,unmapped
+,,,27-4032,nan,Film and Video Editors,,,,soc_structure_base,unmapped
+,,,27-4031,nan,"Camera Operators, Television, Video, and Film",,,,soc_structure_base,unmapped
+,,27-4030,,nan,"Television, Video, and Film Camera Operators and Editors",,,,soc_structure_base,unmapped
+,,27-4020,,nan,Photographers,,,,soc_structure_base,unmapped
+,,,27-4015,nan,Lighting Technicians,,,,soc_structure_base,unmapped
+,,,27-4014,nan,Sound Engineering Technicians,,,,soc_structure_base,unmapped
+,,,27-4012,nan,Broadcast Technicians,,,,soc_structure_base,unmapped
+,,,27-4011,nan,Audio and Video Technicians,,,,soc_structure_base,unmapped
+,,27-4010,,nan,"Broadcast, Sound, and Lighting Technicians",,,,soc_structure_base,unmapped
+,27-4000,,,nan,Media and Communication Equipment Workers,,,,soc_structure_base,unmapped
+,,,27-3099,nan,"Media and Communication Workers, All Other",,,,soc_structure_base,unmapped
+,,,27-3092,nan,Court Reporters and Simultaneous Captioners,,,,soc_structure_base,unmapped
+,,,27-3091,nan,Interpreters and Translators,,,,soc_structure_base,unmapped
+,,27-3090,,nan,Miscellaneous Media and Communication Workers,,,,soc_structure_base,unmapped
+,,,27-3043,nan,Writers and Authors,,,,soc_structure_base,unmapped
+,,27-4090,,nan,Miscellaneous Media and Communication Equipment Workers,,,,soc_structure_base,unmapped
+,,,27-3042,nan,Technical Writers,,,,soc_structure_base,unmapped
+,,,27-4099,nan,"Media and Communication Equipment Workers, All Other",,,,soc_structure_base,unmapped
+,29-1000,,,nan,Healthcare Diagnosing or Treating Practitioners,,,,soc_structure_base,unmapped
+,,,29-1123,nan,Physical Therapists,,,,soc_structure_base,unmapped
+,,,29-1122,nan,Occupational Therapists,,,,soc_structure_base,unmapped
+,,29-1120,,nan,Therapists,,,,soc_structure_base,unmapped
+,,29-1080,,nan,Podiatrists,,,,soc_structure_base,unmapped
+,,29-1070,,nan,Physician Assistants,,,,soc_structure_base,unmapped
+,,29-1050,,nan,Pharmacists,,,,soc_structure_base,unmapped
+,,29-1040,,nan,Optometrists,,,,soc_structure_base,unmapped
+,,29-1030,,nan,Dietitians and Nutritionists,,,,soc_structure_base,unmapped
+,,,29-1029,nan,"Dentists, All Other Specialists",,,,soc_structure_base,unmapped
+,,,29-1024,nan,Prosthodontists,,,,soc_structure_base,unmapped
+,,,29-1023,nan,Orthodontists,,,,soc_structure_base,unmapped
+,,,29-1022,nan,Oral and Maxillofacial Surgeons,,,,soc_structure_base,unmapped
+,,,29-1021,nan,"Dentists, General",,,,soc_structure_base,unmapped
+,,29-1020,,nan,Dentists,,,,soc_structure_base,unmapped
+,,29-1010,,nan,Chiropractors,,,,soc_structure_base,unmapped
+29-0000,,,,nan,Healthcare Practitioners and Technical Occupations,,,,soc_structure_base,unmapped
+,,25-1060,,nan,"Social Sciences Teachers, Postsecondary",,,,soc_structure_base,unmapped
+,,,27-3041,nan,Editors,,,,soc_structure_base,unmapped
+,,27-3030,,nan,Public Relations Specialists,,,,soc_structure_base,unmapped
+,,27-2010,,nan,"Actors, Producers, and Directors",,,,soc_structure_base,unmapped
+,27-2000,,,nan,"Entertainers and Performers, Sports and Related Workers",,,,soc_structure_base,unmapped
+,,,27-1029,nan,"Designers, All Other",,,,soc_structure_base,unmapped
+,,,27-1027,nan,Set and Exhibit Designers,,,,soc_structure_base,unmapped
+,,,27-1026,nan,Merchandise Displayers and Window Trimmers,,,,soc_structure_base,unmapped
+,,,27-1025,nan,Interior Designers,,,,soc_structure_base,unmapped
+,,,27-1024,nan,Graphic Designers,,,,soc_structure_base,unmapped
+,,,27-1023,nan,Floral Designers,,,,soc_structure_base,unmapped
+,,,27-1022,nan,Fashion Designers,,,,soc_structure_base,unmapped
+,,,27-1021,nan,Commercial and Industrial Designers,,,,soc_structure_base,unmapped
+,,27-1020,,nan,Designers,,,,soc_structure_base,unmapped
+,,,27-1019,nan,"Artists and Related Workers, All Other",,,,soc_structure_base,unmapped
+,,,27-1014,nan,Special Effects Artists and Animators,,,,soc_structure_base,unmapped
+,,,27-1013,nan,"Fine Artists, Including Painters, Sculptors, and Illustrators",,,,soc_structure_base,unmapped
+,,,27-1012,nan,Craft Artists,,,,soc_structure_base,unmapped
+,,,27-2011,nan,Actors,,,,soc_structure_base,unmapped
+,,27-3040,,nan,Writers and Editors,,,,soc_structure_base,unmapped
+,,,27-2012,nan,Producers and Directors,,,,soc_structure_base,unmapped
+,,,27-2021,nan,Athletes and Sports Competitors,,,,soc_structure_base,unmapped
+,,,27-3023,nan,"News Analysts, Reporters, and Journalists",,,,soc_structure_base,unmapped
+,,27-3020,,nan,"News Analysts, Reporters and Journalists",,,,soc_structure_base,unmapped
+,,27-3010,,nan,Broadcast Announcers and Radio Disc Jockeys,,,,soc_structure_base,unmapped
+,27-3000,,,nan,Media and Communication Workers,,,,soc_structure_base,unmapped
+,,,27-2099,nan,"Entertainers and Performers, Sports and Related Workers, All Other",,,,soc_structure_base,unmapped
+,,,27-2091,nan,"Disc Jockeys, Except Radio",,,,soc_structure_base,unmapped
+,,27-2090,,nan,"Miscellaneous Entertainers and Performers, Sports and Related Workers",,,,soc_structure_base,unmapped
+,,,27-2042,nan,Musicians and Singers,,,,soc_structure_base,unmapped
+,,,27-2041,nan,Music Directors and Composers,,,,soc_structure_base,unmapped
+,,27-2040,,nan,"Musicians, Singers, and Related Workers",,,,soc_structure_base,unmapped
+,,,27-2032,nan,Choreographers,,,,soc_structure_base,unmapped
+,,,27-2031,nan,Dancers,,,,soc_structure_base,unmapped
+,,27-2030,,nan,Dancers and Choreographers,,,,soc_structure_base,unmapped
+,,,27-2023,nan,"Umpires, Referees, and Other Sports Officials",,,,soc_structure_base,unmapped
+,,,27-2022,nan,Coaches and Scouts,,,,soc_structure_base,unmapped
+,,27-2020,,nan,"Athletes, Coaches, Umpires, and Related Workers",,,,soc_structure_base,unmapped
+,,,55-3019,nan,"Military Enlisted Tactical Operations and Air/Weapons Specialists and Crew Members, All Other",,,,soc_structure_base,unmapped
