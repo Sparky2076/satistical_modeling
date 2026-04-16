@@ -1,6 +1,6 @@
 # 数据文件说明
 
-更新时间：2026-04-15
+更新时间：2026-04-16
 
 ## 已产出数据
 
@@ -56,6 +56,41 @@
   - `job_url`
   - `post_date`
 - 生成脚本：`src/fetch_jobs_micro_raw.py`
+
+### 4) `data/processed/bartik_prov_year.csv`
+
+- 含义：省-年层面的 Bartik 冲击主表
+- 核心字段：
+  - `provcd`
+  - `province`
+  - `year`
+  - `share_p2010`
+  - `robot_density_t`
+  - `bartik_pt`
+- 生成脚本：`src/process_new_github_data.py`
+- 上游原始文件：
+  - `share_p2010_clean.csv`
+  - `robot_density_china_public_clean.csv`
+- 备注：当前年份覆盖基于公开机器人密度数据，非完整 2010–2020 连续序列。
+
+### 5) `data/processed/province_controls.csv`
+
+- 含义：省级控制变量表（当前版本）
+- 核心字段：
+  - `provcd`
+  - `province`
+  - `year`
+  - `gdp`
+  - `population`
+  - `gdp_pc`
+  - `ln_gdp_pc`
+  - `urban_rate`
+  - `unemployment_rate`
+  - `mfg_share`
+- 生成脚本：`src/process_new_github_data.py`
+- 上游原始文件：
+  - `province_controls_2010_clean.csv`
+- 备注：当前版本主要为 2010 年横截面，后续可扩展为 2010–2020 面板。
 
 ## 仍待获取数据
 
