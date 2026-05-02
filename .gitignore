@@ -13,5 +13,6 @@ venv/
 Thumbs.db
 Desktop.ini
 
-# 大文件建议放在 data/；该目录下 PDF 默认不提交（若要跟踪请删除或注释本行）
-data/**/*.pdf
+# 仅跟踪思路 PDF，避免误提交其它资料
+*.pdf
+!zero2one.pdf

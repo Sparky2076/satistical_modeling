@@ -1,0 +1,812 @@
+[
+  {
+    "task_id": "ceval-001",
+    "task_text": "（C-Eval·computer_network）使用位填充方法，以01111110为位首flag，数据为011011111111111111110010，求问传送时要添加几个0____ 选项：A.1 B.2 C.3 D.4",
+    "task_source": "HuggingFace ceval/ceval-exam config=computer_network split=val row=0",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-002",
+    "task_text": "（C-Eval·computer_network）在802.3标准中，发送帧之前需要____ 选项：A.等待冲突 B.等待令牌 C.监听介质 D.接受一个帧",
+    "task_source": "HuggingFace ceval/ceval-exam config=computer_network split=val row=1",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-003",
+    "task_text": "（C-Eval·computer_network）TCP端对端通信作用于____ 选项：A.主机之间 B.网络之间 C.进程之间 D.主机到网络",
+    "task_source": "HuggingFace ceval/ceval-exam config=computer_network split=val row=2",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-004",
+    "task_text": "（C-Eval·computer_network）对于传输层来说错误的是____ 选项：A.TCP是全双工协议 B.TCP是字节流协议 C.TCP和UDP协议不能使用同一个端口 D.TSAD是IP和端口的组合",
+    "task_source": "HuggingFace ceval/ceval-exam config=computer_network split=val row=3",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-005",
+    "task_text": "（C-Eval·computer_network）已知当前TCP连接的RTT值为35ms，连续收到3个确认报文段，它们比相应的数据报文段的发送时间滞后了27ms、30ms与21ms。假设α=0.2，则第三个确认报文段到达后新的RTT估计值为____。 选项：A.33.4ms B.32.7ms C.21ms D.30.4ms",
+    "task_source": "HuggingFace ceval/ceval-exam config=computer_network split=val row=4",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-006",
+    "task_text": "（C-Eval·operating_system）在Unix的两个文件系统之间建立文件或目录的链接命令是____。 选项：A.ln B.ln –s C.ls –n D.ls –i",
+    "task_source": "HuggingFace ceval/ceval-exam config=operating_system split=val row=0",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：B（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-007",
+    "task_text": "（C-Eval·operating_system）下面几条中，____是动态重定位的特点。 选项：A.需要一个复杂的重定位装入程序 B.存储管理算法比较简单 C.不需地址变换硬件机构的支持 D.在执行时将逻辑地址变换成内存地址",
+    "task_source": "HuggingFace ceval/ceval-exam config=operating_system split=val row=1",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-008",
+    "task_text": "（C-Eval·operating_system）Unix打开文件机构中的进程打开文件表是进程扩充控制块user结构中的____。 选项：A.u_pdir B.u_ofile C.u_dirp D.u_pofile",
+    "task_source": "HuggingFace ceval/ceval-exam config=operating_system split=val row=2",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：B（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-009",
+    "task_text": "（C-Eval·operating_system）在虚拟页式存储管理方案中，____完成将页面调入内存的工作。 选项：A.文件读写 B.页面淘汰过程 C.页面工作集处理 D.缺页中断处理",
+    "task_source": "HuggingFace ceval/ceval-exam config=operating_system split=val row=3",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-010",
+    "task_text": "（C-Eval·operating_system）早期采用交换技术的目的是____。 选项：A.能运行更多的程序 B.能运行更大的程序 C.实现分时系统 D.实现虚拟存储技术",
+    "task_source": "HuggingFace ceval/ceval-exam config=operating_system split=val row=4",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：A（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-011",
+    "task_text": "（C-Eval·college_programming）当采用分块查找时，数据的组织方式为____ 选项：A.数据分成若干块，每块内数据有序 B.数据分成若干块，每块内数据不必有序，但块间必须有序，每块内最大（或最小）的数据组成索引块 C.数据分成若干块，每块内数据有序，但块间必须有序，每块内最大（或最小）的数据组成索引块 D.数据分成若干块，每块（除最后一块外）中数据个数需相同",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_programming split=val row=0",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：B（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-012",
+    "task_text": "（C-Eval·college_programming）实现一个银行系统，包括存钱、取钱、转账等多项业务，最恰当的资源组合方式是____ 选项：A.继承 B.重载 C.组合 D.实例化",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_programming split=val row=1",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-013",
+    "task_text": "（C-Eval·college_programming）线性表若采用链式存储结构时，要求内存中可用存储单元的地址____。 选项：A.必须是连续的 B.部分地址必须是连续的 C.一定是不连续的 D.连续不连续都可以",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_programming split=val row=10",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-014",
+    "task_text": "（C-Eval·college_programming）在类中说明的友元函数时____ 选项：A.必须声明在私有成员部分 B.必须声明在共有成员部分 C.必须声明在类开始处 D.可以声明在类中任何地方",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_programming split=val row=11",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-015",
+    "task_text": "（C-Eval·college_programming）对有14个元素的有序表A[1..14]作二分查找，查找元素A[6]时的被比较元素依次为____ 选项：A.A[l], A[2], A[3], A[4] B.A[l], A[14], A[7], A[4] C.A[7], A[5], A[3], A[6] D.A[7], A[3], A[5], A[6]",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_programming split=val row=12",
+    "sector": "code",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-016",
+    "task_text": "（C-Eval·tax_accountant）进行税务咨询服务的核心是____。 选项：A.弄清咨询问题所涉及的税种 B.收集咨询问题相关的税收政策文件 C.分析税收政策适用条款 D.根据需要作必要的沟通说明",
+    "task_source": "HuggingFace ceval/ceval-exam config=tax_accountant split=val row=0",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-017",
+    "task_text": "（C-Eval·tax_accountant）FY公司与FC机械厂均为国有企业，合资设立A有限责任公司(以下简称“A公司”)，出资比例为30%与70%。下列有关A公司董事会组成的说法中，不符合规定的是____。 选项：A.董事会成员中应当有公司职工代表 B.董事张某任期内辞职，在新选出董事就任前，张某仍应履行董事职责 C.A公司董事长可由公司章程规定由小股东FY公司派人担任 D.FY公司和FC机械厂可通过公司章程约定不按出资比例分红",
+    "task_source": "HuggingFace ceval/ceval-exam config=tax_accountant split=val row=1",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：B（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-018",
+    "task_text": "（C-Eval·tax_accountant）下列关于预约定价安排管理的表述中，正确的是____。 选项：A.预约定价安排执行期满后自动失效，企业申请续签的，应当在预约定价安排执行期满之日前30日内向税务机关提出续签申请 B.企业申请双边预约定价安排的，应及时向省级税务机关提出谈签意向 C.预约定价安排适用于自企业提交正式书面申请年度当年起10个连续年度的关联交易 D.在预约定价安排执行期内，税务机关应当每年监控企业执行预约定价安排的情况",
+    "task_source": "HuggingFace ceval/ceval-exam config=tax_accountant split=val row=2",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-019",
+    "task_text": "（C-Eval·tax_accountant）下列各项行为中，应征收个人所得税的是____。 选项：A.离婚析产分割房屋产权 B.军人的转业费、复员费、退役金 C.按照国家统一规定发放的退休费、离休费 D.个人购买福利彩票，一次中奖收入12000元",
+    "task_source": "HuggingFace ceval/ceval-exam config=tax_accountant split=val row=3",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-020",
+    "task_text": "（C-Eval·tax_accountant）某酒厂为增值税一般纳税人，2020年10月发放1吨自制白酒作为职工福利，同类白酒不含税售价50000元/吨，成本价35000元/吨。该酒厂上述业务当月应纳消费税____元。 选项：A.7700 B.8700 C.10000 D.11000",
+    "task_source": "HuggingFace ceval/ceval-exam config=tax_accountant split=val row=4",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-021",
+    "task_text": "（C-Eval·law）下列关于法律推理的表述，能够成立的是____。 选项：A.演绎推理是一种或然性推理 B.归纳推理是从一般知识推出个别知识的推理 C.类比推理是判例法国家运用的一种基本的法律推理方法 D.辩证推理实际上是一种立法活动",
+    "task_source": "HuggingFace ceval/ceval-exam config=law split=val row=0",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-022",
+    "task_text": "（C-Eval·law）某住宅小区业主从事的下列行为中，不必将相关情况告知物业服务人的情形是____。 选项：A.业主甲将其房屋出租给赵某 B.业主乙在其住宅上设立居住权供其弟居住 C.业主丙依法将建筑区划内的绿地改造成花园 D.业主丁在其住宅上设立地役权",
+    "task_source": "HuggingFace ceval/ceval-exam config=law split=val row=1",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-023",
+    "task_text": "（C-Eval·law）张某在甲期刊社发表了一篇颇具价值的学术论文，但未作版权说明。乙期刊社将该学术论文作为资料刊登。则乙期刊社的行为____。 选项：A.属于合理使用，不必向著作权人支付报酬 B.属于侵犯著作权的行为 C.不必经甲期刊社同意，但应向其支付报酬 D.不必经张某同意，但应向其支付报酬",
+    "task_source": "HuggingFace ceval/ceval-exam config=law split=val row=2",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-024",
+    "task_text": "（C-Eval·law）关于我国宪法修改，下列哪一选项是正确的____。 选项：A.我国修宪实践中既有对宪法的部分修改，也有对宪法的全面修改 B.经1/10以上的全国人大代表提议，可以启动宪法修改程序 C.全国人大常委会是法定的修宪主体 D.宪法修正案是我国宪法规定的宪法修改方式",
+    "task_source": "HuggingFace ceval/ceval-exam config=law split=val row=3",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：A（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-025",
+    "task_text": "（C-Eval·law）下列选项中，可以适用不当得利主张请求权的情形是____。 选项：A.甲为自己正在读大学的弟弟乙支付学费，后甲要求乙返还 B.丙明知不欠丁的钱而执意向丁还钱，后丙要求丁返还该金钱 C.张某偿还了欠李某的赌债，后张某要求李某返还赌资 D.陈某和吴某同在河边放牛，后陈某的一头牛走入吴某的牛群中，而吴某对此并不知情",
+    "task_source": "HuggingFace ceval/ceval-exam config=law split=val row=4",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "hard"
+  },
+  {
+    "task_id": "ceval-026",
+    "task_text": "（C-Eval·civil_servant）甲与乙准备进行一个游戏：向空中扔三枚硬币，如果它们落地后全是正面向上或全是反面向上，乙就给甲钱；但若出现两正面一反面或两反面一正面的情况，则由甲给乙钱。乙要求甲每次给10元，那么，从长远来看，甲应该要求乙每次至少给____元才可考虑参加这个游戏。 选项：A.10 B.15 C.20 D.30",
+    "task_source": "HuggingFace ceval/ceval-exam config=civil_servant split=val row=0",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-027",
+    "task_text": "（C-Eval·civil_servant）下列著名诗人与其代表作对应有误的是____。 选项：A.李白——《将进酒》 B.白居易——《琵琶行》 C.王之焕——《登鹳雀楼》 D.杜甫——《长恨歌》",
+    "task_source": "HuggingFace ceval/ceval-exam config=civil_servant split=val row=1",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-028",
+    "task_text": "（C-Eval·civil_servant）经济学上所推崇的“橄榄型”收入分配结构，是指低收入和高收入相对较少、中等收入占绝大多数的分配结构。我国正在采取措施，实施“提低、扩中、调高、打非、保困”的方针，使收入分配朝着“橄榄型”方向发展。这主要是为了促进____。 选项：A.生产的发展 B.效率的提高 C.社会的公平 D.内需的扩大",
+    "task_source": "HuggingFace ceval/ceval-exam config=civil_servant split=val row=2",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-029",
+    "task_text": "（C-Eval·civil_servant）-81，-36，-9，0，9，36，____ 选项：A.49 B.64 C.81 D.100",
+    "task_source": "HuggingFace ceval/ceval-exam config=civil_servant split=val row=3",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-030",
+    "task_text": "（C-Eval·civil_servant）VIP服务本来是个好东西，大企业作为市场竞争的主体，实行差别化服务，无可厚非。但近年来，一些企业纷纷进军医院、机场、车站等公共场所，掏些赞助费，设立所谓“贵宾厅”，霸占公共资源，不仅带来浪费，更造成公共资源分配的不公。这段文字主要强调的是____。 选项：A.公共资源不该过度VIP B.VIP服务导致了公共资源的不公平分配 C.一些企业搬进医院、机场、车站办公 D.实行差别化服务是VIP服务的优势所在",
+    "task_source": "HuggingFace ceval/ceval-exam config=civil_servant split=val row=4",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：A（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-031",
+    "task_text": "（C-Eval·college_economics）在完全竞争厂商的短期均衡产量上，AR小于SAC但大于AVC，则厂商____ 选项：A.亏损，立即停产 B.亏损，但应继续生产 C.亏损，生产或不生产都可以 D.获得正常利润，继续生产",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_economics split=val row=0",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：B（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-032",
+    "task_text": "（C-Eval·college_economics）在一般情况下，供给曲线____ 选项：A.向右上方倾斜 B.向右下方倾斜 C.斜率为正 D.斜率为负",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_economics split=val row=1",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-033",
+    "task_text": "（C-Eval·college_economics）无差异曲线上任一点斜率的绝对值代表了____ 选项：A.消费者为了提高效用而获得另一些商品时愿意放弃的某一种商品的数量 B.消费者花在各种商品上的货币总值 C.两种商品的价格的价格比率 D.在确保消费者效用不变的情况下，一种商品和另一种商品的交换比率",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_economics split=val row=2",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-034",
+    "task_text": "（C-Eval·college_economics）若供给曲线上每一点的点弹性都等于1，则供给曲线只能是一条____ 选项：A.过原点的45线 B.过原点的直线 C.平行于横轴的直线 D.垂直于横轴的直线",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_economics split=val row=3",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：B（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-035",
+    "task_text": "（C-Eval·college_economics）技术进步一般会导致____ 选项：A.供给曲线右移 B.供给量沿着供给曲线减少 C.一个人增加他所消费的所有商品的数量 D.供给量沿着供给曲线增加",
+    "task_source": "HuggingFace ceval/ceval-exam config=college_economics split=val row=4",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：A（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-036",
+    "task_text": "（C-Eval·basic_medicine）不属于第二信使的物质是____ 选项：A.cAMP B.cGMP C.$IP_3$ D.胰岛素",
+    "task_source": "HuggingFace ceval/ceval-exam config=basic_medicine split=val row=0",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-037",
+    "task_text": "（C-Eval·basic_medicine）脱羧酶的辅酶____ 选项：A.生物素 B.叶酸 C.磷酸吡哆醛 D.硫胺素",
+    "task_source": "HuggingFace ceval/ceval-exam config=basic_medicine split=val row=1",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-038",
+    "task_text": "（C-Eval·basic_medicine）关于湿性坏疽的描述，不正确的是____ 选项：A.合并腐败菌感染 B.具有恶臭味 C.常有全身中毒症状 D.坏死组织与健康组织之间界限清楚",
+    "task_source": "HuggingFace ceval/ceval-exam config=basic_medicine split=val row=2",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-039",
+    "task_text": "（C-Eval·basic_medicine）肺梗死形成的先决条件是____ 选项：A.组织疏松 B.严重淤血 C.蛋白含量高 D.侧支循环不充分",
+    "task_source": "HuggingFace ceval/ceval-exam config=basic_medicine split=val row=3",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：B（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-040",
+    "task_text": "（C-Eval·basic_medicine）关于维生素缺乏症的叙述，不正确的是____ 选项：A.维生素A缺乏——夜盲症 B.维生素D缺乏——软骨病 C.维生素$B_1$ 缺乏——脚气病 D.维生素$B_6$缺乏——口角炎",
+    "task_source": "HuggingFace ceval/ceval-exam config=basic_medicine split=val row=4",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-041",
+    "task_text": "（C-Eval·education_science）____是高等学校的中心工作，是实现一定的教育目的和人才培养目标的基本途径。 选项：A.管理 B.教学 C.课程 D.科研",
+    "task_source": "HuggingFace ceval/ceval-exam config=education_science split=val row=0",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：B（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-042",
+    "task_text": "（C-Eval·education_science）依活动过程的特点，可以将动机分为____。 选项：A.交往动机和威信动机 B.社会动机和局部动机 C.外部动机和内部动机 D.近景动机和远景动机",
+    "task_source": "HuggingFace ceval/ceval-exam config=education_science split=val row=1",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：A（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-043",
+    "task_text": "（C-Eval·education_science）把多种学科的相关内容融合在一起，构成新的课程，这是____ 选项：A.活动课程 B.综合课程 C.学科课程 D.必修课程",
+    "task_source": "HuggingFace ceval/ceval-exam config=education_science split=val row=2",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：B（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-044",
+    "task_text": "（C-Eval·education_science）根据学习动机的社会意义，可以把学习动机分为____。 选项：A.社会动机与个人动机 B.工作动机与提高动机 C.高尚动机与低级动机 D.交往动机与荣誉动机",
+    "task_source": "HuggingFace ceval/ceval-exam config=education_science split=val row=3",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：C（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "ceval-045",
+    "task_text": "（C-Eval·education_science）现代学位制度确立的标志是德国柏林大学创设的____。 选项：A.文学博士学位 B.医学博士学位 C.理学博士学位 D.哲学博士学位",
+    "task_source": "HuggingFace ceval/ceval-exam config=education_science split=val row=4",
+    "sector": "education",
+    "expected_answer_hint": "官方标准答案选项：D（C-Eval CC BY-NC-SA 4.0；请引用 Huang et al. NeurIPS 2023）",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-001",
+    "task_text": "（CMMLU·agronomy）肉牛屠宰后，胴体的哪个部位肉质较好 选项：A.胸 B.腹 C.大腿 D.小腿",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/agronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-002",
+    "task_text": "（CMMLU·agronomy）下列鸭品种中，产蛋量最高的品种是 选项：A.高邮鸭 B.北京鸭 C.樱桃谷鸭 D.绍鸭",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/agronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-003",
+    "task_text": "（CMMLU·agronomy）常见家畜中输精管不形成输精管壶腹的是 选项：A.马 B.猪 C.牛 D.羊",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/agronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-004",
+    "task_text": "（CMMLU·agronomy）牛的发情周期平均为 选项：A.16～17天 B.21天 C.28天 D.19～20天",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/agronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-005",
+    "task_text": "（CMMLU·agronomy）羊胴体中，肉质较好的部位是 选项：A.胸下肉 B.肩胛肉 C.后腿肉 D.小腿肉",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/agronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-006",
+    "task_text": "（CMMLU·anatomy）壁胸膜的分部不包括 选项：A.肋胸膜 B.肺胸膜 C.膈胸膜 D.胸膜顶",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/anatomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-007",
+    "task_text": "（CMMLU·anatomy）属于蝶骨上的结构为 选项：A.垂体窝 B.棘孔 C.破裂孔 D.视神经管",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/anatomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-008",
+    "task_text": "（CMMLU·anatomy）属于右心房的结构是 选项：A.肉柱 B.室上嵴 C.乳头肌 D.梳状肌",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/anatomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-009",
+    "task_text": "（CMMLU·anatomy）咽的分部 选项：A.咽隐窝 B.口咽部 C.鼻咽部 D.喉咽部",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/anatomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-010",
+    "task_text": "（CMMLU·anatomy）舌下神经核位于 选项：A.间脑 B.延髓 C.中脑 D.脑挢",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/anatomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-011",
+    "task_text": "（CMMLU·arts）著名民乐作品《十面埋伏》属于 选项：A.管乐 B.打击乐 C.弹拨乐 D.弦乐",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/arts.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-012",
+    "task_text": "（CMMLU·arts）审美的客体是 选项：A.艺术受众 B.艺术作品 C.鉴赏者 D.艺术家",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/arts.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-013",
+    "task_text": "（CMMLU·arts）吴带当风是指谁的绘画风格 选项：A.曹不兴 B.苏轼 C.吴镇 D.吴道子",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/arts.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-014",
+    "task_text": "（CMMLU·arts）话剧《龙须沟》的作者是 选项：A.老舍 B.曹禺 C.夏衍 D.洪深",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/arts.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：A",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-015",
+    "task_text": "（CMMLU·arts）《霓裳羽衣舞》是哪一时期宫廷乐舞。 选项：A.汉 B.宋 C.元 D.唐",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/arts.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-016",
+    "task_text": "（CMMLU·astronomy）以下星座天区内梅西叶天体最多的是 选项：A.武仙座 B.猎户座 C.船尾座 D.蛇夫座",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/astronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-017",
+    "task_text": "（CMMLU·astronomy）以下哪个国家在本年度没有发射月球探测器的计划 选项：A.印度 B.日本 C.俄罗斯 D.以色列",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/astronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-018",
+    "task_text": "（CMMLU·astronomy）梅西叶天体M44位于（）的天区内 选项：A.巨蟹座 B.大犬座 C.金牛座 D.猎户座",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/astronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：A",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-019",
+    "task_text": "（CMMLU·astronomy）在金星西大距时，在金星上看到的地球处于 选项：A.留 B.上合 C.方照 D.冲",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/astronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-020",
+    "task_text": "（CMMLU·astronomy）太阳的光谱型是 选项：A.O型 B.A型 C.K型 D.G型",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/astronomy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-021",
+    "task_text": "（CMMLU·business_ethics）商业伦理学最早出现在 选项：A.英国 B.法国 C.美国 D.意大利",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/business_ethics.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-022",
+    "task_text": "（CMMLU·business_ethics）伦理学的核心是 选项：A.宗教伦理学 B.描述伦理学 C.元伦理学 D.规范伦理学",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/business_ethics.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-023",
+    "task_text": "（CMMLU·business_ethics）下列不属于人的基本权利的时 选项：A.人格平等 B.独立 C.生命 D.自由",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/business_ethics.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-024",
+    "task_text": "（CMMLU·business_ethics）关税的课税客体是 选项：A.进出境的货物 B.消费者 C.海关 D.进出口商",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/business_ethics.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：A",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-025",
+    "task_text": "（CMMLU·business_ethics）区域经济从本质上讲是 选项：A.商品经济 B.一体化经济 C.信用经济 D.市场经济",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/business_ethics.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-026",
+    "task_text": "（CMMLU·chinese_civil_service_exam）假设“如果张楠和林枫不是志愿者，那么杨梅是志愿者”是前提，“林枫是志愿者”为结论。若要以上结论成立，需要补充的前提是 选项：A.杨梅和张楠都是志愿者 B.杨梅不是志愿者 C.张楠是志愿者 D.杨梅和张楠都不是志愿者",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_civil_service_exam.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-027",
+    "task_text": "（CMMLU·chinese_civil_service_exam）对侵害英雄烈士的姓名、肖像、名誉、荣誉的行为，有权向人民法院提起诉讼的主体是：a英雄烈士近亲属；b检察机关；c当地人民政府；d负责英雄烈士保护工作的部门 选项：A.bd B.ac C.ab D.ad",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_civil_service_exam.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-028",
+    "task_text": "（CMMLU·chinese_civil_service_exam）下列说法错误的是 选项：A.苏武牧羊的地点在今天的贝加尔湖一带 B.东汉使者班超同时也是《汉书》的作者 C.西汉张骞与唐代鉴真出行的方向不同 D.成语“南橘北枳”是与晏婴出使楚国有关",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_civil_service_exam.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-029",
+    "task_text": "（CMMLU·chinese_civil_service_exam）日常生活中经常可以依据动物的某些行为预判天气，下列对应正确的是 选项：A.蜻蜓低飞——雨天 B.蚂蚁垒窝——晴天 C.麻省囤食——雨天 D.龟背冒汗——晴天",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_civil_service_exam.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：A",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-030",
+    "task_text": "（CMMLU·chinese_civil_service_exam）设计：修建：高楼 选项：A.热爱：学习：书本 B.痛恨：打击：仇敌 C.勘探：开采：石油 D.体检：判断：病人",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_civil_service_exam.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-031",
+    "task_text": "（CMMLU·chinese_driving_rule）夜间机动车通过照明条件良好的路段时，要怎样使用灯光 选项：A.危险报警闪光灯 B.近光灯 C.远光灯 D.前后雾灯",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_driving_rule.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-032",
+    "task_text": "（CMMLU·chinese_driving_rule）车辆临时靠边停车后准备起步时，应先怎样做 选项：A.鸣喇叭 B.加油起步 C.提高发动机转速 D.观察周围交通情况",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_driving_rule.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-033",
+    "task_text": "（CMMLU·chinese_driving_rule）安全头枕在发生追尾事故时，能有效保护驾驶人的什么部位 选项：A.腰部 B.颈部 C.头部 D.胸部",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_driving_rule.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-034",
+    "task_text": "（CMMLU·chinese_driving_rule）准驾车型为小型汽车的，可以驾驶下列哪种车辆 选项：A.低速载货汽车 B.轮式自行机械 C.三轮摩托车 D.中型客车",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_driving_rule.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：A",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-035",
+    "task_text": "（CMMLU·chinese_driving_rule）安全气囊是一种什么装置 选项：A.防抱死制动系统 B.电子制动力分配系统 C.辅助驾乘人员保护系统 D.驾驶人头颈保护系统",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_driving_rule.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-036",
+    "task_text": "（CMMLU·chinese_food_culture）孔府菜的代表名菜有 选项：A.诗礼银杏 B.扒大乌参 C.黄焖鱼翅 D.清汤燕窝",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_food_culture.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：A",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-037",
+    "task_text": "（CMMLU·chinese_food_culture）下列不属于淮扬菜的是 选项：A.三套鸭 B.叫花鸡 C.虾仁锅巴 D.炸蛎黄",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_food_culture.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-038",
+    "task_text": "（CMMLU·chinese_food_culture）称奶食为“白食”，肉食为“红食”的是 选项：A.壮族 B.傣族 C.回族 D.蒙古族",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_food_culture.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-039",
+    "task_text": "（CMMLU·chinese_food_culture）“割不正不食”观念的提出者是 选项：A.墨子 B.孔子 C.孟子 D.老子",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_food_culture.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：B",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-040",
+    "task_text": "（CMMLU·chinese_food_culture）我国南方地区流行吃青团的节日是 选项：A.中秋节 B.春节 C.腊八节 D.清明节",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_food_culture.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-041",
+    "task_text": "（CMMLU·chinese_foreign_policy）20世纪70年代以来，中国积极融入世界，下列事件发生的先后顺序是：a恢复联合国的合法席位；b尼克松访华；c乒乓外交；d中美建交；e中日签署外交关系的联合声明 选项：A.cabed B.acbde C.abcde D.cbade",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_foreign_policy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：A",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-042",
+    "task_text": "（CMMLU·chinese_foreign_policy）亚非会议能取得成功的根本原因是 选项：A.它没有殖民主义国家参加 B.中国提出“求同存异”方针的推动 C.亚非各国有团结反帝反殖的共同愿望 D.亚非各国间不存在矛盾和分歧",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_foreign_policy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-043",
+    "task_text": "（CMMLU·chinese_foreign_policy）以下哪个是是国家关系发展的必然结果和客观趋势? 选项：A.单边主义 B.强权政治 C.霸权主义 D.世界格局多极化",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_foreign_policy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-044",
+    "task_text": "（CMMLU·chinese_foreign_policy）我国新时期的外交方针与政策有：a不结盟政策；b与周边国家建立友好关系；c一边倒与一大片；d对外开放 选项：A.cd B.abc C.abd D.ac",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_foreign_policy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：C",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  },
+  {
+    "task_id": "cmmlu-045",
+    "task_text": "（CMMLU·chinese_foreign_policy）1948年底到1949年初，中共中央确定了一个重要的外交方针，将承认问题由新政权的单向“被承认”变成与外国政府之间的双向相互承认。毛泽东把这一外交方针概括为 选项：A.“打扫干净屋子再请客” B.“一边倒” C.“求同存异” D.“另起炉灶”",
+    "task_source": "GitHub haonan-li/CMMLU data/dev/chinese_foreign_policy.csv (CC BY-NC-SA 4.0)",
+    "sector": "education",
+    "expected_answer_hint": "标准答案：D",
+    "risk_class": "low",
+    "difficulty_label": "medium"
+  }
+]

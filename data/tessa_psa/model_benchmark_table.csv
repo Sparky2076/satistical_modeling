@@ -1,0 +1,19 @@
+model_id,ceval_avg,cmmlu_avg,composite_leaderboard_score,output_speed_tok_per_s,ttft_ms,input_price_per_1m_usd,context_window_tokens,metrics_as_of,source_note
+deepseek-v4-flash,,,47,83.6,1160,0.14,1000000,2026-05-02,Artificial Analysis model deepseek-v4-flash (Reasoning Max Effort) first-party API; ceval/cmmlu left blank (no verified submission for this API SKU).
+deepseek-v4-pro,,,52,33.7,1950,1.74,1000000,2026-05-02,Artificial Analysis model deepseek-v4-pro (Reasoning Max Effort); ceval/cmmlu left blank.
+gpt-5.4-nano,,,44,159.1,3760,0.2,272000,2026-05-02,Artificial Analysis model gpt-5-4-nano (xhigh reasoning); context from api_price_schedule (AA lists 400k).
+gpt-4o-mini,,,13,32.4,2820,0.15,128000,2026-05-02,Artificial Analysis model gpt-4o-mini; composite marked estimated on AA page; context from api_price_schedule.
+gpt-4o,,,17,133.6,980,2.5,128000,2026-05-02,Artificial Analysis model gpt-4o (Nov 24 snapshot); context from api_price_schedule.
+gpt-5.4,,,57,81.1,186880,2.5,272000,2026-05-02,Artificial Analysis model gpt-5-4 (xhigh reasoning); TTFT includes extended thinking; context from api_price_schedule (AA lists 1m+).
+o4-mini,,,33,127.0,24610,1.1,200000,2026-05-02,Artificial Analysis model o4-mini (high reasoning effort); TTFT includes thinking time per AA methodology.
+claude-haiku-4-5,,,31,92.2,740,1.0,1000000,2026-05-02,Artificial Analysis slug claude-4-5-haiku (Non-reasoning) maps to API Claude 4.5 Haiku; ceval/cmmlu left blank.
+claude-sonnet-4-6,,,44,45.9,1250,3.0,1000000,2026-05-02,Artificial Analysis model claude-sonnet-4-6 (Non-reasoning High Effort).
+claude-opus-4-7,,,57,51.2,20450,5.0,1000000,2026-05-02,Artificial Analysis model claude-opus-4-7 (Adaptive Reasoning Max Effort); TTFT includes reasoning.
+gemini-2.5-flash-lite,,,13,239.0,530,0.10,1000000,2026-05-02,Artificial Analysis model gemini-2-5-flash-lite (Non-reasoning).
+gemini-2.5-flash,,,21,185.5,740,0.30,1000000,2026-05-02,Artificial Analysis model gemini-2-5-flash (Non-reasoning).
+qwen-plus,,,,,,0.11111111,128000,2026-05-02,No Artificial Analysis page for DashScope model_id qwen-plus; composite and latency left blank.
+qwen-turbo,,,,,,0.04166667,128000,2026-05-02,Artificial Analysis qwen-turbo page targets Qwen2.5 Turbo with different USD list prices than B2 DashScope row; metrics omitted to avoid SKU mismatch.
+ERNIE-4.0-8K,,,,,,0.55555556,8192,2026-05-02,No Artificial Analysis listing for ERNIE-4.0-8K; fill when vendor publishes comparable third-party bench.
+ERNIE-4.0-Turbo-8K,,,,,,0.41666667,8192,2026-05-02,No Artificial Analysis listing for ERNIE-4.0-Turbo-8K.
+glm-4-air-250414,,,,,,0.06944444,128000,2026-05-02,No Artificial Analysis listing for Zhipu model_id glm-4-air-250414.
+glm-4-plus,,,,,,0.69444444,128000,2026-05-02,No Artificial Analysis listing for Zhipu model_id glm-4-plus.

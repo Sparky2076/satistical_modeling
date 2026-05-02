@@ -1,0 +1,9 @@
+date,provider,downstream_api_price_index,upstream_gpu_cloud_proxy_index,notes
+2024-06-30,composite_quarterly,150.0,149.25,"采集2026-05-02。下游：指数=100×(P_t/10)，P_t 为当时 GPT-4o 旗舰快照官方「输出 USD/1M tokens」；本行 P_t=15（gpt-4o-2024-05-13），见 OpenAI Platform 定价表 https://platform.openai.com/docs/pricing ；2024-05-13 发布见 https://openai.com/index/hello-gpt-4o/ 。上游：指数=100×(H_t/21.96)，H_t 为 Amazon Linux On-Demand p4d.24xlarge us-east-1 美元/小时；2025-06-01 前 H_t=32.78（由 AWS 公布「相对 2025-05-31 基线约 33% 降价」反推：21.96/0.67），官方说明 https://aws.amazon.com/about-aws/whats-new/2025/06/pricing-usage-model-ec2-instances-nvidia-gpus/ 与博文 https://aws.amazon.com/blogs/aws/announcing-up-to-45-price-reduction-for-amazon-ec2-nvidia-gpu-accelerated-instances/ ；降价后目录价 21.96 与 instances.vantage.sh us-east-1 镜像一致（二次核对）。"
+2024-09-30,composite_quarterly,100.0,149.25,"采集2026-05-02。下游：gpt-4o-2024-08-06 起清单输出 10 USD/1M（同定价页）；发布见 API Changelog https://developers.openai.com/api/docs/changelog （August 2024 / gpt-4o-2024-08-06）。上游：仍处 2025-06-01 降价前，H_t=32.78，指数 149.25，来源同 2024-06-30 行。"
+2024-12-31,composite_quarterly,100.0,149.25,"采集2026-05-02。下游：gpt-4o-2024-11-20 等快照与默认 gpt-4o 文本标价仍为输出 10 USD/1M（OpenAI 模型页 https://developers.openai.com/api/docs/models/gpt-4o 与定价页）。上游：降价前 H_t=32.78。"
+2025-03-31,composite_quarterly,100.0,149.25,"采集2026-05-02。下游：定价页未再改 gpt-4o 标准输出 10 USD/1M（与仓库 api_price_schedule 快照一致）。上游：仍降价前。"
+2025-06-30,composite_quarterly,100.0,100.0,"采集2026-05-02。下游：同上。上游：2025-06-01 起 P4d On-Demand 降价约 33%，取降价后 H_t=21.96 USD/h 为基期 100（AWS What's New / Blog 同上；现价与 https://instances.vantage.sh/aws/ec2/p4d.24xlarge?region=us-east-1 一致）。"
+2025-09-30,composite_quarterly,100.0,100.0,"采集2026-05-02。下游/上游：与 2025-06-30 基期价持平（未见需单独抄录的新官方目录价变更）。"
+2025-12-31,composite_quarterly,100.0,100.0,"采集2026-05-02。同上。"
+2026-03-31,composite_quarterly,100.0,100.0,"采集2026-05-02。季度末占位；若后续 AWS/OpenAI 调价请按同公式用新官方价目更新 H_t 与 P_t。"
