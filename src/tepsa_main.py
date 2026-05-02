@@ -103,11 +103,7 @@ def main() -> None:
 
     fields, obs_rows = read_csv(args.obs)
     obs_rows = [r for r in obs_rows if any((v or "").strip() for v in r.values())]
-    if not obs_rows:
-        print("Observations empty or only header; wrote no enriched file.")
-        return
 
-    prices = price_rows_by_model()
     out_fields = list(fields)
     for c in (
         "input_price_per_1m_usd",
@@ -125,6 +121,12 @@ def main() -> None:
     if "value_score" not in out_fields:
         out_fields.append("value_score")
 
+    if not obs_rows:
+        write_csv(args.out, out_fields, [])
+        print(f"Observations empty or only header; wrote header-only: {args.out}")
+        return
+
+    prices = price_rows_by_model()
     enriched: list[dict[str, object]] = []
     for row in obs_rows:
         mid = row.get("model_id") or row.get("model") or ""

@@ -1,0 +1,9 @@
+policy_id,provider,model_id,prompt_type,context_type,max_output_tokens,temperature,notes
+pl_openai_mini_std,OpenAI,gpt-4o-mini,standard,short,1024,0.2,cheap baseline
+pl_openai_4o_std,OpenAI,gpt-4o,standard,short,1024,0.2,frontier OpenAI multimodal text
+pl_deepseek_flash,DeepSeek,deepseek-v4-flash,standard,short,2048,0.2,low-cost CN vendor
+pl_deepseek_pro,DeepSeek,deepseek-v4-pro,standard,short,2048,0.2,higher-tier CN vendor
+pl_claude_haiku,Anthropic,claude-haiku-4-5,standard,short,2048,0.2,Anthropic fast
+pl_claude_sonnet,Anthropic,claude-sonnet-4-6,standard,short,2048,0.2,Anthropic balanced
+pl_gemini_flash_lite,Google,gemini-2.5-flash-lite,standard,short,2048,0.2,Google lite
+pl_gemini_flash,Google,gemini-2.5-flash,standard,short,2048,0.2,Google default flash

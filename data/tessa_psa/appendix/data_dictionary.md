@@ -12,6 +12,10 @@
 | macro_calibration_totals.csv | 宏观工资锚（与部门映射） | `tepsa_sector` + `year` |
 | compute_service_wedge_optional.csv | 可选算力楔：下游 API 与上游云 GPU 价格指数（季度） | `date` + `provider` |
 
+**Sector 口径**：`task_bank.sector` 使用空格风格（如 `public service`），与 `macro_calibration_totals.csv` 的 `tepsa_sector`（下划线，如 `public_service`）不同。跑批写入 `task_policy_observations.csv` 时增加列 `tepsa_sector`，由 `src/tepsa_validate_inputs.py` 与 `src/tepsa_api_batch.py` 中的同一映射表从 `sector` 派生，便于与宏观表 join。
+
+**task_source**：政务/网页类任务应为 `http` 或 `https` URL；`task_id` 以 `ceval-` / `cmmlu-` 开头的基准锚点允许非 URL 的数据集出处字符串（校验脚本 `tepsa_validate_inputs.py` 与之一致）。
+
 `cost_usd` 推荐由程序按价目表计算：`input/1e6 * pin + output/1e6 * pout + cache/1e6 * pcache`。
 
 `value_score` 见 `data todo list.md` §C 与 `proposal.pdf` 式 (1)，默认系数在 `src/tepsa_main.py` 中可配置。

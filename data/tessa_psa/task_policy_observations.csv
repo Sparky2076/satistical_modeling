@@ -1,1 +1,1 @@
-task_id,sector,task_source,task_text,risk_class,difficulty_label,model,policy_id,prompt_type,context_type,input_tokens,output_tokens,cache_tokens,cost_usd,latency_sec,quality_score,hallucination_flag,risk_score,human_time_base_min,human_time_ai_min,value_score
+task_id,sector,task_source,task_text,risk_class,difficulty_label,model,policy_id,prompt_type,context_type,input_tokens,output_tokens,cache_tokens,cost_usd,latency_sec,quality_score,hallucination_flag,risk_score,human_time_base_min,human_time_ai_min,value_score,tepsa_sector,run_id,response_path

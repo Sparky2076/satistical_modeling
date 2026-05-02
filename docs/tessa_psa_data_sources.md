@@ -59,6 +59,7 @@
 
 ### 3.4 中文任务库（todo §B.4 → `task_bank.csv`）
 
+- **跑批与校验**：先 `python src/tepsa_validate_inputs.py`，再按 [`data/tessa_psa/README_run_batch.md`](../data/tessa_psa/README_run_batch.md) 设置环境变量并调用 `src/tepsa_api_batch.py`；成本与 `value_score` 回填见同文件中的 `tepsa_main.py` 说明。  
 - **政府 FAQ / 办事指南**：用 todo 中的检索式，例如  
   `site:gov.cn 社保 医保 报销 问答`  
   `site:gov.cn 政务服务 常见问题 办理 流程`  
