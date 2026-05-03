@@ -99,3 +99,10 @@
 | 5 | 合并主表 → MTP → 图与分配前沿 |
 
 本仓库路径：`D:\GitHub_Code\satistical_modeling\docs\tessa_psa_data_sources.md`。
+
+---
+
+## 6. 末次人工核对（定价外链占位）
+
+- 一级入口与 CSV 正文维护见 [../data/tessa_psa/appendix/B2_official_pricing_urls.md](../data/tessa_psa/appendix/B2_official_pricing_urls.md) 文末「末次人工核对外链」。  
+- 可复现性 Git / `run_id` / 主表选用见 [../data/tessa_psa/appendix/reproducibility_baseline.md](../data/tessa_psa/appendix/reproducibility_baseline.md)。

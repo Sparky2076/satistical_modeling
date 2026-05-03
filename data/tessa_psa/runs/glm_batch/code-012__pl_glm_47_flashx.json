@@ -1,0 +1,15 @@
+{
+  "task_id": "code-012",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 49.65817089995835,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 1206,
+    "cache_tokens": 5
+  },
+  "error": null,
+  "response_text": "在 Python 的 `logging` 模块中，这三者分工明确，协作完成日志的记录、处理和输出：\n\n1.  **Logger (记录器)**：**决策与分发**\n    *   **职责**：日志的入口。负责创建日志记录，并根据日志级别（DEBUG, INFO, WARNING 等）决定是否记录该消息。\n    *   **关键动作**：将符合条件的日志记录传递给 Handler。\n\n2.  **Handler (处理器)**：**路由与输出**\n    *   **职责**：负责将日志记录发送到指定的目标位置（如控制台、文件、网络）。\n    *   **关键动作**：可以附加过滤器来控制哪些日志被发送，以及决定是否应用 Formatter。\n\n3.  **Formatter (格式化器)**：**呈现与格式化**\n    *   **职责**：负责定义日志的最终字符串格式。\n    *   **关键动作**：将日志记录对象转换为人类可读的字符串（包含时间、级别、消息等）。\n\n**简单流程**：\nLogger 产生记录 -> Handler 接收并路由 -> Formatter 格式化 -> 输出。"
+}

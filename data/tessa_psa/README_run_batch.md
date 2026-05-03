@@ -54,6 +54,22 @@ python src/tepsa_main.py --obs data/tessa_psa/task_policy_observations.csv --out
 
 默认 `--obs` 即为上述路径；输出默认 `task_policy_observations_enriched.csv`。
 
+## P2：人工标注与主表合并
+
+1. 量表与试标流程：[`appendix/annotation_rubric.md`](appendix/annotation_rubric.md)。  
+2. 填写 `human_labels.csv` 后，在仓库根目录执行：
+
+```text
+python src/tepsa_merge_labels.py
+```
+
+默认读取 `task_policy_observations_enriched.csv` 与 `human_labels.csv`，写出 `task_policy_observations_with_labels.csv`（左连接，无标注行标签列为空）。  
+3. 导出待标队列（去重后的 `task_id,policy_id,run_id,response_path`），便于 Excel 分配：
+
+```text
+python src/tepsa_merge_labels.py --export-queue data/tessa_psa/label_queue.csv --filter-run-id ds_batch
+```
+
 ## 相关文档
 
 - 数据源与字段提醒：`docs/tessa_psa_data_sources.md`

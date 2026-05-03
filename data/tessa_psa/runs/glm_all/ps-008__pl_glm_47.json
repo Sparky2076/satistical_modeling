@@ -1,0 +1,15 @@
+{
+  "task_id": "ps-008",
+  "policy_id": "pl_glm_47",
+  "run_id": "glm_batch_v4",
+  "provider": "GLM",
+  "model_id": "glm-4.7",
+  "latency_sec": 39.48822599998675,
+  "usage": {
+    "input_tokens": 97,
+    "output_tokens": 2048,
+    "cache_tokens": 5
+  },
+  "error": null,
+  "response_text": "谈判药品“双通道”供药机制是指通过定点医疗机构和定点零售药店两个渠道，满足谈判药品供应保障、临床使用等方面的合理需求，并同步纳入医保支付的机制。对参保患者而言，主要意味着以下几点：\n\n1.  **购药渠道更畅通（解决“进院难”）：** 针对部分临床价值高、但受限于医院药占比、药品总额控制或临时性缺货等原因难以"
+}

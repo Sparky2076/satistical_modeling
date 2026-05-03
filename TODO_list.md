@@ -6,42 +6,44 @@
 
 ## P0 — 跑通真实数据（阻塞后续实证）
 
-- [ ] 在 Anthropic / OpenAI / DeepSeek 等**官方或团队认可渠道**申请 API Key；勿将密钥写入仓库或聊天。
-- [ ] 在本机 PowerShell 设置环境变量（至少完成计划中的三厂商之一即可先试）：`OPENAI_API_KEY`、`DEEPSEEK_API_KEY`、`ANTHROPIC_API_KEY`（可选 `GEMINI_API_KEY` / `GOOGLE_API_KEY`）。
-- [ ] 仓库根目录执行 `.\scripts\smoke_tepsa_batch.ps1`，确认 `data/tessa_psa/task_policy_observations.csv` 出现 **≥1 行**成功观测，且 `input_tokens`、`output_tokens`、`latency_sec` 非空。
-- [ ] 检查 `data/tessa_psa/runs/<run_id>/` 下 JSON 是否与 CSV 中 `response_path` 一致，抽查一条回答质量。
-- [ ] 执行 `python src/tepsa_main.py`，确认 `task_policy_observations_enriched.csv` 中 `cost_usd`、价目相关列被正确填充。
+> **同步更新**：仓库已含队友提交的 `task_policy_observations.csv`（约 623 行）与 `data/tessa_psa/runs/` 下 JSON；下列「主表非空 / 路径 / enriched」可视为已达成。**若你本机还要跑新批次**，仍须完成密钥与环境变量（第 1～2 项）。
+
+- 在 Anthropic / OpenAI / DeepSeek 等**官方或团队认可渠道**申请 API Key；勿将密钥写入仓库或聊天。（**仅续跑新批次时需要**）
+- 在本机 PowerShell 设置环境变量：`OPENAI_API_KEY`、`DEEPSEEK_API_KEY`、`ANTHROPIC_API_KEY` 等。（**仅续跑新批次时需要**）
+- 主表 `task_policy_observations.csv` 已出现多行成功观测（`input_tokens` / `output_tokens` / `latency_sec` 非空）；含 `smoke_test`、`batch_20260503`、`test_each`、`ds_batch` 等 `run_id`。
+- `runs/<run_id>/` 下 JSON 与 CSV 中 `response_path` 已抽样核对（前 50 条路径均存在）。
+- 已执行 `python src/tepsa_main.py`，`task_policy_observations_enriched.csv` 与观测行数一致并含 `cost_usd`、价目相关列。
 
 ## P1 — 小批量与全量跑批策略
 
-- [ ] 与导师确认：是否对 `risk_class=high` 全程使用 `--skip-high-risk` 或仅分配强模型 policy。
-- [ ] 固定 `run_id`（如 `batch_YYYYMMDD`），用 `--max-tasks 10~20` 做费用可控小批量；确认无误后再扩大或全库（300×策略数，费用显著）。
-- [ ] 需要断点续跑时：同一 `--run-id` + `--resume`，避免重复扣费。
+- 与导师确认：是否对 `risk_class=high` 全程使用 `--skip-high-risk` 或仅分配强模型 policy。
+- 固定 `run_id`（如 `batch_YYYYMMDD`），用 `--max-tasks 10~20` 做费用可控小批量；确认无误后再扩大或全库（300×策略数，费用显著）。
+- 需要断点续跑时：同一 `--run-id` + `--resume`，避免重复扣费。
 
 ## P2 — 标注与主表合并
 
-- [ ] 定稿 [`data/tessa_psa/appendix/annotation_rubric.md`](data/tessa_psa/appendix/annotation_rubric.md)（若需修订）。
-- [ ] 小样本试标 → 计算一致性（ICC 等）→ 扩面填写 [`data/tessa_psa/human_labels.csv`](data/tessa_psa/human_labels.csv)。
-- [ ] 用 `task_id` + `policy_id` + `run_id` 将标注与 `task_policy_observations.csv` 合并，用于论文表格与 MTP。
+- 定稿 `[data/tessa_psa/appendix/annotation_rubric.md](data/tessa_psa/appendix/annotation_rubric.md)`（已补合并键、试标/ICC、`runs` 材料；若导师另有口径可再修订）。
+- 小样本试标 → 计算一致性（ICC 等）→ 扩面填写 `[data/tessa_psa/human_labels.csv](data/tessa_psa/human_labels.csv)`（**须真人**；**占位保留**：现含 8 行 `assistant_demo_v1` AI 占位，定稿前替换或删除，见 `annotation_rubric.md`）。
+- 将标注左连接到 enriched 主表：运行 `python src/tepsa_merge_labels.py`，默认产出 `[task_policy_observations_with_labels.csv](data/tessa_psa/task_policy_observations_with_labels.csv)`；可选 `--export-queue` 导出待标队列。论文分析宜用该合并表（或再在 notebook 内 join）。
 
 ## P3 — 论文与可复现性
 
-- [ ] 在附录或脚注中记录：`api_price_schedule.csv` 抓取日期、各 `run_id`、关键脚本版本（Git commit）。
-- [ ] 宏观 join：使用观测表中的 `tepsa_sector` 与 [`macro_calibration_totals.csv`](data/tessa_psa/macro_calibration_totals.csv) 对齐（见 `appendix/data_dictionary.md`）。
-- [ ] 更新 `docs/tessa_psa_data_sources.md` 中若有的失效链接（定价页常变）。
+- [x] 附录/脚注素材：已新增 [`appendix/reproducibility_baseline.md`](data/tessa_psa/appendix/reproducibility_baseline.md)（`run_id`、价目日、主表选用；Git HEAD 按文内说明用 `git rev-parse` 填入）。  
+- [x] 宏观 join 预览：运行 `python src/tepsa_macro_join_preview.py` 生成 [`obs_macro_preview.csv`](data/tessa_psa/obs_macro_preview.csv)（`tepsa_sector` 对齐 `macro_calibration_totals` `year=2024` 五扇区）；正式回归可在 Stata/R 中再写权重与稳健性。  
+- [ ] 外链巡检：按需打开定价页；已在本仓库 [`appendix/B2_official_pricing_urls.md`](data/tessa_psa/appendix/B2_official_pricing_urls.md) 与 [`docs/tessa_psa_data_sources.md`](docs/tessa_psa_data_sources.md) §6 留「末次核对」占位，复查后改日期。
 
 ## P4 — 仓库与协作（可选）
 
-- [ ] `git add` / `commit` / `push` 前确认未包含 `.env`、`runs/` 下大 JSON、任何密钥文件。
-- [ ] 在 GitHub 上开 **Issues** 将 P0–P2 拆给不同成员，与本 `TODO_list.md` 同步。
+- `git add` / `commit` / `push` 前确认未包含 `.env`、任何密钥文件。（`runs/` 大 JSON 已由队友纳入版本库时，以团队约定为准。）
+- 在 GitHub 上开 **Issues** 将 P0–P2 拆给不同成员，与本 `TODO_list.md` 同步。
 
 ---
 
 ## 非阻塞 / 历史课题
 
-- [ ] 若继续做 `micro_impact_pipeline.py`：按脚本注释准备 `data/raw/cfps_micro.csv` 等输入。
-- [ ] 若需重建任务库：联网运行 `python src/tepsa_task_bank_build.py`（会覆盖/重写 `task_bank.csv`，先备份）。
+- 若继续做 `micro_impact_pipeline.py`：按脚本注释准备 `data/raw/cfps_micro.csv` 等输入。
+- 若需重建任务库：联网运行 `python src/tepsa_task_bank_build.py`（会覆盖/重写 `task_bank.csv`，先备份）。
 
 ---
 
-**最后更新**：与根目录 [`README.md`](README.md) 中「当前进度」表一并维护。
+**最后更新**：与根目录 `[README.md](README.md)` 中「当前进度」表一并维护。

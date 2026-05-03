@@ -1,20 +1,22 @@
 # B.2 API 价目：官方链接与 CSV 正文（2026-05-02 核对）
 
-将下方 **CSV 代码块** 全选复制，覆盖保存为 [`../api_price_schedule.csv`](../api_price_schedule.csv) 即完成 B.2 表体更新。
+将下方 **CSV 代码块** 全选复制，覆盖保存为 `[../api_price_schedule.csv](../api_price_schedule.csv)` 即完成 B.2 表体更新。
 
 **人民币→美元**：阿里云、百度两行按文内价格换算，`fx_cny_per_usd=7.20`（见各 `notes`）。智谱「元/百万 Tokens」按 **输入与输出同单价** 拆入两列（若控制台实际分项不同请改正）。
 
 ## 各厂商一级文档入口（逐项打开核对）
 
-| 厂商 | 建议打开的定价/计费页 |
-|------|------------------------|
-| OpenAI | https://platform.openai.com/docs/pricing |
-| DeepSeek | https://api-docs.deepseek.com/quick_start/pricing/ |
-| Anthropic | https://platform.claude.com/docs/en/about-claude/pricing |
-| Google Gemini | https://ai.google.dev/gemini-api/docs/pricing |
-| 阿里云百炼 | 控制台与帮助中心「模型计费」为准；下列为汇总参考 https://developer.aliyun.com/article/1718400 |
-| 百度千帆 | https://ai.baidu.com/ai-doc/WENXINWORKSHOP/Hm88dcygk |
-| 智谱 BigModel | https://docs.bigmodel.cn/cn/guide/models/text/glm-4 |
+
+| 厂商            | 建议打开的定价/计费页                                                                                                           |
+| ------------- | --------------------------------------------------------------------------------------------------------------------- |
+| OpenAI        | [https://platform.openai.com/docs/pricing](https://platform.openai.com/docs/pricing)                                  |
+| DeepSeek      | [https://api-docs.deepseek.com/quick_start/pricing/](https://api-docs.deepseek.com/quick_start/pricing/)              |
+| Anthropic     | [https://platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing)  |
+| Google Gemini | [https://ai.google.dev/gemini-api/docs/pricing](https://ai.google.dev/gemini-api/docs/pricing)                        |
+| 阿里云百炼         | 控制台与帮助中心「模型计费」为准；下列为汇总参考 [https://developer.aliyun.com/article/1718400](https://developer.aliyun.com/article/1718400) |
+| 百度千帆          | [https://ai.baidu.com/ai-doc/WENXINWORKSHOP/Hm88dcygk](https://ai.baidu.com/ai-doc/WENXINWORKSHOP/Hm88dcygk)          |
+| 智谱 BigModel   | [https://docs.bigmodel.cn/cn/guide/models/text/glm-4](https://docs.bigmodel.cn/cn/guide/models/text/glm-4)            |
+
 
 ## `api_price_schedule.csv` 全文（与仓库列名一致）
 
@@ -42,6 +44,14 @@ Zhipu,glm-4-plus,standard,0.69444444,0,0.69444444,,128000,2026-05-02,https://doc
 
 ## B.2 完成自检
 
-- [x] todo 列出的 7 类厂商均有对应 `source_url` 行（阿里行为汇总参考 + 控制台待核）。
-- [x] 含低价国产、中端、前沿、推理（`o4-mini` / `ERNIE-4.0-Turbo` 等）组合，行数 > 10。
-- [x] `price_collected_date` 与访问日一致；调价后请重抓并改日期。
+- todo 列出的 7 类厂商均有对应 `source_url` 行（阿里行为汇总参考 + 控制台待核）。
+- 含低价国产、中端、前沿、推理（`o4-mini` / `ERNIE-4.0-Turbo` 等）组合，行数 > 10。
+- `price_collected_date` 与访问日一致；调价后请重抓并改日期。
+
+---
+
+## 末次人工核对外链（占位）
+
+- **本文档标题日期**：2026-05-02。  
+- **下次复查**：打开上表各厂商链接，确认仍有效后，更新本行日期、`api_price_schedule.csv` 中 `price_collected_date` 与 [`reproducibility_baseline.md`](reproducibility_baseline.md) 中价目小节。
+

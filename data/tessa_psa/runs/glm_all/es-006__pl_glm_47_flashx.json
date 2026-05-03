@@ -1,0 +1,15 @@
+{
+  "task_id": "es-006",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 23.568592600000557,
+  "usage": {
+    "input_tokens": 101,
+    "output_tokens": 1012,
+    "cache_tokens": 2
+  },
+  "error": null,
+  "response_text": "关于出口退税申报中“单证备案”的提示：\n\n1.  **目录依据**：企业应严格参照税务机关发布的最新规定及具体商品目录执行。\n2.  **保存期限**：一般要求保存5年（自出口之日起计算），具体请以主管税务机关要求为准。\n3.  **重要声明**：\n    *   单证内容与形式必须以**税务机关、监管机关及合同文本**为准。\n    *   严禁替代**专业审计**或**法律意见**。"
+}

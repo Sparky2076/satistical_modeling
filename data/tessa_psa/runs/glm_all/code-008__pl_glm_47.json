@@ -1,0 +1,15 @@
+{
+  "task_id": "code-008",
+  "policy_id": "pl_glm_47",
+  "run_id": "glm_batch_balance",
+  "provider": "GLM",
+  "model_id": "glm-4.7",
+  "latency_sec": 17.835226900002453,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 1282,
+    "cache_tokens": 59
+  },
+  "error": null,
+  "response_text": "`pathlib.Path` 相比 `os.path` 的主要优势在于其**面向对象**的设计和**更现代的语法**，具体包括：\n\n1.  **可读性强**：使用 `/` 运算符拼接路径（如 `Path('a') / 'b'`），比 `os.path.join('a', 'b')` 更直观且不易出错。\n2.  **功能统一**：整合了 `os.path`、`os`、`glob` 和 `shutil` 的相关功能。无需导入多个模块，即可在一个对象上完成路径操作、文件读写、遍历等。\n3.  **面向对象**：路径被视为对象而非字符串，可以直接调用方法（如 `.read_text()`, `.exists()`, `.stat()`），代码更简洁、符合 Python 风格。\n4.  **跨平台兼容**：自动处理不同操作系统（Windows/Linux/macOS）的路径分隔符和根目录差异。\n5.  **类型提示友好**：在静态类型检查中，明确指定参数为 `Path` 对象比字符串更规范。\n\n总体而言，`pathlib` 是现代 Python 代码（Python 3.4+）处理文件路径的首选标准库。"
+}

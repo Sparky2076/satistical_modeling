@@ -1,0 +1,15 @@
+{
+  "task_id": "code-010",
+  "policy_id": "pl_glm_47",
+  "run_id": "glm_batch_balance",
+  "provider": "GLM",
+  "model_id": "glm-4.7",
+  "latency_sec": 64.75325180002255,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 1163,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`dataclasses.field(default_factory=list)` 主要解决了 **可变默认参数（如列表、字典）在类实例间共享** 的问题。\n\n具体作用如下：\n\n1.  **避免数据污染**：在 Python 中，直接使用 `my_list: list = []` 作为默认值会导致所有实例的 `my_list` 指向同一个内存地址。修改其中一个实例的列表，会影响其他实例。使用 `default_factory=list` 可以确保每次创建新实例时，都会调用 `list()` 构造函数生成一个**全新的**独立列表。\n2.  **符合 Dataclasses 规范**：在 `dataclasses` 中，直接将可变对象（如 `list`、`dict`、`set`）作为 `default` 值是禁止的，会抛出 `ValueError`。必须使用 `default_factory` 来包裹工厂函数。\n\n**示例对比：**\n\n*   **错误做法**（会报错或导致逻辑错误）：\n    ```python\n    @dataclass\n    class Group:\n        members: list = []  # ValueError: mutable default <class 'list'>\n    ```\n\n*   **正确做法**：\n    ```python\n    from dataclasses import dataclass, field\n\n    @dataclass\n    class Group:\n        members: list = field(default_factory=list)  # 每次实例化都会创建新列表\n    ```"
+}

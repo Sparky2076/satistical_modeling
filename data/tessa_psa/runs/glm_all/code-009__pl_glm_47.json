@@ -1,0 +1,15 @@
+{
+  "task_id": "code-009",
+  "policy_id": "pl_glm_47",
+  "run_id": "glm_batch_balance",
+  "provider": "GLM",
+  "model_id": "glm-4.7",
+  "latency_sec": 26.84960349998437,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 847,
+    "cache_tokens": 59
+  },
+  "error": null,
+  "response_text": "`itertools.groupby` 仅对**连续**出现的相同键值进行分组。\n\n如果数据未排序，相同的键值分散在不同位置，会被识别为多个独立的组。排序可以确保相同的键值相邻，从而正确归为一组。\n\n**示例：**\n*   **未排序** `[A, B, A]`：会被分为 `(A, [A])`、`(B, [B])`、`(A, [A])` 三组。\n*   **已排序** `[A, A, B]`：会被分为 `(A, [A, A])`、`(B, [B])` 两组。"
+}
