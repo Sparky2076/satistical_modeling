@@ -1,0 +1,11 @@
+{
+  "task_id": "ps-008",
+  "policy_id": "pl_glm_47",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7",
+  "latency_sec": 0.5916526000364684,
+  "usage": {},
+  "error": "HTTP 429: {\"error\":{\"code\":\"1302\",\"message\":\"您的账户已达到速率限制，请您控制请求频率\"}}",
+  "response_text": null
+}
