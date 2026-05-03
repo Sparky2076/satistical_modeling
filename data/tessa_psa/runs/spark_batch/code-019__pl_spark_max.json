@@ -1,0 +1,15 @@
+{
+  "task_id": "code-019",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 11.620446800021455,
+  "usage": {
+    "input_tokens": 76,
+    "output_tokens": 511,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`asyncio.create_task` 与直接 `await` 协对象的核心区别在于任务调度方式：\n\n- **`create_task`**：将协程注册为独立任务，由事件循环在合适时机调度执行。即使不立即 `await`，它也会与其他任务并发运行。返回一个 `Task` 对象，可跟踪状态。\n- **直接 `await`**：若协程尚未运行，事件循环会暂停当前协程，从开头开始执行目标协程，直到完成后才继续。相当于串行等待。\n\n简单说：`create_task` 是\"后台启动\"，`await` 是\"同步等待\"。"
+}

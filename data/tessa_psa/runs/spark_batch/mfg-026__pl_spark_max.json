@@ -1,0 +1,15 @@
+{
+  "task_id": "mfg-026",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 28.375350000016624,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 1247,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "冲压机械的双手操纵装置与安全光栅均为安全防护装置，二者可通过控制系统实现联锁。通常，当操作者双手未同时按压操纵按钮，或安全光栅检测到人体进入危险区域时，控制系统会立即切断动力，使滑块停止运动，从而避免事故。具体联锁逻辑依设备设计及安全标准而定。"
+}

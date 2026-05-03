@@ -1,0 +1,15 @@
+{
+  "task_id": "mfg-028",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 30.683187199989334,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 1512,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "工业机器人安全停止类别主要包括：紧急停止（E-stop）和安全停止（可控停止）。紧急停止用于立即切断动力源，使机器人快速停止；安全停止则通过受控减速确保机器人平稳、安全地停在预定位置。根据ISO 13849-1，安全相关控制系统按性能等级（PL）分为a~e级，紧急停止通常要求PL≥c，安全停止类似。\n\n急停回路设计要求包括：采用硬接线独立于控制电路；使用红色蘑菇头按钮，带自锁和手动复位；回路应为常闭触点，断开时切断所有危险能源；具备声光指示；定期测试；符合GB/T 16855等标准。"
+}

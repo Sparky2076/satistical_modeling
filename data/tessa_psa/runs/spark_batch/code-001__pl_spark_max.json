@@ -1,0 +1,15 @@
+{
+  "task_id": "code-001",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 6.004145599988988,
+  "usage": {
+    "input_tokens": 80,
+    "output_tokens": 274,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "浅拷贝（shallow copy）创建新对象，但嵌套的可变对象仍保持引用，修改嵌套对象会影响原对象。深拷贝（deep copy）递归复制所有层级，生成完全独立的副本。当需要完全独立的对象副本，尤其是包含多层嵌套可变对象时，应使用 `copy.deepcopy`。注意：深拷贝可能较慢，且对循环引用或不可 pickle 的对象会失败。"
+}

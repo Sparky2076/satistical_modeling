@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-038",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 24.24292509999941,
+  "usage": {
+    "input_tokens": 113,
+    "output_tokens": 796,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "不正确的是D。湿性坏疽边界不清，而干性坏疽才界限清楚。"
+}

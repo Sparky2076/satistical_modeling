@@ -1,0 +1,15 @@
+{
+  "task_id": "code-011",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 21.479291900002863,
+  "usage": {
+    "input_tokens": 76,
+    "output_tokens": 595,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 结构子类型的严格程度：\n  - ABC：仅“名义”子类型。要被视为子类型，通常必须显式继承自该ABC；仅实现相同方法并不足够。\n  - typing.Protocol：结构化（“鸭式”）子类型。只要类在运行时具备协议所列的方法/属性并能被成功调用，即被视为满足协议；无需显式继承或声明实现。\n\n- 运行时语义：\n  - ABC：可实例化；可包含具体实现、字段、抽象方法；用于定义可复用的基类与接口契约。\n  - Protocol：默认不可实例化；仅描述“接口”契约；不承载实现细节。Python 3.8+支持@runtime_checkable，可用isinstance/issubclass作运行时结构检查。\n\n- 适用场景：\n  - ABC：当你想强制“名义上”的继承关系、提供共用基类/默认实现、确保类型层级清晰时。\n  - Protocol：用于跨库/框架的“结构等价”类型，如文件类对象、迭代器、上下文管理器等；更适合“混入”多个接口、对第三方类进行静态类型标注。\n\n- 其他差异要点：\n  - 多重继承/实现：类可同时继承一个ABC并实现多个Protocol；Protocol更倾向于“实现多个接口”的风格。\n  - 协变/逆变：二者在TypeVar的约束中均可使用，但Protocol更常用于定义灵活的结构边界。\n  - 冲突处理：若同名方法在多个Protocol间不一致，静态检查器可能报错；ABC因名义性更强，冲突相对更少。\n\n- 示例简述：\n  - ABC：class C(AbcBase): ...；未继承则不被当作子类型。\n  - Protocol：class C: def m(self): ...；即使未声明实现MyProtocol，只要m存在并通过调用检查，即被视为满足。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-043",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 6.648569899989525,
+  "usage": {
+    "input_tokens": 111,
+    "output_tokens": 276,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "D"
+}

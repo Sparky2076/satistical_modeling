@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-009",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 6.848582199978409,
+  "usage": {
+    "input_tokens": 97,
+    "output_tokens": 353,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "咽分为鼻咽、口咽和喉咽三部分，因此正确答案为B、C、D。"
+}

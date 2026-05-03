@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-026",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 32.542484399979,
+  "usage": {
+    "input_tokens": 175,
+    "output_tokens": 790,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "答案：D。解析：三枚硬币共有8种等可能结果。全正或全反（乙赢）的情况有2种，概率为2/8=1/4；出现两正一反或两反一正（甲赢）的情况有6种，概率为6/8=3/4。设乙每次给甲x元，甲每次给乙10元。从长远看，甲的期望收益应≥0，即(1/4)×x − (3/4)×10 ≥ 0，解得x ≥ 30。因此甲应要求乙每次至少给30元，选D。"
+}

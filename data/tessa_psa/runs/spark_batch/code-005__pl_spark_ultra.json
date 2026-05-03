@@ -1,0 +1,15 @@
+{
+  "task_id": "code-005",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 13.943765700008953,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 429,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "基本模式：\n- 定义一个生成器函数，用 @contextmanager 装饰。\n- 在 yield 之前做“进入/获取资源”的准备；把要暴露给 with 的对象用 yield 返回。\n- 在 yield 之后做“退出/释放资源”的清理，通常放在 finally 中，保证即使发生异常也会执行。\n\n最简模板：\n```python\nfrom contextlib import contextmanager\n\n@contextmanager\ndef cm():\n    # 进入：准备/获取资源\n    resource = ...\n    try:\n        yield resource  # 将此对象暴露给 `as` 绑定\n    finally:\n        # 退出：清理/释放资源（应尽量幂等）\n        ...\n\n# 使用\nwith cm() as r:\n    # 使用 r；离开 with 块后自动执行 finally 清理\n    ...\n```\n\n要点：\n- yield 只能出现一次；with 块内的代码运行在 yield 之后。\n- 如果需要在遇到特定异常时“抑制”异常，可在 except 中处理并不重新抛出；其他异常会正常向外传播。\n- 若需动态数量的资源，可用 ExitStack 组合多个上下文。\n- 避免在 finally 中抛出新的异常，以免掩盖原始错误。\n- 具体行为以 Python 官方文档为准。"
+}

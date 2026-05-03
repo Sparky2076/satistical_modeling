@@ -1,0 +1,15 @@
+{
+  "task_id": "code-015",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 13.182256200001575,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 753,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`enum.Enum` 与 `IntEnum` 的核心差异在于成员是否自动携带整数值，以及比较行为的不同。\n\n### 典型使用差异\n| 特性 | `enum.Enum` | `IntEnum` |\n|------|-------------|-----------|\n| **值来源** | 需手动赋值（如 `A = 1`）或依赖顺序 | 自动按定义顺序分配整数（第1个=0，第2个=1…） |\n| **比较能力** | 只能与其他枚举成员比较相等性 | 可直接与整数比较（如 `if x == 5:`） |\n| **类型转换** | 无内置整数转换方法 | 可用 `int(member)` 获取底层整数值 |\n| **适用场景** | 需要语义化名称、无需数值运算时 | 需要同时保留名称和整数值的场景（如状态码、标志位） |\n\n### 示例代码\n```python\nfrom enum import Enum, IntEnum\n\n# 普通枚举：需显式赋值\nclass Color(Enum):\n    RED = 1\n    GREEN = 2\n    BLUE = 3\n\n# IntEnum：自动分配整数值\nclass Status(IntEnum):\n    PENDING = 0      # 实际值为0\n    APPROVED = 1     # 实际值为1\n    REJECTED = 2     # 实际值为2\n\n# 关键区别演示\nprint(Color.RED)        # <Color.RED: 1>\nprint(Status.PENDING)   # <Status.PENDING: 0>\n\n# IntEnum支持直接与整数比较\nif Status.APPROVED == 1:\n    print(\"已批准\")\n\n# 转换为整数\nprint(int(Status.REJECTED))  # 输出: 2\n```\n\n### 选择建议\n- 优先用 `Enum`：当仅需区分不同类别，且不需要数值计算时。\n- 优先用 `IntEnum`：当需要将枚举作为整数常量使用（如配置参数、硬件寄存器映射）。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-019",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 37.60045040000114,
+  "usage": {
+    "input_tokens": 138,
+    "output_tokens": 1308,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "应征收个人所得税的是选项D。"
+}

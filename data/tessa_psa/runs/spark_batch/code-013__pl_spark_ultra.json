@@ -1,0 +1,15 @@
+{
+  "task_id": "code-013",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 13.851011399994604,
+  "usage": {
+    "input_tokens": 79,
+    "output_tokens": 377,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- raise ... from None：显式切断异常链，将“原因”设为 None。表示当前异常不是由另一个异常直接引发，而是独立问题；输出堆栈时通常看不到此前的 traceback。\n- raise ... from e：将当前异常的原因显式绑定到另一个异常实例 e，形成“异常链”。解释器会打印“During handling of the above exception, another exception occurred”并显示两条独立的 traceback（先当前，再 e）。\n- 等价形式：except ... as e: raise X() from e 等同于 except ... as e: exc = X(); exc.__cause__ = e; raise exc。\n- 若既想保留原始异常又不显示长链，可用 raise ... from None 来“抑制”中间包装；但一旦显式设置 __cause__（例如通过 from e），就不会再被 __suppress_context__ 覆盖。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-031",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 7.538280700013274,
+  "usage": {
+    "input_tokens": 109,
+    "output_tokens": 224,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "B.近光灯"
+}

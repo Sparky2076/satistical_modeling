@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-042",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 18.935757600003853,
+  "usage": {
+    "input_tokens": 115,
+    "output_tokens": 607,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "C.外部动机和内部动机"
+}

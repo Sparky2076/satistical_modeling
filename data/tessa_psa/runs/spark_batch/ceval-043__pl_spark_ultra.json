@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-043",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 7.844882800010964,
+  "usage": {
+    "input_tokens": 106,
+    "output_tokens": 223,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "这是**B.综合课程**。  \n\n解析：综合课程的核心特征是打破传统单科课程的界限，将多个学科的内容整合为一门新课程，强调学科间的关联性与整体性。其他选项中，A.活动课程以学生兴趣和活动为中心，非学科融合；C.学科课程是分科设置的传统课程；D.必修课程是按修习要求划分的类型，与“多学科融合”无关。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-032",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 25.087103800004115,
+  "usage": {
+    "input_tokens": 102,
+    "output_tokens": 1128,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "供给曲线一般向右上方倾斜，斜率为正，因此选项A和C均正确。"
+}

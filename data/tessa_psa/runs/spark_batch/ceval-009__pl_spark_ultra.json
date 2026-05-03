@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-009",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 10.285174999997253,
+  "usage": {
+    "input_tokens": 114,
+    "output_tokens": 337,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在虚拟页式存储管理中，**缺页中断处理**完成将页面调入内存的工作。  \n\n### 选项分析：  \n- **A. 文件读写**：是普通文件数据的操作，与“缺页时的页面调入”无直接关联。  \n- **B. 页面淘汰过程**：负责将内存中不用的页面换出到外存，而非调入。  \n- **C. 页面工作集处理**：用于确定进程当前所需的页面集合，不直接执行调入操作。  \n- **D. 缺页中断处理**：当访问的页面不在内存（缺页）时，触发缺页中断，由操作系统通过该流程将目标页面从外存调入内存。  \n\n\n答案：D"
+}

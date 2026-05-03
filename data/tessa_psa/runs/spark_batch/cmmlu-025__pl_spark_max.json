@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-025",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 35.63261670002248,
+  "usage": {
+    "input_tokens": 95,
+    "output_tokens": 1280,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "B.一体化经济"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-009",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 11.122043499985011,
+  "usage": {
+    "input_tokens": 75,
+    "output_tokens": 326,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- groupby 只对“连续”的相同键分组。若数据未按分组键排序，相同值可能分散，导致被分到不同组。\n- 因此，若目标是“按某字段聚合”，通常先用 sort(key=…) 或 sorted(…, key=…) 再传给 groupby。\n- 例外：当数据本身已按该键有序，或你只想对“当前连续段”做流式处理（不求全局聚合），可直接用 groupby。\n- 不想排序也可改用集合/字典计数等结构，但那就不是 groupby 的分组语义了。"
+}

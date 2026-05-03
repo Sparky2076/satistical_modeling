@@ -1,0 +1,15 @@
+{
+  "task_id": "code-013",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 8.9600969000021,
+  "usage": {
+    "input_tokens": 79,
+    "output_tokens": 372,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 异常链中：\n\n- **`raise ... from e`**：将 `e` 设为当前异常的 `__cause__`，形成因果链。`e` 会被记录到 `__context__`，traceback 会显示两层异常。\n\n- **`raise ... from None`**：显式将 `__cause__` 置为 `None`，切断因果链。虽然语法上用了 `from`，但实际没有底层原因，traceback 只显示一层。\n\n简单说：`from e` 建立因果，`from None` 清空因果。"
+}

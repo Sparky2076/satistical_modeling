@@ -1,0 +1,15 @@
+{
+  "task_id": "code-008",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 13.849502500001108,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 418,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 面向对象：用 Path 对象而非字符串，语义更清晰，链式调用简洁（如 Path('a')/'b'/'c'）。\n- 跨平台与安全：自动使用正确分隔符，减少手写 os.sep；多数方法自动处理转义与特殊字符。\n- 丰富 API：内置读写文件、遍历、匹配、比较、权限/元数据等方法，少依赖外部函数。\n- 运算符友好：支持 / 拼接、== 比较，代码更直观。\n- 类型与可读性：便于静态类型检查，结构清晰，易于封装与复用。\n- 异常更明确：常见文件操作在出错时抛出 OSError，利于精确捕获与处理。\n- 与现代 Python 配合更好：与 f-string、类型提示等协同，提升可维护性。"
+}

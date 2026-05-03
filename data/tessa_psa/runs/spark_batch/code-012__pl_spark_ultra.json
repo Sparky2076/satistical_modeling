@@ -1,0 +1,15 @@
+{
+  "task_id": "code-012",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 15.423226099985186,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 471,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- Logger（记录器）\n  - 职责：应用侧的日志“入口”，提供 debug/info/warn/error 等接口，按名称组织（常为层级/父子关系）。\n  - 决定：是否记录某条日志（级别过滤）、这条日志要交给哪些 Handler 处理（通过 addHandler/setHandler、过滤器）。\n  - 不负责：具体写到哪（文件/网络/控制台）或格式怎么排。\n\n- Handler（处理器）\n  - 职责：把日志“写出”到某个目标（如文件、socket、队列、控制台、邮件/告警等）。\n  - 决定：何时写、写到哪里、并发/缓冲/滚动策略；可设置 Level/Filter 来进一步筛选。\n  - 不负责：单条日志内容的最终字符串形式。\n\n- Formatter（格式化器）\n  - 职责：将 LogRecord（时间、级别、logger名、线程、模块行号、异常信息、MDC/NDC 等）组装成最终展示/落盘的字符串格式。\n  - 绑定在 Handler 上，一个 Handler 通常配一个 Formatter。\n\n协作流程（典型链路）：\n1) 应用调用 logger.info(...) → 生成 LogRecord；\n2) Logger 进行级别/过滤器判定，若通过则发布；\n3) 遍历该 Logger 的所有 Handler，各 Handler 用其 Formatter 格式化 LogRecord，并写入对应目标。"
+}

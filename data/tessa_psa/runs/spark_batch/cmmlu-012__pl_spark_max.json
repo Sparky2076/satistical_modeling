@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-012",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 9.076495999994222,
+  "usage": {
+    "input_tokens": 90,
+    "output_tokens": 313,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "B.艺术作品"
+}

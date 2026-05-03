@@ -1,0 +1,15 @@
+{
+  "task_id": "code-016",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 26.41367939999327,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 606,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 可变对象不能哈希：list/dict/set 不能作为 Counter 的键；需转为 tuple/frozenset/str。\n- 浮点与 NaN：float/numpy.float64 可哈希但 NaN != NaN，会导致“看似相同”的数值不被合并；应先离散化/四舍五入，或用 math.isnan 过滤。\n- missing → 0：Counter 对不存在的键返回 0 而不是 KeyError，注意 if k in c 再访问 c[k]，避免后续逻辑误以为存在。\n- update 是累加：c.update(iterable) 会增加而非替换；要重置请用 c.clear() 或重新赋值。\n- 视图与快照：elements()/most_common() 基于当前状态；迭代中修改 Counter 可能导致漏项/重复；需要快照可 list(c.items())。\n- 交集/差集按最小值：&/- 依据计数取 min/逐键相减，可能把正数变成 0；期望集合语义可用 dict 方法过滤。\n- 排序不稳定：most_common(n) 同频顺序不确定；如需稳定，用 sorted(c.items(), key=lambda x: (-x[1], x[0]))。\n- 输入为字符串：Counter(string) 会按字符计数；要词频请先分词。\n- 负值与 None：支持负值（可用于增减），但 None 不可哈希，不能作键。\n- 内存：数据种类多时 Counter 比 .count() 更占内存；超大样本可考虑分块统计或使用工具库。"
+}

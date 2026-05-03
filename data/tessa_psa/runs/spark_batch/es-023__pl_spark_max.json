@@ -1,0 +1,15 @@
+{
+  "task_id": "es-023",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 6.589513500002795,
+  "usage": {
+    "input_tokens": 93,
+    "output_tokens": 351,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "缺陷产品召回信息发布需与消费者权益保护紧密衔接，核心在于通过充分、准确的信息披露，保障消费者知情权，并落实召回中的退换货、补偿等权益保障措施。企业应严格以税务机关、监管机关发布的最新规定及合同文本约定为执行依据，不得擅自解读或偏离；涉及专业审计、法律风险评估等事项，需委托具备资质的机构出具意见，不可替代专业判断。"
+}

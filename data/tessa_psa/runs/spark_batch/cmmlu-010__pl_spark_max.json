@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-010",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 8.250001900014468,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 211,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "B. 延髓"
+}

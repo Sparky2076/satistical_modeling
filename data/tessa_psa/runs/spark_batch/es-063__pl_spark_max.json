@@ -1,0 +1,15 @@
+{
+  "task_id": "es-063",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 16.866472400011844,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 660,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据工业和信息化部等部门发布的《服务型制造标准体系建设指南》及历年“服务型制造示范企业”遴选通知，通常要求企业的“服务收入”占营业收入的比重不低于 **30%**。\n\n但请注意，不同行业、不同批次的遴选通知可能会有细微差异。因此，企业在申报前，务必以最新发布的官方遴选文件为准。同时，请以税务机关、监管机关及合同文本为最终依据，避免替代专业审计或法律意见。"
+}

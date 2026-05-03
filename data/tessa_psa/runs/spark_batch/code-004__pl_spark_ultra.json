@@ -1,0 +1,15 @@
+{
+  "task_id": "code-004",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 12.691094099980546,
+  "usage": {
+    "input_tokens": 77,
+    "output_tokens": 412,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 内存：\n  - 列表推导式会一次性把所有结果存成一个列表，占用 O(n) 内存。\n  - 生成器表达式不预先生成全部元素，按迭代需求逐个产生，几乎不额外占用集合内存（只有迭代时的状态）。\n\n- 惰性求值：\n  - 列表推导式是急切求值：循环与条件立刻执行，先构建完整列表再返回。\n  - 生成器表达式是惰性求值：只返回一个生成器对象，元素在每次 `next()`/`for` 推进时才计算；可配合 `sum`/`max`/`any`/`all`/`sorted` 等提前终止。\n\n- 典型用法：\n  - 列表推导式：`[x*x for x in range(10) if x%2==0]`\n  - 生成器表达式：`(x*x for x in range(10) if x%2==0)`\n\n- 选择建议：\n  - 数据量小或后续需多次索引/复用，用列表推导式。\n  - 数据量大、流式处理或只需一次遍历，用生成器表达式以节省内存。"
+}

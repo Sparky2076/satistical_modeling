@@ -11,7 +11,7 @@ pl_glm_47,GLM,glm-4.7,standard,short,2048,0.2,Zhipu GLM flagship
 pl_glm_47_flashx,GLM,glm-4.7-flashx,standard,short,2048,0.2,Zhipu GLM faster variant
 pl_kimi_k26,Kimi,kimi-k2.6,standard,short,2048,0.2,Kimi latest flagship
 pl_kimi_k25,Kimi,kimi-k2.5,standard,short,2048,0.2,Kimi previous stable model
-pl_spark_ultra,Spark,4.0Ultra,standard,short,2048,0.2,iFlytek Spark Ultra
-pl_spark_max,Spark,generalv3.5,standard,short,2048,0.2,iFlytek Spark Max
+pl_spark_ultra,Spark,spark-x2,standard,short,2048,0.2,iFlytek Spark Ultra
+pl_spark_max,Spark,spark-x2flash,standard,short,2048,0.2,iFlytek Spark Max
 pl_baidu_ernie_45_32k,Baidu,ernie-4.5-turbo-32k,standard,short,2048,0.2,Baidu Qianfan ERNIE 4.5 Turbo 32K
 pl_baidu_ernie_45_128k,Baidu,ernie-4.5-turbo-128k,standard,short,2048,0.2,Baidu Qianfan ERNIE 4.5 Turbo 128K

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-040",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 19.757834999996703,
+  "usage": {
+    "input_tokens": 130,
+    "output_tokens": 724,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "不正确的是D。维生素B6缺乏通常不会导致口角炎，口角炎多见于维生素B2缺乏。"
+}

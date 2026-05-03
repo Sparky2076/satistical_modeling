@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-032",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 42.407421300013084,
+  "usage": {
+    "input_tokens": 102,
+    "output_tokens": 1458,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "供给曲线在一般情况下向右上方倾斜，斜率为正。因此正确答案是A和C。"
+}

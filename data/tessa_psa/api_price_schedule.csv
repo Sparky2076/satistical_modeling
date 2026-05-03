@@ -21,7 +21,7 @@ GLM,glm-4.7,standard,0.6,0.11,2.2,,200000,2026-05-03,https://docs.z.ai/guides/ov
 GLM,glm-4.7-flashx,standard,0.07,0.01,0.4,,200000,2026-05-03,https://docs.z.ai/guides/overview/pricing,Official_USD_per_1M
 Kimi,kimi-k2.6,standard,0.95,0.16,4.00,,256000,2026-05-03,https://platform.moonshot.ai/,Official_USD_per_1M
 Kimi,kimi-k2.5,standard,0.60,0.10,3.00,,256000,2026-05-03,https://platform.moonshot.ai/,Official_USD_per_1M
-Spark,4.0Ultra,standard,7.5,0,7.5,,32000,2026-05-03,https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html,CNY_fx7.20_verify_console
-Spark,generalv3.5,standard,3.19444444,0,3.19444444,,8192,2026-05-03,https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html,CNY_fx7.20_verify_console
+Spark,spark-x2,standard,0.55555556,0,1.66666667,,128000,2026-05-03,https://maas.xfyun.cn/,CNY_fx7.20_official_MaaS
+Spark,spark-x2flash,standard,0.13888889,0,0.27777778,,192000,2026-05-03,https://maas.xfyun.cn/,CNY_fx7.20_official_MaaS
 Baidu,ernie-4.5-turbo-32k,standard,0.11111111,0.02777778,0.44444444,,32000,2026-05-03,https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya,CNY_fx7.20
 Baidu,ernie-4.5-turbo-128k,standard,0.11111111,0.02777778,0.44444444,,128000,2026-05-03,https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya,CNY_fx7.20

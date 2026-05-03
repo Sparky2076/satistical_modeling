@@ -1,0 +1,15 @@
+{
+  "task_id": "code-020",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 34.354948799998965,
+  "usage": {
+    "input_tokens": 79,
+    "output_tokens": 981,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 语义不同：\n  - TypedDict：声明“字典的结构/契约”（键必须存在，类型固定），面向接口/数据形状，运行时不产生新类。\n  - dataclass：定义“一个具体对象”，有构造器、可变状态，主要用于业务实体/领域模型。\n\n- 校验与约束：\n  - TypedDict：仅静态检查；运行时需 mypy/pyright 或 pydantic/typeguard 等才能做校验。总体积层/不可变语义（Total=True）表达力强。\n  - dataclass：实例化时自动校验字段；可自定义 __post_init__；天然支持可变/不可变两种风格。\n\n- 灵活性与功能：\n  - TypedDict：无方法/继承/默认值（只能用 PEP 695 的 Defaults|Required|NotRequired，且生态支持不一）；适合“结构化 dict”的契约。\n  - dataclass：支持方法、继承、私有字段、@field(default_factory)、dataclasses.asdict/replace/frozen=True 等；适合复杂业务对象。\n\n- 可选字段：\n  - TypedDict：用 NotRequired/Required 精确表达哪些键可选；对“缺失键”的刻画更准确。\n  - dataclass：用 typing.Optional[T]/Field(default=...)；表达“缺省值/可空”更自然。\n\n- 继承：\n  - TypedDict：支持继承/多继承合并项，但各实现行为略有差异；IDE 补全有时不稳定。\n  - dataclass：继承按常规 OOP 规则工作，更可预测。\n\n- 运行时开销/性能：\n  - TypedDict：通常零开销（只有类型信息）。\n  - dataclass：每次创建实例有固定开销；高频临时字典场景略重。\n\n- JSON/序列化与生态：\n  - TypedDict：常用于 type-aware 的数据模式描述；与消息/事件契约契合；运行时序列化仍需 pydantic/marshmallow 等。\n  - dataclass：与 asdict/replace/frozen 结合紧密；pydantic/mashumaro/attrs 等都能很好支持。\n\n- 何时选谁：\n  - 选 TypedDict：你只关心“字典的形状/契约”，希望强制键存在并被静态检查；作为 API/消息/配置的模式；不需要方法/继承/可变状态。\n  - 选 dataclass：你需要对象能力（方法、业务逻辑、封装）、默认值/工厂、继承、不可变/替换语义；或者需要成熟的运行时校验/序列化框架。\n\n- 折中方案：\n  - 对外契约用 TypedDict；内部建模用 dataclass，必要时提供 from_dict/to_dict 转换。\n  - 若既要运行时校验又要“像 dict”的使用方式，可用 TypedDict + pydantic/typeguard。"
+}

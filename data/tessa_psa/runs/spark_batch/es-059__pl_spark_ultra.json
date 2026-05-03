@@ -1,0 +1,15 @@
+{
+  "task_id": "es-059",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 12.392328599991743,
+  "usage": {
+    "input_tokens": 91,
+    "output_tokens": 307,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "产业基础再造工程重点支持以下领域（具体以当年官方发布为准）：\n1. 基础材料与核心元器件；\n2. 智能制造装备与工业母机；\n3. 工业软件与关键算法；\n4. 绿色制造基础工艺；\n5. 质量基础设施（NQI）；\n6. 产业链供应链协同平台。\n\n特别提示：政策适用请以税务机关、监管部门正式文件及项目合同条款为准，本答复不构成专业审计或法律意见，重大决策前建议咨询持牌机构。"
+}

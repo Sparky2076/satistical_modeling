@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-029",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 12.777391899988288,
+  "usage": {
+    "input_tokens": 126,
+    "output_tokens": 538,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是：**A. 蜻蜓低飞——雨天**"
+}

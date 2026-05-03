@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-011",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 8.069125799986068,
+  "usage": {
+    "input_tokens": 99,
+    "output_tokens": 238,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "答案：C. 弹拨乐\n\n解析：《十面埋伏》是经典琵琶独奏曲，而琵琶属于中国传统弹拨乐器（通过手指或拨片拨弦发声）。其他选项中，管乐以气流振动发声（如笛、笙），打击乐以敲击发声（如鼓、锣），弦乐多指定弦类拉弦乐器（如二胡、京胡），均不符合。"
+}

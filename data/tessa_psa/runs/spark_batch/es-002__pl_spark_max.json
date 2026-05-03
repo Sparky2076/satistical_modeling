@@ -1,0 +1,15 @@
+{
+  "task_id": "es-002",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 7.924036700002034,
+  "usage": {
+    "input_tokens": 99,
+    "output_tokens": 437,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在高新技术企业认定中，知识产权与研发费用的匹配性指知识产权（如专利）应源于企业自主研发活动，且研发费用（如人员工资、材料费）应合理支撑这些知识产权的开发。匹配性需确保知识产权数量、质量和研发费用规模及用途一致，避免脱节。\n\n企业应以税务机关、监管机关（如科技部）的最新指南及合同文本为准，进行合规评估。避免依赖非专业审计或法律意见，必要时咨询注册会计师或律师。"
+}

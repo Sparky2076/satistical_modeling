@@ -1,0 +1,11 @@
+{
+  "task_id": "cmmlu-029",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 0.1267148999904748,
+  "usage": {},
+  "error": "HTTP 500: {\"error\":{\"message\":\"AppIdNoAuthError (sid: cha000deb15@dx19dee7447bab81a152)\",\"type\":\"api_error\",\"param\":null,\"code\":\"11200\"}}",
+  "response_text": null
+}

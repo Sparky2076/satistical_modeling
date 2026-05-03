@@ -1,0 +1,15 @@
+{
+  "task_id": "code-006",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 15.524026500002947,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 486,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 任务类型：I/O 密集（网络/磁盘/数据库）优先 ThreadPoolExecutor；CPU 密集且可并行计算优先 ProcessPoolExecutor。\n- GIL 影响：Python 线程受 GIL 限制，CPU 密集任务无法真正并行；进程各自有 GIL，可实现多核并行。\n- 资源与开销：线程轻量、启动快；进程内存占用更高、序列化/IPC 成本更大。\n- 共享状态：线程可共享内存，需锁；进程不共享，靠队列/管道/Manager，设计更复杂。\n- 适合的场景：\n  - ThreadPoolExecutor：高并发请求、阻塞 I/O、异步回调整合。\n  - ProcessPoolExecutor：数值计算、图像处理等 CPU 密集，或避免 GIL 的 C 扩展并行。\n- 依赖/生态：\n  - ThreadPoolExecutor 支持 asyncio.Event loop；ProcessPoolExecutor 不支持在子进程中使用同一事件循环。\n- 性能经验法则：若“等待时间/工作时间”远大于 1，用线程；若工作任务较长且 CPU 占用高，用进程。\n- 限制与注意：\n  - ProcessPoolExecutor 要求任务函数及其参数可被 pickle；返回值也会被 pickle。\n  - 进程池不宜过多（通常不超过 CPU 核数），避免过度切换与内存膨胀。\n- 替代方案：超高性能 I/O 可用 asyncio；对 CPU 密集且不可并行的任务，考虑 multiprocessing 或分布式框架。\n- 简化决策：先测单线程/单进程，再按“是否 I/O 密集”“是否受 GIL 影响”二选一；必要时混合（I/O 用线程，CPU 用进程）。"
+}

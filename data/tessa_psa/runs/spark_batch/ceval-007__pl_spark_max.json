@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-007",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 13.699766000005184,
+  "usage": {
+    "input_tokens": 120,
+    "output_tokens": 485,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "D"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-018",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 9.18875509998179,
+  "usage": {
+    "input_tokens": 79,
+    "output_tokens": 448,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "match-case 相比 if-elif 链在以下场景更具可读性：\n\n**1. 多分支匹配时结构更清晰**\n```python\n# match-case\nmatch status:\n    case \"active\": print(\"运行中\")\n    case \"inactive\": print(\"已停止\")\n    case \"pending\": print(\"待处理\")\n\n# if-elif\nif status == \"active\":\n    print(\"运行中\")\nelif status == \"inactive\":\n    print(\"已停止\")\nelif status == \"pending\":\n    print(\"待处理\")\n```\n\n**2. 模式匹配（解构、类型检查）更直观**\n```python\n# match-case\nmatch point:\n    case (0, 0): print(\"原点\")\n    case (x, 0) if x > 0: print(f\"X轴正半轴({x})\")\n    case (0, y) if y > 0: print(f\"Y轴正半轴({y})\")\n```\n\n**3. 新增/删除分支不影响原有逻辑**\n- match-case 的每个 case 是独立的，修改某个分支不会意外影响其他分支\n- if-elif 链需要重新检查所有条件，容易遗漏边界情况\n\n**4. 复杂条件组合更易维护**\n当需要同时匹配值和条件时，match-case 将模式与守卫条件整合在同一层级，视觉上更紧凑。"
+}

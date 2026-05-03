@@ -1,0 +1,15 @@
+{
+  "task_id": "code-012",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 7.856102499994449,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 368,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python logging 模块中：\n\n- **Logger（日志记录器）**：负责生成日志消息，设置日志级别，并将日志事件传递给关联的处理器。它提供接口供应用程序代码调用，如 `logger.info()`。\n- **Handler（处理器）**：决定日志输出的目标位置，如文件、控制台或网络等。它可以设置自己的日志级别，对来自父 Logger 的事件进行过滤。\n- **Formatter（格式化器）**：定义日志消息的格式，例如包含时间戳、日志级别和消息内容。它将日志记录对象转换为字符串。\n\n三者协同工作：Logger 产生日志记录，Handler 将其发送到指定目标，Formatter 将记录格式化为可读文本。"
+}

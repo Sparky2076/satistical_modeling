@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-036",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 11.617168400000082,
+  "usage": {
+    "input_tokens": 102,
+    "output_tokens": 381,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 D. 胰岛素。"
+}

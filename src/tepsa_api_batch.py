@@ -393,15 +393,34 @@ def call_spark_chat(
     max_tokens: int,
     temperature: float,
 ) -> tuple[str | None, dict[str, int], str | None]:
-    key = os.environ.get("SPARK_API_KEY", "").strip() or os.environ.get("XFYUN_API_PASSWORD", "").strip()
-    if not key:
-        return None, {}, "SPARK_API_KEY or XFYUN_API_PASSWORD not set"
-    base = os.environ.get("SPARK_BASE_URL", "https://spark-api-open.xf-yun.com/v1").rstrip("/")
+    # Spark X2 与 X2-flash 使用不同的 base_url、不同的 key、但 model 参数都填 spark-x
+    mid = model_id.lower()
+    if "x2flash" in mid:
+        key = os.environ.get("SPARK_MAX_API_KEY", "").strip()
+        if not key:
+            return None, {}, "SPARK_MAX_API_KEY not set"
+        base = "https://spark-api-open.xf-yun.com/agent/v1"
+        actual_model = "spark-x"
+    elif "x2" in mid:
+        key = os.environ.get("SPARK_ULTRA_API_KEY", "").strip()
+        if not key:
+            return None, {}, "SPARK_ULTRA_API_KEY not set"
+        base = "https://spark-api-open.xf-yun.com/x2"
+        actual_model = "spark-x"
+    else:
+        key = (
+            os.environ.get("SPARK_API_KEY", "").strip()
+            or os.environ.get("XFYUN_API_PASSWORD", "").strip()
+        )
+        if not key:
+            return None, {}, "SPARK_API_KEY or XFYUN_API_PASSWORD not set"
+        base = os.environ.get("SPARK_BASE_URL", "https://spark-api-open.xf-yun.com/v1").rstrip("/")
+        actual_model = model_id
     return _call_openai_compatible_chat(
         provider_name="Spark",
         api_key=key,
         base_url=base,
-        model_id=model_id,
+        model_id=actual_model,
         user_text=user_text,
         system=system,
         max_tokens=max_tokens,

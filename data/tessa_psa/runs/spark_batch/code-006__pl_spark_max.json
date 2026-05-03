@@ -1,0 +1,15 @@
+{
+  "task_id": "code-006",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 9.681504299980588,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 547,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "**线程池（ThreadPoolExecutor）与进程池（ProcessPoolExecutor）选型要点：**\n\n1. **任务类型**  \n   - **CPU密集型任务**（如数值计算、图像处理）：优先选`ProcessPoolExecutor`，利用多核并行，绕过GIL限制。  \n   - **I/O密集型任务**（如网络请求、文件读写）：优先选`ThreadPoolExecutor`，线程切换开销小，避免进程间通信延迟。\n\n2. **资源开销**  \n   - `ThreadPoolExecutor`共享内存，创建/销毁成本低，适合高频短任务。  \n   - `ProcessPoolExecutor`独立内存空间，启动/通信开销大，适合低频长任务。\n\n3. **数据共享需求**  \n   - 需频繁共享数据且要求同步简单：`ThreadPoolExecutor`。  \n   - 需隔离数据或跨进程通信：`ProcessPoolExecutor`。\n\n4. **兼容性**  \n   - Windows系统下`multiprocessing`模块需`if __name__ == '__main__'`保护，而`ThreadPoolExecutor`无此限制。\n\n**总结**：根据任务特性权衡，CPU密集用进程，I/O密集用线程，同时考虑系统环境与代码复杂度。"
+}

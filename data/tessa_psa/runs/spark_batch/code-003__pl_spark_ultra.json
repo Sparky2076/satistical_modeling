@@ -1,0 +1,15 @@
+{
+  "task_id": "code-003",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 13.809545199997956,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 393,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 是否修改原对象：\n  - list.sort()：对原列表就地排序，原列表被修改，返回 None。\n  - sorted()：不修改原可迭代对象，返回一个新的已排序列表。\n- 返回值：\n  - list.sort()：返回 None。\n  - sorted()：返回新列表。\n- 适用对象：\n  - list.sort()：仅适用于列表。\n  - sorted()：可用于任何可迭代对象（列表、元组、字符串、字典键等）。\n- 何时使用：\n  - 想在原列表上直接排序，用 list.sort()。\n  - 需要保留原顺序并得到排序结果，用 sorted()。\n- 共同点与示例：\n  - 都支持 key、reverse 等参数。\n  - 示例：\n    - a = [3,1,2]; b = sorted(a); # a 仍为 [3,1,2]，b 为 [1,2,3]\n    - a.sort(); # a 变为 [1,2,3]，无返回值"
+}

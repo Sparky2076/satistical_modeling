@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-026",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 12.937293599999975,
+  "usage": {
+    "input_tokens": 175,
+    "output_tokens": 820,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "甲的期望收益为 \\(E = \\frac{1}{4}x + \\frac{3}{4}(-10) = \\frac{x-30}{4}\\)。令 \\(E \\ge 0\\) 得 \\(x \\ge 30\\)，故甲应要求乙至少给 **30** 元。\n\n答案：D.30"
+}

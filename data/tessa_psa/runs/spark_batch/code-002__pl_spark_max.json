@@ -1,0 +1,15 @@
+{
+  "task_id": "code-002",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 14.62756230001105,
+  "usage": {
+    "input_tokens": 80,
+    "output_tokens": 709,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "Python 的全局解释器锁（GIL）是一个互斥锁，确保同一时刻只有一个线程执行 Python 字节码。对于 CPU 密集型任务，多线程无法实现真正的并行，因为所有线程都竞争同一个 GIL，只能串行执行，且线程切换带来额外开销，导致性能往往不如单线程。\n\n常见替代方案：\n- **多进程**：使用 `multiprocessing` 模块，每个进程拥有独立的 GIL，可实现真正的并行计算。\n- **释放 GIL 的扩展**：如 NumPy、Pandas 等库在内部操作时会释放 GIL，允许其他线程运行。\n- **JIT 编译器**：如 Numba、Cython，编译后的代码可以释放 GIL，支持并行。\n- **异步编程**：`asyncio` 适用于 I/O 密集型任务，对 CPU 密集型效果有限。\n- **PyPy**：其 GIL 实现更宽松，能更好地利用多核。\n\n总之，纯 Python 中避免用多线程处理 CPU 密集型任务，优先选择多进程或上述替代方案。"
+}

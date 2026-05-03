@@ -1,0 +1,15 @@
+{
+  "task_id": "mfg-017",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 20.291725899995072,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 963,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据相关专项行动要求，重点排查治理以下环节：深基坑（槽）开挖与支护、高大模板支撑体系、脚手架工程、起重吊装及安装拆卸工程、高处作业平台、临时建筑物及大型机械设备等易发生坍塌事故的部位和环节。"
+}

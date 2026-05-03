@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-035",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 10.865440800000215,
+  "usage": {
+    "input_tokens": 111,
+    "output_tokens": 342,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "技术进步一般会降低生产成本或提高生产效率，使生产者在同一价格水平下愿意且能够提供更多商品或服务。这种变化表现为**供给曲线的整体右移**（选项A），而非沿原供给曲线的变动（如B、D所述）。  \n选项C涉及消费需求，与技术进步直接影响供给的逻辑无关。  \n综上，正确答案为：**A.供给曲线右移**。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-024",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 10.150404299987713,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 432,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "关税的课税客体是进出境的货物，故选A。"
+}

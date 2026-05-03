@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-041",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 30.329645099991467,
+  "usage": {
+    "input_tokens": 145,
+    "output_tokens": 1236,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是A。事件按时间顺序为：乒乓外交（1971年4月）、恢复联合国合法席位（1971年10月）、尼克松访华（1972年2月）、中日建交联合声明（1972年9月）、中美建交（1979年1月）。对应选项A（cabed）。"
+}

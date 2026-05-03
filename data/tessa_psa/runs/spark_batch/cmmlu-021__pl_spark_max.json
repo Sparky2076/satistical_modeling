@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-021",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 12.100662100012414,
+  "usage": {
+    "input_tokens": 90,
+    "output_tokens": 406,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "C.美国"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-040",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 24.04236249998212,
+  "usage": {
+    "input_tokens": 130,
+    "output_tokens": 1068,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 D。维生素 B₆ 缺乏通常不会导致口角炎，口角炎更常见于核黄素（维生素 B₂）缺乏。其他选项均正确。"
+}

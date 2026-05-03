@@ -1,0 +1,15 @@
+{
+  "task_id": "code-015",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 19.882007300009718,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 558,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 语义定位：\n  - Enum：纯命名常量；成员之间按身份（is）比较，不保证可与数字互换。\n  - IntEnum：整数值常量；成员既是枚举实例也是 int，可直接参与数值运算/比较。\n\n- 比较行为：\n  - Enum：Color.RED is Color.RED 为真；Color.RED == 1 通常为假（除非显式定义值为 1）。\n  - IntEnum：Color.RED == 1 为真；可用于 switch/链式比较，如 if status >= Status.PENDING。\n\n- 集合与字典：\n  - Enum：set/dict 以成员身份去重，适合“同名即同一常量”的场景。\n  - IntEnum：set/dict 以数值去重，易产生“同值视为相同”的非预期效果。\n\n- 典型用途：\n  - Enum：状态机/标志位/选项列表/消息类型等需要强命名约束的场景。\n  - IntEnum：需要与 C/数据库/协议中的数字常量无缝互操作（位掩码、错误码、权限掩码等）。\n\n- 注意事项：\n  - IntEnum 与 int 混用会失去“仅限预定义成员”的类型约束，需权衡安全与兼容。\n  - 避免把 IntEnum 当纯标签；若只需名字，用 Enum。\n  - 序列化/反序列化时，IntEnum 可用 int 直接读写；Enum 通常需显式映射。\n\n- 选择建议：\n  - 优先 Enum，仅在必须与整数接口兼容时选 IntEnum。\n\n- 示例要点：\n  - Enum：if x is Token.EOF: …\n  - IntEnum：flags & Perm.READ != 0；errno = ENOENT；status = codes.OK。"
+}

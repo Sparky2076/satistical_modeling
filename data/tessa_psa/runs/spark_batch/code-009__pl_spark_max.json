@@ -1,0 +1,15 @@
+{
+  "task_id": "code-009",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 6.1775913999881595,
+  "usage": {
+    "input_tokens": 75,
+    "output_tokens": 257,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "因为 `groupby` 只将**连续且相等**的元素归为一组。如果输入序列未排序，相同的元素可能出现在不同位置，导致它们被分到不同的组中，从而无法实现正确的分组。因此，在使用 `groupby` 之前，通常需要先对数据进行排序。"
+}

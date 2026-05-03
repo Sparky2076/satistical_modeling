@@ -1,0 +1,15 @@
+{
+  "task_id": "code-003",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 8.510643900022842,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 453,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`list.sort()` 和 `sorted()` 的主要区别：\n\n- **作用对象**：`sort()` 是列表的方法，只能用于列表；`sorted()` 是内置函数，适用于任何可迭代对象（如元组、字符串等）。\n- **修改方式**：`sort()` 对原列表进行原地排序，不返回新列表；`sorted()` 返回一个新的已排序列表，原数据保持不变。\n- **返回值**：`sort()` 返回 `None`；`sorted()` 返回排序后的新列表。\n- **参数**：两者都支持 `key` 和 `reverse` 参数，用法相同。"
+}

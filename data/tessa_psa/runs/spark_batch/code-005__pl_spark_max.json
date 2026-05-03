@@ -1,0 +1,15 @@
+{
+  "task_id": "code-005",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 8.521470400010003,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 368,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "contextmanager 与 with 语句配合使用的基本模式如下：\n\n1. **定义上下文管理器**（通常用生成器函数实现）：\n   ```python\n   @contextmanager\n   def my_cm():\n       # 进入 with 代码块前执行的代码（准备资源）\n       resource = acquire()\n       try:\n           yield resource  # 将资源传递给 with 代码块\n       finally:\n           # 退出 with 代码块后执行的代码（清理资源）\n           release(resource)\n   ```\n\n2. **使用 with 语句**：\n   ```python\n   with my_cm() as res:\n       # 在此使用 res（即上面 yield 返回的资源）\n       do_something(res)\n   # 退出 with 后，自动执行 finally 中的清理代码\n   ```\n\n**关键点**：\n- 生成器函数必须只 `yield` 一次，`yield` 的值即为 `with` 中 `as` 后的变量。\n- `try/finally` 确保无论是否发生异常，清理代码都会执行。\n- 适用于需要“获取-使用-释放”资源的任何场景，如文件操作、数据库连接等。"
+}

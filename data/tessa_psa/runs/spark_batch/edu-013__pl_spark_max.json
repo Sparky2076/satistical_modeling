@@ -1,0 +1,15 @@
+{
+  "task_id": "edu-013",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 15.344238299992867,
+  "usage": {
+    "input_tokens": 70,
+    "output_tokens": 655,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《中小学教材选用管理办法》，中小学教材选用委员会一般由教师代表、学科专家、教育管理人员、家长代表等组成，确保代表性和专业性。成员应遵循回避原则，凡与教材编写、出版单位有利益关系，或本人及近亲属参与相关教材编写、审定的，应当主动申请回避。具体规定请以教育部最新发布的文件为准。"
+}

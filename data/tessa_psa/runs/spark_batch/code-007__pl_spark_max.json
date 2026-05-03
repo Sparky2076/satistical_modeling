@@ -1,0 +1,15 @@
+{
+  "task_id": "code-007",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 12.67785670000012,
+  "usage": {
+    "input_tokens": 77,
+    "output_tokens": 699,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`ensure_ascii=False` 用于在序列化时保留原始 Unicode 字符（如中文、日文等），而非转义为 ASCII 码。\n\n## 使用场景\n\n**1. 输出可读性要求高的场景**\n```python\nimport json\n\ndata = {\"name\": \"张三\", \"message\": \"你好世界\"}\n# ensure_ascii=True (默认)\nprint(json.dumps(data, ensure_ascii=True))  # {\"name\": \"\\u5f20\\u4e09\", \"message\": \"\\u4f60\\u597d\\u4e16\\u754c\"}\n\n# ensure_ascii=False\nprint(json.dumps(data, ensure_ascii=False))  # {\"name\": \"张三\", \"message\": \"你好世界\"}\n```\n\n**2. 日志记录或调试输出**\n- 需要直接查看 JSON 内容时，避免看到乱码的转义序列\n- 便于人工阅读和分析数据\n\n**3. 处理混合编码数据**\n- 当 JSON 中同时包含 ASCII 字符和非 ASCII 字符时，保持原样输出\n- 例如：`{\"id\": 1, \"name\": \"李四\", \"description\": \"测试中文\"}`\n\n## 注意事项\n\n- **文件写入时需指定编码**：\n```python\nwith open('output.json', 'w', encoding='utf-8') as f:\n    json.dump(data, f, ensure_ascii=False)\n```\n\n- **体积影响**：非 ASCII 字符通常比转义序列占用更多字节\n- **兼容性**：某些老旧系统可能不支持 UTF-8，需根据目标环境决定\n\n## 最佳实践\n\n- 开发调试阶段建议设为 `False`，提高可读性\n- 生产环境可根据需求选择，若网络传输效率优先则用默认值"
+}

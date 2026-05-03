@@ -1,0 +1,15 @@
+{
+  "task_id": "code-007",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 18.142977300012717,
+  "usage": {
+    "input_tokens": 77,
+    "output_tokens": 436,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 作用：当 ensure_ascii=False 时，JSON 中的非 ASCII 字符（如中文、日文、表情）会以原生 Unicode 字符输出，而不是 \\uXXXX 转义。\n- 典型场景：\n  - 需要人类可读的 JSON（配置文件、日志、调试输出）。\n  - 数据将以 UTF-8/UTF-16 等方式传输或存储，无需强制 ASCII。\n  - 下游服务支持 UTF-8，且希望减小体积（避免大量 \\uXXXX）。\n- 注意：\n  - 输出仍为 str；若要写入文件/网络，请使用 UTF-8 编码。\n  - 终端/编辑器需支持 UTF-8，否则可能乱码。\n  - Python 3 中，键名含非 ASCII 也会保持 Unicode。\n  - 老系统或严格要求 ASCII 的场景，应保持默认 ensure_ascii=True。"
+}

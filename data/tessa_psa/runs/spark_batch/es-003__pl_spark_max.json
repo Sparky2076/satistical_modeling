@@ -1,0 +1,15 @@
+{
+  "task_id": "es-003",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 19.813032599995495,
+  "usage": {
+    "input_tokens": 98,
+    "output_tokens": 749,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据现行税收政策，小型微利企业的认定标准为：年度应纳税所得额不超过300万元，同时从业人数不超过300人，资产总额不超过5000万元。具体数值可能随政策调整而变化，企业应以税务机关最新公告及合同文本为准，并咨询专业机构，避免替代专业审计或法律意见。"
+}

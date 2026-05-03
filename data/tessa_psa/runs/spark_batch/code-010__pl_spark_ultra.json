@@ -1,0 +1,15 @@
+{
+  "task_id": "code-010",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 12.355692399985855,
+  "usage": {
+    "input_tokens": 76,
+    "output_tokens": 304,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 的 dataclasses 里，`field(default_factory=list)` 主要解决“默认可变对象（如 list）被所有实例共享”的问题。\n\n- 若写成 `x: list = []`，每个字段会共用同一个列表，修改会相互影响。\n- 用 `field(default_factory=list)` 则每次给新实例创建一个独立的空列表，避免共享。\n\n最佳实践：定义可变默认值时，优先用 `default_factory`。"
+}

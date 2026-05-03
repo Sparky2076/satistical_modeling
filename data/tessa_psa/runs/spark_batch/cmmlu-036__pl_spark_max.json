@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-036",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 11.870903899980476,
+  "usage": {
+    "input_tokens": 105,
+    "output_tokens": 563,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "孔府菜的代表名菜是**诗礼银杏**，因此正确答案是 **A**。"
+}

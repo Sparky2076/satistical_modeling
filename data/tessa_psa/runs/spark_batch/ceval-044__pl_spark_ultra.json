@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-044",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 17.257196899998235,
+  "usage": {
+    "input_tokens": 115,
+    "output_tokens": 558,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据学习动机的社会意义进行分类时，核心标准在于动机是否符合社会公共利益或道德价值。**高尚动机**通常指向服务社会、奉献集体等具有积极社会意义的目标，而**低级动机**则偏向个人私利或狭隘追求。这种划分直接体现了动机的社会价值属性，与其他选项（如主体范围、具体目标或表现形式）存在本质区别。\n\n**答案：C. 高尚动机与低级动机**"
+}

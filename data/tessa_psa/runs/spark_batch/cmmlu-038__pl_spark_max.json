@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-038",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 10.044367199996486,
+  "usage": {
+    "input_tokens": 108,
+    "output_tokens": 375,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "D. 蒙古族"
+}

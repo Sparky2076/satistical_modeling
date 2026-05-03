@@ -1,0 +1,15 @@
+{
+  "task_id": "code-017",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 9.028343299985863,
+  "usage": {
+    "input_tokens": 80,
+    "output_tokens": 257,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "用于在多个可迭代对象长度不一致时立即报错（ValueError），避免结果被最短者 silently 截断。要求 Python 3.10+，且所有传入的可迭代对象长度相同。示例：list(zip([1,2], [3,4], strict=True)) 正常；list(zip([1,2], [3,4,5], strict=True)) 抛 ValueError。适用于需要严格对齐的场景（如并行遍历必须一一对应）。参见 https://docs.python.org/3/library/functions.html#zip"
+}

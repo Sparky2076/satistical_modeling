@@ -1,0 +1,15 @@
+{
+  "task_id": "mfg-010",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 9.384442900001886,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 366,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "双重预防机制包括风险分级管控和隐患排查治理两部分。两者的衔接在于：风险分级管控通过辨识评估确定不同风险等级，明确管控重点；隐患排查治理则针对已识别的风险点，检查控制措施是否有效、是否存在新的隐患，从而验证和补充风险管控效果。实践中，应建立信息共享机制，将隐患排查结果反馈至风险分级，动态调整管控措施，形成闭环管理，实现持续改进。"
+}

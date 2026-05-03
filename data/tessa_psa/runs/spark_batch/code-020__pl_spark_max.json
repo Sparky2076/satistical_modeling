@@ -1,0 +1,15 @@
+{
+  "task_id": "code-020",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 10.646055599994725,
+  "usage": {
+    "input_tokens": 79,
+    "output_tokens": 505,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 语义与定位：\n  - typing.TypedDict：专门描述“字典结构”，字段可标记 required/optional，适合作为函数参数/返回值的类型提示，强调“键-值”映射。\n  - dataclass：通用的“数据容器/领域对象”，支持继承、校验、序列化，强调“对象行为”。\n\n- 取舍要点：\n  - 需要“纯字典”语义（如配置/请求体，期望直接用 dict 操作）：优先 TypedDict；它更贴近运行时 dict，类型检查也更贴合。\n  - 需要“对象”语义（方法、默认值、继承、校验、序列化）：优先 dataclass；功能更强，但实例不是 dict。\n  - 性能/开销：TypedDict 通常更轻量；dataclass 有 __init__/属性访问等开销。\n  - 可变性：两者都允许字段被修改；若需不可变，可用 Literal/frozen=True（dataclass）或 typing.Final/readonly（TypedDict 无内置，需自行约束）。\n\n- 组合使用：\n  - 用 TypedDict 描述“对外接口/DTO”的结构，内部用 dataclass 承载业务逻辑；通过类型注解关联，兼顾接口清晰与实现灵活。"
+}

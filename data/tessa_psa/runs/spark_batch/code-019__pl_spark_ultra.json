@@ -1,0 +1,15 @@
+{
+  "task_id": "code-019",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 21.262248599989107,
+  "usage": {
+    "input_tokens": 76,
+    "output_tokens": 602,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 语义与并发：\n  - await coro：挂起当前协程，等该单个协程完成；不会“并发”其他任务。\n  - asyncio.create_task(coro)：把协程打包成任务并立即调度，与其他任务并发运行；通常需 later await task 或 gather 来等待结果。\n\n- 错误处理：\n  - await coro：异常在此处即时抛出。\n  - create_task：异常被包裹进 Task 对象；只有在之后 await task 或从任务读取结果时才会暴露（否则可能“吞掉”异常）。\n\n- 生命周期与回收：\n  - await coro：完成后自然回收。\n  - create_task：若对任务没有保留引用，它仍会后台运行直至完成；可能造成“孤立”任务，导致资源泄漏或未捕获异常。可用 task.add_done_callback(...) 或在完成前 await/assure 它结束。\n\n- 返回值与取消：\n  - await coro：直接得到其返回值；取消会影响该协程。\n  - create_task：返回 Task；要取结果需 task.result() 或 await task；取消可通过 cancel(task)。\n\n- 何时用哪个：\n  - 只需顺序执行、不需要并发：直接 await。\n  - 需要并行发起多个操作：先 create_task（或用 gather），稍后再 await/收集结果。\n\n- 小提示：\n  - Python 3.7+ 推荐 asyncio.create_task；旧版本可用 loop.create_task 或 asyncio.ensure_future。\n  - 避免“裸”创建任务却不等待/不回调，常见做法是用 asyncio.gather 管理一组并发任务。"
+}

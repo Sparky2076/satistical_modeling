@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-021",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 16.5759931000066,
+  "usage": {
+    "input_tokens": 128,
+    "output_tokens": 618,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是C。"
+}

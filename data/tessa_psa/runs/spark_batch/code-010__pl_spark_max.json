@@ -1,0 +1,15 @@
+{
+  "task_id": "code-010",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 9.885833299980732,
+  "usage": {
+    "input_tokens": 76,
+    "output_tokens": 439,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`dataclasses.field(default_factory=list)` 用于解决 **可变默认参数的共享问题**。\n\n## 核心问题：为什么需要它？\n\n```python\n# ❌ 错误示范：所有实例共享同一个列表\nclass BadClass:\n    def __init__(self, items=[]):\n        self.items = items\n\na = BadClass()\nb = BadClass()\na.items.append(1)\nprint(b.items)  # [1] - b也被修改了！\n```\n\n这是因为 Python 中，函数/方法的默认参数在定义时就被求值，所有调用都指向同一个对象。\n\n## 解决方案\n\n```python\nfrom dataclasses import dataclass, field\n\n@dataclass\nclass GoodClass:\n    items: list = field(default_factory=list)\n\na = GoodClass()\nb = GoodClass()\na.items.append(1)\nprint(b.items)  # [] - 各自独立！\n```\n\n`default_factory` 会在每次创建实例时调用，生成新的列表对象，避免共享。\n\n## 适用场景\n\n- 字段类型为 `list`、`dict`、`set` 等可变类型\n- 需要每个实例有独立的默认集合\n- 防止意外的状态污染"
+}

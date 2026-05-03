@@ -1,0 +1,15 @@
+{
+  "task_id": "es-028",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 8.650253399988287,
+  "usage": {
+    "input_tokens": 92,
+    "output_tokens": 471,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "政府采购供应商资格条件的合规底线主要包括：依法设定，不得设置歧视性或排他性条款；符合项目实际需求；遵循公开、公平、公正原则。企业应以税务机关（如税务登记要求）、监管机关（如市场监管规定）及合同文本的具体条款为准，避免替代专业审计或法律意见，并及时查阅最新官方指南。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-011",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 17.674912800022867,
+  "usage": {
+    "input_tokens": 76,
+    "output_tokens": 936,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "## typing.Protocol vs ABC 在结构子类型上的区别\n\n### 核心差异\n\n| 特性 | ABC (抽象基类) | typing.Protocol (协议) |\n|------|---------------|----------------------|\n| **实现要求** | 子类必须显式实现所有抽象方法 | 只需具备协议定义的属性/方法，无需继承 |\n| **子类型判断** | 基于是否实现所有抽象方法 | 基于是否包含协议定义的所有属性/方法 |\n| **多态性** | 支持运行时多态 | 仅静态结构匹配，无运行时多态 |\n| **继承关系** | 严格的类继承体系 | 纯接口，不强制继承 |\n| **Python版本** | Python 3.4+ | Python 3.8+ |\n\n### 代码示例\n\n```python\nfrom abc import ABC, abstractmethod\nfrom typing import Protocol\n\n# ========== ABC 示例 ==========\nclass Animal(ABC):\n    @abstractmethod\n    def speak(self) -> str: pass\n\nclass Dog(Animal):\n    def speak(self) -> str: return \"汪汪\"\n\n# Dog 是 Animal 的子类型（实现了抽象方法）\n\n# ========== Protocol 示例 ==========\nclass Speakable(Protocol):\n    def speak(self) -> str: ...\n\nclass Cat:\n    def speak(self) -> str: return \"喵喵\"\n\n# Cat 满足 Speakable 协议（有 speak 方法即可）\ndog = Dog()\ncat = Cat()\n\n# 类型检查器会认为两者都兼容 Speakable\n```\n\n### 关键区别总结\n\n1. **实现方式不同**\n   - ABC：子类必须继承并重写抽象方法\n   - Protocol：任何类只要具备所需属性/方法即可，无需继承\n\n2. **子类型严格度不同**\n   - ABC：严格的\"is-a\"关系，需要完整的继承链\n   - Protocol：宽松的\"duck-typing\"，只看结构不看血统\n\n3. **使用场景不同**\n   - ABC：当你需要强制子类实现特定接口，且希望利用类的完整功能时\n   - Protocol：当你只需要某些对象具备特定能力，而不关心其具体类型时\n\n### 注意事项\n- Protocol 是静态结构检查，不会在运行时验证\n- ABC 可以结合 `@abstractproperty`、`@abstractstaticmethod` 等装饰器\n- 两者可配合使用，例如用 Protocol 定义接口，用 ABC 提供默认实现"
+}

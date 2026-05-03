@@ -1,0 +1,15 @@
+{
+  "task_id": "code-018",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 15.137511100008851,
+  "usage": {
+    "input_tokens": 79,
+    "output_tokens": 434,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 多分支等值判断：case 将各取值并列呈现，结构一目了然，优于层层嵌套的 if-elif。\n- 模式匹配与解构：对枚举、记录/类实例、元组等进行形状匹配并绑定变量，语义更贴近“数据是什么而非如何拆”，可读性显著提升。\n- 枚举/状态机：状态与分支一一对应，case 使状态转移更直观。\n- 类型分派：在同一处按类型/结构匹配并提取字段，避免先检查类型再访问属性的分散逻辑。\n- 守卫条件（when）：少量额外约束可直接附在 case 上，使“满足什么条件做什么”更紧凑。\n\n注意：match-case 适合分支众多且可枚举的场景；若条件高度计算型或不可枚举，仍可用 if-elif。Python 3.10+ 才支持该特性。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "es-024",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 19.138615000003483,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 825,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在价格监督检查中，明码标价违法行为的常见情形包括：未标明价格；标价内容不清晰、不完整；使用模糊语言（如“面议”“参考价”）；虚构原价、虚假折扣；未标明计价单位；未标明税费；组合销售商品未分别标示单价；价格变动后未及时更新标价；利用虚假或使人误解的价格手段诱骗消费者等。\n\n企业应严格遵循税务机关、市场监管部门的规定，并依据合同文本执行，切勿以本回复替代专业审计或法律意见。"
+}

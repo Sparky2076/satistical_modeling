@@ -1,0 +1,11 @@
+{
+  "task_id": "cmmlu-019",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 60.13139290001709,
+  "usage": {},
+  "error": "HTTP 504: The upstream server is timing out\n",
+  "response_text": null
+}

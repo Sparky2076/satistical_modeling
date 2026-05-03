@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-014",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 3.7883067000075243,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 102,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "A.老舍"
+}

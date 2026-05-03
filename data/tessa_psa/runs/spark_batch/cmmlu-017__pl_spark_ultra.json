@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-017",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 58.23136790000717,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 2143,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "截至2024年公开信息，俄罗斯在当年暂未公布明确的月球探测器发射计划；印度、日本、以色列此前均已成功实施或推进过探月任务，并有后续相关计划安排。需说明：航天发射计划可能因技术、资金或政策等因素调整，具体以各国航天机构最新官方公告为准。\n\n综上，答案选C。"
+}

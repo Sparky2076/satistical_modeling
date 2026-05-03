@@ -1,0 +1,15 @@
+{
+  "task_id": "code-002",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 24.928352000017185,
+  "usage": {
+    "input_tokens": 80,
+    "output_tokens": 645,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "- 影响：GIL（全局解释器锁）使 CPython 在同一进程内任意时刻仅允许一个线程执行 Python 字节码。CPU 密集型多线程任务会受“串行化”限制，无法充分利用多核；上下文切换还会引入额外开销。若存在长时间纯 Python 计算循环，即使 I/O 等待较少，也会显著降低并发效率。I/O 密集型任务通常不受影响，因为等待时会释放 GIL。\n- 常见替代方案：\n  - 多进程（multiprocessing、concurrent.futures.ProcessPoolExecutor）：绕过 GIL，真正并行；适用于 CPU 密集型。注意进程间内存不共享，需通过队列/管道或文件传递数据；开销较大。\n  - 原生扩展/C 模块：将性能关键路径用 C/C++ 实现并在扩展中手动释放 GIL（Py_BEGIN_ALLOW_THREADS/Py_END_ALLOW_THREADS），可在保持 Python API 的同时提高并行度。\n  - JIT/无 GIL 的解释器：PyPy（GIL 仍然存在，但 JIT 可大幅提升单进程性能；多进程仍建议）；GraalPython（支持原生多线程并行，需评估兼容性与特性覆盖）。\n  - 专用并行库：NumPy/Pandas 向量化、Numba（JIT，部分场景可用多核）、Dask/Ray 分布式计算；适合数据/科学计算。\n  - 事件驱动/异步（asyncio）：主要用于 I/O 密集型；对 CPU 密集型帮助有限。\n- 选择建议：优先用“多进程”或“原生扩展释放 GIL”来处理真正的 CPU 密集型负载；必要时结合向量化/JIT。若涉及跨机器扩展，考虑容器化/微服务拆分与消息/RPC（如 Celery + 消息队列、gRPC/HTTP）。"
+}

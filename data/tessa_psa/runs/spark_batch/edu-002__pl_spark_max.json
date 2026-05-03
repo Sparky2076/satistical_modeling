@@ -1,0 +1,15 @@
+{
+  "task_id": "edu-002",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 19.240273300005356,
+  "usage": {
+    "input_tokens": 76,
+    "output_tokens": 777,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在《义务教育课程方案（2022年版）》中，“综合实践活动”是一门独立课程，涵盖劳动、科技、社会服务等多个领域；“劳动教育”则是其中的重要内容模块。两者关系为：综合实践活动是实施劳动教育的载体和平台，劳动教育是综合实践活动的核心组成部分。通过综合实践活动，学生可以系统参与生产劳动、生活劳动和服务性劳动，培养正确的劳动观念、必备的劳动能力和积极的劳动精神。"
+}

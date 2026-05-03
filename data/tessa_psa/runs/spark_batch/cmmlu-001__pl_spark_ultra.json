@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-001",
+  "policy_id": "pl_spark_ultra",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2",
+  "latency_sec": 9.284144800010836,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 241,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在肉牛胴体中，大腿部位（如股部肌肉）因运动相对较少，肌肉纤维细且脂肪分布较均匀，肉质较为鲜嫩多汁，属于优质部位。胸、腹部位筋膜较多，肉质偏韧；小腿部位运动频繁，肌肉纤维粗，肉质较老。因此，肉质较好的部位是 **C. 大腿**。"
+}

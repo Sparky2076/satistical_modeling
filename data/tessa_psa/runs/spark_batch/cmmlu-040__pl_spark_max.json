@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-040",
+  "policy_id": "pl_spark_max",
+  "run_id": "spark_batch",
+  "provider": "Spark",
+  "model_id": "spark-x2flash",
+  "latency_sec": 6.227226200018777,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 188,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "D.清明节"
+}
