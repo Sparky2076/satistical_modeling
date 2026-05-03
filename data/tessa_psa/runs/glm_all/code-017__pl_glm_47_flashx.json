@@ -1,0 +1,15 @@
+{
+  "task_id": "code-017",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 9.83872210001573,
+  "usage": {
+    "input_tokens": 77,
+    "output_tokens": 828,
+    "cache_tokens": 7
+  },
+  "error": null,
+  "response_text": "在 Python 3.10+ 中，`zip(strict=True)` 的主要用途是**强制要求**传入的可迭代对象长度必须完全一致。\n\n*   **行为变化**：如果可迭代对象的长度不同，会直接抛出 `ValueError` 异常。\n*   **对比**：在 Python 3.10 之前，`zip()` 默认会自动截断到最短的可迭代对象长度。\n\n**示例：**\n```python\na = [1, 2, 3]\nb = ['a', 'b']\n\n# strict=True 会报错\nlist(zip(a, b, strict=True))\n# 输出: ValueError: zip() argument #2's sequence length 2 != argument #1's sequence length 3\n```"
+}

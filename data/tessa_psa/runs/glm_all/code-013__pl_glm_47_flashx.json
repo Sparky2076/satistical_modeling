@@ -1,0 +1,15 @@
+{
+  "task_id": "code-013",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 17.306726499984507,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 1155,
+    "cache_tokens": 59
+  },
+  "error": null,
+  "response_text": "在 Python 中，`raise ... from e` 和 `raise ... from None` 的核心区别在于**是否保留原始异常信息**。\n\n### 1. `raise ... from e`：显式异常链\n*   **语义**：显式地将当前异常与前一个异常关联起来。\n*   **行为**：设置当前异常的 `__cause__` 属性指向 `e`。\n*   **堆栈跟踪**：打印异常时，会同时显示当前异常和原始异常（`The above exception was the direct cause of the following exception:`）。\n*   **适用场景**：当你希望保留原始错误信息，以便调试，同时表明当前异常是由前一个异常引起的时使用。\n\n### 2. `raise ... from None`：抑制异常链\n*   **语义**：清除异常链，将当前异常变为“根”异常。\n*   **行为**：将当前异常的 `__cause__` 属性设为 `None`。\n*   **堆栈跟踪**：打印异常时，**仅显示当前异常**，完全隐藏原始异常信息。\n*   **适用场景**：当你捕获了一个异常，但决定抛出一个新的、更高级别的异常，且不希望用户看到底层的技术细节时使用（例如将底层的技术错误转换为业务逻辑错误）。\n\n**总结示例：**\n```python\ntry:\n    1 / 0\nexcept ZeroDivisionError as e:\n    # 链接异常：显示两个错误\n    raise ValueError(\"Invalid input\") from e\n\ntry:\n    1 / 0\nexcept ZeroDivisionError as e:\n    # 抑制异常：只显示 ValueError\n    raise ValueError(\"Invalid input\") from None\n```"
+}
