@@ -7,6 +7,10 @@ Uses stdlib only (urllib + ssl). Run from repo root with API keys in env:
   set DEEPSEEK_API_KEY=...
   set ANTHROPIC_API_KEY=...
   set GEMINI_API_KEY=...   (or GOOGLE_API_KEY)
+  set ZAI_API_KEY=...      (or GLM_API_KEY)
+  set MOONSHOT_API_KEY=... (or KIMI_API_KEY)
+  set SPARK_API_KEY=...    (or XFYUN_API_PASSWORD)
+  set QIANFAN_API_KEY=...  (or BAIDU_API_KEY / WENXIN_API_KEY)
 
 Examples:
   python src/tepsa_api_batch.py --dry-run
@@ -55,7 +59,16 @@ DEFAULT_SYSTEM = (
     "judgment, state limits and suggest checking the latest official guidance."
 )
 
-IMPLEMENTED_PROVIDERS = frozenset({"OpenAI", "DeepSeek", "Anthropic", "Google"})
+IMPLEMENTED_PROVIDERS = frozenset({
+    "OpenAI",
+    "DeepSeek",
+    "Anthropic",
+    "Google",
+    "GLM",
+    "Kimi",
+    "Spark",
+    "Baidu",
+})
 
 OBS_EXTRA = ("tepsa_sector", "run_id", "response_path")
 
@@ -284,6 +297,145 @@ def call_google_gemini(
         return None, {}, f"parse Gemini response: {e}"
 
 
+def _call_openai_compatible_chat(
+    *,
+    provider_name: str,
+    api_key: str,
+    base_url: str,
+    model_id: str,
+    user_text: str,
+    system: str,
+    max_tokens: int,
+    temperature: float,
+) -> tuple[str | None, dict[str, int], str | None]:
+    """Call an OpenAI-compatible /chat/completions endpoint."""
+    url = f"{base_url.rstrip('/')}/chat/completions"
+    body = {
+        "model": model_id,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user_text},
+        ],
+        "max_tokens": max_tokens,
+        "temperature": temperature,
+    }
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+    data, err = _json_request(url, headers, body)
+    if err:
+        return None, {}, err
+    try:
+        text = data["choices"][0]["message"]["content"]  # type: ignore[index]
+        u = data.get("usage") or {}
+        toks = {
+            "input_tokens": int(u.get("prompt_tokens", 0) or u.get("input_tokens", 0) or 0),
+            "output_tokens": int(u.get("completion_tokens", 0) or u.get("output_tokens", 0) or 0),
+            "cache_tokens": int(u.get("prompt_tokens_details", {}).get("cached_tokens", 0))
+            if isinstance(u.get("prompt_tokens_details"), dict)
+            else int(u.get("cached_tokens", 0) or 0),
+        }
+        return text, toks, None
+    except (KeyError, IndexError, TypeError) as e:
+        return None, {}, f"parse {provider_name} response: {e}"
+
+
+def call_glm_chat(
+    model_id: str,
+    user_text: str,
+    system: str,
+    max_tokens: int,
+    temperature: float,
+) -> tuple[str | None, dict[str, int], str | None]:
+    key = os.environ.get("ZAI_API_KEY", "").strip() or os.environ.get("GLM_API_KEY", "").strip()
+    if not key:
+        return None, {}, "ZAI_API_KEY or GLM_API_KEY not set"
+    base = os.environ.get("GLM_BASE_URL", "https://open.bigmodel.cn/api/paas/v4").rstrip("/")
+    return _call_openai_compatible_chat(
+        provider_name="GLM",
+        api_key=key,
+        base_url=base,
+        model_id=model_id,
+        user_text=user_text,
+        system=system,
+        max_tokens=max_tokens,
+        temperature=temperature,
+    )
+
+
+
+
+def call_kimi_chat(
+    model_id: str,
+    user_text: str,
+    system: str,
+    max_tokens: int,
+    temperature: float,
+) -> tuple[str | None, dict[str, int], str | None]:
+    key = os.environ.get("MOONSHOT_API_KEY", "").strip() or os.environ.get("KIMI_API_KEY", "").strip()
+    if not key:
+        return None, {}, "MOONSHOT_API_KEY or KIMI_API_KEY not set"
+    base = os.environ.get("KIMI_BASE_URL", "https://api.moonshot.ai/v1").rstrip("/")
+    return _call_openai_compatible_chat(
+        provider_name="Kimi",
+        api_key=key,
+        base_url=base,
+        model_id=model_id,
+        user_text=user_text,
+        system=system,
+        max_tokens=max_tokens,
+        temperature=temperature,
+    )
+
+
+def call_spark_chat(
+    model_id: str,
+    user_text: str,
+    system: str,
+    max_tokens: int,
+    temperature: float,
+) -> tuple[str | None, dict[str, int], str | None]:
+    key = os.environ.get("SPARK_API_KEY", "").strip() or os.environ.get("XFYUN_API_PASSWORD", "").strip()
+    if not key:
+        return None, {}, "SPARK_API_KEY or XFYUN_API_PASSWORD not set"
+    base = os.environ.get("SPARK_BASE_URL", "https://spark-api-open.xf-yun.com/v1").rstrip("/")
+    return _call_openai_compatible_chat(
+        provider_name="Spark",
+        api_key=key,
+        base_url=base,
+        model_id=model_id,
+        user_text=user_text,
+        system=system,
+        max_tokens=max_tokens,
+        temperature=temperature,
+    )
+
+
+def call_baidu_chat(
+    model_id: str,
+    user_text: str,
+    system: str,
+    max_tokens: int,
+    temperature: float,
+) -> tuple[str | None, dict[str, int], str | None]:
+    key = (
+        os.environ.get("QIANFAN_API_KEY", "").strip()
+        or os.environ.get("BAIDU_API_KEY", "").strip()
+        or os.environ.get("WENXIN_API_KEY", "").strip()
+    )
+    if not key:
+        return None, {}, "QIANFAN_API_KEY or BAIDU_API_KEY or WENXIN_API_KEY not set"
+    base = os.environ.get("BAIDU_BASE_URL", "https://qianfan.baidubce.com/v2").rstrip("/")
+    return _call_openai_compatible_chat(
+        provider_name="Baidu",
+        api_key=key,
+        base_url=base,
+        model_id=model_id,
+        user_text=user_text,
+        system=system,
+        max_tokens=max_tokens,
+        temperature=temperature,
+    )
+
+
 def dispatcher(provider: str) -> Callable[..., tuple[str | None, dict[str, int], str | None]]:
     if provider == "OpenAI":
         return call_openai_chat
@@ -293,6 +445,14 @@ def dispatcher(provider: str) -> Callable[..., tuple[str | None, dict[str, int],
         return call_anthropic_messages
     if provider == "Google":
         return call_google_gemini
+    if provider == "GLM":
+        return call_glm_chat
+    if provider == "Kimi":
+        return call_kimi_chat
+    if provider == "Spark":
+        return call_spark_chat
+    if provider == "Baidu":
+        return call_baidu_chat
     raise ValueError(f"Unsupported provider: {provider}")
 
 
@@ -387,7 +547,10 @@ def main() -> None:
     ap.add_argument(
         "--providers",
         default="",
-        help="Comma subset of OpenAI,DeepSeek,Anthropic,Google; empty = all.",
+        help=(
+            "Comma subset of OpenAI,DeepSeek,Anthropic,Google,"
+            "GLM,Kimi,Spark,Baidu; empty = all."
+        ),
     )
     ap.add_argument("--skip-high-risk", action="store_true")
     ap.add_argument(

@@ -17,3 +17,11 @@ Baidu,ERNIE-4.0-8K,standard,0.55555556,0,2.22222222,,8192,2026-05-02,https://ai.
 Baidu,ERNIE-4.0-Turbo-8K,standard,0.41666667,0.16666667,1.25,,8192,2026-05-02,https://ai.baidu.com/ai-doc/WENXINWORKSHOP/Hm88dcygk,CNY_fx7.20
 Zhipu,glm-4-air-250414,standard,0.06944444,0,0.06944444,,128000,2026-05-02,https://docs.bigmodel.cn/cn/guide/models/text/glm-4,CNY_fx7.20_verify
 Zhipu,glm-4-plus,standard,0.69444444,0,0.69444444,,128000,2026-05-02,https://docs.bigmodel.cn/cn/guide/models/text/glm-4,CNY_fx7.20_verify
+GLM,glm-4.7,standard,0.6,0.11,2.2,,200000,2026-05-03,https://docs.z.ai/guides/overview/pricing,Official_USD_per_1M
+GLM,glm-4.7-flashx,standard,0.07,0.01,0.4,,200000,2026-05-03,https://docs.z.ai/guides/overview/pricing,Official_USD_per_1M
+Kimi,kimi-k2.6,standard,0.95,0.16,4.00,,256000,2026-05-03,https://platform.moonshot.ai/,Official_USD_per_1M
+Kimi,kimi-k2.5,standard,0.60,0.10,3.00,,256000,2026-05-03,https://platform.moonshot.ai/,Official_USD_per_1M
+Spark,4.0Ultra,standard,7.5,0,7.5,,32000,2026-05-03,https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html,CNY_fx7.20_verify_console
+Spark,generalv3.5,standard,3.19444444,0,3.19444444,,8192,2026-05-03,https://www.xfyun.cn/doc/spark/HTTP%E8%B0%83%E7%94%A8%E6%96%87%E6%A1%A3.html,CNY_fx7.20_verify_console
+Baidu,ernie-4.5-turbo-32k,standard,0.11111111,0.02777778,0.44444444,,32000,2026-05-03,https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya,CNY_fx7.20
+Baidu,ernie-4.5-turbo-128k,standard,0.11111111,0.02777778,0.44444444,,128000,2026-05-03,https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya,CNY_fx7.20
