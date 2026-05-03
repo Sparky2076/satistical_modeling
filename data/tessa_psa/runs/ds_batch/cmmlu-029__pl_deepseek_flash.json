@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-029",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 5.884541999999783,
+  "usage": {
+    "input_tokens": 121,
+    "output_tokens": 370,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是：A. 蜻蜓低飞——雨天。其他选项：蚂蚁垒窝通常预示雨天；麻雀囤食（题干中的“麻省”应为笔误）一般也预示阴雨；龟背冒汗则预示空气湿度大、可能下雨，而非晴天。"
+}

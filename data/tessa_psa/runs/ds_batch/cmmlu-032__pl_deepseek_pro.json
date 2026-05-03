@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-032",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 6.996757700006128,
+  "usage": {
+    "input_tokens": 108,
+    "output_tokens": 238,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据中国道路交通安全法规和驾驶操作规范，车辆临时靠边停车后准备起步时，**首先应观察周围交通情况**（通过后视镜、转头看盲区等），确认安全后再平稳起步。因此正确答案是 **D**。其他选项如“鸣喇叭”可视情况辅助使用，但并非首要动作，“加油起步”和“提高发动机转速”更可能造成危险。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-020",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.186561900001834,
+  "usage": {
+    "input_tokens": 141,
+    "output_tokens": 169,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "该业务应纳消费税包括从价税和从量税。从价税：同类不含税售价50000元/吨 × 20% = 10000元；从量税：1吨白酒 = 2000斤，每斤0.5元，即1000元。合计11000元。因此正确选项为D。"
+}

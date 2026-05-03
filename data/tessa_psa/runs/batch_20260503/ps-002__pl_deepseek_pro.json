@@ -1,0 +1,15 @@
+{
+  "task_id": "ps-002",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "batch_20260503",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 56.412503300001845,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 2048,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "城乡居民医保（多数地区已将城镇居民医保和“新农合”合并）实行按年参保、按年享受的原则，参保缴费期与待遇享受期的衔接上很容易"
+}

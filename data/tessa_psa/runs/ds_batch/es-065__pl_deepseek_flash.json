@@ -1,0 +1,15 @@
+{
+  "task_id": "es-065",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.006543800001964,
+  "usage": {
+    "input_tokens": 92,
+    "output_tokens": 191,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "供应链创新与应用试点终期验收的常见关注点包括：试点任务与绩效目标完成情况、供应链协同与整合成效、创新模式的可复制推广性、数字化与智能化应用水平、风险防控与合规管理、数据真实性与财务规范性等。企业应以税务机关、监管机关的最新政策及合同文本为准，结合自身实际准备验收材料，避免替代专业审计或法律意见。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-030",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 24.92456780000066,
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 767,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "这段文字先肯定差别化VIP服务在市场竞争中的合理性，随后用“但”转折，重点批评一些企业在医院、机场、车站等公共场所设立贵宾厅、霸占公共资源的行为，并指出这造成了公共资源分配的不公。因此，文段主要强调的是公共资源领域不应过度推行VIP化，即选项A所概括的内容。选项B把问题归咎于VIP服务整体，不符合作者肯定商业领域VIP服务的原意；选项C、D均偏离了批评公共资源被挤占这一核心。\n\n答案：A"
+}

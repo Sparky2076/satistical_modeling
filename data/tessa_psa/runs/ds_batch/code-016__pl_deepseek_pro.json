@@ -1,0 +1,15 @@
+{
+  "task_id": "code-016",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 51.56493799999589,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 1578,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`collections.Counter` 做频次统计时，常见易错点如下：\n\n1. **访问不存在的键返回 0**  \n   与普通 `dict` 不同，`c['missing']` 不会抛 `KeyError` 而是返回 0，容易混淆“键不存在”和“计数为 0”。建议用 `'missing' in c` 或 `c.get('missing')` 区分。\n\n2. **减法 `-` 会移除计数 ≤0 的项**  \n   `c - d` 结果中只保留计数 >0 的元素，计数变为 0 的键会被删除。  \n   `c.subtract(d)` 则保留负计数，不删除键。两者行为差异容易导致数据“丢失”。\n\n3. **`update()` 的拆包陷阱**  \n   `c.update('hello')` 会把字符串拆成单个字符 `'h','e','l','l','o'` 进行频次更新。  \n   如果想要整体计数一个单词，需传入可迭代对象如 `c.update(['hello'])`。\n\n4. **`elements()` 忽略计数 ≤0 的元素**  \n   迭代 `c.elements()` 时只会返回计数 >0 的元素，零和负数条目不产出任何元素。\n\n5. **`most_common()` 对等频项的顺序不稳定**  \n   相同频次的元素，`most_common(n)` 返回的顺序是任意的（取决于内部字典顺序的堆积）。如需稳定排序，请额外用 `sorted(c.items(), key=lambda x: (-x[1], x[0]))`。\n\n6. **算术操作符（+, -, &, |）丢弃计数 ≤0**  \n   使用 `c1 + c2` 等操作生成的 `Counter` 会自动滤掉合计值 ≤0 的键，同时产生新对象，不改变原对象。  \n   若需要保留非正计数，请用 `subtract` 或直接操作字典。\n\n7. **`total()` 方法仅在 Python 3.10+ 可用**  \n   计算所有计数之和（含负计数）时，老版本需使用 `sum(c.values())`，否则会报 `AttributeError`。\n\n8. **不能直接对不可哈希元素统计**  \n   `Counter` 要求元素可哈希，列表等可变对象无法直接作为键，会抛 `TypeError`。\n\n使用中如果涉及负数统计、内存占用较大需要优化等场景，建议进一步查阅官方文档或结合 `defaultdict` 等替代方案。"
+}

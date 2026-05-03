@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-013",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 7.620845399986138,
+  "usage": {
+    "input_tokens": 95,
+    "output_tokens": 200,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "“吴带当风”是指唐代画家**吴道子**的绘画风格，其线条圆转飘逸，衣服犹如被风吹动，与“曹衣出水”并称。因此正确选项是 **D.吴道子**。"
+}

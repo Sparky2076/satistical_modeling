@@ -1,0 +1,15 @@
+{
+  "task_id": "code-017",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 7.74243209999986,
+  "usage": {
+    "input_tokens": 77,
+    "output_tokens": 215,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`zip(strict=True)` 是 Python 3.10 为内置 `zip` 函数新增的关键字参数（默认 `False`）。**主要用途**：当传入的多个可迭代对象长度不一致时，立即抛出 `ValueError`，而不是像默认行为那样静默地以最短长度截断。\n\n这在需要严格保证数据对齐的场景（如配对用户输入、合并表格列等）中非常有用，能帮助我们提前发现数据长度不匹配的 bug，提升代码健壮性。"
+}

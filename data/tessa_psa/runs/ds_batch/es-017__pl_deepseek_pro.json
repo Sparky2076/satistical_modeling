@@ -1,0 +1,15 @@
+{
+  "task_id": "es-017",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 65.61748600000283,
+  "usage": {
+    "input_tokens": 95,
+    "output_tokens": 2048,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": ""
+}

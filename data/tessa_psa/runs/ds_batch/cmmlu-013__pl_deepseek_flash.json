@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-013",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.1147581999975955,
+  "usage": {
+    "input_tokens": 95,
+    "output_tokens": 104,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "吴带当风是指唐代画家吴道子的绘画风格。选项D正确。"
+}

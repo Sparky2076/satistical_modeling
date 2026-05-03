@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-016",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 10.441021000006003,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 644,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "蛇夫座"
+}

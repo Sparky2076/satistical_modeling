@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-023",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 8.574381400001585,
+  "usage": {
+    "input_tokens": 151,
+    "output_tokens": 518,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《中华人民共和国著作权法》相关规定，报刊转载法定许可是指作品在报刊上发表后，除著作权人声明不得转载、摘编外，其他报刊可以转载或者作为文摘、资料刊登，但应当按照规定向著作权人支付报酬。本题中，张某未作版权说明，即未声明不得转载，因此乙期刊社可以不经张某同意进行转载，但应当向其支付报酬。选项D正确。\n\n答案：D"
+}

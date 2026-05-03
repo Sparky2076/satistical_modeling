@@ -1,0 +1,15 @@
+{
+  "task_id": "code-009",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.8673550999956205,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 142,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`itertools.groupby` 将连续且键相同的元素归为一组。如果输入序列未按键排序，相同的键可能分散在不同位置，导致同一个键被分为多个组。因此，通常先排序，确保相同键的元素相邻，才能正确合并。"
+}

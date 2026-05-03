@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-020",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 16.083880299993325,
+  "usage": {
+    "input_tokens": 141,
+    "output_tokens": 496,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "该酒厂将自制白酒用于职工福利，应视同销售缴纳消费税。白酒消费税采用复合计税办法：从价税率20%，从量税0.5元/500克。\n\n- 同类白酒不含税售价为50000元/吨，因此从价部分消费税 = 50000 × 20% = 10000元。\n- 1吨 = 1000公斤 = 2000个500克，从量部分消费税 = 2000 × 0.5 = 1000元。\n- 当月应纳消费税合计 = 10000 + 1000 = 11000元。\n\n答案：D"
+}

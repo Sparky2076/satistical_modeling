@@ -1,0 +1,15 @@
+{
+  "task_id": "code-006",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 10.932134500006214,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 733,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "以下是 `ThreadPoolExecutor` 与 `ProcessPoolExecutor` 的选型要点（简洁版）：\n\n---\n\n### 1. 核心区别：GIL 限制\n- **ThreadPoolExecutor**：受 Python GIL（全局解释器锁）限制，同一时刻只有一个线程执行字节码。  \n  → **适合 I/O 密集型任务**（网络请求、文件读写、数据库查询），这些任务在等待时会释放 GIL，让其他线程运行。\n- **ProcessPoolExecutor**：每个进程有独立 GIL，可实现真正的并行计算。  \n  → **适合 CPU 密集型任务**（数值计算、图像处理、复杂循环），能充分利用多核 CPU。\n\n---\n\n### 2. 任务类型\n| 任务特性 | 推荐池 | 原因 |\n|----------|--------|------|\n| 大量 I/O（如 HTTP 请求、文件读写） | ThreadPoolExecutor | 线程开销小，I/O 等待时 GIL 释放，可并发处理 |\n| 密集计算（如矩阵运算、加密） | ProcessPoolExecutor | 多进程并行，避免 GIL 瓶颈 |\n| 混合型（少量计算 + 大量 I/O） | ThreadPoolExecutor + 异步或进程池 | 一般优先线程池，若计算占比大则考虑进程池 |\n\n---\n\n### 3. 资源与开销\n- **线程**：启动快、内存共享方便（需注意线程安全），适合大量短任务。\n- **进程**：启动慢、内存独立（需序列化传递数据），适合少数长时间运行的 CPU 密集型任务。\n\n---\n\n### 4. 数据共享与隔离\n- 线程池：可直接共享全局变量，但要加锁（`Lock`、`RLock`）防止竞争。\n- 进程池：数据需通过 `pickle` 序列化传输，复杂对象可能失败；共享内存需 `multiprocessing.Manager` 或 `Value`/`Array`，但效率较低。\n\n---\n\n### 5. 其他考量\n- **子进程安全**：某些库（如 `requests`、`sqlite3`）在 fork 进程后可能异常，需确认兼容性。\n- **最大并发数**：线程池建议不超过 CPU 核心数 ×（I/O 等待时间/计算时间）的经验值；进程池通常 ≤ CPU 核心数。\n\n---\n\n### 简单总结\n- **I/O 多 → 线程池**（`ThreadPoolExecutor`）  \n- **计算多 → 进程池**（`ProcessPoolExecutor`）  \n- **不确定时**：先试线程池，若 CPU 利用率低且任务耗时，再换进程池。\n\n> 若任务既包含大量 I/O 又需并行计算，可考虑 `asyncio` + 进程池的组合。"
+}

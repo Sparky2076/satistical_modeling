@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-019",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 25.087099900003523,
+  "usage": {
+    "input_tokens": 99,
+    "output_tokens": 1569,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在金星西大距时，从地球看金星与太阳的角距最大，此时地球-金星-太阳构成直角三角形（∠EVS=90°）。因此从金星上看，地球与太阳的角距为90°，即地球处于“方照”位置。\n\n答案：C.方照"
+}

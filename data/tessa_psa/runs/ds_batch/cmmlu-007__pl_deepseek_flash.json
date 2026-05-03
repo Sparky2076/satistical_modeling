@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-007",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 27.821589900006074,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 1733,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "属于蝶骨上的结构包括：A.垂体窝、B.棘孔、D.视神经管。C.破裂孔由蝶骨、颞骨和枕骨共同围成，不属于单独的蝶骨结构。若为单选题，常见答案多选A或D，但本题中三个选项均为蝶骨结构。"
+}

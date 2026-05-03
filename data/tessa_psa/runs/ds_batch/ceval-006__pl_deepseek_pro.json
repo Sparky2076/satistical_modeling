@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-006",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 5.89914310000313,
+  "usage": {
+    "input_tokens": 107,
+    "output_tokens": 168,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Unix/Linux 系统中，硬链接（命令 `ln`）不能跨文件系统，因为硬链接直接指向文件的 inode，而不同文件系统的 inode 表是独立的。而符号链接（命令 `ln -s`）可以跨文件系统，因为它只存储目标路径的字符串。\n\n因此，正确答案是 **B. ln –s**。"
+}

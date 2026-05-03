@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-042",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 20.463317499990808,
+  "usage": {
+    "input_tokens": 126,
+    "output_tokens": 626,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "亚非会议（万隆会议）能取得成功的根本原因是**亚非各国具有团结反帝反殖的共同愿望**。亚非国家在历史上有着相似的被侵略被压迫经历，在现实中都面临维护民族独立、发展民族经济的任务，这一共同基础决定了会议能够克服分歧并达成一致。中国提出“求同存异”方针有力地推动了这一进程，但属于重要推动因素；会议没有殖民主义国家参加是会议的特点而非根本原因；亚非各国间不存在矛盾和分歧的说法不符合事实。\n\n**答案：C**"
+}

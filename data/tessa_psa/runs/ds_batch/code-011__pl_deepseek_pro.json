@@ -1,0 +1,15 @@
+{
+  "task_id": "code-011",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 26.506145199993625,
+  "usage": {
+    "input_tokens": 75,
+    "output_tokens": 934,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 的类型系统中，`typing.Protocol` 与 `abc.ABC` 关于子类型判定有本质区别：\n\n- **子类型判定方式不同**  \n  - `Protocol`：采用**结构子类型**（structural subtyping），只看对象是否具备协议规定的属性和方法，**不要求显式继承**。只要一个类的结构与协议定义兼容，静态类型检查器就视其为该协议的子类型（即“鸭子类型”的形式化）。  \n  - `ABC`：采用**名义子类型**（nominal subtyping），必须通过显式继承（或 `register()` 注册）来声明“我是一个抽象基类的子类”，否则即使实现了全部抽象方法，运行时和静态检查都不承认该子类型关系。\n\n- **运行时行为差异**  \n  - `Protocol`：默认**不参与运行时**的 `isinstance()`/`issubclass()` 检查；若需运行时校验，必须使用 `@runtime_checkable` 装饰，且仅能检查方法/属性的**存在性**，不检查签名。  \n  - `ABC`：**天然支持运行时的** `isinstance()` 和 `issubclass()` 检查，配合 `@abstractmethod` 还能在实例化时强制要求子类实现。\n\n- **设计意图与适用场景**  \n  - `Protocol`：服务于**静态类型检查**，用于标注“需要什么功能”，不侵入已有代码的继承体系，适合为第三方类、内置类型等添加类型约束。  \n  - `ABC`：用于**定义接口与实现继承**，强调类层次中的“是一个”关系，适合在框架中规定公共 API 并复用默认实现。\n\n简而言之：`Protocol` 实现了“**长什么样就算什么**”的结构类型，而 `ABC` 坚持“**必须说自己是才算**”的名义类型。"
+}

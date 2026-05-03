@@ -1,0 +1,15 @@
+{
+  "task_id": "code-013",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 33.33953900000779,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 1024,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 异常链中，`raise NewExc from e` 与 `raise NewExc from None` 的关键语义区别在于：**是否显式建立“直接原因”关系**以及**是否抑制异常上下文的输出**。\n\n- **`raise NewExc from e`**  \n  将 `NewExc.__cause__` 设置为 `e`，明确声明 `e` 是引发 `NewExc` 的**直接原因**。  \n  打印回溯时，会显示：  \n  ```\n  The above exception was the direct cause of the following exception:\n  ```\n  并依次展示 `e` 和 `NewExc` 的完整调用栈，形成清晰的因果链。\n\n- **`raise NewExc from None`**  \n  将 `NewExc.__cause__` 设为 `None`，同时设置 `__suppress_context__ = True`，表示 `NewExc` **没有前导原因，且不希望显示任何隐式上下文**。  \n  打印回溯时，**只会显示 `NewExc` 自身的 traceback**，不会出现 `e` 的信息，也没有 “During handling…” 或 “direct cause” 这类衔接文字，彻底切断与前一个异常的显示关联。\n\n**使用场景**  \n- 当你需要向调用者暴露明确的业务异常，同时又想保留原始技术异常的诊断信息时，用 `from e`（如 `raise MyError(\"业务失败\") from database_error`）。  \n- 当你认为前一异常属于内部细节，对外完全无意义，或希望你抛出的新异常就是全新的起点时，用 `from None`，避免泄露敏感的底层堆栈。\n\n简言之：`from e` **建立并展示因果链**，`from None` **主动打断链、隐藏原始异常**。"
+}

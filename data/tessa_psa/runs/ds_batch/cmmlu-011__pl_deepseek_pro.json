@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-011",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 7.525854100007564,
+  "usage": {
+    "input_tokens": 97,
+    "output_tokens": 201,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "著名民乐作品《十面埋伏》是传统琵琶大套武曲，而琵琶在中国民族乐器分类中属于弹拨乐器。因此，该作品属于**弹拨乐**。\n\n答案：C"
+}

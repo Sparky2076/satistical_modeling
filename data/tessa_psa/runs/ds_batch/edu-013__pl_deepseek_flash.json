@@ -1,0 +1,15 @@
+{
+  "task_id": "edu-013",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.856929300003685,
+  "usage": {
+    "input_tokens": 69,
+    "output_tokens": 149,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "中小学教材选用委员会通常由教育行政部门人员、教研员、一线骨干教师、学校管理者及家长代表等组成。其回避原则为：凡与教材编写、出版、发行有直接利益关系的人员，不得参与本地区或本校的教材选用工作；近亲属涉及教材编写、出版、发行的，相关人员也应主动回避。具体组成比例和回避细则可参考当地教育主管部门的最新文件。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-027",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.1584282999974675,
+  "usage": {
+    "input_tokens": 125,
+    "output_tokens": 218,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《中华人民共和国英雄烈士保护法》第二十五条规定，侵害英雄烈士的姓名、肖像、名誉、荣誉的行为，英雄烈士的近亲属可以依法向人民法院提起诉讼；英雄烈士没有近亲属或者近亲属不提起诉讼的，检察机关依法向人民法院提起诉讼。因此有权提起诉讼的主体是英雄烈士近亲属和检察机关，对应选项a和b。\n\n正确答案：C.ab"
+}

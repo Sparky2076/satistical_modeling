@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-033",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 1.6793481000058819,
+  "usage": {
+    "input_tokens": 105,
+    "output_tokens": 70,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 B.颈部。安全头枕在追尾事故中可限制头部向后过度运动，减轻对颈部的冲击，有效保护颈部。"
+}

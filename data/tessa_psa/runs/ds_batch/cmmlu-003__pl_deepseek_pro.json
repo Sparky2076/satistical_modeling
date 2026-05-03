@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-003",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 13.791471600008663,
+  "usage": {
+    "input_tokens": 98,
+    "output_tokens": 417,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 B.猪。  \n\n在家畜解剖学中，马、牛、羊的输精管末端均膨大形成输精管壶腹（或称壶腹部），其中马的壶腹尤为发达，牛也有明显的壶腹结构，羊的存在但相对不显著。而公猪的输精管越过输尿管后不形成明显的壶腹部，末端直接与精囊腺导管一同开口于尿生殖道起始部。"
+}

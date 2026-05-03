@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-001",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 58.98108099999081,
+  "usage": {
+    "input_tokens": 95,
+    "output_tokens": 1777,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在给出的选项中，**C.大腿** 的肉质相对较好。  \n牛胴体中，大腿（后腿部位，如米龙、臀肉等）属于中等运动量的部位，肌肉纤维较细，结缔组织比胸、腹及小腿少，嫩度和多汁性优于其他三个选项。胸和腹富含结缔组织、质地较老，小腿（腱子肉）运动量大、肉质最硬。因此，四者中大腿肉质最佳。"
+}

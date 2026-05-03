@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-033",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.762145000000601,
+  "usage": {
+    "input_tokens": 134,
+    "output_tokens": 277,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "无差异曲线上任一点斜率的绝对值代表边际替代率，即消费者在保持效用水平不变时，愿意用一种商品交换另一种商品的比率。因此，正确选项是D。\n\n答案：D"
+}

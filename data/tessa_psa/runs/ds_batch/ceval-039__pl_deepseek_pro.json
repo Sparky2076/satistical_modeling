@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-039",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 9.375876299993251,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 330,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "肺梗死形成的先决条件是 **严重淤血**。肺有双重血液循环（肺动脉和支气管动脉），通常不易发生梗死；但在严重肺淤血（如左心衰竭）时，肺静脉压力升高，支气管动脉侧支循环无法有效代偿，此时肺动脉栓塞极易引发出血性梗死。因此，选项 **B** 正确。"
+}

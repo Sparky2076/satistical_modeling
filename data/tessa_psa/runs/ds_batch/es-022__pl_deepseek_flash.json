@@ -1,0 +1,15 @@
+{
+  "task_id": "es-022",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.039615200003027,
+  "usage": {
+    "input_tokens": 91,
+    "output_tokens": 250,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "强制性产品认证目录调整可能要求企业重新评估产品是否需新增或豁免CCC认证，影响生产、进口、销售环节的合规成本与周期。企业应及时跟踪目录变化，调整认证计划及供应链管理，确保持证或免证合规，避免因无证出厂、销售而面临行政处罚或市场准入障碍。  \n\n**重要提示**：本解答仅为一般性参考，不构成专业法律或审计意见。企业在具体合规操作中，应以税务机关、监管机关的最新规定及合同文本为准，必要时咨询专业机构。"
+}

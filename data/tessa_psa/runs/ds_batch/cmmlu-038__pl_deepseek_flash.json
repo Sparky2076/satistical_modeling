@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-038",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.0450524000043515,
+  "usage": {
+    "input_tokens": 105,
+    "output_tokens": 117,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "称奶食为“白食”、肉食为“红食”的是蒙古族。\n\n答案：D.蒙古族"
+}

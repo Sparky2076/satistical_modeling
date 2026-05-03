@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-016",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.303321799990954,
+  "usage": {
+    "input_tokens": 112,
+    "output_tokens": 174,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "进行税务咨询服务的核心是分析税收政策适用条款，即选项C。其他步骤如弄清税种、收集政策文件、沟通说明都是辅助性工作，最终目的是准确适用政策提供解答。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-020",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 43.111246200001915,
+  "usage": {
+    "input_tokens": 79,
+    "output_tokens": 1310,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`typing.TypedDict` 与 `dataclass` 都是为结构化数据提供类型提示的工具，但在“描述字典结构”这个场景下，取舍核心在于：**是否只需要一个带类型约束的纯字典，还是需要一个封装了行为的类**。\n\n- **TypedDict**  \n  - 纯粹的类型注解，运行时就是一个普通 `dict`，零额外开销。  \n  - 适合描述 JSON 载荷、配置文件、API 返回值等，可直接用于 `json.dumps()` 或作为 `**kwargs` 传递。  \n  - 键通过字符串下标访问（`d[\"key\"]`），受限于字典语法。  \n  - 不能在内部定义方法，但可以借助继承类增加方法（实例仍是字典）。  \n  - 类型检查器（`mypy`/`pyright`）只会验证键值类型，不产生任何运行时结构变化。  \n\n- **dataclass**  \n  - 生成一个真正的类，实例拥有属性访问（`obj.key`）、`__repr__`、`__eq__` 等方法。  \n  - 适合需要行为或逻辑的数据对象，可以在类中定义方法、`__post_init__` 校验、计算属性等。  \n  - 序列化为字典需借助 `dataclasses.asdict()`，且默认不可直接序列化为 JSON（需定制编码器）。  \n  - 可通过继承复用字段和方法，字段有默认值工厂等丰富选项。  \n  - 运行时存在一定内存和性能开销，但通常可忽略。  \n\n**取舍建议**  \n- 如果数据结构以“无行为的记录”存在，且要与大量字典编解码、数据库、Web 框架深度融合，优先选 `TypedDict`。  \n- 如果需要字段验证、派生属性、或者更习惯面向对象风格（点号访问），并且可以接受将对象转为字典再序列化，使用 `dataclass`。  \n- 混用时，可以将 `TypedDict` 作为函数参数类型，内部用 `dataclass` 处理逻辑，最后通过 `asdict()` 输出字典。  \n\n简单总结：**用 `TypedDict` 描述“像字典一样的数据”，用 `dataclass` 构造“具有行为的记录类”**；当两者边界模糊时，先确定数据能否保持为纯字典、是否需要跨系统传递，如果答案肯定，`TypedDict` 更轻量；如果有任何必须依附于数据的逻辑，则转向 `dataclass`。"
+}

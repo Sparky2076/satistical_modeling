@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-002",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 9.583312400005525,
+  "usage": {
+    "input_tokens": 101,
+    "output_tokens": 332,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是：**C. 监听介质**\n\n在 IEEE 802.3（以太网）标准中，采用 CSMA/CD（载波监听多路访问/冲突检测）机制。站点在发送数据帧之前，必须先监听传输介质是否有载波信号（即是否有其他站在发送）。若介质空闲则发送，若忙则继续监听并等待。其他选项不符合 802.3 的访问控制规则（等待冲突是发送过程中的行为，等待令牌属于令牌环网，接受一个帧则与发送流程无关）。"
+}

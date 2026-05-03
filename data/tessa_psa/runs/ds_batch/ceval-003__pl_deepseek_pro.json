@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-003",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 6.290733600006206,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 180,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "TCP的端对端（end-to-end）通信作用于**进程之间**（选项C）。  \n传输层负责将数据从源主机的应用进程可靠地传递到目的主机的应用进程，而主机间的通信由网络层（IP）完成。"
+}

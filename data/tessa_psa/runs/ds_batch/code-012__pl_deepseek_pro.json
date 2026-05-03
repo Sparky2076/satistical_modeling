@@ -1,0 +1,15 @@
+{
+  "task_id": "code-012",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 26.33067999999912,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 819,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 的 `logging` 模块（或其他类似日志框架）中，三者的职责划分如下：\n\n- **Logger**（日志记录器）  \n  - 是应用程序直接调用的接口，通过 `logger.debug()` 等方法产生日志记录。  \n  - 负责根据自身设置的**级别**与**过滤器**决定是否处理该记录。  \n  - 若决定处理，会将日志记录（`LogRecord`）分发给所有已添加的 **Handler**，并依 `propagate` 设置决定是否向父 Logger 传播。\n\n- **Handler**（处理器）  \n  - 负责将日志记录**输出到具体目标**，如控制台（`StreamHandler`）、文件（`FileHandler`）、网络、syslog 等。  \n  - 拥有独立的级别和过滤器，可再次过滤记录。  \n  - 将最终需要输出的记录交给所绑定的 **Formatter** 格式化。\n\n- **Formatter**（格式化器）  \n  - 决定日志输出的**最终字符串格式**，例如时间戳、日志级别、日志器名称、消息内容等。  \n  - 属于 Handler，通常一个 Handler 关联一个 Formatter，将 `LogRecord` 转换为可读的文本。\n\n**协作流程简述**：  \nLogger 产生并筛选记录 → 交给各 Handler 判断与分发 → Handler 用 Formatter 排版后写出。\n\n> 实际使用时常将 Logger 看作“入口”，Handler 看作“出口通道”，Formatter 看作“出口处的排版规则”，三者解耦，便于灵活控制日志目的地和格式。"
+}

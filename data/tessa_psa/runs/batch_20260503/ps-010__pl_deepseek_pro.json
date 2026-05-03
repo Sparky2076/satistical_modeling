@@ -1,0 +1,11 @@
+{
+  "task_id": "ps-010",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "batch_20260503",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 21.153251300012926,
+  "usage": {},
+  "error": "IncompleteRead(0 bytes read)",
+  "response_text": null
+}

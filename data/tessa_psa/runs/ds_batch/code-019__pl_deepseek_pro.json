@@ -1,0 +1,15 @@
+{
+  "task_id": "code-019",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 44.02026130000013,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 1368,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`asyncio.create_task` 和直接 `await` 协程对象是两种不同的协程执行方式，核心区别在于 **并发** 和 **控制权**。\n\n---\n\n### 1. 执行方式不同\n- **直接 `await coro()`**：  \n  顺序等待。当前协程会“卡”在这里，直到被 await 的协程完全执行完毕，才会继续往下走。多个协程只能**一个接一个**运行。\n- **`asyncio.create_task(coro())`**：  \n  创建 Task 并立即提交给事件循环，**并发调度**。create_task 会马上返回一个 Task 对象，原协程可以继续执行（或 await 其他东西），而 Task 会在后台运行。当多个 Task 被创建后，它们会**同时**（交错）执行。\n\n---\n\n### 2. 效率对比（典型例子）\n假设有两个异步 `sleep(1)`：\n```python\nasync def work():\n    await asyncio.sleep(1)\n\n# 顺序执行：耗时 ≈ 2 秒\nasync def main_serial():\n    await work()\n    await work()\n\n# 并发执行：耗时 ≈ 1 秒\nasync def main_concurrent():\n    t1 = asyncio.create_task(work())\n    t2 = asyncio.create_task(work())\n    await t1\n    await t2\n```\n直接 await 的总时间累加；create_task 将两个 sleep 重叠，总时间近似单个最长的耗时。\n\n---\n\n### 3. 返回对象与可管理性\n- **直接 await 协程**：得到的是协程的最终返回值，没有 Task 对象。你**无法取消**它，也不能检查状态，更不能用 `add_done_callback` 等。\n- **create_task**：返回一个 `Task`（是 `Future` 的子类），你可以：\n  - 随时 `task.cancel()` 取消任务\n  - 用 `task.done()` 查看是否完成\n  - 用 `task.result()` 获取结果（需要先等完成）\n  - 添加回调、处理异常等\n\n---\n\n### 4. 异常处理与遗忘风险\n- 如果**直接 await**，异常会立即在当前协程抛出，你可以直接 `try/except`。\n- 用 `create_task` 创建的 Task，如果**忘记 await 它**，里面的异常可能被静默忽略（只有在 Task 被垃圾回收时才会报 `Task exception was never retrieved` 警告）。通常需要显式 `await task` 或使用 `asyncio.gather` 来收集异常。\n\n---\n\n### 5. 何时使用哪个\n| 场景 | 推荐方式 |\n|------|----------|\n| 有先后依赖，必须等上一步完成 | 直接 `await` |\n| 多个独立的 I/O 操作，可同时进行 | `create_task` + gather/wait |\n| 需要能取消、超时控制、后台运行 | `create_task` |\n| 在异步生成器或异步上下文管理器内 | 一般直接 `await`，避免 Task 生命周期管理混乱 |\n\n---\n\n### 一句话总结\n> 直接 `await` 是“等我做完再走”，**串行**且简单；  \n> `asyncio.create_task` 是“你先去忙，我稍后检查”，**并发**且可控制，适合同时发起多个异步操作。"
+}

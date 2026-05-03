@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-023",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 5.726855900007649,
+  "usage": {
+    "input_tokens": 91,
+    "output_tokens": 160,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在人的基本权利语境中，生命、自由和平等（包括人格平等）都是公认的基本人权，而“独立”通常指民族或国家的独立，不属于个人的基本权利范畴。因此，不属于人的基本权利的是 **B. 独立**。"
+}

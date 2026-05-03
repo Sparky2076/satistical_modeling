@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-004",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 3.428153000000748,
+  "usage": {
+    "input_tokens": 97,
+    "output_tokens": 105,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "牛的发情周期平均为 **21天**（范围通常为18～24天）。  \n**答案：B. 21天**"
+}

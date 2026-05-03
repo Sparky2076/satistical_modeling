@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-001",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 32.45043819998682,
+  "usage": {
+    "input_tokens": 117,
+    "output_tokens": 2048,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": ""
+}

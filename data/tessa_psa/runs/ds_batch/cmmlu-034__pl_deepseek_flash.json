@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-034",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.404544299992267,
+  "usage": {
+    "input_tokens": 108,
+    "output_tokens": 237,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据中国机动车驾驶证准驾车型规定，C1（小型汽车）可以驾驶C3（低速载货汽车）。因此正确答案是 **A.低速载货汽车**。"
+}

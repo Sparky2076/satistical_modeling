@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-008",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 7.6607116000086535,
+  "usage": {
+    "input_tokens": 109,
+    "output_tokens": 218,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在Unix系统中，进程的打开文件表存储在进程的user结构（u结构）中，该数组通常被称为 `u_ofile`。它记录了该进程所有打开文件的文件描述符对应的file结构指针。因此正确选项是 **B. u_ofile**。"
+}

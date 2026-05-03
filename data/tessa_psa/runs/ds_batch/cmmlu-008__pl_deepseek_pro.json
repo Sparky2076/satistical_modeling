@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-008",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 11.628773299991735,
+  "usage": {
+    "input_tokens": 95,
+    "output_tokens": 347,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 **D. 梳状肌**（即梳状肌，pectinate muscles），它是右心房特有的内部结构，主要分布在右心耳和部分心房壁。其他选项中：肉柱（A）与乳头肌（C）属于心室结构，室上嵴（B）则位于右心室。"
+}

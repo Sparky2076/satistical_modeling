@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-044",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 11.962245300004724,
+  "usage": {
+    "input_tokens": 118,
+    "output_tokens": 366,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "我国“新时期”的外交（通常指改革开放后）主要包括：独立自主的不结盟政策（a）、与周边国家建立友好关系（b）以及对外开放（d）。而“一边倒与一大片”（c）是新中国成立初期的外交方针，不属于新时期。因此正确组合是abd。\n\n答案选：**C**"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-020",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 1.4037173000106122,
+  "usage": {
+    "input_tokens": 88,
+    "output_tokens": 65,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "太阳的光谱型是G型，具体为G2V。正确答案是D。"
+}

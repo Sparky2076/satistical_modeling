@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-036",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.6958993000007467,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 141,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "不属于第二信使的物质是胰岛素（D）。cAMP、cGMP和IP₃都是经典的细胞内第二信使，而胰岛素是一种多肽激素，属于第一信使，作用于细胞膜受体引发下游信号。"
+}

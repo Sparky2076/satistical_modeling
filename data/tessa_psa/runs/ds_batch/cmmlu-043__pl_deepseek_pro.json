@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-043",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 9.145425699985935,
+  "usage": {
+    "input_tokens": 107,
+    "output_tokens": 309,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "世界格局多极化（D）是当前国际关系发展的必然结果和客观趋势。随着新兴市场国家和发展中大国群体性崛起，国际力量对比更趋均衡，多极化成为不可阻挡的历史潮流，而单边主义、强权政治和霸权主义都有悖于时代发展潮流和国际社会的普遍愿望。"
+}

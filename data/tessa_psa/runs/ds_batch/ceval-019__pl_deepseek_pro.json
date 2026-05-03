@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-019",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 9.674001499995939,
+  "usage": {
+    "input_tokens": 132,
+    "output_tokens": 285,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据中国个人所得税法及相关规定，选项A（离婚析产分割房屋产权）、B（军人的转业费、复员费、退役金）、C（按照国家统一规定发放的退休费、离休费）均属于免税项目。选项D：个人购买福利彩票，一次中奖收入超过10000元的，应就全额征收个人所得税（12000元＞10000元），因此应征税。\n\n答案：D"
+}

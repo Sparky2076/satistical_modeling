@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-022",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 28.88369079999393,
+  "usage": {
+    "input_tokens": 140,
+    "output_tokens": 932,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确选项是 **D**。\n\n根据《中华人民共和国民法典》第九百四十五条的规定，业主需要告知物业服务人的情形包括：装饰装修房屋、转让或出租专有部分、设立居住权，以及依法改变共有部分用途。  \n- A项（出租房屋）属于出租专有部分，应当告知。  \n- B项（设立居住权）属于法条明确要求告知的情形。  \n- C项（改变绿地用途）属于依法改变共有部分用途，应当告知。  \n- D项（在自有住宅上设立地役权）不在上述法定告知范围内，因此不必告知物业服务人。"
+}

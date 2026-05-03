@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-023",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.804959400004009,
+  "usage": {
+    "input_tokens": 91,
+    "output_tokens": 222,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据基本法理和常见的人权分类，生命权、自由权、人格平等均属于人的基本权利。而“独立”通常指国家主权或个体自主性，并非国际公认的个人基本权利范畴。因此，正确答案是 **B. 独立**。"
+}

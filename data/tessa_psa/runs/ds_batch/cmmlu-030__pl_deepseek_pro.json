@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-030",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 14.906411100004334,
+  "usage": {
+    "input_tokens": 111,
+    "output_tokens": 428,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "题干“设计：修建：高楼”中，先设计高楼，再修建高楼，构成有计划性的先后动作与同一对象的关系。\n\n选项C“勘探：开采：石油”中，先勘探石油，再开采石油，同样为针对同一对象的先后动作，逻辑关系一致。\n\n故选C。"
+}

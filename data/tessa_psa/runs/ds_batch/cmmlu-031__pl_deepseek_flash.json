@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-031",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.4321220999991056,
+  "usage": {
+    "input_tokens": 108,
+    "output_tokens": 143,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "夜间机动车在照明条件良好的路段行驶时，应使用**近光灯**。远光灯会干扰对向车辆视线，危险报警闪光灯和雾灯仅用于特殊场景。正确答案：B。"
+}

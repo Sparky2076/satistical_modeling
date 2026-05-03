@@ -1,0 +1,15 @@
+{
+  "task_id": "code-016",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 16.164968099998077,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 1067,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`collections.Counter` 是 Python 中频次统计的利器，但新手容易踩到以下常见坑：\n\n1. **访问不存在的键返回 0，但 `dict` 方法仍会报错**  \n   `Counter` 是 `dict` 的子类，读取缺失键时返回 `0`（例如 `c['x']` 不报错）。但若用 `c.keys()`、`c.values()` 或 `c.items()`，缺失键不会出现。若用 `del c['x']` 删除不存在的键会引发 `KeyError`。\n\n2. **统计字符串时会按字符拆分，而非按单词**  \n   `Counter('hello world')` 会统计每个字母和空格，而非单词。要统计单词需先 `split()`：`Counter('hello world'.split())`。\n\n3. **加减运算可能产生负计数**  \n   `c1 + c2` 只保留正计数，但 `c1 - c2` 会保留差值，包括负数。若想忽略负数，可用 `c1 & c2`（取交集，最小计数）或 `c1 | c2`（取并集，最大计数）。另外 `c.subtract(other)` 会直接修改原对象，允许负值。\n\n4. **`most_common(n)` 对相同频次的元素顺序不保证稳定**  \n   当多个元素频次相同时，`most_common` 按元素首次出现的顺序返回（Python 3.7+ 字典有序），但这是实现细节，不应依赖。\n\n5. **大文本或流式数据时内存暴涨**  \n   `Counter` 将所有元素加载到内存。处理超大数据时宜用 `defaultdict(int)` 并结合增量更新，或使用 `collections.Counter.update()` 分批读取，但总体仍占内存。更优方案是外部排序或数据库聚合。\n\n6. **`elements()` 按计数重复输出，顺序按首次插入**  \n   若元素计数为负，`elements()` 会忽略该元素（不报错，但也不输出）。使用前最好确保计数非负。\n\n7. **`update()` 与直接加法的行为差异**  \n   `c.update('abc')` 会统计字符串中每个字符（相当于 +1 多次），而 `c['a'] += 1` 只加一次。若误用 `c.update('a')` 会将 `'a'` 视为可迭代对象，只统计一次（因为字符串只有一个字符），但若传列表 `['a']` 则统计一次，传 `'aa'` 则统计两次，容易混淆。\n\n建议：明确统计对象（列表、字符串或字典），常用 `c[item] += 1` 手动累加更可控；避免高并发下直接修改（非线程安全）。"
+}

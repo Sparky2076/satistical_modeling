@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-033",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 6.650709699999425,
+  "usage": {
+    "input_tokens": 105,
+    "output_tokens": 173,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在追尾事故中，安全头枕主要防止驾乘人员的头部因惯性猛烈后仰，从而有效保护**颈部**，避免挥鞭样损伤。\n\n正确答案：**B.颈部**"
+}

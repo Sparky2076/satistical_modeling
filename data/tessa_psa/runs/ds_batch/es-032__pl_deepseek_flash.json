@@ -1,0 +1,15 @@
+{
+  "task_id": "es-032",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.8778430999955162,
+  "usage": {
+    "input_tokens": 93,
+    "output_tokens": 160,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在企业债券注册制下，信息披露义务人（包括发行人等）需依法真实、准确、完整、及时披露信息，不得有虚假记载、误导性陈述或重大遗漏。责任边界以《证券法》《企业债券管理条例》及注册制相关规则为准，具体判断需结合信息披露的实质性影响、主观过错及因果关系等因素。监管机关（如证监会、发改委）及合同文本是重要依据，税务机关要求亦需遵守。**提示：企业应以税务机关、监管机关及合同文本为准，避免替代专业审计或法律意见。**"
+}

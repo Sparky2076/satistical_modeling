@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-002",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.4945532999990974,
+  "usage": {
+    "input_tokens": 101,
+    "output_tokens": 124,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在802.3（以太网）标准中，发送帧之前需要**监听介质**，即检测信道是否空闲。因此正确答案是C。"
+}

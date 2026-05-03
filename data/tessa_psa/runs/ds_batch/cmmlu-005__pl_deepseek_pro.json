@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-005",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 21.129124599989154,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 633,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "羊胴体中，**后腿肉**肌肉丰满、结缔组织相对较少，肉质细嫩多汁，适合涮、烤、炒等多种烹饪方式，通常是分级中品质较好的部位。相比之下，肩胛肉虽也较嫩但筋腱稍多；胸下肉偏肥腻，小腿肉筋多、肉质较硬，适合慢炖。因此正确答案是 **C.后腿肉**。"
+}

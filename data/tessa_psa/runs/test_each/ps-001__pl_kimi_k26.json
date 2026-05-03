@@ -1,0 +1,11 @@
+{
+  "task_id": "ps-001",
+  "policy_id": "pl_kimi_k26",
+  "run_id": "test_each",
+  "provider": "Kimi",
+  "model_id": "kimi-k2.6",
+  "latency_sec": 1.8231044999993173,
+  "usage": {},
+  "error": "HTTP 401: {\"error\":{\"message\":\"Invalid Authentication\",\"type\":\"invalid_authentication_error\"}}",
+  "response_text": null
+}

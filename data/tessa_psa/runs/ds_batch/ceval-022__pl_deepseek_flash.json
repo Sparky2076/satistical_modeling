@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-022",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 12.259349200001452,
+  "usage": {
+    "input_tokens": 140,
+    "output_tokens": 781,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《民法典》第945条，业主转让、出租物业专有部分、设立居住权或依法改变共有部分用途时，应当及时告知物业服务人。选项A、B、C分别对应出租、设立居住权和改变共有部分用途，均需告知；选项D（设立地役权）未在法条中明确要求，因此不必告知。\n\n答案：D"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-019",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 5.23083799998858,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 285,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`asyncio.create_task` 将协程包装成 `Task` 并立即调度到事件循环中，允许该协程与当前协程**并发**执行。返回 `Task` 对象，可以后续 `await` 获取结果或取消。\n\n直接 `await` 一个协程对象则是**顺序**执行：当前协程会暂停，等待该协程完成后才继续，不会并发。\n\n**区别总结**：\n- `create_task` → 并发（非阻塞调度），适合同时运行多个独立任务。\n- 直接 `await` → 串行（阻塞式等待），适合依赖后续步骤的单一任务。\n\n示例：\n```python\nasync def main():\n    task = asyncio.create_task(foo())  # foo 开始执行，不等待\n    await bar()                        # 当前继续执行 bar\n    await task                         # 等待 foo 完成\n```"
+}

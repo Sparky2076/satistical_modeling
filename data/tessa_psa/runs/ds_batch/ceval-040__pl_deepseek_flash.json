@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-040",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.2695491000049515,
+  "usage": {
+    "input_tokens": 125,
+    "output_tokens": 247,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "不正确的选项是 D。维生素B₆缺乏通常引起皮炎、周围神经炎等，而口角炎主要与维生素B₂缺乏有关。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-028",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 12.073614099994302,
+  "usage": {
+    "input_tokens": 132,
+    "output_tokens": 373,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "B\n\n班超是东汉著名军事家、外交家，曾出使西域，但《汉书》的主要作者是其兄班固，班固去世后由妹妹班昭等人续写，班超并未参与《汉书》的撰写。"
+}

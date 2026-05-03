@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-036",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 11.172131600003922,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 329,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "不属于第二信使的物质是 **D. 胰岛素**。  \n（胰岛素本身是一种激素，属于第一信使；cAMP、cGMP 和 IP₃ 均为典型的细胞内第二信使。）"
+}

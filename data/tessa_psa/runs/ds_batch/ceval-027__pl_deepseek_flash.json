@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-027",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.012299099995289,
+  "usage": {
+    "input_tokens": 118,
+    "output_tokens": 87,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是D。杜甫的《长恨歌》对应有误，实际作者为白居易。"
+}

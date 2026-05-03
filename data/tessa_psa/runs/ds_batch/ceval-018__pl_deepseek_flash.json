@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-018",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 9.992454000006546,
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 662,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据相关税收法规，选项D正确。在预约定价安排执行期内，税务机关确实应当每年监控企业的执行情况，并形成监控报告。其他选项均有错误：A项中续签申请应为期满前90日内；B项中双边预约定价安排应向国家税务总局提出谈签意向；C项中预约定价安排通常适用于3至5个连续年度，而非10年（仅双边或多边安排经协商可延长）。"
+}

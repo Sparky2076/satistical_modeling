@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-045",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.5249413999990793,
+  "usage": {
+    "input_tokens": 101,
+    "output_tokens": 119,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "现代学位制度确立的标志是德国柏林大学创设的哲学博士学位。因此正确答案是D。"
+}

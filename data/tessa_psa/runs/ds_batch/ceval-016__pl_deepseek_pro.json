@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-016",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 8.873033600000781,
+  "usage": {
+    "input_tokens": 112,
+    "output_tokens": 292,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "进行税务咨询服务的核心是**分析税收政策适用条款**，即将相关政策与咨询问题的事实情况相结合，作出专业判断。\n\n正确答案：C"
+}

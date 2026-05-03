@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-037",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.963846700004069,
+  "usage": {
+    "input_tokens": 97,
+    "output_tokens": 218,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "脱羧酶的辅酶是磷酸吡哆醛。"
+}

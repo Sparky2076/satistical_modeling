@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-035",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.390657000010833,
+  "usage": {
+    "input_tokens": 108,
+    "output_tokens": 147,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "技术进步一般会导致供给曲线右移，因为生产效率提高，相同价格下供给量增加。\n\n正确答案：A"
+}

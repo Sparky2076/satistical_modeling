@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-027",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 11.375582000007853,
+  "usage": {
+    "input_tokens": 118,
+    "output_tokens": 337,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "下列著名诗人与其代表作对应有误的是 **D**。\n\n- A 项：李白《将进酒》对应正确。\n- B 项：白居易《琵琶行》对应正确。\n- C 项：王之焕（应为王之涣）《登鹳雀楼》对应正确，虽有字形差异，但通常视为同一人。\n- D 项：《长恨歌》是白居易的代表作，并非杜甫所作，对应错误。"
+}

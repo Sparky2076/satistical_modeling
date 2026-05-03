@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-030",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.8674956999893766,
+  "usage": {
+    "input_tokens": 111,
+    "output_tokens": 170,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "C. 勘探：开采：石油"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-012",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.286057699995581,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 197,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 的 `logging` 模块中：\n\n- **Logger**：负责对外暴露日志接口（如 `debug()`、`info()`），记录日志消息并判断日志级别是否满足；可将日志传播给父 Logger；内部可绑定多个 Handler。\n- **Handler**：负责将日志消息发送到指定目标（如控制台、文件、网络等）；可设置独立的日志级别过滤器；每个 Handler 通常绑定一个 Formatter。\n- **Formatter**：负责定义日志消息的输出格式（如时间、级别、模块名、消息内容等），将 LogRecord 对象格式化成字符串。\n\n三者协作流程：Logger 生成 LogRecord → 根据级别判断 → 传递给绑定的 Handler → Handler 进一步过滤 → 调用 Formatter 格式化 → 输出。"
+}

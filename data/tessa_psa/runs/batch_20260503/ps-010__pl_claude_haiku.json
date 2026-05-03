@@ -1,0 +1,11 @@
+{
+  "task_id": "ps-010",
+  "policy_id": "pl_claude_haiku",
+  "run_id": "batch_20260503",
+  "provider": "Anthropic",
+  "model_id": "claude-haiku-4-5",
+  "latency_sec": 1.6588007999962429,
+  "usage": {},
+  "error": "HTTP 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"invalid x-api-key\"},\"request_id\":\"req_011Caf3eET4WVkLG98rUiu7R\"}",
+  "response_text": null
+}

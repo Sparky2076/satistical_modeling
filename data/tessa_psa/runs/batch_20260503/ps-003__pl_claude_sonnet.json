@@ -1,0 +1,11 @@
+{
+  "task_id": "ps-003",
+  "policy_id": "pl_claude_sonnet",
+  "run_id": "batch_20260503",
+  "provider": "Anthropic",
+  "model_id": "claude-sonnet-4-6",
+  "latency_sec": 1.1292351999873063,
+  "usage": {},
+  "error": "HTTP 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"invalid x-api-key\"},\"request_id\":\"req_011Caf3CwVeT3JhH3SZv1qHd\"}",
+  "response_text": null
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-015",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.043850400004885,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 100,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "《霓裳羽衣舞》是唐代宫廷乐舞，由唐玄宗李隆基创作或改编。正确答案是D.唐。"
+}

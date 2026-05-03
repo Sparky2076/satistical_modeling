@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-044",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.8873028000089107,
+  "usage": {
+    "input_tokens": 112,
+    "output_tokens": 143,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "C.高尚动机与低级动机"
+}

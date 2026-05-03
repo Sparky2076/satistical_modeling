@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-025",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.5155236999999033,
+  "usage": {
+    "input_tokens": 92,
+    "output_tokens": 143,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "区域经济从本质上讲是 **B.一体化经济**。它强调特定区域内各经济要素的相互联系与协同发展，形成有机整体。"
+}

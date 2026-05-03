@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-034",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 16.07560789999843,
+  "usage": {
+    "input_tokens": 108,
+    "output_tokens": 520,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《机动车驾驶证申领和使用规定》，小型汽车驾驶证（C1）的准驾车型为小型、微型载客汽车以及轻型、微型载货汽车、轻型、微型专项作业车，同时准予驾驶C2（小型自动挡汽车）、C3（低速载货汽车）、C4（三轮汽车）。因此，准驾车型为小型汽车的，可以驾驶低速载货汽车。\n\n选项中：\n- A. 低速载货汽车（对应C3，可以驾驶）\n- B. 轮式自行机械（需M证，不可驾驶）\n- C. 三轮摩托车（需D证，不可驾驶）\n- D. 中型客车（需B1证，不可驾驶）\n\n**正确答案：A. 低速载货汽车**"
+}

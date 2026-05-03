@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-044",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.803761499992106,
+  "usage": {
+    "input_tokens": 118,
+    "output_tokens": 246,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "我国新时期的外交方针与政策包括不结盟政策、与周边国家建立友好关系以及对外开放，而“一边倒与一大片”是建国初期的外交策略，不属于新时期。因此正确答案是C. abd。"
+}

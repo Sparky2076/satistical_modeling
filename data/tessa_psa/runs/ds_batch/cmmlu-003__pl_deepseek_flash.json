@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-003",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.78076080000028,
+  "usage": {
+    "input_tokens": 98,
+    "output_tokens": 205,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "常见家畜中，输精管不形成输精管壶腹的是 **B.猪**。马、牛、羊的输精管末端均膨大形成壶腹，而猪的输精管无此结构。"
+}

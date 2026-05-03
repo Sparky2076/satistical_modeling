@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-040",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 21.297013200004585,
+  "usage": {
+    "input_tokens": 125,
+    "output_tokens": 664,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "不正确的叙述是 **D**。  \n- 维生素 A 缺乏确实可导致夜盲症（A 正确）。  \n- 维生素 D 缺乏可引起佝偻病或骨软化症，常统称为软骨病（B 正确）。  \n- 维生素 B₁ 缺乏引起脚气病（C 正确）。  \n- 口角炎主要由维生素 B₂（核黄素）缺乏引起，而非维生素 B₆。维生素 B₆ 缺乏多表现为脂溢性皮炎、舌炎、周围神经病变等（D 错误）。"
+}

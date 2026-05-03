@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-017",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 12.808970099998987,
+  "usage": {
+    "input_tokens": 172,
+    "output_tokens": 768,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《公司法》规定，有限责任公司董事会成员为3至13人，两个以上国有企业投资设立的，董事会中应当有职工代表（A正确）。董事长产生办法由公司章程规定，可由小股东派人担任（C正确）。全体股东可约定不按出资比例分红（D正确）。董事辞职后是否继续履职，取决于辞职是否导致董事会成员低于法定人数，选项B未区分情况，说法绝对，不符合规定。\n\n答案：B"
+}

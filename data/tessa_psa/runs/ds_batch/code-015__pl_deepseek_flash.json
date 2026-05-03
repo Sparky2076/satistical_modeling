@@ -1,0 +1,15 @@
+{
+  "task_id": "code-015",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 7.892148799990537,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 508,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`enum.Enum` 和 `IntEnum` 的核心差异在于**成员的类型继承**及**与整数的互操作性**：\n\n1. **类型关系**  \n   - `Enum` 的成员是 `Enum` 类的实例，**不是 `int` 的子类**。  \n   - `IntEnum` 的成员既是枚举成员，又是 `int` 的子类，**可以直接当作整数使用**（如参与算术运算、作为列表索引等）。\n\n2. **比较行为**  \n   - `Enum` 成员之间只能进行**身份比较**（`is`）和**相等比较**（`==`），不支持大小比较（`<`, `>` 等），会引发 `TypeError`。  \n     ```python\n     class Color(Enum): RED = 1\n     Color.RED > 0  # TypeError\n     ```\n   - `IntEnum` 成员可以**与整数直接比较大小**，也支持 `+`, `-`, `&` 等整数运算。  \n     ```python\n     class Priority(IntEnum): LOW = 1; HIGH = 2\n     Priority.HIGH > 1   # True\n     Priority.LOW + 1    # 2（整数）\n     ```\n\n3. **典型使用场景**  \n   - **`Enum`**：纯语义标志，不需要数值运算，如状态码、方向、颜色等（避免整数意外混用）。  \n   - **`IntEnum`**：需要同时保留整数值行为（如兼容旧代码或API要求整数参数），或者需要按数值排序、位掩码操作（如组合权限标志）。\n\n**注意**：若希望成员间可比较大小但不能完全当作整数，可使用 `IntFlag`（支持位运算但继承自 `int`）或自定义 `Enum` 添加 `__lt__` 等方法。"
+}

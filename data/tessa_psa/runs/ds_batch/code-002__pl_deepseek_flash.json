@@ -1,0 +1,15 @@
+{
+  "task_id": "code-002",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 7.693035600008443,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 482,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "Python 的 GIL（全局解释器锁）确保同一时刻只有一个线程执行 Python 字节码。对于 **CPU 密集型** 的多线程任务，这会导致：\n\n- 无法利用多核并行加速，多线程退化为串行，甚至因线程切换开销而**比单线程更慢**。\n- 并行计算资源浪费，核心越多效果越差。\n\n**常见替代方案**（按推荐程度排序）：\n\n1. **多进程**（`multiprocessing` 或 `concurrent.futures.ProcessPoolExecutor`）  \n   每个进程有独立解释器和 GIL，可真正并行利用多核，适合 CPU 密集型任务。\n\n2. **异步 / 协程**（`asyncio`）  \n   仅适用于 I/O 密集型任务，对 CPU 密集无帮助（协程依然是单线程串行）。\n\n3. **C 扩展**（如 Cython、Numba、ctypes、C 扩展模块）  \n   在长时间运算的 C 代码段中手动释放 GIL（如 `nogil` 声明），但仍受 GIL 入场/退出的限制。\n\n4. **更换解释器**（如 Jython、IronPython、PyPy 的某些版本，但兼容性或生态有限）  \n   极少数场景下使用。\n\n**总结**：对 Python CPU 密集计算，**优先使用多进程**（需考虑进程间通信开销）；若需极高并行性能，应改用 C++/Rust 等语言开发关键模块。"
+}

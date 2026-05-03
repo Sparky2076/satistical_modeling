@@ -1,0 +1,15 @@
+{
+  "task_id": "code-009",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 20.514209699991625,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 750,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`itertools.groupby` 在遍历可迭代对象时，**只对键值连续相同的相邻元素进行分组**。一旦某个键发生变化，上一组就结束，后续即使再出现同一个键，也会被归入新的、独立的组。\n\n因此，如果原序列中相同键的元素分散在不同位置，`groupby` 会将其拆成多个零散的组，无法实现“把所有同键元素合并到一个组”的预期效果。\n\n**先排序**可以确保所有键值相同的元素都相邻排列，此时 `groupby` 才能一次性把同键元素完整聚合到同一组中。\n\n```python\nfrom itertools import groupby\n\ndata = [1, 2, 1, 2, 2]  # 未排序\n\n# 不排序：1 被分成两个组\nprint([(k, list(g)) for k, g in groupby(data)])\n# [(1, [1]), (2, [2]), (1, [1]), (2, [2, 2])]\n\n# 先排序：所有相同元素相邻，分组正确\nsorted_data = sorted(data)  # [1, 1, 2, 2, 2]\nprint([(k, list(g)) for k, g in groupby(sorted_data)])\n# [(1, [1, 1]), (2, [2, 2, 2])]\n```\n\n**补充说明**：这种设计让 `groupby` 变得惰性且节省内存，特别适合处理已排序的流式数据。如果需要不排序直接做全局分组，通常使用 `collections.defaultdict` 或 `pandas.groupby` 更合适。"
+}

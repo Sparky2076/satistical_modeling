@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-022",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 9.733923099993262,
+  "usage": {
+    "input_tokens": 92,
+    "output_tokens": 267,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "伦理学的核心是**规范伦理学**（D）。规范伦理学旨在确立人们应遵循的道德原则和行为规范，是连接元伦理学分析与现实道德实践的主体部分。"
+}

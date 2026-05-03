@@ -1,0 +1,15 @@
+{
+  "task_id": "es-045",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.7055786999990232,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 173,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "关键软件产品首版次保险补偿机制旨在降低用户首次应用国产关键软件的风险，通过保险和财政补偿分担试错成本，从而鼓励企业创新、加速国产软件替代与产业化推广。\n\n**提示：** 上述内容仅作一般性政策介绍，具体适用条件、补偿比例、申报流程及税务处理等，请以税务机关、监管机关的现行规定及合同文本为准。本回复不构成专业审计或法律意见。"
+}

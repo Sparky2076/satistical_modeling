@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-039",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 5.252508299992769,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 296,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "肺梗死形成的先决条件是严重淤血（选项B）。肺组织有肺动脉和支气管动脉双重供血，侧支循环丰富，单纯栓塞不易梗死；但当存在严重淤血（如左心衰竭）时，侧支循环难以代偿，易发生坏死。"
+}

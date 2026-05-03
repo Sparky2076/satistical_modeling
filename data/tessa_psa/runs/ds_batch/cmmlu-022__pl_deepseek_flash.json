@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-022",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.8779391999996733,
+  "usage": {
+    "input_tokens": 92,
+    "output_tokens": 149,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "伦理学的核心是规范伦理学，因为它直接研究道德规范和行为准则，探讨“应当如何行动”的根本问题。"
+}

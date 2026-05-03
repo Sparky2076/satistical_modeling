@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-041",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 6.049425099990913,
+  "usage": {
+    "input_tokens": 137,
+    "output_tokens": 386,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确顺序为：乒乓外交（c）→ 恢复联合国合法席位（a）→ 尼克松访华（b）→ 中日签署外交关系的联合声明（e）→ 中美建交（d），即 cabed。因此，答案是 A。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-021",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.542277300002752,
+  "usage": {
+    "input_tokens": 124,
+    "output_tokens": 209,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "C. 类比推理是判例法国家运用的一种基本的法律推理方法"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-007",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 55.827568799999426,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 2048,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": ""
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-006",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 32.90667620000022,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 987,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "选择 `ThreadPoolExecutor` 还是 `ProcessPoolExecutor`，核心看**任务类型**与**GIL 影响**。\n\n- **CPU 密集型**（大量计算、数据处理）→ **ProcessPoolExecutor**\n  - Python 有 GIL，线程无法并行执行 Python 字节码，用线程对计算加速没用。\n  - 进程有独立 GIL 和内存空间，实现真正并行，能榨干多核。\n\n- **I/O 密集型**（网络请求、文件读写、数据库操作、睡眠等）→ **ThreadPoolExecutor**\n  - I/O 等待时会释放 GIL，线程可并发，总体吞吐量高。\n  - 线程创建和切换开销远小于进程，内存占用低。\n\n**选型要点展开：**\n\n1. **GIL 限制**：线程池受制于 GIL，不能并行计算，但 I/O 时 GIL 会释放，多线程依然能并发等待 I/O；进程池不受此限。\n2. **资源开销**：线程共享内存，启动快、内存省；进程独立地址空间，启动慢、内存占用高（需考虑 `fork` 或 `spawn` 的开销）。\n3. **数据共享**：线程间直接共享变量（需加锁）；进程间传递数据必须序列化（`pickle`），大数据量通信用队列或共享内存，复杂度和开销上升。\n4. **稳定性隔离**：子进程崩溃一般不影响主进程；子线程崩溃可能导致整个程序终止。\n5. **适用场景示例**：\n   - 线程池：爬虫、API 调用、文件下载、日志写入。\n   - 进程池：图像视频处理、科学计算、机器学习推理、大量 CPU 计算的 map/reduce。\n6. **混合使用**：复杂任务可组合（如进程池内嵌线程池），但优先从单一模型开始。\n\n> 实际选型时，最好针对目标任务做小规模基准测试，特别是对于混合负载或持有 GIL 的 C 扩展，行为可能与典型情况不同。"
+}

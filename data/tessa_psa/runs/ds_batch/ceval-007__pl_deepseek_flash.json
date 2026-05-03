@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-007",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.7522234999923967,
+  "usage": {
+    "input_tokens": 116,
+    "output_tokens": 166,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "动态重定位的特点是在程序执行过程中，由硬件自动将逻辑地址转换为物理地址，因此正确答案是 D。"
+}

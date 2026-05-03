@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-015",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 6.433341399999335,
+  "usage": {
+    "input_tokens": 170,
+    "output_tokens": 307,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "被比较元素依次为：A[7]、A[3]、A[5]、A[6]，对应选项 D。"
+}

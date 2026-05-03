@@ -1,0 +1,15 @@
+{
+  "task_id": "code-005",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 30.63778450000973,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 958,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`contextlib.contextmanager` 装饰器可以将一个生成器函数快速转换为上下文管理器，与 `with` 语句配合的基本模式如下：\n\n### 1. 定义上下文管理器函数\n- 使用 `@contextmanager` 装饰一个生成器函数。\n- 在 `yield` **之前**写 `__enter__` 阶段的逻辑（获取资源、打开文件/连接等）。\n- 在 `yield` **之后**写 `__exit__` 阶段的清理逻辑，**必须放在 `try...finally` 块中**，以确保即使 `with` 代码块发生异常也能执行清理。\n- `yield` 抛出的值会被赋给 `with ... as` 后面的变量；若不需要返回值，可以 `yield` 而不带表达式。\n\n### 2. 与 `with` 语句配合\n- 像使用普通上下文管理器一样，在 `with` 语句中调用该函数。\n- `with` 代码块执行时，生成器会停在 `yield` 处；代码块结束后（或发生异常时），继续执行 `yield` 之后的清理代码。\n\n### 典型代码模式\n\n```python\nfrom contextlib import contextmanager\n\n@contextmanager\ndef managed_resource(*args):\n    # 进入阶段：获取资源\n    resource = acquire_resource(*args)\n    try:\n        yield resource          # 将资源提供给 with 代码块\n    finally:\n        # 退出阶段：释放资源（无论是否异常都会执行）\n        release_resource(resource)\n```\n\n使用示例：\n\n```python\nwith managed_resource() as res:\n    # 使用 res 进行操作\n    do_something(res)\n```\n\n### 异常处理模式\n如果需要根据异常类型决定是否抑制异常，可在 `try` 块后增加 `except` 处理，并在需要抑制时返回 `True`：\n\n```python\n@contextmanager\ndef suppress_errors():\n    try:\n        yield\n    except SomeSpecificError:\n        # 处理并抑制该异常\n        return True   # 返回 True 告诉 with 不要继续传播异常\n```\n\n### 关键点\n- `yield` 之前的代码等效于 `__enter__`，之后（`finally` 内）的代码等效于 `__exit__`。\n- 清理逻辑务必放入 `finally` 块，否则 `with` 代码块内的未处理异常会导致清理代码被跳过。\n- `contextmanager` 装饰器自动实现了 `__enter__` 和 `__exit__` 协议。\n\n这种模式让自定义上下文管理器变得非常简洁，无需编写类并实现两个魔术方法。"
+}

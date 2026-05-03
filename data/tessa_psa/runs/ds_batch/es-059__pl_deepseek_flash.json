@@ -1,0 +1,15 @@
+{
+  "task_id": "es-059",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.5612849999888567,
+  "usage": {
+    "input_tokens": 90,
+    "output_tokens": 137,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "产业基础再造工程重点支持以下领域：核心基础零部件（元器件）、关键基础材料、先进基础工艺、产业技术基础（“四基”），以及工业软件、高端装备等短板环节，推动产业链供应链自主可控和高质量发展。\n\n**提示：** 企业在申报或实施过程中，应以税务机关、监管机关发布的正式文件及合同文本为准，本回答不能替代专业审计或法律意见。建议及时查阅最新官方政策并咨询专业机构。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-004",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.2780880000063917,
+  "usage": {
+    "input_tokens": 97,
+    "output_tokens": 109,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "牛的发情周期平均为21天，因此正确选项是B。"
+}

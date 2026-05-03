@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-006",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.9958639999968,
+  "usage": {
+    "input_tokens": 107,
+    "output_tokens": 225,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在Unix中，要跨文件系统建立文件或目录的链接，必须使用符号链接（软链接），因为硬链接不能跨文件系统。`ln -s`命令用于创建符号链接，因此正确答案是B。\n\n```json\n{\n  \"answer\": \"B\"\n}\n```"
+}

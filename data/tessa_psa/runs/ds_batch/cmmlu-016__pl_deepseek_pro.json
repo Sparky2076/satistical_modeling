@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-016",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 13.761954000001424,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 500,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "蛇夫座（Ophiuchus）是梅西叶天体分布最密集的星座之一，共包含7个梅西叶天体（M9、M10、M12、M14、M19、M62、M107），数量远多于其他选项。因此答案为 **D.蛇夫座**。\n\n简单对比：武仙座有2个（M13、M92），猎户座有3个（M42、M43、M78），船尾座有3个（M46、M47、M93）。"
+}

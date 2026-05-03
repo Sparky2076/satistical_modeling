@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-007",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 16.674101900003734,
+  "usage": {
+    "input_tokens": 116,
+    "output_tokens": 519,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "动态重定位的核心特点是：在程序执行过程中，当访问内存单元时才进行地址变换，即将逻辑地址转换为实际的物理地址。它需要硬件地址变换机构（如基址寄存器）的支持，且装入程序相对简单。因此正确选项是：\n\n**D. 在执行时将逻辑地址变换成内存地址**"
+}

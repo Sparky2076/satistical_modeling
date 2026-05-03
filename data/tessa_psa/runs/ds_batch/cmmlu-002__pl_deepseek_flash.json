@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-002",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.8817330000019865,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 149,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "产蛋量最高的鸭品种是绍鸭（绍兴鸭），它是我国著名的蛋用型鸭种，产蛋性能优异。因此，正确答案是 D。"
+}

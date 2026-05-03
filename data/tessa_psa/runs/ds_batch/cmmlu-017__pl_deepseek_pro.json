@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-017",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 55.793705200005206,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 1745,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 D.以色列（Israel）。\n\n在2023年，印度成功发射了“月船3号”（Chandrayaan-3），日本发射了小型月球着陆器SLIM（同时日本民间企业ispace的Mission 1也在这一年尝试登月），俄罗斯发射了“月球25号”（Luna 25）。而以色列在当年没有实际的月球探测器发射计划。  \n若题目所指“本年度”为此背景年份，则以色列是唯一没有发射月球探测器计划的国家。"
+}

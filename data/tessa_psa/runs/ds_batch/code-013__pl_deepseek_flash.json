@@ -1,0 +1,15 @@
+{
+  "task_id": "code-013",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 7.768606099998578,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 472,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 异常处理中，`raise ... from e` 和 `raise ... from None` 用于控制异常链（exception chaining）的显示方式。\n\n- **`raise new_exception from e`**：显式将 `e` 设置为新异常的 `__cause__`。当打印异常回溯时，会显示 “During handling of the above exception, another exception occurred:”，清晰呈现原始异常 `e` 与新异常之间的因果关系。\n- **`raise new_exception from None`**：抑制隐式异常上下文，将新异常的 `__cause__` 和 `__context__` 均设为 `None`。这样做会完全切断异常链，回溯信息中**不会**显示原始异常，适合在捕获并处理异常后，不希望暴露内部实现细节的场景。\n\n简而言之，`from e` 保留并显式链接异常链，`from None` 则彻底截断异常链。"
+}

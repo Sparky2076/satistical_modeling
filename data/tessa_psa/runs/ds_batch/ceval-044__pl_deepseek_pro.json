@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-044",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 8.751288400002522,
+  "usage": {
+    "input_tokens": 112,
+    "output_tokens": 301,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据学习动机的社会意义（即是否符合社会利益和道德标准），通常分为高尚的动机与低级的动机。高尚动机以利他为核心，低级动机以利己为核心。故选项C正确。"
+}

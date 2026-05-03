@@ -1,0 +1,15 @@
+{
+  "task_id": "code-011",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.2746305000036955,
+  "usage": {
+    "input_tokens": 75,
+    "output_tokens": 196,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`typing.Protocol` 支持**结构子类型**（structural subtyping），即只要对象实现了协议中定义的方法和属性，就自动被视为该类型的子类型，无需显式继承。而 `ABC`（抽象基类）采用**名义子类型**（nominal subtyping），必须通过显式继承或 `register()` 注册才能视为子类型。简言之：Protocol 看“有什么”，ABC 看“是谁”。"
+}

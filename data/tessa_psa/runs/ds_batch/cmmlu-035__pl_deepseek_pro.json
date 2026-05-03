@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-035",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 5.820395100003225,
+  "usage": {
+    "input_tokens": 110,
+    "output_tokens": 158,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "安全气囊是一种**辅助驾乘人员保护系统**（选项C）。它在车辆发生剧烈碰撞时迅速充气弹出，与安全带配合使用，为车内人员提供缓冲保护，减轻伤害。其他选项中，A（防抱死制动系统）和B（电子制动力分配系统）属于主动安全或制动系统，D（驾驶人头颈保护系统）通常指座椅头枕等保护装置，均非安全气囊。"
+}

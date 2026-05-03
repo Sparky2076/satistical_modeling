@@ -1,0 +1,15 @@
+{
+  "task_id": "ps-026",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 65.76245900000504,
+  "usage": {
+    "input_tokens": 93,
+    "output_tokens": 2047,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "海域使用论证和海洋环境影响评价（简称“海环评”）在程序上的衔接，目前已从早期的“串联审批”全面转向以“多评合一”为核心的并联衔接机制。根据现行法律法规以及自然资源部、生态环境部关于深化“放管服”改革的公开部署，其衔接要点主要体现在以下三个环节：\n\n### 1. 报告编制阶段"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-026",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.3477292000025045,
+  "usage": {
+    "input_tokens": 168,
+    "output_tokens": 248,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "甲应该要求乙每次至少给30元才可考虑参加这个游戏。因为三枚硬币全正面或全反面的概率为1/4，其余情况概率为3/4。设乙给甲x元，则甲的期望收益为(1/4)x + (3/4)×(-10) = (x-30)/4，要使其不小于0，需x≥30。\n\n答案：D"
+}

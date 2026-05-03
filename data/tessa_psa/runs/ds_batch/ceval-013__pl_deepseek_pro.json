@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-013",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 4.407930500005023,
+  "usage": {
+    "input_tokens": 114,
+    "output_tokens": 148,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "D.连续不连续都可以"
+}

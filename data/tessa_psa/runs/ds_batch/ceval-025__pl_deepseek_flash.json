@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-025",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 8.081522800013772,
+  "usage": {
+    "input_tokens": 171,
+    "output_tokens": 458,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《中华人民共和国民法典》第985条关于不当得利的规定，不当得利是指没有合法根据取得利益，造成他人损失，受损失方有权请求返还。但以下情形除外：为履行道德义务的给付、债务到期前的清偿、明知无给付义务而进行的债务清偿。选项A属于履行道德义务（兄弟间学费资助），选项B属于明知无债务而清偿，选项C的赌债属于非法债务，一般不适用不当得利返还。选项D中，吴某误收他人牛群且不知情，没有合法依据获利，造成陈某损失，符合不当得利构成要件。\n\n因此，可以适用不当得利主张请求权的情形是**D**。"
+}

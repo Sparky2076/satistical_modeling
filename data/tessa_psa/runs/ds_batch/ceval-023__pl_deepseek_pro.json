@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-023",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 14.229012600000715,
+  "usage": {
+    "input_tokens": 151,
+    "output_tokens": 440,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《中华人民共和国著作权法》第三十五条第二款的规定，作品刊登后，除著作权人声明不得转载、摘编的外，其他报刊可以转载或者作为文摘、资料刊登，但应当按照规定向著作权人支付报酬。本题中，张某已发表论文且未作版权说明（即未声明不得转载），乙期刊社将其作为资料刊登属于法定许可，无须经作者张某同意，但必须向作者支付报酬。甲期刊社并非著作权人，无需向其支付报酬，且该行为不构成侵权，亦非合理使用。\n\n答案：D"
+}

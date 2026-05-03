@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-035",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 9.158024800010026,
+  "usage": {
+    "input_tokens": 108,
+    "output_tokens": 261,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "技术进步一般会导致 **A. 供给曲线右移**（供给增加）。技术进步降低了生产成本，使生产者在相同价格下愿意并能够提供更多产品，因此整条供给曲线向右移动。供给量的变化是由商品自身价格变动引起的，而非技术进步所致。"
+}

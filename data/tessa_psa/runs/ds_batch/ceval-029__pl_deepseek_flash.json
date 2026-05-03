@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-029",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 11.022984100010945,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 654,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "该数列的规律是：每个数都是9乘以一个完全平方数，并且符号交替（前三项为负，中间0，后三项为正）。具体为：-9×9, -4×9, -1×9, 0×9, 1×9, 4×9，其中乘数分别为-3², -2², -1², 0², 1², 2²，下一个乘数为3²=9，因此下一个数为9×9=81。\n\n答案：C.81"
+}

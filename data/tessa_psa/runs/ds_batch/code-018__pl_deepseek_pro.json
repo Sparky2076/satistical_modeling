@@ -1,0 +1,15 @@
+{
+  "task_id": "code-018",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 33.4742816999933,
+  "usage": {
+    "input_tokens": 76,
+    "output_tokens": 986,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`match-case` 是**声明式模式匹配**，在以下场景中比 `if-elif` 链的可读性优势最明显：\n\n1. **多路字面量/枚举分支**  \n   - 避免反复写 `变量 ==`，结构更平直，意图一目了然。  \n   - 例：处理 HTTP 状态码、命令词、菜单选项等。\n\n2. **解构复合数据结构**  \n   - 匹配元组、列表、字典、对象字段并**同时提取**内部值，无需手动索引、`isinstance` 或 `.get()`。  \n   - 典型场景：解析坐标 `(0, y)`、`(x, 0)`、`(x, y)`；匹配嵌套 JSON 形状；处理 AST 节点。\n\n3. **组合多个模式（`|`）**  \n   - 一个 `case` 用 `|` 合并多个值，避免 `if a == 1 or a == 2 or a == 3` 长链。  \n   - 例如 `case 401 | 403 | 404:` 语义直接。\n\n4. **模式 + 守卫（`if`）**  \n   - 把结构匹配和附加条件分离，逻辑层次清晰：先匹配“形状”，再检查具体约束。  \n   - 可用于“若为 `(x, y)` 且 `x > y` 则…”，避免 `if isinstance(...) and ...` 的嵌套。\n\n5. **处理标签联合/变体类型**  \n   - 按数据标签（如 `(\"error\", msg)` vs `(\"ok\", value)`）分派，比一连串类型检查和属性访问更直观。\n\n**结论**：只要分支依据是数据的“形状”或“种类”，`match-case` 都能显著减少重复代码和嵌套，提升意图表达；而纯基于复杂布尔表达式、无结构可言的判断仍适合用 `if-elif`。"
+}

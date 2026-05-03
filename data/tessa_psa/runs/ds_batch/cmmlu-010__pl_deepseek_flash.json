@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-010",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.580715100004454,
+  "usage": {
+    "input_tokens": 93,
+    "output_tokens": 148,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "舌下神经核位于延髓，因此正确答案是B.延髓。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-026",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 17.25626409999677,
+  "usage": {
+    "input_tokens": 168,
+    "output_tokens": 559,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "要判断甲是否应该参加游戏，需要计算甲的期望收益。\n\n- 扔三枚硬币，总共有 \\(2^3 = 8\\) 种等可能结果。\n- 全是正面或全是反面的情况有 2 种（HHH、TTT），概率为 \\(\\frac{2}{8} = \\frac{1}{4}\\)，此时乙给甲 \\(x\\) 元。\n- 两正一反或两反一正的情况有 6 种，概率为 \\(\\frac{6}{8} = \\frac{3}{4}\\)，此时甲给乙 10 元。\n\n甲的期望收益为：\n\\[\nE = \\frac{1}{4} \\cdot x + \\frac{3}{4} \\cdot (-10) = \\frac{x - 30}{4}\n\\]\n要使甲愿意参加，期望收益应至少为 0：\n\\[\n\\frac{x - 30}{4} \\geq 0 \\implies x \\geq 30\n\\]\n因此，甲应要求乙每次至少给 **30 元**。\n\n答案：**D.30**"
+}

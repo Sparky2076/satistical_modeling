@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-042",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.650927599999704,
+  "usage": {
+    "input_tokens": 126,
+    "output_tokens": 278,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "亚非会议（万隆会议）成功的根本原因是 **C. 亚非各国有团结反帝反殖的共同愿望**。尽管与会国之间存在社会制度、意识形态等差异，但共同的反帝反殖目标促使他们求同存异、达成共识。中国提出的“求同存异”方针（选项B）是重要推动因素，但并非根本原因；选项A和D与史实不符。"
+}

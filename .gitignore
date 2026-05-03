@@ -1,5 +1,4 @@
-# Large API run artifacts (per-task JSON under data/tessa_psa/runs/)
-data/tessa_psa/runs/
+
 
 # Python
 __pycache__/

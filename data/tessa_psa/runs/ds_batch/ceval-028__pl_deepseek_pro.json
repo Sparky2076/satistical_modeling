@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-028",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 10.690687399997842,
+  "usage": {
+    "input_tokens": 157,
+    "output_tokens": 313,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "我国推进“橄榄型”收入分配结构，核心是通过“提低、扩中、调高”等措施缩小贫富差距，让中等收入群体成为社会主体。这一改革属于分配领域的调整，直接目标是促进**社会的公平**，保障共同富裕。\n\n答案：C"
+}

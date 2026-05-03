@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-045",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 11.117923199999495,
+  "usage": {
+    "input_tokens": 101,
+    "output_tokens": 332,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 **D. 哲学博士学位**。\n\n**解析：**  \n1810年德国柏林大学（今洪堡大学）正式确立了以科研为核心的现代大学理念，并创设了**哲学博士学位**（Ph.D.）。这一制度将教学与科研紧密结合，要求学生在导师指导下进行独立研究并完成学位论文，这标志着以研究为导向的现代学位制度的正式确立。此后，哲学博士学位成为世界范围内高级研究学位的典范。"
+}

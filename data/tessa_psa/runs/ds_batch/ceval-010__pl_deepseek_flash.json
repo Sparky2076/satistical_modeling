@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-010",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.9425974000041606,
+  "usage": {
+    "input_tokens": 104,
+    "output_tokens": 232,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "早期采用交换技术的目的是在有限的内存中同时运行更多的程序，通过将暂时不运行的进程换出到磁盘，腾出内存空间给其他进程。因此，正确答案是 **A.能运行更多的程序**。"
+}

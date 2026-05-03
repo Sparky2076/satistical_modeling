@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-042",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.8387365999951726,
+  "usage": {
+    "input_tokens": 111,
+    "output_tokens": 145,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据活动过程的特点，动机可分为近景动机和远景动机，因此正确答案是D。"
+}

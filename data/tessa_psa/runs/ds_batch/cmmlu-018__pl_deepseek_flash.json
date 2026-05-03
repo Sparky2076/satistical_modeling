@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-018",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 1.817831499996828,
+  "usage": {
+    "input_tokens": 98,
+    "output_tokens": 83,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "梅西叶天体M44（蜂巢星团）位于巨蟹座的天区内。\n\n答案：A.巨蟹座"
+}

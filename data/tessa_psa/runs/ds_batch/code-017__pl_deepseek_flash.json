@@ -1,0 +1,15 @@
+{
+  "task_id": "code-017",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.788640900005703,
+  "usage": {
+    "input_tokens": 77,
+    "output_tokens": 147,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 3.10 及更高版本中，`zip(strict=True)` 用于要求所有传入的可迭代对象长度必须相等。如果长度不一致，会抛出 `ValueError`，而不是默认的截断行为。这有助于在数据对齐时及早发现错误，提高代码健壮性。"
+}

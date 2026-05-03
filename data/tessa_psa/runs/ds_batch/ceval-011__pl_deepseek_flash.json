@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-011",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 6.900674900010927,
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 405,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "分块查找（索引顺序查找）中，数据被分成若干块，块内元素不必有序，但块与块之间必须有序（即后一块的所有关键字均大于前一块的最大关键字）。同时，需要建立一个索引表，存储每块的最大（或最小）关键字及起始地址。因此，正确的选项是 **B**。"
+}

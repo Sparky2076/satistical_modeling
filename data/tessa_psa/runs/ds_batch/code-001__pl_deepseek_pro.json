@@ -1,0 +1,15 @@
+{
+  "task_id": "code-001",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 17.01673230000597,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 495,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 中，**浅拷贝**（`copy.copy()` 或 `list.copy()` 等）只复制对象本身，其内部嵌套的**可变对象**（如列表、字典）仍然共享同一引用。**深拷贝**（`copy.deepcopy()`）则会递归复制对象及其所有嵌套对象，生成完全独立的副本。\n\n**关键区别**  \n- 修改浅拷贝中**嵌套的可变元素**会影响到原对象。  \n- 深拷贝中无论修改顶层还是嵌套元素，都不会影响原对象。\n\n**何时使用 `copy.deepcopy`**  \n- 当对象内部包含**多层嵌套的可变结构**（如列表、字典、自定义对象等），并且你需要一个**完全独立、互不干扰**的副本时。  \n- 典型场景：复制包含嵌套列表的二维数组、复制含字典的配置对象，或需要隔离原对象与副本的后续操作。  \n\n对于只包含不可变元素或仅需浅层独立的情况，浅拷贝更高效。`deepcopy` 会遍历所有引用，性能开销较大，但能正确处理循环引用等复杂结构。"
+}

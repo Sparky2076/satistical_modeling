@@ -1,0 +1,15 @@
+{
+  "task_id": "es-040",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.358963399994536,
+  "usage": {
+    "input_tokens": 92,
+    "output_tokens": 274,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "工业产品生产许可证制度改革后，监管重点已从“事前审批”转向“事中事后监管”，核心包括：企业主体责任落实、生产过程控制、产品质量安全、风险监测与信用约束。企业应关注自身质量保证能力、关键工序管控、出厂检验等环节，并主动配合日常监督检查与随机抽查。\n\n**特别提示**：以上内容仅为一般性说明，具体操作请以税务机关、市场监管部门的最新规定及合同文本为准，切勿替代专业审计或法律意见。如涉及具体法律责任认定，建议咨询执业律师或专业机构。"
+}

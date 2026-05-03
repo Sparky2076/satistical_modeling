@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-021",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.1445856999926036,
+  "usage": {
+    "input_tokens": 88,
+    "output_tokens": 116,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "商业伦理学作为一门独立学科，最早出现在美国。因此，正确答案是 C.美国。"
+}

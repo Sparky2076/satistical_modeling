@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-012",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 7.198819400000502,
+  "usage": {
+    "input_tokens": 88,
+    "output_tokens": 193,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "审美的客体通常指审美活动中被欣赏、感知和评价的对象，与进行审美活动的主体（如鉴赏者、受众）相对。因此，艺术作品是审美客体。\n\n正确答案：**B.艺术作品**"
+}

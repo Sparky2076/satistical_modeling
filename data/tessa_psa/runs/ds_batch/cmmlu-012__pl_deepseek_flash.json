@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-012",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.5108945999963908,
+  "usage": {
+    "input_tokens": 88,
+    "output_tokens": 134,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "审美的客体是审美活动中被主体观照、欣赏的对象，即艺术作品。因此正确答案是B。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-028",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.267368299988448,
+  "usage": {
+    "input_tokens": 157,
+    "output_tokens": 220,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "C.社会的公平"
+}

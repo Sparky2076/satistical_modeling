@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-001",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 16.467234499999904,
+  "usage": {
+    "input_tokens": 95,
+    "output_tokens": 968,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在肉牛屠宰分割中，通常将胴体按部位区分肉质。大腿（尤其是后腿内侧的“米龙”“黄瓜条”等）肌肉纤维较细、结缔组织少，相对胸、腹和运动量大的小腿而言更嫩，适合煎烤或炒制；而胸肉纤维粗、腹肉脂肪与结缔组织多、小腿肌腱丰富，多用于炖煮。因此，选项中肉质较好的是大腿。\n\n答案：C"
+}

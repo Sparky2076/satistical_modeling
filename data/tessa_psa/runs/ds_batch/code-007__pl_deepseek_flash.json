@@ -1,0 +1,15 @@
+{
+  "task_id": "code-007",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 6.786329399998067,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 395,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`ensure_ascii=False` 用于 **json.dumps** 时，会让 JSON 字符串中的非 ASCII 字符（如中文、日文、特殊符号）以原始 Unicode 字符形式输出，而不是被转义成 `\\uXXXX` 格式。\n\n**主要使用场景：**\n\n1. **生成人类可读的 JSON 文件**（如配置文件、日志记录），直接显示中文或特殊字符，方便查看和编辑。\n2. **与前端或其他系统交互**，若对方期望直接接收 UTF-8 编码的原始字符（现代 Web 应用普遍支持），避免转义后增加传输体积和解析负担。\n3. **存储到数据库或文件**，保留原始文本内容，便于后续直接搜索或处理。\n4. **调试和开发阶段**，输出更直观的 JSON 内容，快速定位问题。\n\n**注意：** 若 JSON 后续被老旧系统或严格遵循 ASCII 标准的环境解析，可能需要关闭此选项（保持默认 `True`）。现代 JSON 解析器都支持 Unicode 字符，因此绝大多数情况下推荐开启 `ensure_ascii=False`。"
+}

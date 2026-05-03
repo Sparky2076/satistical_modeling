@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-035",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.6805449000094086,
+  "usage": {
+    "input_tokens": 110,
+    "output_tokens": 166,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "安全气囊是一种**辅助驾乘人员保护系统**（选项 C）。它在车辆发生碰撞时迅速充气，缓冲冲击，保护车内人员安全。其他选项分别对应不同的汽车安全或制动辅助系统。"
+}

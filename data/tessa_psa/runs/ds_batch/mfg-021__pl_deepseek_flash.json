@@ -1,0 +1,15 @@
+{
+  "task_id": "mfg-021",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.694854799992754,
+  "usage": {
+    "input_tokens": 71,
+    "output_tokens": 220,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "露天矿山边坡监测中，雷达与人工巡查互补主要体现在：\n\n- **雷达优势**：24小时连续、全天候、大范围实时监测，能早期发现毫米级形变，自动预警，覆盖盲区。\n- **人工优势**：可现场确认雷达报警的真实性、排查干扰因素，对局部裂隙、浮石、排水沟等细节进行灵活巡查，处理突发异常。\n\n**互补方式**：雷达作为“天眼”提供全局预警，人工作为“地面尖兵”进行验证、处置和精细化巡检，两者结合实现“面+点”“自动+人工”的立体安全监控。"
+}

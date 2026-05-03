@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-004",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.8178853999997955,
+  "usage": {
+    "input_tokens": 113,
+    "output_tokens": 283,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "对于传输层来说错误的是 **C**。TCP 和 UDP 是不同协议，端口号空间相互独立，因此可以同时使用同一个端口号。其他选项：A 正确，TCP 是全双工协议；B 正确，TCP 是字节流协议；D 正确，TSAD（传输层服务访问点地址）通常由 IP 地址和端口号组合而成。"
+}

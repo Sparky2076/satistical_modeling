@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-005",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.525075500001549,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 190,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "羊胴体中，肉质较好的部位是后腿肉，因其运动量适中、瘦肉多、口感细嫩。**正确答案：C.后腿肉**。"
+}

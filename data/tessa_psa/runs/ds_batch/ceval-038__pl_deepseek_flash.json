@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-038",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.1213463000021875,
+  "usage": {
+    "input_tokens": 109,
+    "output_tokens": 235,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "不正确的是 D。湿性坏疽坏死组织与健康组织之间界限不清，而干性坏疽界限清楚。"
+}

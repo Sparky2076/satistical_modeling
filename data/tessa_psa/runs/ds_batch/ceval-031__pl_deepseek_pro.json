@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-031",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 7.683730799995828,
+  "usage": {
+    "input_tokens": 125,
+    "output_tokens": 213,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在完全竞争市场中，当平均收益（AR）低于短期平均成本（SAC）但高于平均可变成本（AVC）时，厂商处于亏损状态。但由于收入能够覆盖全部可变成本和部分固定成本，继续生产比停产损失更小。因此，厂商应该继续生产。\n\n答案：B"
+}

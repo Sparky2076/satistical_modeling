@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-038",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 13.962150399995153,
+  "usage": {
+    "input_tokens": 109,
+    "output_tokens": 431,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在湿性坏疽中，坏死组织与健康组织之间的分界通常是**不清晰**的，这是由于病变部位含水分较多、腐败菌感染严重，导致炎症反应弥漫、组织肿胀明显。因此，**选项D不正确**。\n\n**正确描述：**\n- A. 合并腐败菌感染（如大肠杆菌、厌氧菌等）✅\n- B. 由于产生硫化氢、吲哚等物质，有恶臭味 ✅\n- C. 毒素吸收常引起明显的全身中毒症状 ✅\n- D. 坏死组织与健康组织之间界限不清楚（干性坏疽才界限清楚） ❌"
+}

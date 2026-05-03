@@ -1,0 +1,11 @@
+{
+  "task_id": "ps-009",
+  "policy_id": "pl_claude_haiku",
+  "run_id": "batch_20260503",
+  "provider": "Anthropic",
+  "model_id": "claude-haiku-4-5",
+  "latency_sec": 5.033703000008245,
+  "usage": {},
+  "error": "URL error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)",
+  "response_text": null
+}

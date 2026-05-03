@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-006",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 7.740830800001277,
+  "usage": {
+    "input_tokens": 97,
+    "output_tokens": 205,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "壁胸膜的分部包括肋胸膜、膈胸膜、纵隔胸膜和胸膜顶。肺胸膜属于脏胸膜，不属于壁胸膜的分部。\n\n答案：B.肺胸膜"
+}

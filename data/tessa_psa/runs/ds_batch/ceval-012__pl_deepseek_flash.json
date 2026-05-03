@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-012",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.533985300004133,
+  "usage": {
+    "input_tokens": 111,
+    "output_tokens": 192,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "最恰当的资源组合方式是 **C. 组合**。在面向对象设计中，组合能灵活地组合不同业务行为（如存钱、取钱、转账），避免继承带来的紧耦合，提高系统可维护性和扩展性。"
+}

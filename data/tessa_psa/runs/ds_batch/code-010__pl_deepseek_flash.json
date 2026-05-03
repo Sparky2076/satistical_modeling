@@ -1,0 +1,15 @@
+{
+  "task_id": "code-010",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.309255400003167,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 163,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 的 `dataclasses` 中，直接使用 `[]` 作为默认值会导致所有实例共享同一个列表对象，从而引发数据串改的 bug。使用 `field(default_factory=list)` 可以为每个实例独立创建一个新的空列表，保证数据隔离和正确性。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-038",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 7.273547200005851,
+  "usage": {
+    "input_tokens": 105,
+    "output_tokens": 203,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "称奶食为“白食”，肉食为“红食”的是 **D.蒙古族**。  \n蒙古族传统饮食将乳制品称为“白食”（查干伊德），将肉类称为“红食”（乌兰伊德）。"
+}

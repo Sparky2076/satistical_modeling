@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-025",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 17.014444499989622,
+  "usage": {
+    "input_tokens": 92,
+    "output_tokens": 516,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "区域经济的本质强调一定地域范围内各种经济要素的有机联系和整体性，其内部各组成部分之间形成分工协作、相互依存的统一整体，因此本质上是一体化经济。\n\n答案：**B**"
+}

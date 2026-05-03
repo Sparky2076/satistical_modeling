@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-005",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 40.407621499995,
+  "usage": {
+    "input_tokens": 152,
+    "output_tokens": 1283,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据TCP的RTT估计公式，新的RTT估计值为旧估计值与样本值的加权平均，通常采用指数加权移动平均：\n\\[\n\\text{RTT}_{\\text{new}} = (1 - \\alpha) \\times \\text{RTT}_{\\text{old}} + \\alpha \\times \\text{SampleRTT}\n\\]\n已知初始RTT估计值为35 ms，平滑因子 \\(\\alpha = 0.2\\)，样本依次为27 ms、30 ms、21 ms。需连续更新三次：\n\n第一次（样本27 ms）：\n\\[\n\\text{RTT}_1 = 0.8 \\times 35 + 0.2 \\times 27 = 28 + 5.4 = 33.4 \\text{ ms}\n\\]\n第二次（样本30 ms）：\n\\[\n\\text{RTT}_2 = 0.8 \\times 33.4 + 0.2 \\times 30 = 26.72 + 6 = 32.72 \\text{ ms}\n\\]\n第三次（样本21 ms）：\n\\[\n\\text{RTT}_3 = 0.8 \\times 32.72 + 0.2 \\times 21 = 26.176 + 4.2 = 30.376 \\approx 30.4 \\text{ ms}\n\\]\n因此第三个确认报文段到达后新的RTT估计值为30.4 ms。\n\n正确答案：D. 30.4ms"
+}

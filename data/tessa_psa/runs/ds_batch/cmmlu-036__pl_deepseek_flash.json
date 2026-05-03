@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-036",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.750224599993089,
+  "usage": {
+    "input_tokens": 105,
+    "output_tokens": 237,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "孔府菜的代表名菜是 **A. 诗礼银杏**。这道菜源自孔子“诗礼传家”的典故，以银杏果为主料，是孔府宴中具有文化象征意义的经典菜品。其他选项虽为高档菜肴，但不专属孔府菜代表。"
+}

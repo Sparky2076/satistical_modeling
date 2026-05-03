@@ -1,0 +1,15 @@
+{
+  "task_id": "code-018",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 6.475858900012099,
+  "usage": {
+    "input_tokens": 76,
+    "output_tokens": 364,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`match-case` 在以下场景可读性优势明显：\n\n1. **模式匹配替代多条件分支**  \n   当需要根据数据的**结构、类型或模式**（如解包元组、匹配枚举、守卫条件）进行分支时，`match-case` 比 `if-elif` 更直观。例如解析 JSON 或 AST 节点时，`match` 直接表达“如果结构是X则处理Y”。\n\n2. **分支条件存在重叠或复杂组合**  \n   `match-case` 支持 `|`（或）、通配符 `_`、模式绑定变量，能清晰表达“匹配A或B时执行同一逻辑”，而 `if-elif` 链往往需要重复书写条件或增加临时变量。\n\n3. **需要同时匹配多个值或结构解构**  \n   `match case (x, y)` 比 `if isinstance(...)` + 索引访问更简洁，且错误少。例如处理元组或列表的不同长度、字典的特定键。\n\n4. **守卫条件增强可读性**  \n   `case _ if condition:` 将额外条件放在模式后面，逻辑聚焦在“匹配这个模式且满足特定条件”，而 `if-elif` 链中守卫条件容易淹没在复杂表达式中。\n\n**反例**：简单数值判断或少量布尔组合（`if a > 0:`）仍推荐 `if-elif`，因 `match-case` 会引入额外缩进和模式匹配的认知负担。"
+}

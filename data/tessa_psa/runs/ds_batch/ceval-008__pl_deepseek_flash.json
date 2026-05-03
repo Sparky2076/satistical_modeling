@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-008",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.187461100009386,
+  "usage": {
+    "input_tokens": 109,
+    "output_tokens": 261,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 **B.u_ofile**。在Unix系统中，进程打开文件表存储在进程扩充控制块（user结构）的 `u_ofile` 字段中，用于管理进程打开的文件描述符。其他选项如 `u_pdir`、`u_dirp`、`u_pofile` 分别与目录指针或进程相关，但不是打开文件表。"
+}

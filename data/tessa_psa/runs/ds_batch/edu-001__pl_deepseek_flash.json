@@ -1,0 +1,15 @@
+{
+  "task_id": "edu-001",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 1.8671608000004198,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 106,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《普通高中数学课程标准（2017年版2020年修订）》，数学学科核心素养包含六个维度：数学抽象、逻辑推理、数学建模、直观想象、数学运算和数据分析。"
+}

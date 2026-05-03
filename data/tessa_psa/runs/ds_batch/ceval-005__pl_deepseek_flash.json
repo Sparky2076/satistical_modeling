@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-005",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 9.175378999992972,
+  "usage": {
+    "input_tokens": 152,
+    "output_tokens": 655,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据TCP的RTT估计公式：新RTT = (1-α)×旧RTT + α×样本RTT，其中α=0.2。初始RTT=35ms，依次用三个样本更新：\n\n- 第一个样本27ms：新RTT = 0.8×35 + 0.2×27 = 28 + 5.4 = 33.4ms  \n- 第二个样本30ms：新RTT = 0.8×33.4 + 0.2×30 = 26.72 + 6 = 32.72ms≈32.7ms  \n- 第三个样本21ms：新RTT = 0.8×32.72 + 0.2×21 = 26.176 + 4.2 = 30.376ms≈30.4ms  \n\n因此，第三个确认报文段到达后新的RTT估计值为30.4ms，对应选项D。\n\n答案：D"
+}

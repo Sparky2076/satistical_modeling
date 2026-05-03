@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-031",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 4.431806199994753,
+  "usage": {
+    "input_tokens": 125,
+    "output_tokens": 248,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在完全竞争厂商的短期均衡中，若AR（平均收益，即价格）小于SAC（短期平均总成本），说明厂商处于亏损状态；但若AR大于AVC（平均可变成本），则厂商继续生产能弥补部分固定成本，比立即停产损失更小。因此应选择“亏损，但应继续生产”。\n\n答案：B"
+}

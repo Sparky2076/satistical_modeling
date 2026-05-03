@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-009",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 5.805591299998923,
+  "usage": {
+    "input_tokens": 111,
+    "output_tokens": 164,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在虚拟页式存储管理方案中，将页面调入内存的工作由缺页中断处理程序完成。当访问的页面不在内存时，会触发缺页中断，操作系统响应中断后负责从磁盘读入所需页面。因此正确答案是 **D. 缺页中断处理**。"
+}

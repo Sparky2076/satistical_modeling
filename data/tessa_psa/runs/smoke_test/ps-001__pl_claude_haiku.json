@@ -1,0 +1,11 @@
+{
+  "task_id": "ps-001",
+  "policy_id": "pl_claude_haiku",
+  "run_id": "smoke_test",
+  "provider": "Anthropic",
+  "model_id": "claude-haiku-4-5",
+  "latency_sec": 1.3565522999997484,
+  "usage": {},
+  "error": "HTTP 401: {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"invalid x-api-key\"},\"request_id\":\"req_011Caf3EnhcPwU2gUkLPC2dt\"}",
+  "response_text": null
+}

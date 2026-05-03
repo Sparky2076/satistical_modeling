@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-021",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 10.305300000007264,
+  "usage": {
+    "input_tokens": 88,
+    "output_tokens": 307,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "商业伦理学作为一门独立的学科，最早出现在20世纪70年代的 **美国**。当时一系列企业丑闻促使学术界和公众开始系统关注商业道德问题，并逐步形成相关课程与研究体系。\n\n**答案：C.美国**"
+}

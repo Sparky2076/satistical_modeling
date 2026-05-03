@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-041",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 4.868432200004463,
+  "usage": {
+    "input_tokens": 101,
+    "output_tokens": 134,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "B.教学  \n\n**解析**：高等学校的根本任务是培养人才，而教学是实现教育目的和人才培养目标的基本途径，因此教学是高等学校的中心工作。"
+}

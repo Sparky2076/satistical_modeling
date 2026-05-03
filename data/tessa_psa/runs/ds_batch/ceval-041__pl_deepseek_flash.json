@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-041",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 1.8060721999936504,
+  "usage": {
+    "input_tokens": 101,
+    "output_tokens": 72,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "B.教学"
+}

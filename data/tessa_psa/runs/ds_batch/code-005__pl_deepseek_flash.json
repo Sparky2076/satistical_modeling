@@ -1,0 +1,15 @@
+{
+  "task_id": "code-005",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 7.05145659999107,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 436,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在 Python 中，`with` 语句与上下文管理器配合，用于管理资源（如文件、锁、数据库连接等），确保进入和退出时执行特定操作。基本模式有两种：\n\n### 1. 基于类的上下文管理器\n定义一个类，实现 `__enter__` 和 `__exit__` 方法。\n\n```python\nclass MyContext:\n    def __enter__(self):\n        # 进入 with 块时执行，返回的对象赋给 as 后的变量\n        print(\"进入\")\n        return self  # 或者其他资源\n\n    def __exit__(self, exc_type, exc_val, exc_tb):\n        # 退出 with 块时执行，无论是否异常\n        print(\"退出\")\n        # 如果返回 True，则抑制异常；返回 False 或不返回则传播异常\n        return False\n\nwith MyContext() as obj:\n    print(\"代码块\")\n```\n\n### 2. 基于生成器的上下文管理器（`@contextmanager`）\n使用 `contextlib.contextmanager` 装饰一个生成器函数，`yield` 前后分别对应 `__enter__` 和 `__exit__`。\n\n```python\nfrom contextlib import contextmanager\n\n@contextmanager\ndef my_context():\n    print(\"进入\")\n    try:\n        yield \"资源\"  # 返回给 as 变量\n    finally:\n        print(\"退出\")\n\nwith my_context() as resource:\n    print(resource)\n```\n\n两种模式都能确保资源被正确清理，但生成器模式代码更简洁，适合简单场景；类模式可更精细控制异常处理（如 `__exit__` 返回值）。"
+}

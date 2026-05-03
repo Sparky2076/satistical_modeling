@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-010",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 34.535089099998004,
+  "usage": {
+    "input_tokens": 104,
+    "output_tokens": 1041,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "C. 实现分时系统"
+}

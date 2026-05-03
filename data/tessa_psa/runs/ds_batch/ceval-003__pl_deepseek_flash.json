@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-003",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.368754800001625,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 114,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "C.进程之间"
+}

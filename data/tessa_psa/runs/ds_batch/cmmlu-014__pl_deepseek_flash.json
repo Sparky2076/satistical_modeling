@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-014",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 1.6501534999988507,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 85,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "话剧《龙须沟》的作者是**老舍**，因此正确答案是 **A**。"
+}

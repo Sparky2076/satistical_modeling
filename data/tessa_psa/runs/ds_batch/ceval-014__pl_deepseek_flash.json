@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-014",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 1.7707956999947783,
+  "usage": {
+    "input_tokens": 117,
+    "output_tokens": 81,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 D。在 C++ 中，友元函数可以在类的任何部分（私有、公有或保护区域）声明，没有位置限制。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-029",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 16.683805399996345,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 508,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "该数列为：-81，-36，-9，0，9，36，____。  \n观察各项绝对值：81，36，9，0，9，36，可发现它们分别是9²，6²，3²，0²，3²，6²。符号上前三项为负，中间为0，后三项为正，整体呈对称规律。按此规律，下一项应为9²=81，且符号为正。  \n故答案为C. 81。"
+}

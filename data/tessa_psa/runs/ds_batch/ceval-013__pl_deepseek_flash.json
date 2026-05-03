@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-013",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 1.8597824000025867,
+  "usage": {
+    "input_tokens": 114,
+    "output_tokens": 89,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 D。链式存储结构通过指针链接各个结点，结点在内存中的地址可以是连续的，也可以是不连续的，因此对地址连续性没有要求。"
+}

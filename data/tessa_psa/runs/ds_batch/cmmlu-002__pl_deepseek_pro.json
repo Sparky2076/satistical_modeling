@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-002",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 12.50502919999417,
+  "usage": {
+    "input_tokens": 100,
+    "output_tokens": 382,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 **D. 绍鸭**。\n\n绍兴鸭（简称绍鸭）是我国著名的蛋用型鸭品种，产蛋量极高，年产蛋可达250-300枚甚至更多，被誉为“产蛋机器”。其他选项中：高邮鸭为兼用型（以产双黄蛋闻名），北京鸭和樱桃谷鸭均为肉用型鸭种，其产蛋量均远不及绍鸭。"
+}

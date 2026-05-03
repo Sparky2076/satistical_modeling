@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-041",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 13.988789399998495,
+  "usage": {
+    "input_tokens": 137,
+    "output_tokens": 446,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 A。这些事件的正确先后顺序为：\n\n1. **乒乓外交（c）**：1971年4月，美国乒乓球队访华，打开中美交往大门。\n2. **恢复联合国的合法席位（a）**：1971年10月25日，联合国大会通过第2758号决议。\n3. **尼克松访华（b）**：1972年2月，美国总统尼克松访问中国。\n4. **中日签署外交关系的联合声明（e）**：1972年9月29日，中日邦交正常化。\n5. **中美建交（d）**：1979年1月1日，中美正式建立外交关系。\n\n顺序为 **c → a → b → e → d**，对应选项 A。"
+}

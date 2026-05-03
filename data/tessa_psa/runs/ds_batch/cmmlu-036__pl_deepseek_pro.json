@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-036",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 17.704106899996987,
+  "usage": {
+    "input_tokens": 105,
+    "output_tokens": 537,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "A. 诗礼银杏  \n（诗礼银杏是孔府菜中最具文化寓意的代表名菜，源自孔府诗礼堂前的银杏树；其余选项中，扒大乌参、黄焖鱼翅、清汤燕窝均非孔府菜的核心代表。）"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-024",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 9.416991400008556,
+  "usage": {
+    "input_tokens": 93,
+    "output_tokens": 279,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "关税的课税客体（即征税对象）是进出国境或关境的货物和物品。因此正确答案是：\n\n**A. 进出境的货物**\n\n其他选项辨析：\n- B. 消费者：通常为间接税负的实际承担者（负税人），而非课税客体。\n- C. 海关：是依法征收关税的行政机关（征税主体）。\n- D. 进出口商：是关税的纳税义务人（课税主体）。"
+}

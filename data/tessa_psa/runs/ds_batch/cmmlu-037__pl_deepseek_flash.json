@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-037",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 16.097096299999976,
+  "usage": {
+    "input_tokens": 103,
+    "output_tokens": 1102,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "正确答案是 **D.炸蛎黄**。\n\n**解析**：  \n- **三套鸭**：扬州名菜，属于经典淮扬菜。  \n- **叫花鸡**：江苏常熟名菜，属于苏锡菜，虽属江苏菜系但非淮扬菜代表。  \n- **虾仁锅巴**：又称“天下第一菜”，是江苏传统名菜，常归入淮扬菜或苏锡菜。  \n- **炸蛎黄**：以牡蛎为原料，是福建、广东沿海地区的常见菜肴，属于闽菜或粤菜，与淮扬菜无关。  \n\n因此，不属于淮扬菜的是炸蛎黄。"
+}

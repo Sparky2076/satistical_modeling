@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-011",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 15.776653900000383,
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 569,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "分块查找（索引顺序查找）的特点是：将数据分成若干块，块内数据可以无序，但块间必须有序（如前一块的最大关键字小于后一块的最小关键字），并建立由每块最大（或最小）关键字和块起始地址构成的索引表。\n\n因此，正确的数据组织方式是选项 **B**。\n\n**答案：B**"
+}

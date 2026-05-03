@@ -1,0 +1,15 @@
+{
+  "task_id": "code-003",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 6.378135499995551,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 397,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`list.sort()` 与 `sorted()` 的关键差异如下：\n\n1. **操作对象**  \n   - `list.sort()` 是列表的**方法**，仅能用于列表对象。  \n   - `sorted()` 是**内置函数**，可作用于任何可迭代对象（如列表、元组、字符串、字典等）。\n\n2. **返回结果**  \n   - `list.sort()` 直接**修改原列表**，返回 `None`。  \n   - `sorted()` **返回新列表**，原迭代对象不变。\n\n3. **内存与副作用**  \n   - `list.sort()` 原地排序，节省内存，但有副作用（原列表被改变）。  \n   - `sorted()` 创建新对象，原数据保留，但额外占用内存。\n\n4. **使用场景**  \n   - 无需保留原顺序且只需对列表排序时，用 `list.sort()` 更高效。  \n   - 需保留原数据或对非列表可迭代对象排序时，用 `sorted()`。  \n   - 两者均支持 `key` 和 `reverse` 参数，语法一致。\n\n示例：\n```python\na = [3, 1, 2]\nb = a.sort()       # b 是 None，a 变为 [1, 2, 3]\nc = sorted(a)      # c 是 [1, 2, 3]，a 不变\n```"
+}

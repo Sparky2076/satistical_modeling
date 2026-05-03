@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-012",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 14.66815690000658,
+  "usage": {
+    "input_tokens": 111,
+    "output_tokens": 520,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "在面向对象设计中，实现银行系统这类包含多种独立功能（存钱、取钱、转账等）的场景，最恰当的资源复用与组织方式是**组合**（Composition）。组合体现的是“has-a”关系，可以让银行系统类包含不同的业务处理对象（如存款处理器、转账处理器等），从而实现松耦合、易于扩展和维护。相比之下，继承（“is-a”关系）会带来不必要的层级耦合，重载只是方法层面的多态，实例化是创建对象的过程，均非宏观的资源组合方式。  \n\n答案：C.组合"
+}

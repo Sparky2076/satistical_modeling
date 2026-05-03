@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-040",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 3.97528539999621,
+  "usage": {
+    "input_tokens": 98,
+    "output_tokens": 101,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "我国南方地区吃青团的习俗主要与清明节相关，故正确答案是 **D. 清明节**。青团是用艾草汁染色的糯米团，通常包裹豆沙等馅料，是清明时节的传统时令点心。"
+}

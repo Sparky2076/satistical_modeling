@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-015",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 5.547640999997384,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 131,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "《霓裳羽衣舞》是唐代著名的宫廷乐舞，相传由唐玄宗李隆基作曲，杨贵妃表演，代表了唐代乐舞的最高成就。\n\n正确答案是 **D. 唐**。"
+}

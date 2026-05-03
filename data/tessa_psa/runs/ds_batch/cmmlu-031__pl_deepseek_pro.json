@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-031",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 15.527389000009862,
+  "usage": {
+    "input_tokens": 108,
+    "output_tokens": 480,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "夜间机动车通过照明条件良好的路段时，应当使用**近光灯**。  \n这样既能保证自身视线，又不会因强光影响对向车辆和行人。\n\n**正确选项：B.近光灯**"
+}

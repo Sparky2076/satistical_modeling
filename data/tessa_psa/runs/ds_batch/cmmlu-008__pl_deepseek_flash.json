@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-008",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.852167200006079,
+  "usage": {
+    "input_tokens": 95,
+    "output_tokens": 179,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "属于右心房的结构是梳状肌（D）。其他选项均为心室结构：肉柱和乳头肌位于心室，室上嵴位于右心室。"
+}

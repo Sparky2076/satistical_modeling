@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-019",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 5.865595199997188,
+  "usage": {
+    "input_tokens": 132,
+    "output_tokens": 349,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据《中华人民共和国个人所得税法》及相关规定，个人购买福利彩票一次中奖收入超过10,000元需全额缴纳个人所得税。选项D中奖12,000元，超出免税限额，因此应征收个人所得税。其他选项均属免税或非征税范围。\n\n答案：D"
+}

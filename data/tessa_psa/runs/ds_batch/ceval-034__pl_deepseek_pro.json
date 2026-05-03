@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-034",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 11.578576700005215,
+  "usage": {
+    "input_tokens": 117,
+    "output_tokens": 354,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "对于供给曲线上每一点的点弹性都恒等于1，根据点弹性公式 \\( E_s = \\frac{dQ}{dP} \\cdot \\frac{P}{Q} = 1 \\)，解此微分方程可得 \\( Q = kP \\)（\\( k>0 \\)），即供给曲线是一条过原点的直线，斜率可以是任意正常数，不要求斜率正好为1（即45°线）。因此正确选项为 **B.过原点的直线**。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-032",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 65.80213939999521,
+  "usage": {
+    "input_tokens": 99,
+    "output_tokens": 2048,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": ""
+}

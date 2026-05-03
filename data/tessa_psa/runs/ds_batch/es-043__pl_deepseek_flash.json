@@ -1,0 +1,15 @@
+{
+  "task_id": "es-043",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.9310076999972807,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 168,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "国家质量基础设施（NQI）是指计量、标准、认证认可、检验检测等质量要素的有机融合，为企业提供全链条质量技术支撑。对企业质量提升的含义在于：帮助企业建立统一的质量基准（计量）、规范生产过程（标准）、获得市场信任（认证认可）、确保产品合规（检验检测），从而降低交易成本、增强竞争力。  \n\n**提示**：以上内容仅供一般性参考，企业在具体操作中应以税务机关、监管机关的最新规定及合同文本为准，涉及审计、法律等专业事项时，请咨询有资质的专业人士，本回答不替代专业意见。"
+}

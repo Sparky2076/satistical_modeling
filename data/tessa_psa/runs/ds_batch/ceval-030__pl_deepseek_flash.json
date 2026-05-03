@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-030",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 5.454368599996087,
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 307,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "这段文字主要强调的是公共资源被过度VIP化导致的不公和浪费，因此正确选项是 **A.公共资源不该过度VIP**。"
+}

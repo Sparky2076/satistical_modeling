@@ -1,0 +1,15 @@
+{
+  "task_id": "code-003",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 19.47286609999719,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 701,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`list.sort()` 与 `sorted()` 是 Python 中两种排序方式，关键差异如下：\n\n1. **作用对象**\n   - `list.sort()` 是列表对象的方法，**只能用于列表**。\n   - `sorted()` 是内置函数，**可用于任何可迭代对象**（如列表、元组、字符串、字典、集合、生成器等），并总是返回一个列表。\n\n2. **是否修改原数据**\n   - `list.sort()` **原地排序**，直接修改原列表，**返回 `None`**。适合不需要保留原顺序的场景。\n   - `sorted()` **创建新列表**，原可迭代对象保持不变，**返回排序后的新列表**。适合需要保留原始数据的场景。\n\n3. **返回值**\n   - `list.sort()` 返回 `None`（注意不可链式调用）。\n   - `sorted()` 返回排好序的新列表。\n\n4. **性能**\n   - `list.sort()` 稍快，因为避免了创建新列表的开销。\n   - `sorted()` 因需复制数据并返回新列表，相对略慢。\n\n5. **共性**\n   - 都支持 `key` 和 `reverse` 参数，用法一致。\n   - 均为**稳定排序**（相等元素的相对顺序不变）。\n\n**示例**\n\n```python\n# list.sort()\na = [3, 1, 2]\na.sort()\nprint(a)  # [1, 2, 3]\n\n# sorted()\nb = (3, 1, 2)\nc = sorted(b)\nprint(b)  # (3, 1, 2) 未变\nprint(c)  # [1, 2, 3]\n```\n\n总之，需要原址修改且仅操作列表时用 `sort()`；需要保留原始数据或操作任意可迭代对象时用 `sorted()`。"
+}

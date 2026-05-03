@@ -1,0 +1,15 @@
+{
+  "task_id": "es-019",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 3.7605381999892415,
+  "usage": {
+    "input_tokens": 92,
+    "output_tokens": 252,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "公平竞争审查制度要求地方政府在制定招商引资条款时，不得含有排除、限制竞争的内容，例如违法给予特定企业税收减免、财政补贴或市场准入优待等。这促使地方政府转向普惠性、公开透明的营商政策，避免“量身定制”式优惠。  \n企业需注意：招商引资承诺是否合规，应以税务机关、监管机关的最新规定及正式合同文本为准，切勿依赖口头承诺或非官方解读。本回答不构成专业审计或法律意见，具体签约前建议咨询专业机构。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-043",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.3415727999963565,
+  "usage": {
+    "input_tokens": 107,
+    "output_tokens": 116,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "国家关系发展的必然结果和客观趋势是世界格局多极化。因此，正确答案是 D。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-040",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 0.756065599998692,
+  "usage": {
+    "input_tokens": 98,
+    "output_tokens": 25,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "D.清明节"
+}

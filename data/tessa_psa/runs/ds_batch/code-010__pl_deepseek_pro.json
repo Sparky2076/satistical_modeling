@@ -1,0 +1,15 @@
+{
+  "task_id": "code-010",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 10.28907959999924,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 311,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`dataclasses.field(default_factory=list)` 主要解决 **可变默认值共享** 的陷阱。\n\n在 Python 中，如果用 `[]` 直接作为参数的默认值，同一个列表对象会在所有未传入该参数的实例之间共享，导致一个实例修改列表后，其他实例也受到影响。例如：\n\n```python\n@dataclass\nclass Bad:\n    items: list = []  # 所有实例共享同一个列表\n\na = Bad()\nb = Bad()\na.items.append(1)\nprint(b.items)  # 输出 [1]，并非期望的空列表\n```\n\n`field(default_factory=list)` 通过每次实例化时**调用工厂函数生成新对象**，确保每个实例获得独立的空列表：\n\n```python\n@dataclass\nclass Good:\n    items: list = field(default_factory=list)  # 每次新建一个空列表\n\na = Good()\nb = Good()\na.items.append(1)\nprint(b.items)  # 输出 []，互不影响\n```\n\n类似场景同样适用于 `dict`、`set` 等所有可变类型。"
+}

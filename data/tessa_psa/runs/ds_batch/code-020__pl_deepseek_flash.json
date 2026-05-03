@@ -1,0 +1,15 @@
+{
+  "task_id": "code-020",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 13.180907799993292,
+  "usage": {
+    "input_tokens": 79,
+    "output_tokens": 784,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`TypedDict` 与 `dataclass` 的核心区别在于**运行时行为**与**使用场景**。以下是简明取舍建议：\n\n| 维度 | `TypedDict` | `dataclass` |\n|------|-------------|-------------|\n| **本质** | 仅为静态类型提示，运行时仍是普通 `dict` | 生成一个真正的类实例，具备 `__init__`、`__repr__`、比较等方法 |\n| **可变性** | 可变（字典本身） | 默认可变，可用 `frozen=True` 设为不可变 |\n| **默认值** | 需用 `total=False` 或 `NotRequired`（Python 3.11+） | 直接支持默认值、`field(default_factory=...)` |\n| **类型校验** | 仅静态检查，运行时无校验 | 静态 + 可选运行时校验（如 `pydantic` 集成） |\n| **序列化** | 天然 JSON 兼容（就是字典） | 需额外转 dict（`.asdict()`）或使用库 |\n| **性能** | 零开销（纯字典） | 轻微类实例创建开销 |\n| **可扩展性** | 无法添加方法或属性 | 可定义方法、属性、计算字段等 |\n| **嵌套结构** | 支持嵌套 TypedDict | 支持嵌套 dataclass，但转 JSON 需递归处理 |\n\n### 何时选哪个？\n\n- **用 `TypedDict`**：你只需要**字典的类型标注**，接受运行时是普通字典，无需自定义行为。典型场景：API 请求/响应、配置文件、数据库行映射、**仅传递数据而不操作**。\n- **用 `dataclass`**：需要**对象行为**（方法、属性、默认值、继承）、**多字段复杂逻辑**、或需要**不可变对象**（`frozen=True`）。典型场景：业务实体、领域对象、需要序列化/反序列化但保持结构一致性（配合 `dataclasses-json` 或 `pydantic`）。\n\n### 其他取舍点\n- **与类型系统兼容性**：`TypedDict` 在 `mypy`/`pyright` 中能检查字典型赋值的键缺失/多余，`dataclass` 检查属性类型。\n- **内存**：大量字典场景下 `TypedDict` 无额外内存开销；`dataclass` 每个实例多一个 `__dict__`（除非 `__slots__`）。\n- **IDE 支持**：两者都支持自动补全，但 `dataclass` 在方法调用上更自然。\n\n**总结**：如果需要**纯字典的轻量类型提示**，用 `TypedDict`；如果需要**对象范式**（行为、封装、不可变性），用 `dataclass`。混合使用时可以 `dataclass` 内包含 `TypedDict` 字段。"
+}

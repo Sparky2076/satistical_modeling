@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-039",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.5545721000089543,
+  "usage": {
+    "input_tokens": 95,
+    "output_tokens": 155,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "“割不正不食”出自《论语·乡党》，是孔子提出的饮食礼仪规范，因此正确答案是 B.孔子。"
+}

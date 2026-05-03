@@ -1,0 +1,15 @@
+{
+  "task_id": "code-004",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 2.6476036999956705,
+  "usage": {
+    "input_tokens": 77,
+    "output_tokens": 130,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "生成器表达式（如 `(x for x in range(10))`）采用惰性求值，只在迭代时逐个生成元素，不一次保存全部结果，因此内存占用小。列表推导式（如 `[x for x in range(10)]`）会立即计算所有元素并存入内存，生成完整列表，适合小数据量，但大数据量时内存开销大。"
+}

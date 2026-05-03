@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-017",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 6.150297000000137,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 331,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "根据近年各国月球探测计划，以色列在2019年发射“创世纪号”后暂无新的月球探测器计划，而印度、日本、俄罗斯在2023-2024年均有相关任务（如印度的月船3号、日本的SLIM、俄罗斯的月球25号）。因此，正确答案是 **D. 以色列**。"
+}

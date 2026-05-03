@@ -1,0 +1,15 @@
+{
+  "task_id": "ceval-014",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 4.398166400002083,
+  "usage": {
+    "input_tokens": 117,
+    "output_tokens": 132,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "友元函数可以在类定义中的任意位置声明，包括私有、公有或保护部分，因为友元声明不属于类的成员，不受访问控制符的限制。\n\n答案：D"
+}

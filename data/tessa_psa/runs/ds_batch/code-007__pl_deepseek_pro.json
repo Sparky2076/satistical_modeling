@@ -1,0 +1,15 @@
+{
+  "task_id": "code-007",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 25.160299999988638,
+  "usage": {
+    "input_tokens": 74,
+    "output_tokens": 763,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "`json.dumps` 中设置 `ensure_ascii=False` 的主要场景是：**需要在 JSON 中直接输出非 ASCII 字符（如中文、日文、表情符号等），而不是将其转义成 `\\uXXXX` 格式。**\n\n常见具体场景：\n\n1. **提高可读性**  \n   在日志、配置文件或调试输出中，希望看到原始中文内容，而不是一堆编码转义，方便人工查阅和编辑。\n\n2. **生成 UTF-8 的 JSON 用于网页或 API**  \n   HTTP 响应通常使用 UTF-8 编码，设置 `ensure_ascii=False` 后，JSON 中的中文直接就是 UTF-8 字节，浏览器能正确解析并渲染，无需由前端额外解码转义序列，且能略微减少传输体积。\n\n3. **存储到支持 Unicode 的文件或数据库**  \n   当写入 UTF-8 编码的 JSON 文件时，直接保存原文字符，避免转义导致文件内容难以检索或处理。\n\n4. **对接要求原生 Unicode 的系统**  \n   某些下游服务或工具（如 Elasticsearch、MongoDB 的某些驱动）期望接收直接包含多语言字符的 JSON，而不是转义形式。\n\n**注意**：设置 `ensure_ascii=False` 后，`dumps` 返回的是含有真实非 ASCII 字符的 Unicode 字符串。若输出环境不支持 UTF-8（如老旧终端），可能显示乱码，此时应保持默认的 `True`。只要目标环境能正确处理 UTF-8，即可安全使用。"
+}

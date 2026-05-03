@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-032",
+  "policy_id": "pl_deepseek_flash",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-flash",
+  "latency_sec": 1.738666999997804,
+  "usage": {
+    "input_tokens": 108,
+    "output_tokens": 96,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "车辆临时靠边停车后准备起步时，应先观察周围交通情况，确保安全后再操作。因此正确答案是D。"
+}

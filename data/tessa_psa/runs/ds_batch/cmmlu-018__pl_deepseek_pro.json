@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-018",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 7.749175999997533,
+  "usage": {
+    "input_tokens": 98,
+    "output_tokens": 262,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "梅西叶天体M44是著名的蜂巢星团（鬼宿星团），位于**巨蟹座**。\n\n答案：**A. 巨蟹座**"
+}

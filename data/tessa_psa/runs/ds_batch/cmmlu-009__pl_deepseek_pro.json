@@ -1,0 +1,15 @@
+{
+  "task_id": "cmmlu-009",
+  "policy_id": "pl_deepseek_pro",
+  "run_id": "ds_batch",
+  "provider": "DeepSeek",
+  "model_id": "deepseek-v4-pro",
+  "latency_sec": 40.53172839999024,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 1278,
+    "cache_tokens": 0
+  },
+  "error": null,
+  "response_text": "咽分为**鼻咽部**、**口咽部**和**喉咽部**三部分。  \n- A. 咽隐窝：是鼻咽侧壁咽鼓管圆枕后方的凹陷，属于解剖结构，**不是咽的一个分部**。  \n\n因此，若题目是“咽的分部包括”，则应选 **B、C、D**；如果是问“哪项不属于咽的分部”，则选 **A**。"
+}
