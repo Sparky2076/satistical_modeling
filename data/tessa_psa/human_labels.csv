@@ -1,1 +1,9 @@
 task_id,policy_id,run_id,annotator_id,quality_score,correctness_score,completeness_score,risk_score,hallucination_flag,human_time_base_min,human_time_ai_min,review_effort_min,notes
+ps-001,pl_deepseek_flash,smoke_test,assistant_demo_v1,8,8,8,5,0,25,8,12,"AI辅助试填占位；结构清晰、有材料清单与官方渠道提示；论文定稿前须真人重标或删除本行。"
+ps-001,pl_deepseek_flash,batch_20260503,assistant_demo_v1,8,8,8,5,0,25,8,10,"同上；与 smoke_test 为同一题不同 run，用于检查合并键。"
+ps-005,pl_deepseek_flash,batch_20260503,assistant_demo_v1,8,8,9,5,0,30,10,14,"医疗救助认定与一站式说明较完整，含地方差异提示。"
+ps-001,pl_deepseek_flash,test_each,assistant_demo_v1,8,8,8,5,0,25,8,11,"DeepSeek 版异地就医要点，口径与 smoke 类似。"
+ps-001,pl_spark_ultra,test_each,assistant_demo_v1,9,8,9,5,0,25,7,12,"分类型材料更细；仍须以参保地最新规定为准，未见明显编造。"
+es-002,pl_deepseek_flash,ds_batch,assistant_demo_v1,8,8,8,4,0,35,10,15,"高企研发费用与知识产权匹配，含免责提示，偏解释性。"
+ps-053,pl_deepseek_flash,ds_batch,assistant_demo_v1,7,7,7,5,0,20,8,10,"占位评分：未逐条核对 JSON 全文；请真人打开对应 response 后修订。"
+cmmlu-025,pl_deepseek_flash,ds_batch,assistant_demo_v1,7,7,6,3,0,5,2,4,"选择题短答；未核对标准答案选项，correctness 保守给分。"
