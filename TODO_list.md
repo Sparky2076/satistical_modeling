@@ -6,7 +6,7 @@
 
 ## P0 — 跑通真实数据（阻塞后续实证）
 
-> **同步更新**：仓库已含队友提交的 **`task_policy_observations.csv`（约 623 行）** 与 [`data/tessa_psa/runs/`](data/tessa_psa/runs/) 下 JSON；下列「主表非空 / 路径 / enriched」可视为已达成。**若你本机还要跑新批次**，仍须完成密钥与环境变量（第 1～2 项）。
+> **同步更新**：仓库已含队友提交的 `task_policy_observations.csv`（约 623 行）与 `data/tessa_psa/runs/` 下 JSON；下列「主表非空 / 路径 / enriched」可视为已达成。**若你本机还要跑新批次**，仍须完成密钥与环境变量（第 1～2 项）。
 
 - [ ] 在 Anthropic / OpenAI / DeepSeek 等**官方或团队认可渠道**申请 API Key；勿将密钥写入仓库或聊天。（**仅续跑新批次时需要**）
 - [ ] 在本机 PowerShell 设置环境变量：`OPENAI_API_KEY`、`DEEPSEEK_API_KEY`、`ANTHROPIC_API_KEY` 等。（**仅续跑新批次时需要**）
@@ -22,9 +22,9 @@
 
 ## P2 — 标注与主表合并
 
-- [ ] 定稿 [`data/tessa_psa/appendix/annotation_rubric.md`](data/tessa_psa/appendix/annotation_rubric.md)（若需修订）。
-- [ ] 小样本试标 → 计算一致性（ICC 等）→ 扩面填写 [`data/tessa_psa/human_labels.csv`](data/tessa_psa/human_labels.csv)。
-- [ ] 用 `task_id` + `policy_id` + `run_id` 将标注与 `task_policy_observations.csv` 合并，用于论文表格与 MTP。
+- [x] 定稿 [`data/tessa_psa/appendix/annotation_rubric.md`](data/tessa_psa/appendix/annotation_rubric.md)（已补合并键、试标/ICC、`runs` 材料；若导师另有口径可再修订）。
+- [ ] 小样本试标 → 计算一致性（ICC 等）→ 扩面填写 [`data/tessa_psa/human_labels.csv`](data/tessa_psa/human_labels.csv)（**人工**，本地或协作表完成）。
+- [x] 将标注左连接到 enriched 主表：运行 `python src/tepsa_merge_labels.py`，默认产出 [`task_policy_observations_with_labels.csv`](data/tessa_psa/task_policy_observations_with_labels.csv)；可选 `--export-queue` 导出待标队列。论文分析宜用该合并表（或再在 notebook 内 join）。
 
 ## P3 — 论文与可复现性
 
@@ -34,7 +34,7 @@
 
 ## P4 — 仓库与协作（可选）
 
-- [ ] `git add` / `commit` / `push` 前确认未包含 `.env`、`runs/` 下大 JSON、任何密钥文件。
+- [ ] `git add` / `commit` / `push` 前确认未包含 `.env`、任何密钥文件。（`runs/` 大 JSON 已由队友纳入版本库时，以团队约定为准。）
 - [ ] 在 GitHub 上开 **Issues** 将 P0–P2 拆给不同成员，与本 `TODO_list.md` 同步。
 
 ---

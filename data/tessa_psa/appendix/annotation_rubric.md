@@ -23,3 +23,28 @@
 ## 高风险任务
 
 税务、医保、法律、特种设备等领域：**禁止**为对比随意分配弱策略到可致损场景；见 `proposal.pdf` 伦理说明。
+
+---
+
+## 与主表对齐（合并键）
+
+填写 [`human_labels.csv`](../human_labels.csv) 时，**必须**与 [`task_policy_observations.csv`](../task_policy_observations.csv)（或 enriched 版）中同一行完全一致：
+
+- `task_id`、`policy_id`、`run_id`（建议复制粘贴，避免空格或大小写误差）。
+- 同一任务若存在多个 `run_id`（如烟测、正式批），**勿混用**：每条标注只对应唯一一次 API 调用。
+
+合并到分析表：仓库根目录执行 `python src/tepsa_merge_labels.py`（左连接，见根目录 `README.md` 或 `README_run_batch.md`）。
+
+---
+
+## 试标与一致性（建议流程）
+
+1. **先固定一个 `run_id`**（例如 `ds_batch`），避免跨批次口径漂移。  
+2. **每位标注员先试标 20–30 条**，用同一批 JSON（`response_path` 指向 `data/tessa_psa/runs/<run_id>/…json`）阅读模型全文再打分。  
+3. **一致性**：可在 R 或独立 Python notebook 中计算 ICC / Fleiss’ Kappa / 加权 Kappa；本仓库不捆绑统计包。  
+4. **定稿 rubric** 后再扩面；扩面时仍保留 `annotator_id` 便于审计。
+
+## 标注材料从哪来
+
+- 主表列 **`response_path`**：打开对应 JSON，字段 `response_text`（或脚本约定字段）即为模型回答。  
+- 目录说明见 [`../runs/README_runs.md`](../runs/README_runs.md)。

@@ -9,6 +9,8 @@
 | api_price_schedule.csv | 厂商公开价目快照 | `provider` + `model_id` + `pricing_tier` |
 | model_benchmark_table.csv | 能力与价格辅助表 | `model_id` |
 | human_labels.csv | 人工对某次响应的评分 | `task_id` + `policy_id` + `run_id` |
+| task_policy_observations_enriched.csv | 观测表经 `tepsa_main.py` 合并价目并回填 `cost_usd` 等 | 同观测表；建议分析用此版本 |
+| task_policy_observations_with_labels.csv | enriched 左连接 `human_labels`（`src/tepsa_merge_labels.py` 产出） | 同观测表 + 标注列 |
 | macro_calibration_totals.csv | 宏观工资锚（与部门映射） | `tepsa_sector` + `year` |
 | compute_service_wedge_optional.csv | 可选算力楔：下游 API 与上游云 GPU 价格指数（季度） | `date` + `provider` |
 

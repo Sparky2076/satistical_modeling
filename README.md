@@ -17,8 +17,9 @@
 | 成本/价值回填 `tepsa_main.py`              | **已完成**               | 合并价目、计算 `cost_usd`；观测表仅表头时仍写出 **带扩展列的 enriched 表头**。                                                                                                                                                                                                                                                                                  |
 | 烟测脚本 `scripts/smoke_tepsa_batch.ps1` | **已完成**               | 校验 + 干跑；三把密钥齐全则跑 OpenAI + DeepSeek + Anthropic 各 1 次。                                                                                                                                                                                                                                                                                 |
 | **真实 API 跑批数据行**                     | **已有数据（队友提交）**        | `[task_policy_observations.csv](data/tessa_psa/task_policy_observations.csv)` 约 **623** 行；含多个 `run_id`（`ds_batch`、`batch_20260503`、`smoke_test`、`test_each` 等）。原始 JSON 已纳入版本库，见 `[data/tessa_psa/runs/README_runs.md](data/tessa_psa/runs/README_runs.md)`。本地继续跑批仍按 `[README_run_batch.md](data/tessa_psa/README_run_batch.md)` 配置密钥。 |
-| 人工标注 `human_labels.csv`              | **未开始**               | 仅表头；定稿 rubric 后填写，并与主表 `task_id`+`policy_id`+`run_id` 对齐。                                                                                                                                                                                                                                                                             |
+| 人工标注 `human_labels.csv`              | **未开始（量表已定稿）**       | 仅表头；填写见 [`appendix/annotation_rubric.md`](data/tessa_psa/appendix/annotation_rubric.md)。键与主表一致：`task_id`+`policy_id`+`run_id`。                                                                                                                                                                                                                    |
 | **enriched 主表**                      | **已生成**               | 同步后执行 `python src/tepsa_main.py` 可得到带价目列的 `[task_policy_observations_enriched.csv](data/tessa_psa/task_policy_observations_enriched.csv)`（与观测行数一致）。                                                                                                                                                                                   |
+| **合并表 `task_policy_observations_with_labels.csv`** | **脚本已就绪**            | 运行 `python src/tepsa_merge_labels.py`：左连接 enriched 与 `human_labels`；当前无标注时标签列为空。                                                                                                                                                                                                                                                        |
 | GitHub 同步                            | **已与 origin/main 对齐** | `git pull` 后包含队友提交的 `runs/` 与观测数据；再推送请以团队约定为准。                                                                                                                                                                                                                                                                                        |
 
 
@@ -44,6 +45,7 @@
 | `[src/tepsa_validate_inputs.py](src/tepsa_validate_inputs.py)`                 | 校验 `data/tessa_psa/task_bank.csv`；致命错误时非零退出。                                                                         |
 | `[src/tepsa_api_batch.py](src/tepsa_api_batch.py)`                             | `task_bank` × `policies` 多厂商批量调用；写 `task_policy_observations.csv` 与 `data/tessa_psa/runs/<run_id>/*.json`。           |
 | `[src/tepsa_main.py](src/tepsa_main.py)`                                       | 读取观测表，合并 `api_price_schedule` 字段，计算 `cost_usd` / `value_score`（后者依赖质量分等）；输出 `task_policy_observations_enriched.csv`。 |
+| `[src/tepsa_merge_labels.py](src/tepsa_merge_labels.py)`                       | 将 `human_labels.csv` 左连接到 enriched 观测表，输出 `task_policy_observations_with_labels.csv`；支持 `--export-queue` 导出待标队列。 |
 | `[src/tepsa_task_bank_build.py](src/tepsa_task_bank_build.py)`                 | **重建**任务库：门户数据 + C-Eval + CMMLU（需网络）；一般维护直接编辑 CSV 即可，不必每次全量重跑。                                                       |
 | `[src/tepsa_task_bank_portal_data.py](src/tepsa_task_bank_portal_data.py)`     | 门户类任务 curated 数据，供 `tepsa_task_bank_build.py` 引用。                                                                    |
 | `[src/tepsa_task_bank_benchmark_gen.py](src/tepsa_task_bank_benchmark_gen.py)` | 基准题生成相关辅助逻辑（与任务库构建配合）。                                                                                               |
@@ -71,6 +73,7 @@
 | `[task_policy_observations.csv](data/tessa_psa/task_policy_observations.csv)`                   | **主表**：每次「任务 × 策略」API 调用一行（成功写入）；列含 `tepsa_sector`、`run_id`、`response_path`。         |
 | `[task_policy_observations_enriched.csv](data/tessa_psa/task_policy_observations_enriched.csv)` | `tepsa_main.py` 输出：在原观测上附加价目列与回填后的 `cost_usd` 等（可无数据行，仅表头）。                          |
 | `[human_labels.csv](data/tessa_psa/human_labels.csv)`                                           | 人工标注（与主表按 `task_id`+`policy_id`+`run_id` 合并）。                                        |
+| `[task_policy_observations_with_labels.csv](data/tessa_psa/task_policy_observations_with_labels.csv)` | `tepsa_merge_labels.py` 输出：enriched + 标注列（无标注时列空）。 |
 | `[macro_calibration_totals.csv](data/tessa_psa/macro_calibration_totals.csv)`                   | 宏观校准：`tepsa_sector`（下划线）与工资等。                                                        |
 | `[compute_service_wedge_optional.csv](data/tessa_psa/compute_service_wedge_optional.csv)`       | 可选算力楔指数。                                                                             |
 | `[policy_background_notes.md](data/tessa_psa/policy_background_notes.md)`                       | 政策背景摘录笔记。                                                                            |
@@ -112,8 +115,15 @@ python src/tepsa_main.py
 
 详细参数与多厂商说明：`[data/tessa_psa/README_run_batch.md](data/tessa_psa/README_run_batch.md)`。
 
+## P2：人工标注与合并
+
+1. 量表与流程见 [`data/tessa_psa/appendix/annotation_rubric.md`](data/tessa_psa/appendix/annotation_rubric.md)。  
+2. 填写 [`data/tessa_psa/human_labels.csv`](data/tessa_psa/human_labels.csv)（键：`task_id` + `policy_id` + `run_id`）。  
+3. 可选：导出待标列表 `python src/tepsa_merge_labels.py --export-queue data/tessa_psa/label_queue.csv --filter-run-id ds_batch`（`--filter-run-id` 可省略以导出全部去重键）。  
+4. 合并：`python src/tepsa_merge_labels.py` → 默认生成 [`task_policy_observations_with_labels.csv`](data/tessa_psa/task_policy_observations_with_labels.csv)。本地试标可在 `human_labels.csv` 追加 1～2 行后重跑合并验证，**不必提交试标行**。
+
 ---
 
 ## 后续分工
 
-执行层待办见 `**[TODO_list.md](TODO_list.md)**`（**后面要做的事项**清单）；需要分工时在清单里标注负责人或拆 GitHub Issue 跟踪即可。
+执行层待办见 [`TODO_list.md`](TODO_list.md)（后面要做的事项清单）；需要分工时在清单里标注负责人或拆 GitHub Issue 跟踪即可。
