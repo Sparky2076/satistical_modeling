@@ -1,0 +1,15 @@
+{
+  "task_id": "code-009",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 30.449760899995454,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 1330,
+    "cache_tokens": 2
+  },
+  "error": null,
+  "response_text": "`itertools.groupby` 是按顺序遍历数据的，它将**连续的**相同元素归为一组。\n\n**原因：**\n它通过比较当前元素与**前一个**元素的键值（key）来决定是否开启新组。如果数据未排序，相同的元素之间会夹杂其他元素，导致它们被判定为不同的组。\n\n**示例对比：**\n\n*   **未排序** `[1, 2, 1]`：\n    *   1 和 2 不同 $\\rightarrow$ 开启新组\n    *   2 和 1 不同 $\\rightarrow$ 开启新组\n    *   结果：`[1]`, `[2]`, `[1]`\n\n*   **已排序** `[1, 1, 2]`：\n    *   1 和 1 相同 $\\rightarrow$ 归为一组\n    *   1 和 2 不同 $\\rightarrow$ 开启新组\n    *   结果：`[1, 1]`, `[2]`\n\n因此，使用前通常需要先排序。"
+}

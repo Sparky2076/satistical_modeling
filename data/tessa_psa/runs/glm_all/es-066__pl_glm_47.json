@@ -1,0 +1,11 @@
+{
+  "task_id": "es-066",
+  "policy_id": "pl_glm_47",
+  "run_id": "glm_batch_balance",
+  "provider": "GLM",
+  "model_id": "glm-4.7",
+  "latency_sec": 120.4048829000094,
+  "usage": {},
+  "error": "The read operation timed out",
+  "response_text": null
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-007",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 58.828215199988335,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 1288,
+    "cache_tokens": 7
+  },
+  "error": null,
+  "response_text": "`json.dumps` 中的 `ensure_ascii=False` 参数的主要作用是**保留非 ASCII 字符（如中文、日文、表情符号）的原样**，而不是将其转义为 `\\uXXXX` 形式。\n\n**主要使用场景：**\n\n1.  **提高可读性（日志与调试）**\n    *   在打印日志或调试信息时，直接显示中文比显示 `\\u4e2d\\u6587` 更直观、易读。\n2.  **本地文件存储**\n    *   如果将 JSON 数据直接写入本地文件（如配置文件、数据备份），使用 `False` 可以避免后续读取时需要解码转义序列，文件内容更干净。\n3.  **特定系统对接**\n    *   某些系统或数据库接口直接要求接收原始 Unicode 字符，不接受转义序列。\n\n**对比示例：**\n\n```python\nimport json\n\ndata = {\"name\": \"张三\", \"age\": 25}\n\n# ensure_ascii=True (默认)\nprint(json.dumps(data, ensure_ascii=True))\n# 输出: {\"name\": \"\\u5f20\\u4e09\", \"age\": 25}\n\n# ensure_ascii=False\nprint(json.dumps(data, ensure_ascii=False))\n# 输出: {\"name\": \"张三\", \"age\": 25}\n```\n\n**注意：** 如果是用于 HTTP API 网络传输，通常建议使用默认的 `True`，以确保字符集兼容性。"
+}

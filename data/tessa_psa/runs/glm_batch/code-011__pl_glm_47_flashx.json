@@ -1,0 +1,15 @@
+{
+  "task_id": "code-011",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 47.238639099989086,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 1348,
+    "cache_tokens": 7
+  },
+  "error": null,
+  "response_text": "**核心区别：名义子类型 vs. 结构子类型**\n\n*   **`typing.ABC` (抽象基类)**：\n    *   **机制**：基于**名义子类型**。\n    *   **要求**：必须显式继承该类（`class Foo(Bar): ...`）。\n    *   **运行时**：在运行时有效，强制子类实现抽象方法。\n    *   **适用场景**：需要强制子类必须实现特定方法，且强调类之间的继承关系。\n\n*   **`typing.Protocol`**：\n    *   **机制**：基于**结构子类型**（即“鸭子类型”）。\n    *   **要求**：不需要继承，只要对象具备协议中定义的属性或方法即可。\n    *   **运行时**：默认不生效（除非使用 `@runtime_checkable` 装饰器），仅在静态类型检查时生效。\n    *   **适用场景**：定义接口或契约，不关心类继承关系，只关心对象是否“具备某种能力”。\n\n**总结**：`ABC` 强调“是什么类”，`Protocol` 强调“有什么能力”。"
+}

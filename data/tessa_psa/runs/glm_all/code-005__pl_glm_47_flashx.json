@@ -1,0 +1,15 @@
+{
+  "task_id": "code-005",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 20.7010702000116,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 1463,
+    "cache_tokens": 59
+  },
+  "error": null,
+  "response_text": "`contextmanager` 是 Python `contextlib` 模块中的一个装饰器，它允许你通过编写一个生成器函数来轻松创建上下文管理器，而无需定义 `__enter__` 和 `__exit__` 方法。\n\n**基本模式如下：**\n\n1.  **导入**：从 `contextlib` 导入 `contextmanager`。\n2.  **装饰**：使用 `@contextmanager` 装饰一个生成器函数。\n3.  **分割逻辑**：在函数中使用 `yield` 关键字。\n    *   `yield` **之前**的代码相当于 `__enter__` 方法（进入时执行，通常用于资源初始化）。\n    *   `yield` **之后**的代码相当于 `__exit__` 方法（退出时执行，通常用于资源清理）。\n    *   `yield` 返回的值会被赋值给 `with` 语句中的 `as` 变量。\n\n**代码示例：**\n\n```python\nfrom contextlib import contextmanager\n\n@contextmanager\ndef file_manager(filename):\n    # 1. 进入时执行 (相当于 __enter__)\n    print(f\"正在打开文件: {filename}\")\n    f = open(filename, 'w')\n    \n    try:\n        # 2. yield 将控制权交给 with 块\n        yield f  # 这里的 f 会被赋值给 as 变量\n    finally:\n        # 3. 退出时执行 (相当于 __exit__)，无论是否发生异常都会执行\n        print(\"正在关闭文件\")\n        f.close()\n\n# 使用 with 语句\nwith file_manager(\"test.txt\") as f:\n    f.write(\"Hello, World!\")\n    print(\"文件写入完成\")\n\nprint(\"程序结束\")\n```\n\n**关键点：**\n*   **异常处理**：`yield` 之后的代码通常放在 `try...finally` 块中，以确保无论 `with` 块内是否发生异常，资源都能被正确释放。"
+}

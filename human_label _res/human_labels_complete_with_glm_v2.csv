@@ -1,0 +1,683 @@
+risk_score,correctness_score,human_time_ai_min,task_source,human_time_base_min,difficulty_label,policy_id,task_id,completeness_score,notes,task_text,quality_score,run_id,sector,risk_class,review_effort_min,hallucination_flag,annotator_id
+5,8,8,,25,,pl_deepseek_flash,ps-001,8,AI辅助试填占位；结构清晰、有材料清单与官方渠道提示；论文定稿前须真人重标或删除本行。,,8,smoke_test,,,12,0,assistant_demo_v1
+5,8,8,,25,,pl_deepseek_flash,ps-001,8,同上；与 smoke_test 为同一题不同 run，用于检查合并键。,,8,batch_20260503,,,10,0,assistant_demo_v1
+5,8,10,,30,,pl_deepseek_flash,ps-005,9,医疗救助认定与一站式说明较完整，含地方差异提示。,,8,batch_20260503,,,14,0,assistant_demo_v1
+5,8,8,,25,,pl_deepseek_flash,ps-001,8,DeepSeek 版异地就医要点，口径与 smoke 类似。,,8,test_each,,,11,0,assistant_demo_v1
+5,8,7,,25,,pl_spark_ultra,ps-001,9,分类型材料更细；仍须以参保地最新规定为准，未见明显编造。,,9,test_each,,,12,0,assistant_demo_v1
+4,8,10,,35,,pl_deepseek_flash,es-002,8,高企研发费用与知识产权匹配，含免责提示，偏解释性。,,8,ds_batch,,,15,0,assistant_demo_v1
+5,7,8,,20,,pl_deepseek_flash,ps-053,7,占位评分：未逐条核对 JSON 全文；请真人打开对应 response 后修订。,,7,ds_batch,,,10,0,assistant_demo_v1
+3,7,2,,5,,pl_deepseek_flash,cmmlu-025,6,选择题短答；未核对标准答案选项，correctness 保守给分。,,7,ds_batch,,,4,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-001,10,AI自动标注 - 响应长度: 1472字符,,9,batch_20260503,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-002,10,AI自动标注 - 响应长度: 726字符,,9,batch_20260503,,,12,1,assistant_demo_v1
+6,4,26,,25,,pl_deepseek_pro,ps-002,3,AI自动标注 - 响应长度: 61字符,,4,batch_20260503,,,12,0,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-003,8,AI自动标注 - 响应长度: 409字符,,8,batch_20260503,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-003,10,AI自动标注 - 响应长度: 868字符,,9,batch_20260503,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-004,10,AI自动标注 - 响应长度: 847字符,,9,batch_20260503,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-004,10,AI自动标注 - 响应长度: 833字符,,9,batch_20260503,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-005,10,AI自动标注 - 响应长度: 903字符,,9,batch_20260503,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-006,9,AI自动标注 - 响应长度: 537字符,,8,batch_20260503,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-006,10,AI自动标注 - 响应长度: 679字符,,9,batch_20260503,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-007,10,AI自动标注 - 响应长度: 549字符,,8,batch_20260503,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-007,9,AI自动标注 - 响应长度: 527字符,,8,batch_20260503,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-008,8,AI自动标注 - 响应长度: 543字符,,8,batch_20260503,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-008,10,AI自动标注 - 响应长度: 1005字符,,9,batch_20260503,,,12,1,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-009,8,AI自动标注 - 响应长度: 391字符,,7,batch_20260503,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-009,10,AI自动标注 - 响应长度: 763字符,,9,batch_20260503,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-010,10,AI自动标注 - 响应长度: 691字符,,9,batch_20260503,,,12,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-002,3,AI自动标注 - 响应长度: 50字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,ceval-002,4,AI自动标注 - 响应长度: 190字符,,6,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,ceval-003,1,AI自动标注 - 响应长度: 6字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,ceval-003,4,AI自动标注 - 响应长度: 92字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-004,3,AI自动标注 - 响应长度: 135字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,ceval-004,6,AI自动标注 - 响应长度: 189字符,,6,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_flash,ceval-005,9,AI自动标注 - 响应长度: 314字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,9,8,,5,,pl_deepseek_pro,ceval-005,10,AI自动标注 - 响应长度: 586字符,,8,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-006,6,AI自动标注 - 响应长度: 111字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-006,4,AI自动标注 - 响应长度: 141字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-007,4,AI自动标注 - 响应长度: 46字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-007,4,AI自动标注 - 响应长度: 120字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-008,3,AI自动标注 - 响应长度: 142字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-008,3,AI自动标注 - 响应长度: 109字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-009,3,AI自动标注 - 响应长度: 85字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,ceval-009,3,AI自动标注 - 响应长度: 98字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-010,3,AI自动标注 - 响应长度: 82字符,,4,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_pro,ceval-010,1,AI自动标注 - 响应长度: 9字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-011,3,AI自动标注 - 响应长度: 117字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-011,5,AI自动标注 - 响应长度: 129字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-012,3,AI自动标注 - 响应长度: 81字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,ceval-012,7,AI自动标注 - 响应长度: 217字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-013,3,AI自动标注 - 响应长度: 63字符,,4,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_pro,ceval-013,1,AI自动标注 - 响应长度: 10字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-014,3,AI自动标注 - 响应长度: 51字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,ceval-014,4,AI自动标注 - 响应长度: 63字符,,4,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,ceval-015,3,AI自动标注 - 响应长度: 36字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,ceval-015,9,AI自动标注 - 响应长度: 298字符,,7,ds_batch,,,3,0,assistant_demo_v1
+6,4,6,,5,,pl_deepseek_flash,ceval-016,3,AI自动标注 - 响应长度: 73字符,,4,ds_batch,,,3,0,assistant_demo_v1
+6,4,6,,5,,pl_deepseek_pro,ceval-016,4,AI自动标注 - 响应长度: 62字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_flash,ceval-017,4,AI自动标注 - 响应长度: 169字符,,6,ds_batch,,,3,0,assistant_demo_v1
+6,7,7,,5,,pl_deepseek_pro,ceval-017,8,AI自动标注 - 响应长度: 304字符,,7,ds_batch,,,3,0,assistant_demo_v1
+6,6,6,,5,,pl_deepseek_flash,ceval-018,3,AI自动标注 - 响应长度: 152字符,,6,ds_batch,,,3,0,assistant_demo_v1
+6,7,7,,5,,pl_deepseek_pro,ceval-018,8,AI自动标注 - 响应长度: 261字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-019,4,AI自动标注 - 响应长度: 109字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-019,4,AI自动标注 - 响应长度: 147字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-020,3,AI自动标注 - 响应长度: 102字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,ceval-020,8,AI自动标注 - 响应长度: 216字符,,7,ds_batch,,,3,0,assistant_demo_v1
+6,2,6,,5,,pl_deepseek_flash,ceval-021,2,AI自动标注 - 响应长度: 27字符,,2,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_pro,ceval-021,1,AI自动标注 - 响应长度: 1字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-022,4,AI自动标注 - 响应长度: 124字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,ceval-022,8,AI自动标注 - 响应长度: 224字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_flash,ceval-023,4,AI自动标注 - 响应长度: 156字符,,6,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,ceval-023,4,AI自动标注 - 响应长度: 199字符,,6,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_flash,ceval-024,8,AI自动标注 - 响应长度: 328字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,ceval-024,8,AI自动标注 - 响应长度: 361字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_flash,ceval-025,7,AI自动标注 - 响应长度: 241字符,,7,ds_batch,,,3,0,assistant_demo_v1
+6,7,7,,5,,pl_deepseek_pro,ceval-025,8,AI自动标注 - 响应长度: 272字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-026,4,AI自动标注 - 响应长度: 124字符,,5,ds_batch,,,3,1,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,ceval-026,10,AI自动标注 - 响应长度: 392字符,,7,ds_batch,,,3,1,assistant_demo_v1
+4,2,6,,5,,pl_deepseek_flash,ceval-027,2,AI自动标注 - 响应长度: 29字符,,2,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-027,6,AI自动标注 - 响应长度: 141字符,,5,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,ceval-028,1,AI自动标注 - 响应长度: 7字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,ceval-028,4,AI自动标注 - 响应长度: 99字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_flash,ceval-029,4,AI自动标注 - 响应长度: 151字符,,6,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-029,4,AI自动标注 - 响应长度: 143字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-030,3,AI自动标注 - 响应长度: 56字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,ceval-030,4,AI自动标注 - 响应长度: 195字符,,6,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-031,4,AI自动标注 - 响应长度: 121字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-031,4,AI自动标注 - 响应长度: 109字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-032,4,AI自动标注 - 响应长度: 44字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-033,4,AI自动标注 - 响应长度: 72字符,,4,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_pro,ceval-033,3,AI自动标注 - 响应长度: 33字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,ceval-034,4,AI自动标注 - 响应长度: 148字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,ceval-034,3,AI自动标注 - 响应长度: 173字符,,6,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-035,4,AI自动标注 - 响应长度: 44字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-035,3,AI自动标注 - 响应长度: 106字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-036,3,AI自动标注 - 响应长度: 78字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,ceval-036,4,AI自动标注 - 响应长度: 75字符,,4,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,ceval-037,1,AI自动标注 - 响应长度: 13字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,ceval-037,8,AI自动标注 - 响应长度: 283字符,,7,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,ceval-038,3,AI自动标注 - 响应长度: 38字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,ceval-038,8,AI自动标注 - 响应长度: 207字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-039,3,AI自动标注 - 响应长度: 87字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,ceval-039,3,AI自动标注 - 响应长度: 122字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,ceval-040,4,AI自动标注 - 响应长度: 48字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,ceval-040,5,AI自动标注 - 响应长度: 179字符,,6,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,ceval-041,1,AI自动标注 - 响应长度: 4字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,ceval-041,4,AI自动标注 - 响应长度: 68字符,,4,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,ceval-042,3,AI自动标注 - 响应长度: 34字符,,3,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_pro,ceval-042,3,AI自动标注 - 响应长度: 31字符,,3,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,ceval-043,1,AI自动标注 - 响应长度: 6字符,,1,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_pro,ceval-043,1,AI自动标注 - 响应长度: 6字符,,1,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,ceval-044,1,AI自动标注 - 响应长度: 11字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,ceval-044,3,AI自动标注 - 响应长度: 73字符,,4,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,ceval-045,3,AI自动标注 - 响应长度: 37字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,ceval-045,5,AI自动标注 - 响应长度: 179字符,,6,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,cmmlu-001,4,AI自动标注 - 响应长度: 135字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-001,4,AI自动标注 - 响应长度: 140字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-002,4,AI自动标注 - 响应长度: 49字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-002,4,AI自动标注 - 响应长度: 124字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-003,3,AI自动标注 - 响应长度: 58字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-003,4,AI自动标注 - 响应长度: 130字符,,5,ds_batch,,,3,0,assistant_demo_v1
+4,2,6,,5,,pl_deepseek_flash,cmmlu-004,2,AI自动标注 - 响应长度: 22字符,,2,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-004,4,AI自动标注 - 响应长度: 47字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-005,4,AI自动标注 - 响应长度: 49字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-005,3,AI自动标注 - 响应长度: 121字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-006,4,AI自动标注 - 响应长度: 46字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-006,4,AI自动标注 - 响应长度: 54字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-007,3,AI自动标注 - 响应长度: 90字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-008,4,AI自动标注 - 响应长度: 47字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-008,3,AI自动标注 - 响应长度: 107字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-009,3,AI自动标注 - 响应长度: 51字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-009,5,AI自动标注 - 响应长度: 137字符,,5,ds_batch,,,3,0,assistant_demo_v1
+4,2,6,,5,,pl_deepseek_flash,cmmlu-010,2,AI自动标注 - 响应长度: 22字符,,2,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_pro,cmmlu-010,1,AI自动标注 - 响应长度: 4字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-011,4,AI自动标注 - 响应长度: 47字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-011,4,AI自动标注 - 响应长度: 64字符,,4,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,cmmlu-012,3,AI自动标注 - 响应长度: 38字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-012,4,AI自动标注 - 响应长度: 78字符,,4,ds_batch,,,3,0,assistant_demo_v1
+4,2,6,,5,,pl_deepseek_flash,cmmlu-013,2,AI自动标注 - 响应长度: 25字符,,2,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-013,3,AI自动标注 - 响应长度: 70字符,,4,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,cmmlu-014,3,AI自动标注 - 响应长度: 32字符,,3,ds_batch,,,3,0,assistant_demo_v1
+4,2,6,,5,,pl_deepseek_pro,cmmlu-014,2,AI自动标注 - 响应长度: 22字符,,2,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,cmmlu-015,3,AI自动标注 - 响应长度: 37字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-015,4,AI自动标注 - 响应长度: 66字符,,4,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,cmmlu-016,1,AI自动标注 - 响应长度: 3字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,cmmlu-016,4,AI自动标注 - 响应长度: 160字符,,6,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,cmmlu-017,3,AI自动标注 - 响应长度: 119字符,,5,ds_batch,,,3,1,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,cmmlu-017,5,AI自动标注 - 响应长度: 197字符,,6,ds_batch,,,3,1,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,cmmlu-018,3,AI自动标注 - 响应长度: 34字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-018,4,AI自动标注 - 响应长度: 48字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-019,4,AI自动标注 - 响应长度: 93字符,,4,ds_batch,,,3,0,assistant_demo_v1
+4,2,6,,5,,pl_deepseek_flash,cmmlu-020,2,AI自动标注 - 响应长度: 24字符,,2,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_pro,cmmlu-020,3,AI自动标注 - 响应长度: 32字符,,3,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,cmmlu-021,3,AI自动标注 - 响应长度: 36字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-021,4,AI自动标注 - 响应长度: 95字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-022,4,AI自动标注 - 响应长度: 46字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-022,3,AI自动标注 - 响应长度: 67字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-023,3,AI自动标注 - 响应长度: 91字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-023,3,AI自动标注 - 响应长度: 92字符,,4,ds_batch,,,3,0,assistant_demo_v1
+4,2,6,,5,,pl_deepseek_flash,cmmlu-024,2,AI自动标注 - 响应长度: 24字符,,2,ds_batch,,,3,0,assistant_demo_v1
+5,6,6,,5,,pl_deepseek_pro,cmmlu-024,7,AI自动标注 - 响应长度: 152字符,,6,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-025,4,AI自动标注 - 响应长度: 81字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,cmmlu-026,4,AI自动标注 - 响应长度: 114字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,cmmlu-026,9,AI自动标注 - 响应长度: 267字符,,7,ds_batch,,,3,0,assistant_demo_v1
+6,6,6,,5,,pl_deepseek_flash,cmmlu-027,4,AI自动标注 - 响应长度: 151字符,,6,ds_batch,,,3,0,assistant_demo_v1
+6,5,6,,5,,pl_deepseek_pro,cmmlu-027,4,AI自动标注 - 响应长度: 143字符,,5,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,cmmlu-028,3,AI自动标注 - 响应长度: 30字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-028,4,AI自动标注 - 响应长度: 69字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-029,3,AI自动标注 - 响应长度: 83字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,cmmlu-029,8,AI自动标注 - 响应长度: 287字符,,7,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,cmmlu-030,1,AI自动标注 - 响应长度: 11字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-030,5,AI自动标注 - 响应长度: 103字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-031,3,AI自动标注 - 响应长度: 68字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-031,5,AI自动标注 - 响应长度: 76字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-032,4,AI自动标注 - 响应长度: 44字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-032,3,AI自动标注 - 响应长度: 141字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-033,4,AI自动标注 - 响应长度: 49字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-033,4,AI自动标注 - 响应长度: 66字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-034,3,AI自动标注 - 响应长度: 61字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,cmmlu-034,9,AI自动标注 - 响应长度: 243字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-035,3,AI自动标注 - 响应长度: 79字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-035,3,AI自动标注 - 响应长度: 144字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-036,3,AI自动标注 - 响应长度: 87字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-036,4,AI自动标注 - 响应长度: 77字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_flash,cmmlu-037,9,AI自动标注 - 响应长度: 204字符,,7,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,cmmlu-038,3,AI自动标注 - 响应长度: 32字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-038,4,AI自动标注 - 响应长度: 72字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-039,4,AI自动标注 - 响应长度: 43字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-039,4,AI自动标注 - 响应长度: 58字符,,4,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,cmmlu-040,1,AI自动标注 - 响应长度: 5字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_pro,cmmlu-040,3,AI自动标注 - 响应长度: 76字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-041,3,AI自动标注 - 响应长度: 82字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,cmmlu-041,9,AI自动标注 - 响应长度: 267字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_flash,cmmlu-042,3,AI自动标注 - 响应长度: 134字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,cmmlu-042,7,AI自动标注 - 响应长度: 202字符,,7,ds_batch,,,3,0,assistant_demo_v1
+4,3,6,,5,,pl_deepseek_flash,cmmlu-043,3,AI自动标注 - 响应长度: 36字符,,3,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-043,3,AI自动标注 - 响应长度: 112字符,,5,ds_batch,,,3,0,assistant_demo_v1
+5,4,6,,5,,pl_deepseek_flash,cmmlu-044,3,AI自动标注 - 响应长度: 81字符,,4,ds_batch,,,3,0,assistant_demo_v1
+5,5,6,,5,,pl_deepseek_pro,cmmlu-044,4,AI自动标注 - 响应长度: 119字符,,5,ds_batch,,,3,0,assistant_demo_v1
+3,1,6,,5,,pl_deepseek_flash,cmmlu-045,1,AI自动标注 - 响应长度: 8字符,,1,ds_batch,,,3,0,assistant_demo_v1
+5,8,7,,5,,pl_deepseek_pro,cmmlu-045,9,AI自动标注 - 响应长度: 314字符,,7,ds_batch,,,3,0,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_flash,code-001,8,AI自动标注 - 响应长度: 387字符,,7,ds_batch,,,10,1,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_pro,code-001,9,AI自动标注 - 响应长度: 432字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,code-002,10,AI自动标注 - 响应长度: 609字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-002,9,AI自动标注 - 响应长度: 633字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,9,23,,20,,pl_deepseek_flash,code-003,10,AI自动标注 - 响应长度: 598字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-003,10,AI自动标注 - 响应长度: 791字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,5,21,,20,,pl_deepseek_flash,code-004,3,AI自动标注 - 响应长度: 145字符,,5,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-004,10,AI自动标注 - 响应长度: 716字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,code-005,10,AI自动标注 - 响应长度: 909字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-005,10,AI自动标注 - 响应长度: 1342字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,code-006,10,AI自动标注 - 响应长度: 1191字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-006,10,AI自动标注 - 响应长度: 805字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,code-007,9,AI自动标注 - 响应长度: 466字符,,8,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-007,10,AI自动标注 - 响应长度: 663字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,code-008,9,AI自动标注 - 响应长度: 430字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-008,10,AI自动标注 - 响应长度: 682字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,5,21,,20,,pl_deepseek_flash,code-009,3,AI自动标注 - 响应长度: 101字符,,5,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-009,10,AI自动标注 - 响应长度: 688字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,5,21,,20,,pl_deepseek_flash,code-010,3,AI自动标注 - 响应长度: 136字符,,5,ds_batch,,,10,0,assistant_demo_v1
+5,9,23,,20,,pl_deepseek_pro,code-010,10,AI自动标注 - 响应长度: 563字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,8,21,,20,,pl_deepseek_flash,code-011,6,AI自动标注 - 响应长度: 200字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-011,10,AI自动标注 - 响应长度: 801字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_flash,code-012,8,AI自动标注 - 响应长度: 374字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-012,10,AI自动标注 - 响应长度: 718字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,code-013,8,AI自动标注 - 响应长度: 463字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-013,10,AI自动标注 - 响应长度: 844字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,code-014,10,AI自动标注 - 响应长度: 677字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-014,10,AI自动标注 - 响应长度: 786字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,code-015,10,AI自动标注 - 响应长度: 815字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-015,10,AI自动标注 - 响应长度: 1117字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,code-016,10,AI自动标注 - 响应长度: 1136字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-016,10,AI自动标注 - 响应长度: 1064字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,5,21,,20,,pl_deepseek_flash,code-017,3,AI自动标注 - 响应长度: 122字符,,5,ds_batch,,,10,0,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_pro,code-017,7,AI自动标注 - 响应长度: 201字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,9,23,,20,,pl_deepseek_flash,code-018,10,AI自动标注 - 响应长度: 587字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-018,10,AI自动标注 - 响应长度: 751字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,22,,20,,pl_deepseek_flash,code-019,10,AI自动标注 - 响应长度: 443字符,,8,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,code-019,10,AI自动标注 - 响应长度: 1583字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,code-020,10,AI自动标注 - 响应长度: 1239字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,code-020,10,AI自动标注 - 响应长度: 1007字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,4,21,,20,,pl_deepseek_flash,edu-001,3,AI自动标注 - 响应长度: 75字符,,4,ds_batch,,,10,1,assistant_demo_v1
+5,5,21,,20,,pl_deepseek_pro,edu-001,7,AI自动标注 - 响应长度: 117字符,,5,ds_batch,,,10,1,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_flash,edu-002,8,AI自动标注 - 响应长度: 294字符,,7,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-002,10,AI自动标注 - 响应长度: 836字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,edu-003,10,AI自动标注 - 响应长度: 614字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-003,10,AI自动标注 - 响应长度: 707字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_flash,edu-004,9,AI自动标注 - 响应长度: 396字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_pro,edu-004,8,AI自动标注 - 响应长度: 425字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,edu-005,9,AI自动标注 - 响应长度: 421字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-005,10,AI自动标注 - 响应长度: 760字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,22,,20,,pl_deepseek_flash,edu-006,10,AI自动标注 - 响应长度: 478字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-006,10,AI自动标注 - 响应长度: 785字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,edu-007,9,AI自动标注 - 响应长度: 408字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-007,10,AI自动标注 - 响应长度: 767字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,edu-008,10,AI自动标注 - 响应长度: 492字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-008,10,AI自动标注 - 响应长度: 908字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_flash,edu-009,10,AI自动标注 - 响应长度: 805字符,,9,ds_batch,,,10,1,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,edu-009,10,AI自动标注 - 响应长度: 1066字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,edu-010,10,AI自动标注 - 响应长度: 719字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-010,10,AI自动标注 - 响应长度: 974字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_flash,edu-011,9,AI自动标注 - 响应长度: 530字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-011,10,AI自动标注 - 响应长度: 835字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_flash,edu-012,8,AI自动标注 - 响应长度: 303字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-012,10,AI自动标注 - 响应长度: 1125字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,6,21,,20,,pl_deepseek_flash,edu-013,3,AI自动标注 - 响应长度: 151字符,,6,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_pro,edu-013,10,AI自动标注 - 响应长度: 419字符,,8,ds_batch,,,10,1,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_flash,edu-014,9,AI自动标注 - 响应长度: 288字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-014,10,AI自动标注 - 响应长度: 682字符,,9,ds_batch,,,10,1,assistant_demo_v1
+6,7,22,,20,,pl_deepseek_flash,edu-015,10,AI自动标注 - 响应长度: 415字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_pro,edu-015,9,AI自动标注 - 响应长度: 449字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,edu-016,9,AI自动标注 - 响应长度: 457字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,9,23,,20,,pl_deepseek_pro,edu-016,10,AI自动标注 - 响应长度: 589字符,,8,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,edu-017,10,AI自动标注 - 响应长度: 671字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-017,10,AI自动标注 - 响应长度: 1009字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,22,,20,,pl_deepseek_flash,edu-018,10,AI自动标注 - 响应长度: 499字符,,8,ds_batch,,,10,1,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,edu-018,10,AI自动标注 - 响应长度: 1773字符,,9,ds_batch,,,10,1,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_flash,edu-019,9,AI自动标注 - 响应长度: 518字符,,8,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,edu-019,10,AI自动标注 - 响应长度: 697字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,edu-020,9,AI自动标注 - 响应长度: 401字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,edu-020,10,AI自动标注 - 响应长度: 662字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-001,9,AI自动标注 - 响应长度: 421字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-001,10,AI自动标注 - 响应长度: 534字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-002,10,AI自动标注 - 响应长度: 835字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-003,10,AI自动标注 - 响应长度: 649字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-003,10,AI自动标注 - 响应长度: 697字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-004,9,AI自动标注 - 响应长度: 485字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-004,10,AI自动标注 - 响应长度: 966字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-005,8,AI自动标注 - 响应长度: 340字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-005,10,AI自动标注 - 响应长度: 994字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-006,7,AI自动标注 - 响应长度: 287字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-006,10,AI自动标注 - 响应长度: 917字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-007,10,AI自动标注 - 响应长度: 474字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-007,10,AI自动标注 - 响应长度: 777字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-008,9,AI自动标注 - 响应长度: 475字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-008,10,AI自动标注 - 响应长度: 1209字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-009,9,AI自动标注 - 响应长度: 493字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-009,8,AI自动标注 - 响应长度: 409字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-010,10,AI自动标注 - 响应长度: 559字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-010,10,AI自动标注 - 响应长度: 1419字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-011,10,AI自动标注 - 响应长度: 642字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-011,10,AI自动标注 - 响应长度: 797字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-012,10,AI自动标注 - 响应长度: 528字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-012,10,AI自动标注 - 响应长度: 963字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-013,9,AI自动标注 - 响应长度: 733字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-013,10,AI自动标注 - 响应长度: 825字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-014,8,AI自动标注 - 响应长度: 342字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-014,10,AI自动标注 - 响应长度: 1303字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-015,6,AI自动标注 - 响应长度: 246字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-015,10,AI自动标注 - 响应长度: 952字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-016,9,AI自动标注 - 响应长度: 480字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-016,10,AI自动标注 - 响应长度: 810字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-017,9,AI自动标注 - 响应长度: 499字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-018,9,AI自动标注 - 响应长度: 372字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-018,10,AI自动标注 - 响应长度: 978字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,6,36,,35,,pl_deepseek_flash,es-019,4,AI自动标注 - 响应长度: 194字符,,6,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-019,10,AI自动标注 - 响应长度: 596字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-020,8,AI自动标注 - 响应长度: 417字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-020,10,AI自动标注 - 响应长度: 1728字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-021,7,AI自动标注 - 响应长度: 233字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-021,10,AI自动标注 - 响应长度: 466字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,36,,35,,pl_deepseek_flash,es-022,7,AI自动标注 - 响应长度: 200字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-022,10,AI自动标注 - 响应长度: 715字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-023,7,AI自动标注 - 响应长度: 268字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-023,10,AI自动标注 - 响应长度: 747字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-024,9,AI自动标注 - 响应长度: 369字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-024,10,AI自动标注 - 响应长度: 902字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-025,9,AI自动标注 - 响应长度: 352字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-025,10,AI自动标注 - 响应长度: 741字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-026,8,AI自动标注 - 响应长度: 413字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-026,10,AI自动标注 - 响应长度: 649字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-027,8,AI自动标注 - 响应长度: 252字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-027,10,AI自动标注 - 响应长度: 886字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-028,8,AI自动标注 - 响应长度: 456字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-028,10,AI自动标注 - 响应长度: 1026字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-029,8,AI自动标注 - 响应长度: 254字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-029,10,AI自动标注 - 响应长度: 881字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-030,7,AI自动标注 - 响应长度: 235字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-030,10,AI自动标注 - 响应长度: 564字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-031,8,AI自动标注 - 响应长度: 405字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-031,10,AI自动标注 - 响应长度: 609字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-032,6,AI自动标注 - 响应长度: 203字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-032,8,AI自动标注 - 响应长度: 413字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-033,9,AI自动标注 - 响应长度: 480字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-033,10,AI自动标注 - 响应长度: 762字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-034,9,AI自动标注 - 响应长度: 413字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-034,10,AI自动标注 - 响应长度: 944字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-035,10,AI自动标注 - 响应长度: 507字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-035,10,AI自动标注 - 响应长度: 528字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-036,8,AI自动标注 - 响应长度: 386字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-036,10,AI自动标注 - 响应长度: 673字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-037,10,AI自动标注 - 响应长度: 464字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-037,10,AI自动标注 - 响应长度: 713字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-038,9,AI自动标注 - 响应长度: 350字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-038,7,AI自动标注 - 响应长度: 467字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-039,8,AI自动标注 - 响应长度: 459字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-039,10,AI自动标注 - 响应长度: 1026字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-040,7,AI自动标注 - 响应长度: 215字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-040,10,AI自动标注 - 响应长度: 558字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-041,7,AI自动标注 - 响应长度: 286字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-041,10,AI自动标注 - 响应长度: 988字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-042,10,AI自动标注 - 响应长度: 430字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-042,9,AI自动标注 - 响应长度: 437字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-043,7,AI自动标注 - 响应长度: 231字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-043,9,AI自动标注 - 响应长度: 350字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-044,8,AI自动标注 - 响应长度: 334字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-044,10,AI自动标注 - 响应长度: 520字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,6,36,,35,,pl_deepseek_flash,es-045,4,AI自动标注 - 响应长度: 162字符,,6,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-045,7,AI自动标注 - 响应长度: 344字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-046,10,AI自动标注 - 响应长度: 666字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-046,10,AI自动标注 - 响应长度: 765字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-047,8,AI自动标注 - 响应长度: 377字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-047,9,AI自动标注 - 响应长度: 438字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-048,10,AI自动标注 - 响应长度: 686字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-048,10,AI自动标注 - 响应长度: 1013字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-049,8,AI自动标注 - 响应长度: 328字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-049,10,AI自动标注 - 响应长度: 751字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-050,8,AI自动标注 - 响应长度: 321字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-050,9,AI自动标注 - 响应长度: 638字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-051,7,AI自动标注 - 响应长度: 227字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-051,7,AI自动标注 - 响应长度: 241字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-052,9,AI自动标注 - 响应长度: 318字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-052,10,AI自动标注 - 响应长度: 1001字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-053,7,AI自动标注 - 响应长度: 245字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-053,10,AI自动标注 - 响应长度: 809字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-054,9,AI自动标注 - 响应长度: 505字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-054,10,AI自动标注 - 响应长度: 1511字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-055,8,AI自动标注 - 响应长度: 424字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-055,9,AI自动标注 - 响应长度: 663字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-056,7,AI自动标注 - 响应长度: 251字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-056,7,AI自动标注 - 响应长度: 296字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-057,9,AI自动标注 - 响应长度: 421字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-057,10,AI自动标注 - 响应长度: 768字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-058,9,AI自动标注 - 响应长度: 398字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-058,10,AI自动标注 - 响应长度: 1104字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,6,36,,35,,pl_deepseek_flash,es-059,4,AI自动标注 - 响应长度: 178字符,,6,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-059,9,AI自动标注 - 响应长度: 432字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-060,9,AI自动标注 - 响应长度: 447字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-060,10,AI自动标注 - 响应长度: 753字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-061,9,AI自动标注 - 响应长度: 463字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-061,10,AI自动标注 - 响应长度: 537字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-062,9,AI自动标注 - 响应长度: 456字符,,8,ds_batch,,,17,1,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-062,10,AI自动标注 - 响应长度: 684字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-063,7,AI自动标注 - 响应长度: 258字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-063,7,AI自动标注 - 响应长度: 308字符,,7,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-064,8,AI自动标注 - 响应长度: 389字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-064,10,AI自动标注 - 响应长度: 607字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,5,36,,35,,pl_deepseek_flash,es-065,3,AI自动标注 - 响应长度: 148字符,,5,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-065,10,AI自动标注 - 响应长度: 678字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-066,10,AI自动标注 - 响应长度: 570字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-066,10,AI自动标注 - 响应长度: 804字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-067,7,AI自动标注 - 响应长度: 345字符,,7,ds_batch,,,17,0,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_pro,es-067,9,AI自动标注 - 响应长度: 404字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_flash,es-068,10,AI自动标注 - 响应长度: 687字符,,9,ds_batch,,,17,0,assistant_demo_v1
+5,10,38,,35,,pl_deepseek_pro,es-068,10,AI自动标注 - 响应长度: 876字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-069,9,AI自动标注 - 响应长度: 446字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-069,10,AI自动标注 - 响应长度: 1127字符,,9,ds_batch,,,17,1,assistant_demo_v1
+6,7,37,,35,,pl_deepseek_flash,es-070,8,AI自动标注 - 响应长度: 439字符,,8,ds_batch,,,17,0,assistant_demo_v1
+6,7,38,,35,,pl_deepseek_pro,es-070,10,AI自动标注 - 响应长度: 854字符,,9,ds_batch,,,17,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_flash,mfg-001,10,AI自动标注 - 响应长度: 721字符,,9,ds_batch,,,10,1,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,mfg-001,10,AI自动标注 - 响应长度: 1295字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-002,10,AI自动标注 - 响应长度: 965字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-002,10,AI自动标注 - 响应长度: 1159字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,mfg-003,10,AI自动标注 - 响应长度: 489字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-003,10,AI自动标注 - 响应长度: 975字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-004,10,AI自动标注 - 响应长度: 1057字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-004,10,AI自动标注 - 响应长度: 822字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,9,23,,20,,pl_deepseek_flash,mfg-005,10,AI自动标注 - 响应长度: 582字符,,8,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,mfg-005,10,AI自动标注 - 响应长度: 801字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_flash,mfg-006,8,AI自动标注 - 响应长度: 349字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-006,10,AI自动标注 - 响应长度: 819字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_flash,mfg-007,10,AI自动标注 - 响应长度: 748字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-007,10,AI自动标注 - 响应长度: 914字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,mfg-008,10,AI自动标注 - 响应长度: 436字符,,8,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,mfg-008,10,AI自动标注 - 响应长度: 928字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,mfg-009,9,AI自动标注 - 响应长度: 494字符,,8,ds_batch,,,10,0,assistant_demo_v1
+6,7,22,,20,,pl_deepseek_pro,mfg-009,9,AI自动标注 - 响应长度: 449字符,,8,ds_batch,,,10,1,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,mfg-010,10,AI自动标注 - 响应长度: 475字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-010,10,AI自动标注 - 响应长度: 731字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_flash,mfg-011,10,AI自动标注 - 响应长度: 793字符,,9,ds_batch,,,10,1,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,mfg-011,10,AI自动标注 - 响应长度: 593字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,mfg-012,10,AI自动标注 - 响应长度: 480字符,,8,ds_batch,,,10,1,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,mfg-012,10,AI自动标注 - 响应长度: 810字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-013,10,AI自动标注 - 响应长度: 706字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-013,10,AI自动标注 - 响应长度: 601字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,9,23,,20,,pl_deepseek_flash,mfg-014,9,AI自动标注 - 响应长度: 561字符,,8,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-014,10,AI自动标注 - 响应长度: 1187字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,9,23,,20,,pl_deepseek_flash,mfg-015,10,AI自动标注 - 响应长度: 529字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-015,10,AI自动标注 - 响应长度: 706字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-016,10,AI自动标注 - 响应长度: 673字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-016,10,AI自动标注 - 响应长度: 861字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_flash,mfg-017,9,AI自动标注 - 响应长度: 380字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_pro,mfg-017,10,AI自动标注 - 响应长度: 498字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-018,10,AI自动标注 - 响应长度: 735字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-018,10,AI自动标注 - 响应长度: 893字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-019,10,AI自动标注 - 响应长度: 997字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-019,10,AI自动标注 - 响应长度: 896字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-020,10,AI自动标注 - 响应长度: 606字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-020,10,AI自动标注 - 响应长度: 866字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,8,22,,20,,pl_deepseek_flash,mfg-021,8,AI自动标注 - 响应长度: 216字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-021,10,AI自动标注 - 响应长度: 748字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-022,10,AI自动标注 - 响应长度: 786字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-022,10,AI自动标注 - 响应长度: 908字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-023,10,AI自动标注 - 响应长度: 717字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-023,10,AI自动标注 - 响应长度: 1298字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,mfg-024,10,AI自动标注 - 响应长度: 438字符,,8,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-024,10,AI自动标注 - 响应长度: 788字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-025,10,AI自动标注 - 响应长度: 669字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-025,10,AI自动标注 - 响应长度: 962字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,22,,20,,pl_deepseek_flash,mfg-026,8,AI自动标注 - 响应长度: 386字符,,7,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-026,10,AI自动标注 - 响应长度: 718字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-027,10,AI自动标注 - 响应长度: 721字符,,9,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,mfg-027,10,AI自动标注 - 响应长度: 842字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,9,22,,20,,pl_deepseek_flash,mfg-028,10,AI自动标注 - 响应长度: 439字符,,8,ds_batch,,,10,0,assistant_demo_v1
+6,7,23,,20,,pl_deepseek_pro,mfg-028,10,AI自动标注 - 响应长度: 1473字符,,9,ds_batch,,,10,1,assistant_demo_v1
+5,9,23,,20,,pl_deepseek_flash,mfg-029,10,AI自动标注 - 响应长度: 570字符,,8,ds_batch,,,10,1,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-029,10,AI自动标注 - 响应长度: 1082字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_flash,mfg-030,10,AI自动标注 - 响应长度: 639字符,,9,ds_batch,,,10,0,assistant_demo_v1
+5,10,23,,20,,pl_deepseek_pro,mfg-030,10,AI自动标注 - 响应长度: 967字符,,9,ds_batch,,,10,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-001,10,AI自动标注 - 响应长度: 506字符,,8,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-001,10,AI自动标注 - 响应长度: 1106字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-002,10,AI自动标注 - 响应长度: 712字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-003,9,AI自动标注 - 响应长度: 564字符,,8,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-003,10,AI自动标注 - 响应长度: 910字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-004,10,AI自动标注 - 响应长度: 618字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-004,10,AI自动标注 - 响应长度: 1098字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-005,10,AI自动标注 - 响应长度: 730字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-005,10,AI自动标注 - 响应长度: 835字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-006,9,AI自动标注 - 响应长度: 557字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-006,10,AI自动标注 - 响应长度: 904字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-007,7,AI自动标注 - 响应长度: 280字符,,7,ds_batch,,,12,1,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_pro,ps-007,7,AI自动标注 - 响应长度: 272字符,,7,ds_batch,,,12,0,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-008,6,AI自动标注 - 响应长度: 283字符,,7,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-008,10,AI自动标注 - 响应长度: 699字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-009,10,AI自动标注 - 响应长度: 563字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-009,10,AI自动标注 - 响应长度: 840字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-010,9,AI自动标注 - 响应长度: 535字符,,8,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-010,10,AI自动标注 - 响应长度: 774字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-011,7,AI自动标注 - 响应长度: 274字符,,7,ds_batch,,,12,0,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_pro,ps-011,7,AI自动标注 - 响应长度: 328字符,,7,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-012,10,AI自动标注 - 响应长度: 873字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-012,10,AI自动标注 - 响应长度: 960字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-013,9,AI自动标注 - 响应长度: 619字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-013,10,AI自动标注 - 响应长度: 991字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-014,10,AI自动标注 - 响应长度: 614字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-014,10,AI自动标注 - 响应长度: 814字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-015,10,AI自动标注 - 响应长度: 1094字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-015,10,AI自动标注 - 响应长度: 1125字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-016,10,AI自动标注 - 响应长度: 728字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-016,10,AI自动标注 - 响应长度: 801字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-017,10,AI自动标注 - 响应长度: 701字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-017,10,AI自动标注 - 响应长度: 706字符,,9,ds_batch,,,12,0,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_flash,ps-018,9,AI自动标注 - 响应长度: 626字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-018,10,AI自动标注 - 响应长度: 905字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,9,28,,25,,pl_deepseek_flash,ps-019,10,AI自动标注 - 响应长度: 515字符,,8,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-019,10,AI自动标注 - 响应长度: 814字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-020,10,AI自动标注 - 响应长度: 886字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-021,10,AI自动标注 - 响应长度: 766字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-021,10,AI自动标注 - 响应长度: 1108字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-022,10,AI自动标注 - 响应长度: 743字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-022,10,AI自动标注 - 响应长度: 1254字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-023,10,AI自动标注 - 响应长度: 449字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-024,10,AI自动标注 - 响应长度: 669字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-024,10,AI自动标注 - 响应长度: 1033字符,,9,ds_batch,,,12,0,assistant_demo_v1
+5,8,27,,25,,pl_deepseek_flash,ps-025,8,AI自动标注 - 响应长度: 378字符,,7,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-025,10,AI自动标注 - 响应长度: 670字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-026,10,AI自动标注 - 响应长度: 844字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,5,26,,25,,pl_deepseek_pro,ps-026,4,AI自动标注 - 响应长度: 137字符,,5,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-027,10,AI自动标注 - 响应长度: 1599字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-027,10,AI自动标注 - 响应长度: 1565字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-028,10,AI自动标注 - 响应长度: 514字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-028,10,AI自动标注 - 响应长度: 698字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-029,10,AI自动标注 - 响应长度: 501字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-029,10,AI自动标注 - 响应长度: 1145字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-030,8,AI自动标注 - 响应长度: 340字符,,7,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-030,10,AI自动标注 - 响应长度: 666字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-031,10,AI自动标注 - 响应长度: 856字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-031,10,AI自动标注 - 响应长度: 1010字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-032,10,AI自动标注 - 响应长度: 828字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-032,10,AI自动标注 - 响应长度: 911字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-033,9,AI自动标注 - 响应长度: 473字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-033,10,AI自动标注 - 响应长度: 886字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_flash,ps-034,10,AI自动标注 - 响应长度: 735字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-035,10,AI自动标注 - 响应长度: 1107字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,4,26,,25,,pl_deepseek_pro,ps-035,3,AI自动标注 - 响应长度: 79字符,,4,ds_batch,,,12,1,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-036,9,AI自动标注 - 响应长度: 431字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-036,10,AI自动标注 - 响应长度: 827字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-037,10,AI自动标注 - 响应长度: 1666字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-037,10,AI自动标注 - 响应长度: 697字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_flash,ps-038,10,AI自动标注 - 响应长度: 798字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-038,10,AI自动标注 - 响应长度: 996字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-039,8,AI自动标注 - 响应长度: 484字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-039,10,AI自动标注 - 响应长度: 964字符,,9,ds_batch,,,12,0,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-040,9,AI自动标注 - 响应长度: 403字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-040,10,AI自动标注 - 响应长度: 535字符,,8,ds_batch,,,12,0,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-041,9,AI自动标注 - 响应长度: 449字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-041,10,AI自动标注 - 响应长度: 1099字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,8,27,,25,,pl_deepseek_flash,ps-042,7,AI自动标注 - 响应长度: 297字符,,7,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-042,8,AI自动标注 - 响应长度: 505字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_flash,ps-043,10,AI自动标注 - 响应长度: 602字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-043,10,AI自动标注 - 响应长度: 1260字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-044,8,AI自动标注 - 响应长度: 429字符,,8,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-044,10,AI自动标注 - 响应长度: 748字符,,9,ds_batch,,,12,0,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-045,9,AI自动标注 - 响应长度: 408字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,9,28,,25,,pl_deepseek_pro,ps-045,10,AI自动标注 - 响应长度: 540字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-046,9,AI自动标注 - 响应长度: 431字符,,8,ds_batch,,,12,0,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-046,10,AI自动标注 - 响应长度: 976字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_flash,ps-047,10,AI自动标注 - 响应长度: 866字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-047,10,AI自动标注 - 响应长度: 1037字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-048,9,AI自动标注 - 响应长度: 491字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-048,10,AI自动标注 - 响应长度: 624字符,,9,ds_batch,,,12,0,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-049,8,AI自动标注 - 响应长度: 435字符,,8,ds_batch,,,12,0,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-049,10,AI自动标注 - 响应长度: 953字符,,9,ds_batch,,,12,0,assistant_demo_v1
+5,8,27,,25,,pl_deepseek_flash,ps-050,6,AI自动标注 - 响应长度: 275字符,,7,ds_batch,,,12,0,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-050,10,AI自动标注 - 响应长度: 992字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-051,9,AI自动标注 - 响应长度: 471字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-051,10,AI自动标注 - 响应长度: 938字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-052,10,AI自动标注 - 响应长度: 584字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-052,10,AI自动标注 - 响应长度: 821字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-053,10,AI自动标注 - 响应长度: 855字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-054,10,AI自动标注 - 响应长度: 403字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-054,10,AI自动标注 - 响应长度: 1115字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-055,9,AI自动标注 - 响应长度: 542字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-055,10,AI自动标注 - 响应长度: 975字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-056,9,AI自动标注 - 响应长度: 530字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-056,10,AI自动标注 - 响应长度: 1044字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-057,10,AI自动标注 - 响应长度: 1047字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-057,10,AI自动标注 - 响应长度: 1270字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-058,10,AI自动标注 - 响应长度: 1010字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-058,10,AI自动标注 - 响应长度: 750字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-059,10,AI自动标注 - 响应长度: 463字符,,8,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-059,10,AI自动标注 - 响应长度: 1023字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_flash,ps-060,10,AI自动标注 - 响应长度: 610字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-060,10,AI自动标注 - 响应长度: 1065字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-061,9,AI自动标注 - 响应长度: 482字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-061,10,AI自动标注 - 响应长度: 933字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-062,9,AI自动标注 - 响应长度: 684字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_flash,ps-063,10,AI自动标注 - 响应长度: 658字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-063,10,AI自动标注 - 响应长度: 1115字符,,9,ds_batch,,,12,1,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-064,8,AI自动标注 - 响应长度: 487字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-064,10,AI自动标注 - 响应长度: 979字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-065,10,AI自动标注 - 响应长度: 627字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-065,10,AI自动标注 - 响应长度: 1849字符,,9,ds_batch,,,12,0,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-066,10,AI自动标注 - 响应长度: 491字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-066,10,AI自动标注 - 响应长度: 1075字符,,9,ds_batch,,,12,0,assistant_demo_v1
+6,7,27,,25,,pl_deepseek_flash,ps-067,9,AI自动标注 - 响应长度: 456字符,,8,ds_batch,,,12,0,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-067,10,AI自动标注 - 响应长度: 1178字符,,9,ds_batch,,,12,0,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-068,9,AI自动标注 - 响应长度: 486字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-068,10,AI自动标注 - 响应长度: 812字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_flash,ps-069,9,AI自动标注 - 响应长度: 547字符,,8,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_deepseek_pro,ps-069,10,AI自动标注 - 响应长度: 737字符,,9,ds_batch,,,12,0,assistant_demo_v1
+5,9,27,,25,,pl_deepseek_flash,ps-070,10,AI自动标注 - 响应长度: 477字符,,8,ds_batch,,,12,1,assistant_demo_v1
+5,10,28,,25,,pl_deepseek_pro,ps-070,10,AI自动标注 - 响应长度: 842字符,,9,ds_batch,,,12,1,assistant_demo_v1
+6,7,28,,25,,pl_glm_47_flashx,ps-001,10,AI自动标注 - 响应长度: 707字符,,9,test_each,,,12,1,assistant_demo_v1
+,,,https://www.gov.cn/gongbao/2025/issue_12266/202509/content_7039598.html,,medium,pl_glm_47_flashx,ps-001,,GLM-4.7-flashx auto-generated response. Latency: 26.97s. Response length: 795 chars.,职工基本医疗保险参保人员办理异地就医备案前，应核对哪些关键信息与材料？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhsa.gov.cn/col/col114/index.html,,medium,pl_glm_47_flashx,ps-002,,GLM-4.7-flashx auto-generated response. Latency: 25.42s. Response length: 760 chars.,城乡居民医保参保缴费期与待遇享受期衔接，应注意哪些常见误区？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhsa.gov.cn/col/col105/index.html,,medium,pl_glm_47_flashx,ps-003,,GLM-4.7-flashx auto-generated response. Latency: 23.73s. Response length: 820 chars.,门诊慢特病资格认定与报销流程，一般包含哪些环节？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhsa.gov.cn/col/col104/index.html,,medium,pl_glm_47_flashx,ps-004,,GLM-4.7-flashx auto-generated response. Latency: 20.33s. Response length: 408 chars.,生育保险待遇申领通常需要哪些证明材料与办理渠道？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhsa.gov.cn/col/col109/index.html,,medium,pl_glm_47_flashx,ps-005,,GLM-4.7-flashx auto-generated response. Latency: 25.32s. Response length: 483 chars.,医疗救助对象认定与“一站式”结算，政策要点有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.gov.cn/zhengce/zuixin/,,medium,pl_glm_47_flashx,ps-006,,GLM-4.7-flashx auto-generated response. Latency: 19.41s. Response length: 291 chars.,长期护理保险试点地区参保人如何了解本地待遇与评估流程？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.gov.cn/hudong/index.htm,,medium,pl_glm_47_flashx,ps-007,,GLM-4.7-flashx auto-generated response. Latency: 24.11s. Response length: 336 chars.,医保电子凭证与实体社保卡在就医结算中的关系如何理解？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/,,medium,pl_glm_47_flashx,ps-008,,GLM-4.7-flashx auto-generated response. Latency: 19.44s. Response length: 362 chars.,谈判药品“双通道”供药机制对参保患者意味着什么？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.moe.gov.cn/jyb_xwfb/xw_fbbm/,,medium,pl_glm_47_flashx,ps-009,,GLM-4.7-flashx auto-generated response. Latency: 33.54s. Response length: 756 chars.,医保基金监管举报投诉渠道与受理范围一般包括哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mem.gov.cn/,,medium,pl_glm_47_flashx,ps-010,,GLM-4.7-flashx auto-generated response. Latency: 41.96s. Response length: 656 chars.,跨省异地就医直接结算失败时，可按什么顺序自查原因？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mem.gov.cn/yw/zdgz/ajfb/,,medium,pl_glm_47_flashx,ps-011,,GLM-4.7-flashx auto-generated response. Latency: 22.69s. Response length: 322 chars.,国家组织药品集中带量采购对参保人药费负担的影响应如何客观表述？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.samr.gov.cn/,,medium,pl_glm_47_flashx,ps-012,,GLM-4.7-flashx auto-generated response. Latency: 17.99s. Response length: 791 chars.,基本公共卫生服务与基本医疗服务在制度上如何区分？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.samr.gov.cn/zw/zwfb/,,medium,pl_glm_47_flashx,ps-013,,GLM-4.7-flashx auto-generated response. Latency: 21.12s. Response length: 444 chars.,传染病疫情信息报告与个人隐私保护之间如何把握平衡？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mnr.gov.cn/,,medium,pl_glm_47_flashx,ps-014,,GLM-4.7-flashx auto-generated response. Latency: 37.30s. Response length: 472 chars.,学校传染病防控中家校协同的常见要点有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mee.gov.cn/,,medium,pl_glm_47_flashx,ps-015,,GLM-4.7-flashx auto-generated response. Latency: 59.34s. Response length: 931 chars.,预防接种异常反应补偿与民事赔偿关系应如何向群众解释？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mee.gov.cn/zcwj/gwywj/202508/t20250827_1126207.shtml,,medium,pl_glm_47_flashx,ps-016,,GLM-4.7-flashx auto-generated response. Latency: 50.89s. Response length: 629 chars.,精神卫生法框架下严重精神障碍患者服务管理要点是什么？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mca.gov.cn/,,medium,pl_glm_47_flashx,ps-017,,GLM-4.7-flashx auto-generated response. Latency: 31.24s. Response length: 431 chars.,突发公共卫生事件分级响应启动后，社区可承担哪些配合工作？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mca.gov.cn/n152/n165/c166/,,medium,pl_glm_47_flashx,ps-018,,GLM-4.7-flashx auto-generated response. Latency: 44.12s. Response length: 474 chars.,食品安全事故信息通报与舆情回应应注意哪些原则？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,high,,,glm_4.7_flashx_auto
+,,,https://www.mohrss.gov.cn/SYrlzyhshbzk/,,medium,pl_glm_47_flashx,ps-019,,GLM-4.7-flashx auto-generated response. Latency: 40.95s. Response length: 475 chars.,饮用水水源保护区管理中的公众参与方式有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mohrss.gov.cn/SYrlzyhshbzb/jycyz/,,medium,pl_glm_47_flashx,ps-020,,GLM-4.7-flashx auto-generated response. Latency: 93.73s. Response length: 382 chars.,噪声污染防治中“敏感建筑物集中区域”监管要点是什么？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.ndrc.gov.cn/,,medium,pl_glm_47_flashx,ps-021,,GLM-4.7-flashx auto-generated response. Latency: 44.08s. Response length: 354 chars.,生活垃圾分类投放、收集、运输的责任边界如何划分？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.ndrc.gov.cn/fggz/,,medium,pl_glm_47_flashx,ps-022,,GLM-4.7-flashx auto-generated response. Latency: 31.23s. Response length: 351 chars.,危险废物经营许可证制度对产废单位意味着什么？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,high,,,glm_4.7_flashx_auto
+,,,https://www.mof.gov.cn/,,medium,pl_glm_47_flashx,ps-023,,GLM-4.7-flashx auto-generated response. Latency: 79.65s. Response length: 631 chars.,土壤污染风险管控和修复活动中的信息公开要求有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/,,medium,pl_glm_47_flashx,ps-024,,GLM-4.7-flashx auto-generated response. Latency: 30.58s. Response length: 520 chars.,碳排放权交易与排污许可制度在监管对象上如何区分？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhc.gov.cn/,,medium,pl_glm_47_flashx,ps-025,,GLM-4.7-flashx auto-generated response. Latency: 22.92s. Response length: 487 chars.,生态保护红线内允许的人类活动类型有哪些概括性限制？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhc.gov.cn/wjw/bmgz/,,medium,pl_glm_47_flashx,ps-026,,GLM-4.7-flashx auto-generated response. Latency: 92.41s. Response length: 692 chars.,海域使用论证与海洋环境影响评价在程序上如何衔接？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.moj.gov.cn/,,medium,pl_glm_47_flashx,ps-027,,GLM-4.7-flashx auto-generated response. Latency: 65.41s. Response length: 1387 chars.,养老机构备案与消防审验的常见合规要点有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.moj.gov.cn/pub/sfbgw/,,medium,pl_glm_47_flashx,ps-028,,GLM-4.7-flashx auto-generated response. Latency: 26.37s. Response length: 308 chars.,未成年人社会保护工作中强制报告制度的适用情形有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mps.gov.cn/,,medium,pl_glm_47_flashx,ps-029,,GLM-4.7-flashx auto-generated response. Latency: 39.64s. Response length: 437 chars.,最低生活保障家庭经济状况核对应注意哪些隐私与准确性问题？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mps.gov.cn/n2253534/n2253535/,,medium,pl_glm_47_flashx,ps-030,,GLM-4.7-flashx auto-generated response. Latency: 19.36s. Response length: 401 chars.,临时救助与低保在对象与给付方式上有何主要区别？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.ccdi.gov.cn/,,medium,pl_glm_47_flashx,ps-031,,GLM-4.7-flashx auto-generated response. Latency: 66.62s. Response length: 896 chars.,特困人员供养与分散供养服务协议应关注哪些条款？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.gov.cn/gongbao/2025/issue_12266/202509/content_7039598.html,,medium,pl_glm_47_flashx,ps-032,,GLM-4.7-flashx auto-generated response. Latency: 20.64s. Response length: 453 chars.,残疾人两项补贴资格认定与动态复核要点是什么？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhsa.gov.cn/col/col114/index.html,,medium,pl_glm_47_flashx,ps-033,,GLM-4.7-flashx auto-generated response. Latency: 37.01s. Response length: 655 chars.,婚姻登记“跨省通办”试点中当事人材料准备要点有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhsa.gov.cn/col/col105/index.html,,medium,pl_glm_47_flashx,ps-034,,GLM-4.7-flashx auto-generated response. Latency: 29.63s. Response length: 0 chars.,收养登记评估与收养能力评估有何制度性区别？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhsa.gov.cn/col/col104/index.html,,medium,pl_glm_47_flashx,ps-035,,GLM-4.7-flashx auto-generated response. Latency: 87.24s. Response length: 1365 chars.,慈善组织信息公开与募捐备案应关注哪些合规点？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhsa.gov.cn/col/col109/index.html,,medium,pl_glm_47_flashx,ps-036,,GLM-4.7-flashx auto-generated response. Latency: 45.63s. Response length: 302 chars.,志愿服务记录与证明出具应遵循哪些基本要求？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.gov.cn/zhengce/zuixin/,,medium,pl_glm_47_flashx,ps-037,,GLM-4.7-flashx auto-generated response. Latency: 56.77s. Response length: 453 chars.,行政区划变更公告后，证照与合同地址条款如何处理更稳妥？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.gov.cn/hudong/index.htm,,medium,pl_glm_47_flashx,ps-038,,GLM-4.7-flashx auto-generated response. Latency: 105.85s. Response length: 623 chars.,地名管理中对具有重要地理方位意义的名称命名更名程序要点？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/,,medium,pl_glm_47_flashx,ps-039,,GLM-4.7-flashx auto-generated response. Latency: 43.69s. Response length: 730 chars.,基层群众性自治组织与基层政府在社区治理中的职责边界？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.moe.gov.cn/jyb_xwfb/xw_fbbm/,,medium,pl_glm_47_flashx,ps-040,,GLM-4.7-flashx auto-generated response. Latency: 33.97s. Response length: 300 chars.,信访事项受理与办理“三个到位”应如何向群众解释？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mem.gov.cn/,,medium,pl_glm_47_flashx,ps-041,,GLM-4.7-flashx auto-generated response. Latency: 25.25s. Response length: 755 chars.,行政复议与行政诉讼在救济路径选择上如何把握？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,high,,,glm_4.7_flashx_auto
+,,,https://www.mem.gov.cn/yw/zdgz/ajfb/,,medium,pl_glm_47_flashx,ps-042,,GLM-4.7-flashx auto-generated response. Latency: 19.65s. Response length: 441 chars.,政府信息公开申请中“三需要”原则应如何准确理解？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.samr.gov.cn/,,medium,pl_glm_47_flashx,ps-043,,GLM-4.7-flashx auto-generated response. Latency: 18.38s. Response length: 739 chars.,重大行政决策公众参与与专家论证如何组织更规范？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.samr.gov.cn/zw/zwfb/,,medium,pl_glm_47_flashx,ps-044,,GLM-4.7-flashx auto-generated response. Latency: 50.24s. Response length: 675 chars.,行政执法公示制度中应重点公开哪些要素？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mee.gov.cn/,,medium,pl_glm_47_flashx,ps-046,,GLM-4.7-flashx auto-generated response. Latency: 31.55s. Response length: 847 chars.,数字政府建设中政务数据共享与数据安全如何统筹？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mee.gov.cn/zcwj/gwywj/202508/t20250827_1126207.shtml,,medium,pl_glm_47_flashx,ps-047,,GLM-4.7-flashx auto-generated response. Latency: 20.61s. Response length: 319 chars.,一体化政务服务平台“跨省通办”事项清单动态管理要点？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mca.gov.cn/,,medium,pl_glm_47_flashx,ps-048,,GLM-4.7-flashx auto-generated response. Latency: 26.13s. Response length: 0 chars.,电子证照法律效力与纸质证照关系应如何向企业说明？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mca.gov.cn/n152/n165/c166/,,medium,pl_glm_47_flashx,ps-049,,GLM-4.7-flashx auto-generated response. Latency: 23.31s. Response length: 545 chars.,政务服务“好差评”结果在绩效考核中如何合理使用？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.mohrss.gov.cn/SYrlzyhshbzk/,,medium,pl_glm_47_flashx,ps-050,,GLM-4.7-flashx auto-generated response. Latency: 16.15s. Response length: 529 chars.,公共资源交易平台整合共享对企业投标成本有何影响？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch,public service,medium,,,glm_4.7_flashx_auto
+,,,https://www.nhsa.gov.cn/col/col104/index.html,,medium,pl_glm_47_flashx,ps-004,,GLM-4.7-flashx v2 auto-generated response. Latency: 36.53s. Response length: 355 chars.,生育保险待遇申领通常需要哪些证明材料与办理渠道？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.nhsa.gov.cn/col/col109/index.html,,medium,pl_glm_47_flashx,ps-005,,GLM-4.7-flashx v2 auto-generated response. Latency: 26.92s. Response length: 886 chars.,医疗救助对象认定与“一站式”结算，政策要点有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.gov.cn/zhengce/zuixin/,,medium,pl_glm_47_flashx,ps-006,,GLM-4.7-flashx v2 auto-generated response. Latency: 56.58s. Response length: 429 chars.,长期护理保险试点地区参保人如何了解本地待遇与评估流程？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.gov.cn/hudong/index.htm,,medium,pl_glm_47_flashx,ps-007,,GLM-4.7-flashx v2 auto-generated response. Latency: 33.54s. Response length: 332 chars.,医保电子凭证与实体社保卡在就医结算中的关系如何理解？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/,,medium,pl_glm_47_flashx,ps-008,,GLM-4.7-flashx v2 auto-generated response. Latency: 50.68s. Response length: 269 chars.,谈判药品“双通道”供药机制对参保患者意味着什么？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.moe.gov.cn/jyb_xwfb/xw_fbbm/,,medium,pl_glm_47_flashx,ps-009,,GLM-4.7-flashx v2 auto-generated response. Latency: 39.77s. Response length: 593 chars.,医保基金监管举报投诉渠道与受理范围一般包括哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.mem.gov.cn/,,medium,pl_glm_47_flashx,ps-010,,GLM-4.7-flashx v2 auto-generated response. Latency: 39.60s. Response length: 373 chars.,跨省异地就医直接结算失败时，可按什么顺序自查原因？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.mem.gov.cn/yw/zdgz/ajfb/,,medium,pl_glm_47_flashx,ps-011,,GLM-4.7-flashx v2 auto-generated response. Latency: 32.76s. Response length: 274 chars.,国家组织药品集中带量采购对参保人药费负担的影响应如何客观表述？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.samr.gov.cn/,,medium,pl_glm_47_flashx,ps-012,,GLM-4.7-flashx v2 auto-generated response. Latency: 22.26s. Response length: 650 chars.,基本公共卫生服务与基本医疗服务在制度上如何区分？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.samr.gov.cn/zw/zwfb/,,medium,pl_glm_47_flashx,ps-013,,GLM-4.7-flashx v2 auto-generated response. Latency: 25.46s. Response length: 934 chars.,传染病疫情信息报告与个人隐私保护之间如何把握平衡？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.mnr.gov.cn/,,medium,pl_glm_47_flashx,ps-014,,GLM-4.7-flashx v2 auto-generated response. Latency: 32.44s. Response length: 608 chars.,学校传染病防控中家校协同的常见要点有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.mee.gov.cn/,,medium,pl_glm_47_flashx,ps-015,,GLM-4.7-flashx v2 auto-generated response. Latency: 30.54s. Response length: 482 chars.,预防接种异常反应补偿与民事赔偿关系应如何向群众解释？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.mee.gov.cn/zcwj/gwywj/202508/t20250827_1126207.shtml,,medium,pl_glm_47_flashx,ps-016,,GLM-4.7-flashx v2 auto-generated response. Latency: 26.84s. Response length: 840 chars.,精神卫生法框架下严重精神障碍患者服务管理要点是什么？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.mca.gov.cn/,,medium,pl_glm_47_flashx,ps-017,,GLM-4.7-flashx v2 auto-generated response. Latency: 25.98s. Response length: 319 chars.,突发公共卫生事件分级响应启动后，社区可承担哪些配合工作？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.mca.gov.cn/n152/n165/c166/,,medium,pl_glm_47_flashx,ps-018,,GLM-4.7-flashx v2 auto-generated response. Latency: 19.18s. Response length: 389 chars.,食品安全事故信息通报与舆情回应应注意哪些原则？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,high,,,glm_4.7_flashx_auto_v2
+,,,https://www.mohrss.gov.cn/SYrlzyhshbzk/,,medium,pl_glm_47_flashx,ps-019,,GLM-4.7-flashx v2 auto-generated response. Latency: 25.74s. Response length: 375 chars.,饮用水水源保护区管理中的公众参与方式有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.mohrss.gov.cn/SYrlzyhshbzb/jycyz/,,medium,pl_glm_47_flashx,ps-020,,GLM-4.7-flashx v2 auto-generated response. Latency: 40.67s. Response length: 413 chars.,噪声污染防治中“敏感建筑物集中区域”监管要点是什么？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.ndrc.gov.cn/,,medium,pl_glm_47_flashx,ps-021,,GLM-4.7-flashx v2 auto-generated response. Latency: 57.23s. Response length: 473 chars.,生活垃圾分类投放、收集、运输的责任边界如何划分？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.ndrc.gov.cn/fggz/,,medium,pl_glm_47_flashx,ps-022,,GLM-4.7-flashx v2 auto-generated response. Latency: 24.18s. Response length: 436 chars.,危险废物经营许可证制度对产废单位意味着什么？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,high,,,glm_4.7_flashx_auto_v2
+,,,https://www.mof.gov.cn/,,medium,pl_glm_47_flashx,ps-023,,GLM-4.7-flashx v2 auto-generated response. Latency: 18.26s. Response length: 606 chars.,土壤污染风险管控和修复活动中的信息公开要求有哪些？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/,,medium,pl_glm_47_flashx,ps-024,,GLM-4.7-flashx v2 auto-generated response. Latency: 16.93s. Response length: 676 chars.,碳排放权交易与排污许可制度在监管对象上如何区分？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2
+,,,https://www.nhc.gov.cn/,,medium,pl_glm_47_flashx,ps-025,,GLM-4.7-flashx v2 auto-generated response. Latency: 28.57s. Response length: 441 chars.,生态保护红线内允许的人类活动类型有哪些概括性限制？ 请结合权威公开信息作答，并提示用户以经办机构或主管部门最新规定为准。,,glm_batch_v2,public service,medium,,,glm_4.7_flashx_auto_v2

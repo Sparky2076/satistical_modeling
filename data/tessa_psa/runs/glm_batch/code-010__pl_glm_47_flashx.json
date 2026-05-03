@@ -1,0 +1,15 @@
+{
+  "task_id": "code-010",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 17.129916600009892,
+  "usage": {
+    "input_tokens": 73,
+    "output_tokens": 1049,
+    "cache_tokens": 2
+  },
+  "error": null,
+  "response_text": "`dataclasses.field(default_factory=list)` 主要解决了 **可变默认值被所有实例共享** 的问题。\n\n具体来说：\n\n1.  **问题背景**：\n    在 Python 中，如果直接在类定义中给可变对象（如 `list`、`dict`、`set`）赋默认值，那么所有实例都会引用**同一个**对象。这意味着修改一个实例的该字段，会影响到其他所有实例。\n\n2.  **解决方案**：\n    使用 `default_factory=list` 告诉 dataclass：当实例化时，如果该字段未提供值，请调用 `list()` 函数来**创建一个新的独立列表**。\n\n**示例对比：**\n\n```python\nfrom dataclasses import dataclass, field\n\n# ❌ 错误方式：所有实例共享同一个列表\n@dataclass\nclass BadClass:\n    items: list = []  # 所有实例共用同一个空列表\n\n# ✅ 正确方式：每个实例拥有独立的列表\n@dataclass\nclass GoodClass:\n    items: list = field(default_factory=list)  # 每次实例化时创建新列表\n\nb1 = BadClass()\nb2 = BadClass()\nb1.items.append(1)\nprint(b2.items)  # 输出: [1] (因为共享了同一个对象)\n\ng1 = GoodClass()\ng2 = GoodClass()\ng1.items.append(1)\nprint(g2.items)  # 输出: [] (因为各自拥有独立的对象)\n```"
+}

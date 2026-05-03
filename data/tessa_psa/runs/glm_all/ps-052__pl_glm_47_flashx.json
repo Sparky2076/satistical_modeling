@@ -1,0 +1,11 @@
+{
+  "task_id": "ps-052",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 5.031861800001934,
+  "usage": {},
+  "error": "URL error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)",
+  "response_text": null
+}
