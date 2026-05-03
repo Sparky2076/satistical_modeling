@@ -11,6 +11,7 @@
 | human_labels.csv | 人工对某次响应的评分 | `task_id` + `policy_id` + `run_id` |
 | task_policy_observations_enriched.csv | 观测表经 `tepsa_main.py` 合并价目并回填 `cost_usd` 等 | 同观测表；建议分析用此版本 |
 | task_policy_observations_with_labels.csv | enriched 左连接 `human_labels`（`src/tepsa_merge_labels.py` 产出） | 同观测表 + 标注列 |
+| obs_macro_preview.csv | enriched/with_labels 左连接宏观表 `year=2024` 五扇区（`src/tepsa_macro_join_preview.py`） | 同观测表 + `macro_*` 列 |
 | macro_calibration_totals.csv | 宏观工资锚（与部门映射） | `tepsa_sector` + `year` |
 | compute_service_wedge_optional.csv | 可选算力楔：下游 API 与上游云 GPU 价格指数（季度） | `date` + `provider` |
 
@@ -23,3 +24,5 @@
 `cost_usd` 推荐由程序按价目表计算：`input/1e6 * pin + output/1e6 * pout + cache/1e6 * pcache`。
 
 `value_score` 见 `data todo list.md` §C 与 `proposal.pdf` 式 (1)，默认系数在 `src/tepsa_main.py` 中可配置。
+
+**可复现性备忘**：[`appendix/reproducibility_baseline.md`](reproducibility_baseline.md)（Git、`run_id`、价目日、主表选用说明）。

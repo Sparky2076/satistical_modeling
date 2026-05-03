@@ -23,14 +23,14 @@
 ## P2 — 标注与主表合并
 
 - 定稿 `[data/tessa_psa/appendix/annotation_rubric.md](data/tessa_psa/appendix/annotation_rubric.md)`（已补合并键、试标/ICC、`runs` 材料；若导师另有口径可再修订）。
-- 小样本试标 → 计算一致性（ICC 等）→ 扩面填写 `[data/tessa_psa/human_labels.csv](data/tessa_psa/human_labels.csv)`（**须真人**；现含 8 行 `assistant_demo_v1` AI 占位，见 `annotation_rubric.md`）。
+- 小样本试标 → 计算一致性（ICC 等）→ 扩面填写 `[data/tessa_psa/human_labels.csv](data/tessa_psa/human_labels.csv)`（**须真人**；**占位保留**：现含 8 行 `assistant_demo_v1` AI 占位，定稿前替换或删除，见 `annotation_rubric.md`）。
 - 将标注左连接到 enriched 主表：运行 `python src/tepsa_merge_labels.py`，默认产出 `[task_policy_observations_with_labels.csv](data/tessa_psa/task_policy_observations_with_labels.csv)`；可选 `--export-queue` 导出待标队列。论文分析宜用该合并表（或再在 notebook 内 join）。
 
 ## P3 — 论文与可复现性
 
-- 在附录或脚注中记录：`api_price_schedule.csv` 抓取日期、各 `run_id`、关键脚本版本（Git commit）。
-- 宏观 join：使用观测表中的 `tepsa_sector` 与 `[macro_calibration_totals.csv](data/tessa_psa/macro_calibration_totals.csv)` 对齐（见 `appendix/data_dictionary.md`）。
-- 更新 `docs/tessa_psa_data_sources.md` 中若有的失效链接（定价页常变）。
+- [x] 附录/脚注素材：已新增 [`appendix/reproducibility_baseline.md`](data/tessa_psa/appendix/reproducibility_baseline.md)（`run_id`、价目日、主表选用；Git HEAD 按文内说明用 `git rev-parse` 填入）。  
+- [x] 宏观 join 预览：运行 `python src/tepsa_macro_join_preview.py` 生成 [`obs_macro_preview.csv`](data/tessa_psa/obs_macro_preview.csv)（`tepsa_sector` 对齐 `macro_calibration_totals` `year=2024` 五扇区）；正式回归可在 Stata/R 中再写权重与稳健性。  
+- [ ] 外链巡检：按需打开定价页；已在本仓库 [`appendix/B2_official_pricing_urls.md`](data/tessa_psa/appendix/B2_official_pricing_urls.md) 与 [`docs/tessa_psa_data_sources.md`](docs/tessa_psa_data_sources.md) §6 留「末次核对」占位，复查后改日期。
 
 ## P4 — 仓库与协作（可选）
 
