@@ -1,0 +1,15 @@
+{
+  "task_id": "code-016",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 32.20442570000887,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 1995,
+    "cache_tokens": 59
+  },
+  "error": null,
+  "response_text": "`collections.Counter` 是字典的子类，虽然强大，但在使用频次统计时容易踩以下坑：\n\n1.  **可变性与不可变性**\n    *   **坑点**：Counter 是**可变**的。它不能直接放入 `frozenset` 中，也不能直接作为字典的键（除非先哈希化，但这通常不是预期行为）。\n    *   **注意**：如果你需要不可变对象，需要使用 `frozenset(counter.items())`。\n\n2.  **除法运算的精度**\n    *   **坑点**：使用 `/` 运算符会返回**浮点数**的 Counter，而 `most_common()` 返回的是整数。\n    *   **注意**：如果需要整数结果，请使用 `//`（整除）或 `int()` 转换。\n\n3.  **most_common() 的排序不确定性**\n    *   **坑点**：当多个元素频次相同时，`most_common()` 返回的顺序是不确定的（虽然 CPython 实现中通常保留插入顺序，但这不是语言规范）。\n    *   **注意**：如果顺序对业务逻辑至关重要，建议在 `most_common()` 后再进行二次排序。\n\n4.  **elements() 忽略零和负数**\n    *   **坑点**：调用 `elements()` 方法时，只会生成计数**大于 0** 的元素。负数计数会被忽略。\n    *   **注意**：如果使用了 `subtract()` 导致负数，`elements()` 不会报错，但不会输出这些元素。\n\n5.  **update() 与 + 的区别**\n    *   **坑点**：`c1.update(c2)` 会**原地修改** `c1`；而 `c1 + c2` 会**创建并返回一个新的 Counter**。\n    *   **注意**：`+=` 运算符会原地修改对象（类似 `update`），而 `+` 不会。\n\n6.  **空值处理**\n    *   **坑点**：`Counter(None)` 会抛出 `TypeError`，因为 `None` 不可迭代。\n    *   **注意**：`Counter([None])` 会将 `None` 视为一个元素，计数为 1。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-015",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 24.18928660004167,
+  "usage": {
+    "input_tokens": 72,
+    "output_tokens": 814,
+    "cache_tokens": 2
+  },
+  "error": null,
+  "response_text": "`enum.Enum` 与 `enum.IntEnum` 的核心区别在于**继承关系**和**比较行为**：\n\n1.  **继承关系**：\n    *   `IntEnum` 继承自 `int`。\n    *   `Enum` 不继承 `int`。\n\n2.  **比较与类型**：\n    *   **IntEnum**：成员可以直接与整数比较，且 `isinstance(IntEnum实例, int)` 返回 `True`。\n    *   **Enum**：成员不能直接与整数比较（除非显式转换），且 `isinstance(Enum实例, int)` 返回 `False`。\n\n3.  **典型使用场景**：\n    *   **Enum**：用于语义化标签，强调成员的名称而非数值（如状态名称、星期几）。\n    *   **IntEnum**：用于需要整数值的场景，如数据库 ID、HTTP 状态码、配置参数等。"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "code-018",
+  "policy_id": "pl_glm_47_flashx",
+  "run_id": "glm_batch",
+  "provider": "GLM",
+  "model_id": "glm-4.7-flashx",
+  "latency_sec": 36.78268729994306,
+  "usage": {
+    "input_tokens": 78,
+    "output_tokens": 1738,
+    "cache_tokens": 59
+  },
+  "error": null,
+  "response_text": "`match-case` 结构在以下场景相比 `if-elif` 链具有显著的可读性优势：\n\n1.  **结构化数据解构**：当处理元组、字典或对象属性时，`match-case` 可以直接提取变量（如 `case (x, y)`），避免多层嵌套的 `if` 判断，代码更扁平直观。\n2.  **意图表达明确**：`match-case` 明确表达“模式匹配”的语义，而 `if-elif` 仅是条件判断，前者逻辑意图更清晰。\n3.  **守卫逻辑分离**：当需要额外条件时，`match-case` 的 `if` 子句比 `if-elif` 链更整洁，避免逻辑混杂。\n4.  **枚举与常量匹配**：对于状态机或枚举类型，`match-case` 比字符串比较更直观且类型安全。"
+}
