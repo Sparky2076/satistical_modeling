@@ -6,11 +6,13 @@
 
 ## P0 — 跑通真实数据（阻塞后续实证）
 
-- [ ] 在 Anthropic / OpenAI / DeepSeek 等**官方或团队认可渠道**申请 API Key；勿将密钥写入仓库或聊天。
-- [ ] 在本机 PowerShell 设置环境变量（至少完成计划中的三厂商之一即可先试）：`OPENAI_API_KEY`、`DEEPSEEK_API_KEY`、`ANTHROPIC_API_KEY`（可选 `GEMINI_API_KEY` / `GOOGLE_API_KEY`）。
-- [ ] 仓库根目录执行 `.\scripts\smoke_tepsa_batch.ps1`，确认 `data/tessa_psa/task_policy_observations.csv` 出现 **≥1 行**成功观测，且 `input_tokens`、`output_tokens`、`latency_sec` 非空。
-- [ ] 检查 `data/tessa_psa/runs/<run_id>/` 下 JSON 是否与 CSV 中 `response_path` 一致，抽查一条回答质量。
-- [ ] 执行 `python src/tepsa_main.py`，确认 `task_policy_observations_enriched.csv` 中 `cost_usd`、价目相关列被正确填充。
+> **同步更新**：仓库已含队友提交的 **`task_policy_observations.csv`（约 623 行）** 与 [`data/tessa_psa/runs/`](data/tessa_psa/runs/) 下 JSON；下列「主表非空 / 路径 / enriched」可视为已达成。**若你本机还要跑新批次**，仍须完成密钥与环境变量（第 1～2 项）。
+
+- [ ] 在 Anthropic / OpenAI / DeepSeek 等**官方或团队认可渠道**申请 API Key；勿将密钥写入仓库或聊天。（**仅续跑新批次时需要**）
+- [ ] 在本机 PowerShell 设置环境变量：`OPENAI_API_KEY`、`DEEPSEEK_API_KEY`、`ANTHROPIC_API_KEY` 等。（**仅续跑新批次时需要**）
+- [x] 主表 `task_policy_observations.csv` 已出现多行成功观测（`input_tokens` / `output_tokens` / `latency_sec` 非空）；含 `smoke_test`、`batch_20260503`、`test_each`、`ds_batch` 等 `run_id`。
+- [x] `runs/<run_id>/` 下 JSON 与 CSV 中 `response_path` 已抽样核对（前 50 条路径均存在）。
+- [x] 已执行 `python src/tepsa_main.py`，`task_policy_observations_enriched.csv` 与观测行数一致并含 `cost_usd`、价目相关列。
 
 ## P1 — 小批量与全量跑批策略
 

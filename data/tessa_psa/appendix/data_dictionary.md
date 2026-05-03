@@ -16,6 +16,8 @@
 
 **task_source**：政务/网页类任务应为 `http` 或 `https` URL；`task_id` 以 `ceval-` / `cmmlu-` 开头的基准锚点允许非 URL 的数据集出处字符串（校验脚本 `tepsa_validate_inputs.py` 与之一致）。
 
+**b4_benchmark_snapshot.json**：附录中 C-Eval/CMMLU 子集的 JSON 快照（90 条），字段与 `task_bank.csv` 同源；以 **CSV 母本为准** 时，快照用于可复现与论文附录引用；已核对与 `task_bank` 中对应 `task_id` 的 `task_text`、`expected_answer_hint` 一致。
+
 `cost_usd` 推荐由程序按价目表计算：`input/1e6 * pin + output/1e6 * pout + cache/1e6 * pcache`。
 
 `value_score` 见 `data todo list.md` §C 与 `proposal.pdf` 式 (1)，默认系数在 `src/tepsa_main.py` 中可配置。
