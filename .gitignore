@@ -19,3 +19,12 @@ Desktop.ini
 # 仅跟踪思路 PDF，避免误提交其它资料
 *.pdf
 !zero2one.pdf
+
+# LaTeX 编译产物（docs/paper）
+docs/paper/*.aux
+docs/paper/*.log
+docs/paper/*.out
+docs/paper/*.toc
+docs/paper/*.lof
+docs/paper/*.lot
+docs/paper/*.synctex.gz
