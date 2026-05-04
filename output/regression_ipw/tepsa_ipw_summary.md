@@ -29,7 +29,7 @@ Dep. Variable:                      T   No. Observations:                 1239
 Model:                          Logit   Df Residuals:                     1230
 Method:                           MLE   Df Model:                            8
 Date:                Mon, 04 May 2026   Pseudo R-squ.:                0.003062
-Time:                        14:34:45   Log-Likelihood:                -681.43
+Time:                        15:44:58   Log-Likelihood:                -681.43
 converged:                       True   LL-Null:                       -683.52
 Covariance Type:            nonrobust   LLR p-value:                    0.8400
 =========================================================================================================
@@ -46,4 +46,3 @@ C(tepsa_sector)[T.manufacturing]         -0.1723   2.34e+06  -7.37e-08      1.00
 C(tepsa_sector)[T.public_service]        -0.4556   2.34e+06  -1.95e-07      1.000   -4.59e+06    4.59e+06
 =========================================================================================================
 ```
-

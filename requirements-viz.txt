@@ -1,4 +1,6 @@
 # 可选：大赛出图（pip install -r requirements-viz.txt）
+# scripts/tepsa_figures.py --extended 需要 statsmodels（与回归脚本共用 OLS/公式接口）
 matplotlib>=3.8.0
 pandas>=2.0.0
 numpy>=1.24.0
+statsmodels>=0.14.0

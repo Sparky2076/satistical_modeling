@@ -5,6 +5,8 @@ Generate competition-style figures from obs_macro_preview.csv (or enriched).
   pip install -r requirements-viz.txt
   python scripts/tepsa_figures.py
   python scripts/tepsa_figures.py --run-id ds_batch
+  python scripts/tepsa_figures.py --extended
+  python scripts/tepsa_figures.py --extended --run-id ds_batch
 
 Outputs PNG under output/figures/ (300 dpi).
 """
@@ -12,11 +14,13 @@ Outputs PNG under output/figures/ (300 dpi).
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import statsmodels.formula.api as smf
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CSV = REPO_ROOT / "data" / "tessa_psa" / "obs_macro_preview.csv"
@@ -313,6 +317,321 @@ def fig_risk_welfare_frontier(df: pd.DataFrame, out: Path) -> None:
     plt.close(fig)
 
 
+def _ensure_src_on_path() -> None:
+    src = REPO_ROOT / "src"
+    p = str(src)
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
+
+def _prep_like_baseline(df: pd.DataFrame) -> pd.DataFrame:
+    _ensure_src_on_path()
+    from tepsa_regression_baseline import _prep_base, _value_score_from_row
+
+    d = _prep_base(df)
+    d["value_score_calc"] = d.apply(_value_score_from_row, axis=1)
+    _vs_file = pd.to_numeric(d["value_score"], errors="coerce")
+    d["value_score_reg"] = _vs_file.where(_vs_file.notna(), d["value_score_calc"])
+    return d
+
+
+def fig_propensity_overlap(
+    input_csv: Path,
+    run_id: str,
+    out: Path,
+    treat_policy: str,
+    clip: float,
+    outcome: str,
+) -> bool:
+    _ensure_src_on_path()
+    from tepsa_regression_ipw import IPWFrameBuildError, build_ipw_frame
+
+    try:
+        dz, _, _, _ = build_ipw_frame(input_csv, run_id, treat_policy, outcome, clip)
+    except IPWFrameBuildError as e:
+        print(f"[extended] Skip propensity overlap: {e}")
+        return False
+    p = np.asarray(dz["pscore"], dtype=float)
+    t = np.asarray(dz["T"], dtype=int)
+    fig, ax = plt.subplots(figsize=(7.5, 4.5))
+    bins = 28
+    ax.hist(p[t == 0], bins=bins, alpha=0.55, color="#3949ab", label=f"对照 T=0 (n={(t == 0).sum()})", density=True)
+    ax.hist(p[t == 1], bins=bins, alpha=0.55, color="#c62828", label=f"处理 T=1 (n={(t == 1).sum()})", density=True)
+    ax.set_xlabel(r"$\hat p$ = P(T=1|Z)（裁剪后）")
+    ax.set_ylabel("密度")
+    rid = run_id.strip() or "全 run"
+    ax.set_title(
+        f"倾向得分重叠（policy={treat_policy}；{rid}；outcome={outcome}）",
+        fontweight="bold",
+    )
+    ax.legend(loc="upper right", fontsize=9)
+    fig.tight_layout()
+    fig.savefig(out, bbox_inches="tight")
+    plt.close(fig)
+    return True
+
+
+def fig_m1_logcost_fitted_vs_actual(df: pd.DataFrame, out: Path, min_cell: int) -> bool:
+    _ensure_src_on_path()
+    from tepsa_regression_baseline import _drop_sparse_categories
+
+    d = _prep_like_baseline(df)
+    d1 = d[np.isfinite(d["log_cost"]) & np.isfinite(d["log_tokens"])].copy()
+    d1 = _drop_sparse_categories(d1, "policy_id", min_cell)
+    if len(d1) < 20 or d1["policy_id"].nunique() < 2:
+        print("[extended] Skip M1 fitted vs actual: insufficient rows or policy levels.")
+        return False
+    res = smf.ols("log_cost ~ log_tokens + C(policy_id)", data=d1).fit(cov_type="HC1")
+    y = np.asarray(res.model.endog, dtype=float)
+    fh = np.asarray(res.fittedvalues, dtype=float)
+    r = np.asarray(res.resid, dtype=float)
+    lt = np.asarray(d1["log_tokens"], dtype=float)
+
+    fig, axes = plt.subplots(1, 2, figsize=(10.5, 4.5))
+    n = len(y)
+    if n > 5000:
+        idx = np.random.default_rng(0).choice(n, size=5000, replace=False)
+        yp, fhp, rp, ltp = y[idx], fh[idx], r[idx], lt[idx]
+    else:
+        yp, fhp, rp, ltp = y, fh, r, lt
+    axes[0].scatter(fhp, yp, s=8, alpha=0.35, c="#1565c0")
+    lo = float(min(yp.min(), fhp.min()))
+    hi = float(max(yp.max(), fhp.max()))
+    axes[0].plot([lo, hi], [lo, hi], color="#c62828", lw=1.2, label="y=x")
+    axes[0].set_xlabel("拟合 log(cost+ε)")
+    axes[0].set_ylabel("实际 log(cost+ε)")
+    axes[0].set_title("M1 价目核对：拟合 vs 实际（对数成本）", fontweight="bold")
+    axes[0].legend(loc="upper left", fontsize=8)
+    axes[1].scatter(ltp, rp, s=8, alpha=0.35, c="#00695c")
+    axes[1].axhline(0.0, color="#c62828", lw=1.0)
+    axes[1].set_xlabel("log_tokens")
+    axes[1].set_ylabel("残差（log 成本）")
+    axes[1].set_title("残差 — log_tokens", fontweight="bold")
+    fig.suptitle(f"M1 OLS + C(policy_id)，HC1；N={int(res.nobs)}", fontsize=10, y=1.02)
+    fig.tight_layout()
+    fig.savefig(out, bbox_inches="tight")
+    plt.close(fig)
+    return True
+
+
+def fig_coef_log_tokens_forest(
+    df: pd.DataFrame,
+    out: Path,
+    min_cell: int,
+    min_policies_per_task: int,
+) -> bool:
+    _ensure_src_on_path()
+    from tepsa_regression_baseline import _drop_sparse_categories, _fit_ols_robust
+    from tepsa_regression_within_task import _filter_multi_policy
+
+    d = _prep_like_baseline(df)
+    rows: list[tuple[str, float, float, float]] = []
+
+    d2 = d[d["quality_score"].notna() & np.isfinite(d["log_tokens"])].copy()
+    d2 = d2[pd.to_numeric(d2["quality_score"], errors="coerce") > 0]
+    d2 = _drop_sparse_categories(d2, "tepsa_sector", min_cell)
+    if len(d2) >= 15 and d2["tepsa_sector"].nunique() >= 2:
+        res2, _ = _fit_ols_robust("quality_score ~ log_tokens + C(tepsa_sector)", d2, "M2")
+        se = float(res2.bse["log_tokens"])
+        c = float(res2.params["log_tokens"])
+        rows.append(("M2 基线（扇区 FE）", c, c - 1.96 * se, c + 1.96 * se))
+
+    d3 = d[np.isfinite(d["log_tokens"]) & d["value_score_reg"].notna()].copy()
+    d3 = _drop_sparse_categories(d3, "policy_id", min_cell)
+    if len(d3) >= 15 and d3["policy_id"].nunique() >= 2:
+        res3, _ = _fit_ols_robust("value_score_reg ~ log_tokens + C(policy_id)", d3, "M3")
+        se = float(res3.bse["log_tokens"])
+        c = float(res3.params["log_tokens"])
+        rows.append(("M3 基线（策略 FE）", c, c - 1.96 * se, c + 1.96 * se))
+
+    if "task_id" not in d.columns:
+        print("[extended] Skip within-task forest: no task_id.")
+    else:
+        df_w, _ = _filter_multi_policy(d, min_policies_per_task)
+        d2w = df_w[df_w["quality_score"].notna() & np.isfinite(df_w["log_tokens"])].copy()
+        d2w = d2w[pd.to_numeric(d2w["quality_score"], errors="coerce") > 0]
+        if len(d2w) >= 20 and d2w["task_id"].nunique() >= 2:
+            res2w, _ = _fit_ols_robust("quality_score ~ log_tokens + C(task_id)", d2w, "M2w")
+            se = float(res2w.bse["log_tokens"])
+            c = float(res2w.params["log_tokens"])
+            rows.append(("M2w Within-task（任务 FE）", c, c - 1.96 * se, c + 1.96 * se))
+
+        d3w = df_w[np.isfinite(df_w["log_tokens"]) & df_w["value_score_reg"].notna()].copy()
+        d3w = _drop_sparse_categories(d3w, "policy_id", min_cell)
+        if len(d3w) >= 20 and d3w["policy_id"].nunique() >= 2 and d3w["task_id"].nunique() >= 2:
+            res3w, _ = _fit_ols_robust(
+                "value_score_reg ~ log_tokens + C(task_id) + C(policy_id)",
+                d3w,
+                "M3w",
+            )
+            se = float(res3w.bse["log_tokens"])
+            c = float(res3w.params["log_tokens"])
+            rows.append(("M3w Within-task（任务+策略 FE）", c, c - 1.96 * se, c + 1.96 * se))
+
+    if not rows:
+        print("[extended] Skip log_tokens forest: no models fitted.")
+        return False
+
+    fig, ax = plt.subplots(figsize=(8, max(3.0, 0.9 * len(rows))))
+    y_pos = np.arange(len(rows))
+    for i, (_lab, coef, lo, hi) in enumerate(rows):
+        ax.plot([lo, hi], [i, i], color="#424242", lw=2, solid_capstyle="round")
+        ax.scatter([coef], [i], zorder=3, s=55, c="#1565c0", edgecolors="white", linewidths=1)
+    ax.axvline(0.0, color="#bdbdbd", linestyle="--", lw=1)
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels([r[0] for r in rows])
+    ax.set_xlabel("log_tokens 系数（OLS，HC1；95% 区间）")
+    ax.set_title("基线 vs Within-task：log_tokens 系数森林图", fontweight="bold")
+    fig.tight_layout()
+    fig.savefig(out, bbox_inches="tight")
+    plt.close(fig)
+    return True
+
+
+def fig_policy_sector_quality_heatmap(df: pd.DataFrame, out: Path, min_n_cell: int = 3) -> bool:
+    d = df.copy()
+    d["quality_score"] = pd.to_numeric(d["quality_score"], errors="coerce")
+    d["policy_id"] = d["policy_id"].astype(str).str.strip()
+    d["tepsa_sector"] = d["tepsa_sector"].astype(str).str.strip()
+    sub = d[d["quality_score"].notna() & (d["quality_score"] > 0)]
+    if sub.empty:
+        print("[extended] Skip policy×sector heatmap: no quality rows.")
+        return False
+    g = sub.groupby(["policy_id", "tepsa_sector"], observed=True)
+    mean_q = g["quality_score"].mean().unstack(fill_value=np.nan)
+    cnt = g.size().unstack(fill_value=0)
+    pols = sorted(mean_q.index.tolist())
+    secs = sorted(mean_q.columns.tolist())
+    mean_q = mean_q.reindex(index=pols, columns=secs)
+    cnt = cnt.reindex(index=pols, columns=secs)
+    Z = mean_q.to_numpy(dtype=float)
+    Cn = cnt.to_numpy(dtype=float)
+    Z = np.where(Cn >= min_n_cell, Z, np.nan)
+    if np.all(np.isnan(Z)):
+        print("[extended] Skip heatmap: all cells below min_n_cell.")
+        return False
+    fig, ax = plt.subplots(figsize=(max(8.0, 0.45 * len(secs) + 4), max(5.0, 0.35 * len(pols) + 2)))
+    im = ax.imshow(Z, aspect="auto", cmap="YlOrRd", interpolation="nearest")
+    ax.set_xticks(np.arange(len(secs)))
+    ax.set_yticks(np.arange(len(pols)))
+    ax.set_xticklabels(secs, rotation=35, ha="right", fontsize=8)
+    ax.set_yticklabels(pols, fontsize=8)
+    for i in range(len(pols)):
+        for j in range(len(secs)):
+            if np.isfinite(Z[i, j]):
+                ax.text(
+                    j,
+                    i,
+                    f"{Z[i, j]:.2f}\n(n={int(Cn[i, j])})",
+                    ha="center",
+                    va="center",
+                    fontsize=7,
+                    color="black",
+                )
+    fig.colorbar(im, ax=ax, label="mean quality_score")
+    ax.set_title(
+        f"policy × tepsa_sector 平均质量（quality>0；格内 n≥{min_n_cell}）",
+        fontweight="bold",
+    )
+    fig.tight_layout()
+    fig.savefig(out, bbox_inches="tight")
+    plt.close(fig)
+    return True
+
+
+def fig_within_task_policy_count_hist(
+    df: pd.DataFrame,
+    out: Path,
+    min_policies_per_task: int,
+) -> bool:
+    if "task_id" not in df.columns or "policy_id" not in df.columns:
+        print("[extended] Skip within-task policy count hist: missing task_id or policy_id.")
+        return False
+    tid = df["task_id"].astype(str).str.strip()
+    pid = df["policy_id"].astype(str).str.strip()
+    g = pd.DataFrame({"task_id": tid, "policy_id": pid}).groupby("task_id")["policy_id"].nunique()
+    n_tasks = int(len(g))
+    if n_tasks == 0:
+        print("[extended] Skip within-task hist: no tasks.")
+        return False
+    kept = int((g >= min_policies_per_task).sum())
+    ret_rows = 0
+    keep_set = set(g[g >= min_policies_per_task].index)
+    for t in keep_set:
+        ret_rows += int((tid == t).sum())
+    n_rows = int(len(df))
+    pct_tasks = 100.0 * kept / n_tasks
+    pct_rows = 100.0 * ret_rows / max(n_rows, 1)
+
+    fig, ax = plt.subplots(figsize=(7.5, 4.5))
+    vals = g.to_numpy()
+    max_k = int(vals.max())
+    bins = np.arange(0.5, max_k + 1.5, 1.0)
+    ax.hist(vals, bins=bins, color="#5c6bc0", edgecolor="white", alpha=0.88)
+    ax.axvline(min_policies_per_task, color="#c62828", lw=2, label=f"阈值 ≥{min_policies_per_task} 策略/任务")
+    ax.set_xlabel("每任务不同 policy_id 个数")
+    ax.set_ylabel("任务数")
+    ax.set_title(
+        f"Within-task 样本构造：每任务策略数分布（任务 {n_tasks}；≥阈值 {kept}，{pct_tasks:.1f}%）",
+        fontweight="bold",
+    )
+    ax.legend(loc="upper right", fontsize=8)
+    fig.text(
+        0.5,
+        0.01,
+        f"行保留（粗略）：{ret_rows}/{n_rows} ≈ {pct_rows:.1f}%（与 within-task 回归筛选一致时需同 run_id）",
+        ha="center",
+        fontsize=8,
+        color="#424242",
+    )
+    fig.tight_layout()
+    fig.subplots_adjust(bottom=0.14)
+    fig.savefig(out, bbox_inches="tight")
+    plt.close(fig)
+    return True
+
+
+def run_extended_figures(
+    input_csv: Path,
+    out_dir: Path,
+    run_id: str,
+    suffix: str,
+    *,
+    treat_policy: str,
+    ipw_clip: float,
+    ipw_outcome: str,
+    min_cell: int,
+    min_policies_per_task: int,
+) -> None:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    df = load_obs(input_csv, run_id or None)
+    if df.empty:
+        raise SystemExit("No rows after filter; check --run-id or --input.")
+
+    fig_propensity_overlap(
+        input_csv,
+        run_id,
+        out_dir / f"fig_propensity_overlap{suffix}.png",
+        treat_policy,
+        ipw_clip,
+        ipw_outcome,
+    )
+    fig_m1_logcost_fitted_vs_actual(df, out_dir / f"fig_m1_logcost_fitted_vs_actual{suffix}.png", min_cell)
+    fig_coef_log_tokens_forest(
+        df,
+        out_dir / f"fig_coef_log_tokens_forest{suffix}.png",
+        min_cell,
+        min_policies_per_task,
+    )
+    fig_policy_sector_quality_heatmap(df, out_dir / f"fig_policy_sector_quality_heatmap{suffix}.png")
+    fig_within_task_policy_count_hist(
+        df,
+        out_dir / f"fig_within_task_policy_count_hist{suffix}.png",
+        min_policies_per_task,
+    )
+    print(f"[extended] Wrote extended figures to {out_dir} (suffix={suffix!r})")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", type=Path, default=DEFAULT_CSV)
@@ -323,6 +642,31 @@ def main() -> None:
         type=int,
         default=5,
         help="fig_cost_by_policy: draw boxplot only when policy has at least this many non-null cost rows.",
+    )
+    ap.add_argument(
+        "--extended",
+        action="store_true",
+        help="Also write IPW overlap, M1 diagnostic, coef forest, heatmap, within-task hist (needs statsmodels).",
+    )
+    ap.add_argument("--treat-policy", default="pl_deepseek_pro", help="IPW / overlap figure: T=1 policy_id.")
+    ap.add_argument("--ipw-clip", type=float, default=0.05, help="Propensity clipping for overlap figure.")
+    ap.add_argument(
+        "--ipw-outcome",
+        choices=("quality", "value"),
+        default="quality",
+        help="Outcome used for IPW sample construction in overlap figure (same as tepsa_regression_ipw).",
+    )
+    ap.add_argument(
+        "--min-cell",
+        type=int,
+        default=5,
+        help="Min rows per FE category for extended M1/forest (align with regression scripts).",
+    )
+    ap.add_argument(
+        "--min-policies-per-task",
+        type=int,
+        default=2,
+        help="Within-task threshold for forest + policy-count histogram.",
     )
     args = ap.parse_args()
 
@@ -351,6 +695,19 @@ def main() -> None:
     fig_risk_welfare_frontier(df, args.out_dir / f"fig04_risk_welfare_scatter{suffix}.png")
 
     print(f"Wrote figures to {args.out_dir} (n={len(df)} rows, suffix={suffix!r})")
+
+    if args.extended:
+        run_extended_figures(
+            args.input,
+            args.out_dir,
+            args.run_id,
+            suffix,
+            treat_policy=args.treat_policy,
+            ipw_clip=args.ipw_clip,
+            ipw_outcome=args.ipw_outcome,
+            min_cell=args.min_cell,
+            min_policies_per_task=args.min_policies_per_task,
+        )
 
 
 if __name__ == "__main__":

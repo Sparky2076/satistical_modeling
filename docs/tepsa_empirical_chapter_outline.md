@@ -41,8 +41,9 @@
 | 描述统计 | `fig_run_id_counts_*`、`fig_cost_by_policy_*`、`fig_tokens_hist_*`、`fig_cost_vs_tokens_*`、`fig_latency_by_provider_*`、`fig_sector_structure_*` | 数据节：样本结构、成本与延迟 |
 | Token—质量 | `fig02_token_quality_scatter_*.png` | 结果：质量与规模（注意自动分口径） |
 | 风险—成本—质量 | `fig04_risk_welfare_scatter_*.png` | 结果或稳健性讨论 |
+| 扩展（IPW/回归可视化） | `fig_propensity_overlap_*`、`fig_m1_logcost_fitted_vs_actual_*`、`fig_coef_log_tokens_forest_*`、`fig_policy_sector_quality_heatmap_*`、`fig_within_task_policy_count_hist_*` | 识别敏感性、M1 价目核对、系数对照、异质性、within 样本构造 |
 
-出图命令：`pip install -r requirements-viz.txt` → `python scripts/tepsa_figures.py`（可加 `--run-id`）。
+出图命令：`pip install -r requirements-viz.txt` → `python scripts/tepsa_figures.py`（可加 `--run-id`）；扩展图加 `--extended`（依赖 `statsmodels`，与 `tepsa_regression_ipw.build_ipw_frame` 共用 IPW 样本定义）。
 
 ---
 

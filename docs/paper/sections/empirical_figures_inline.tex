@@ -1,5 +1,5 @@
 % 仓库实证图表（插在「六、结果展示与解释框架」节后、该章其余小节之前）
-% 出图：python scripts/tepsa_figures.py；回归：python src/tepsa_regression_baseline.py
+% 出图：python scripts/tepsa_figures.py；扩展：同命令加 --extended；回归：python src/tepsa_regression_baseline.py
 %
 % 以下四张 PNG 默认关闭以加快本地编译；需要插图时将下一行改为 \iftrue
 \iffalse
@@ -29,6 +29,42 @@
   \includegraphics[width=0.95\linewidth]{figures/fig04_risk_welfare_scatter_allruns.png}
   \caption{风险—福利相关散点（\texttt{fig04\_risk\_welfare\_scatter\_allruns.png}）。}
   \label{fig:emp-fig04}
+\end{figure}
+
+% 扩展图（与 IPW / within-task / M1 核对一致）；PNG 需先运行 scripts/tepsa_figures.py --extended
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.92\linewidth]{figures/fig_propensity_overlap_allruns.png}
+  \caption{倾向得分重叠（处理/对照；\texttt{fig\_propensity\_overlap\_allruns.png}）。}
+  \label{fig:emp-propensity}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/fig_m1_logcost_fitted_vs_actual_allruns.png}
+  \caption{M1 对数成本拟合 vs 实际及残差（\texttt{fig\_m1\_logcost\_fitted\_vs\_actual\_allruns.png}）。}
+  \label{fig:emp-m1-fit}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.88\linewidth]{figures/fig_coef_log_tokens_forest_allruns.png}
+  \caption{基线与 within-task 的 $\log(\mathrm{tokens}+1)$ 系数对照（\texttt{fig\_coef\_log\_tokens\_forest\_allruns.png}）。}
+  \label{fig:emp-forest}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/fig_policy_sector_quality_heatmap_allruns.png}
+  \caption{策略×扇区平均质量（格内 $n$；\texttt{fig\_policy\_sector\_quality\_heatmap\_allruns.png}）。}
+  \label{fig:emp-heatmap}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.88\linewidth]{figures/fig_within_task_policy_count_hist_allruns.png}
+  \caption{每任务不同策略数分布与 within-task 阈值（\texttt{fig\_within\_task\_policy\_count\_hist\_allruns.png}）。}
+  \label{fig:emp-within-hist}
 \end{figure}
 \fi
 
