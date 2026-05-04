@@ -37,6 +37,7 @@
 
 | 路径                             | 功能                                                                   |
 | ------------------------------ | -------------------------------------------------------------------- |
+| `[data/DATA_FILES_GITHUB.md](data/DATA_FILES_GITHUB.md)` | **Git 已跟踪数据与派生产物索引**（CSV、`runs/`、附录、`output/`、`human_label _res/` 等）。 |
 | `[README.md](README.md)`       | 本文件：项目说明、进度、结构索引。                                                    |
 | `[TODO_list.md](TODO_list.md)` | **后续待办清单**（含配置密钥、跑批、标注、论文步骤）；便于分工（如指定负责人跟进）。                         |
 | `[.gitignore](.gitignore)`     | 忽略 `__pycache_`_、虚拟环境、`.env`、`data/tessa_psa/runs/`（大批量 JSON 跑批产物）等。 |
