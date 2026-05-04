@@ -1,0 +1,18 @@
+% 单独编译本文件即可得到「识别与置换检验」附录 PDF（XeLaTeX）
+% 在 docs/paper/ 目录下: xelatex identification_placebo_standalone.tex
+\documentclass[UTF8,a4paper,zihao=-4]{ctexart}
+\usepackage{geometry}
+\geometry{left=3.17cm,right=3.17cm,top=2.54cm,bottom=2.54cm}
+\usepackage{amsmath,amssymb}
+\usepackage[strings]{underscore}
+\usepackage{hyperref}
+\hypersetup{unicode=true,hidelinks}
+\begin{document}
+\title{识别、置换检验与因果表述边界\\{\normalsize\rmfamily （与 \texttt{src/tepsa\_identification\_placebos.py} 对齐）}}
+\author{TESSA-PSA 统计建模仓库}
+\date{}
+\maketitle
+
+\input{sections/identification_placebo_writeup}
+
+\end{document}

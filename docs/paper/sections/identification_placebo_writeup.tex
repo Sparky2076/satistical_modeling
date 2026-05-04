@@ -1,0 +1,53 @@
+% 识别、置换安慰剂与因果表述边界（与 src/tepsa_identification_placebos.py 一致）
+% 主文档：在附录中 \input{sections/identification_placebo_writeup}
+% 单独编译：见 identification_placebo_standalone.tex
+
+\subsection{附录 D\quad 识别、置换检验与因果表述边界}
+
+\subsubsection{D.1\quad 本文统计结论的定位}
+
+仓库内分析包含：（i）价目—日志核对（M1）；（ii）混合截面及固定效应下的条件关联（扇区/策略/任务 FE）；（iii）二值策略 IPW 与 Hajek 加权对照；（iv）任务内 \texttt{policy\_id} 置换及分层内置换处理变量 \(T\) 的\textbf{置换检验}。除另有说明外，这些结果应表述为\textbf{样本内关联、敏感性或随机化推断式对照}，\textbf{不}等同于在随机对照试验（RCT）意义下已识别的平均因果效应（ATE），除非存在可辩护的外生变动或设计。
+
+\subsubsection{D.2\quad 实验一：任务内策略置换（质量均值差）}
+
+设 \(a^\ast\) 为选定的处理策略（如 \texttt{pl\_deepseek\_pro}）。对子样本中每一行 \(i\)（仅保留同一 \texttt{task\_id} 下至少两种 \texttt{policy\_id} 的任务，且 \(Y_i=\texttt{quality\_score}_i>0\)），定义处理指示
+\begin{equation}
+T_i = \mathbf{1}\{\texttt{policy\_id}_i = a^\ast\}.
+\end{equation}
+观测统计量为行级样本均值差
+\begin{equation}
+S_{\mathrm{obs}} \;=\; \frac{\sum_i T_i Y_i}{\sum_i T_i} - \frac{\sum_i (1-T_i)Y_i}{\sum_i (1-T_i)}.
+\end{equation}
+\textbf{置换}：对每个 \texttt{task\_id} 分组，组内对 \texttt{policy\_id} 标签做一次均匀随机重排（各任务内 multiset 不变），得到 \(\texttt{policy\_id}_i^{(b)}\) 及相应的 \(T_i^{(b)}\)，计算
+\begin{equation}
+S^{(b)} \;=\; \frac{\sum_i T_i^{(b)} Y_i}{\sum_i T_i^{(b)}} - \frac{\sum_i (1-T_i^{(b)})Y_i}{\sum_i (1-T_i^{(b)})},\qquad b=1,\ldots,B.
+\end{equation}
+在\textbf{「组内打乱策略标签不改变质量」}这一参照下，\(\{S^{(b)}\}\) 给出 \(S_{\mathrm{obs}}\) 的零分布。双侧 \(p\) 值采用保守计数
+\begin{equation}
+p \;=\; \frac{1 + \sum_{b=1}^{B} \mathbf{1}\bigl\{|S^{(b)}| \ge |S_{\mathrm{obs}}|\bigr\}}{1 + B}.
+\end{equation}
+
+\subsubsection{D.3\quad 实验二：分层内置换 \(T\)、固定倾向得分下的 Hajek ATE}
+
+在 IPW 分析样本上，设 \(Y_i\) 为结果（如质量），\(T_i\in\{0,1\}\) 为二值处理，\(\hat p_i=\texttt{pscore}_i\) 为由 \(\texttt{difficulty\_label},\texttt{risk\_class},\texttt{tepsa\_sector}\) 等协变量拟合再经裁剪的倾向得分。\textbf{Hajek} 型加权对照均值为
+\begin{align}
+\hat\mu_1 &= \frac{\sum_i (T_i/\hat p_i)\,Y_i}{\sum_i T_i/\hat p_i}, &
+\hat\mu_0 &= \frac{\sum_i \bigl((1-T_i)/(1-\hat p_i)\bigr)\,Y_i}{\sum_i (1-T_i)/(1-\hat p_i)}, \\
+\widehat{\mathrm{ATE}}_{\mathrm{Hajek}} &= \hat\mu_1 - \hat\mu_0.
+\end{align}
+\textbf{置换}：在协变量分层 \(s=(\texttt{difficulty\_label},\texttt{risk\_class},\texttt{tepsa\_sector})\) 内对 \(\{T_i:i\in s\}\) 做无放回均匀重排（保持各层内 \(T\) 的个数不变）；\textbf{固定} \(\hat p_i\) 与 \(Y_i\)，不重估 logit。若任一层内 \(T\) 无变异则跳过该层；若无可置换层则退化为\textbf{全局}重排 \(T\)（脚本记录该情形）。每次置换得到 \(\widehat{\mathrm{ATE}}_{\mathrm{Hajek}}^{(b)}\)，零分布用于与 \(\widehat{\mathrm{ATE}}_{\mathrm{Hajek}}\) 比较；\(p\) 值仍采用与式 (3) 相同计数规则（将 \(S^{(b)},S_{\mathrm{obs}}\) 换为对应的 Hajek ATE）。
+
+\textbf{说明}：该置换回答的是「在\textbf{同一}拟合 \(\hat p\) 下，若处理赋值与结果近似独立」时的参照；\textbf{不是}同时重估倾向模型，也\textbf{不}替代对未测混杂、函数形式等假设的讨论。
+
+\subsubsection{D.4\quad 与「因果关系」表述的关系}
+
+置换 \(p\) 值小，仅表明：在\textbf{上述零假设与样本构造}下，观测统计量相对置换分布位于尾部。其\textbf{不}蕴含：策略对质量的社会因果机制已在非实验数据中完全识别。若正文需讨论因果，建议将主结论限定为\textbf{条件关联与敏感性}，将\textbf{外生设计}（RCT、可信工具变量、断点等）列为强化识别的方向。
+
+\subsubsection{D.5\quad 可复现命令与输出}
+
+\begin{verbatim}
+pip install -r requirements-regression.txt
+python src/tepsa_identification_placebos.py
+python src/tepsa_identification_placebos.py --run-id ds_batch --out-dir output/identification_placebo_ds_batch
+\end{verbatim}
+默认输出目录为 \texttt{output/identification\_placebo/}，含 \texttt{tepsa\_placebo\_summary.md}、零分布 \texttt{csv} 及 \texttt{fig\_placebo\_null\_distributions.png}。参数 \texttt{--n-reps} 控制置换次数 \(B\)（越大则 \(p\) 可分辨越细）。

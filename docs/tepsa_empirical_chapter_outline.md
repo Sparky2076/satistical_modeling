@@ -91,6 +91,16 @@
 
 **写作**：**敏感性 / 对照估计**；依赖可交换性与无未测混杂等假设，**不作唯一主因果结论**。
 
+### 4.5 表 H（可选）：识别安慰剂 / 置换检验
+
+| 表号 | 内容 | 脚本 | 输出 |
+|------|------|------|------|
+| 表 H | **实验1**：within-task 组内打乱 `policy_id`（multiset 不变），零分布为行级「处理组与对照组 `quality_score` 样本均值之差」；**实验2**：在 `difficulty_label`×`risk_class`×`tepsa_sector` 层内置换 `T`，**固定** `pscore`、不重估 logit，零分布为 **Hajek ATE**；双侧 p 见摘要 | `python src/tepsa_identification_placebos.py`（可加 `--run-id`、`--n-reps`、`--out-dir`） | `output/identification_placebo/tepsa_placebo_summary.md`、`tepsa_placebo_null_task_perm.csv`、`tepsa_placebo_null_hajek_perm.csv`、`fig_placebo_null_distributions.png` |
+
+**写作**：**随机化推断式参照**，用于「若处理与结果（近似）独立」时的对照；**不**替代 RCT。若与 `ds_batch` 等不同子样本复跑，建议用 `--out-dir` 分目录保存，避免覆盖全样本结果。
+
+**LaTeX（公式与表述边界）**：与上表同一套定义与符号见 [`docs/paper/sections/identification_placebo_writeup.tex`](../docs/paper/sections/identification_placebo_writeup.tex)（已 `\input` 进 `docs/paper/sections/body_backmatter.tex` 附录；亦可单独 `xelatex docs/paper/identification_placebo_standalone.tex`）。
+
 ---
 
 依赖（MVP）：`pip install -r requirements-regression.txt`。

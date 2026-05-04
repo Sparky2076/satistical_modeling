@@ -28,6 +28,8 @@ xelatex main.tex
 
 第二遍用于更新目录与交叉引用。
 
+**仅编译「识别 / 置换检验」附录（含公式）**：在同一目录执行 `xelatex identification_placebo_standalone.tex`（主文件为 [`identification_placebo_standalone.tex`](identification_placebo_standalone.tex)，内容来自 [`sections/identification_placebo_writeup.tex`](sections/identification_placebo_writeup.tex)；与主文 `main.tex` 中的附录 D 同源）。
+
 ## 常见报错
 
 - **找不到图**：确认 `figures/` 内已含 `fig01`…`fig04` 等 png（可从仓库 `output/figures/` 复制，见 `sections/empirical_figures_inline.tex`）。
