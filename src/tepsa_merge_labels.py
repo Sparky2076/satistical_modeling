@@ -36,12 +36,31 @@ def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, object]]) 
             w.writerow({k: row.get(k, "") for k in fieldnames})
 
 
-def norm_key(row: dict[str, str]) -> tuple[str, str, str]:
+def raw_key(row: dict[str, str]) -> tuple[str, str, str]:
+    """观测表 join 键：与 CSV 中 run_id 一致（不做别名改写）。"""
     return (
         (row.get("task_id") or "").strip(),
         (row.get("policy_id") or "").strip(),
         (row.get("run_id") or "").strip(),
     )
+
+
+# GLM 评测导出曾使用 glm_batch_v3 / v4 / final，与主表 run_id=glm_batch 不一致；合并前对齐。
+_GLM_RUN_ALIASES = frozenset({"glm_batch_v3", "glm_batch_v4", "glm_batch_final"})
+
+
+def normalize_label_run_id(run_id: str) -> str:
+    r = (run_id or "").strip()
+    if r in _GLM_RUN_ALIASES:
+        return "glm_batch"
+    return r
+
+
+def label_join_key(row: dict[str, str], *, normalize_glm_run: bool) -> tuple[str, str, str]:
+    t, p, rid = raw_key(row)
+    if normalize_glm_run:
+        rid = normalize_label_run_id(rid)
+    return (t, p, rid)
 
 
 def main() -> None:
@@ -75,6 +94,11 @@ def main() -> None:
         default="",
         help="With --export-queue: keep only rows with this run_id.",
     )
+    ap.add_argument(
+        "--no-normalize-glm-run-id",
+        action="store_true",
+        help="Do not map glm_batch_v3/v4/final -> glm_batch on label keys (default: normalize).",
+    )
     args = ap.parse_args()
 
     obs_fields, obs_rows = read_csv(args.obs)
@@ -89,7 +113,7 @@ def main() -> None:
         for r in obs_rows:
             if run_filter and (r.get("run_id") or "").strip() != run_filter:
                 continue
-            k = norm_key(r)
+            k = raw_key(r)
             if not all(k) or k in seen:
                 continue
             seen.add(k)
@@ -110,12 +134,14 @@ def main() -> None:
     lbl_rows = [r for r in lbl_rows if any((v or "").strip() for v in r.values())]
 
     join_keys = ("task_id", "policy_id", "run_id")
+    norm_glm = not args.no_normalize_glm_run_id
     label_by_key: dict[tuple[str, str, str], dict[str, str]] = {}
     for r in lbl_rows:
-        k = norm_key(r)
+        lr = dict(r)
+        k = label_join_key(lr, normalize_glm_run=norm_glm)
         if not all(k):
             continue
-        label_by_key[k] = {a: (r.get(a) or "").strip() for a in lbl_fields}
+        label_by_key[k] = {a: (lr.get(a) or "").strip() for a in lbl_fields}
 
     label_only = [c for c in lbl_fields if c not in join_keys]
     out_fields = list(obs_fields)
@@ -126,7 +152,7 @@ def main() -> None:
     merged: list[dict[str, object]] = []
     for r in obs_rows:
         out = dict(r)
-        k = norm_key(r)
+        k = raw_key(r)
         lab = label_by_key.get(k)
         if lab:
             for c in label_only:
@@ -134,7 +160,7 @@ def main() -> None:
         merged.append(out)
 
     write_csv(args.out, out_fields, merged)
-    n_matched = sum(1 for r in merged if norm_key(r) in label_by_key)
+    n_matched = sum(1 for r in merged if raw_key(r) in label_by_key)
     print(f"Wrote {args.out} rows={len(merged)} label_keys_in_file={len(label_by_key)} matched_rows={n_matched}")
 
 
