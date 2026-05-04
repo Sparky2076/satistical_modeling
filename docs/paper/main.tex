@@ -1,0 +1,53 @@
+\input{preamble}
+\begin{document}
+
+% —— 封面（按大赛要素占位；终稿在 Word 母版中替换编号与队员信息）——
+\begin{titlepage}
+  \centering
+  \vspace*{0.5cm}
+  {\large\bfseries 2026年（第十二届）全国大学生统计建模大赛\par}
+  \vspace{1.2cm}
+  {\LARGE\bfseries 参\,赛\,作\,品\par}
+  \vspace{2cm}
+
+  {\zihao{3}\heiti 作品编号：\texttt{TJJM2026XXXXXXX}\par}
+  \vspace{1.5em}
+  {\zihao{3}\heiti 参赛学校：\underline{\makebox[10cm][c]{}} \par}
+  \vspace{1em}
+  {\zihao{3}\heiti 论文题目：\par}
+  \vspace{0.5em}
+  {\zihao{3}\fangsong
+    从 Token 消耗到公共智能服务配置：中国“人工智能+”战略的统计建模框架\par}
+  \vspace{1.5em}
+  {\zihao{3}\heiti 参赛队员：\underline{\makebox[10cm][c]{}} \par}
+  \vspace{1em}
+  {\zihao{3}\heiti 指导老师：\underline{\makebox[10cm][c]{}} \par}
+
+  \vfill
+  {\zihao{4}\songti （封面版式以《论文要素及格式要求》Word 模板为准；本页便于 Overleaf 预览。）\par}
+\end{titlepage}
+
+\clearpage
+\setcounter{page}{1}
+
+\input{sections/abstract}
+
+\clearpage
+\tableofcontents
+
+\clearpage
+\listoffigures
+\addcontentsline{toc}{section}{插图清单}
+
+\clearpage
+\listoftables
+\addcontentsline{toc}{section}{表格清单}
+
+\clearpage
+% 正文页码自此处起按阿拉伯数字连续编号（与 Word「正文单独编页码」一致时可再拆分前言）
+\input{sections/body_autogen}
+
+\clearpage
+\input{sections/body_backmatter}
+
+\end{document}

@@ -1,0 +1,50 @@
+% 仓库实证图表（插在「六、结果展示与解释框架」节后、该章其余小节之前）
+% 出图：python scripts/tepsa_figures.py；回归：python src/tepsa_regression_baseline.py
+%
+% 以下四张 PNG 默认关闭以加快本地编译；需要插图时将下一行改为 \iftrue
+\iffalse
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/fig01_schematic_national_to_mvp.png}
+  \caption{从国家战略到 MVP 统计建模路径（\texttt{fig01\_schematic\_national\_to\_mvp.png}）。}
+  \label{fig:emp-fig01}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/fig02_token_quality_scatter_allruns.png}
+  \caption{Token 与质量得分散点（全样本/run 汇总；\texttt{fig02\_token\_quality\_scatter\_allruns.png}）。}
+  \label{fig:emp-fig02}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/fig03_schematic_data_to_dashboard.png}
+  \caption{数据到政策看板的建模流程示意（\texttt{fig03\_schematic\_data\_to\_dashboard.png}）。}
+  \label{fig:emp-fig03}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/fig04_risk_welfare_scatter_allruns.png}
+  \caption{风险—福利相关散点（\texttt{fig04\_risk\_welfare\_scatter\_allruns.png}）。}
+  \label{fig:emp-fig04}
+\end{figure}
+\fi
+
+\begin{table}[htbp]
+  \centering
+  \caption{TESSA-PSA 基线回归摘要（节选系数；完整结果见 \texttt{output/regression/} 与 \texttt{data/tessa\_psa/appendix/reproducibility\_baseline.md}）。}
+  \label{tab:emp-baseline}
+  \begin{tabular}{llrr}
+    \toprule
+    模型 & 项 & 系数 & $R^2$ \\
+    \midrule
+    M1（$\log$ 成本） & $\log(\mathrm{tokens}+1)$ & 1.102 & 0.9996 \\
+    M2（质量） & $\log(\mathrm{tokens}+1)$ & 0.859 & 0.458 \\
+    M3（综合价值 proxy） & $\log(\mathrm{tokens}+1)$ & 2.113 & 0.517 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\noindent\textit{说明：}M1 的 $R^2$ 接近 1 多反映价目线性计费与策略截距的技术基线性质，不宜单独解释为因果识别主结论（参见 \texttt{docs/tepsa\_empirical\_chapter\_outline.md}）。

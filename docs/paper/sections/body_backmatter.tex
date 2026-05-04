@@ -1,0 +1,162 @@
+% Back matter from _source/draft.md (references, appendix, acknowledgements)
+\begingroup\small\setlength{\parskip}{0.35em}
+
+\section{参考文献}
+\begin{thebibliography}{99}
+
+\bibitem{ref1}国务院. 关于深入实施“人工智能+”行动的意见[Z]. 国发〔2025〕11号, 2025.
+
+\bibitem{ref2}OpenAI. API Pricing Documentation[EB/OL]. 2026.
+
+\bibitem{ref3}DeepSeek. Models and Pricing: DeepSeek API Documentation[EB/OL]. 2026.
+
+\bibitem{ref4}Artificial Analysis. AI Model and API Provider Analysis[EB/OL]. 2026.
+
+\bibitem{ref5}国家统计局. 2024年城镇单位就业人员平均工资统计数据[EB/OL]. 2025.
+
+\bibitem{ref6}Huang Yuzhen, Bai Yuzhuo, Zhu Zhihao, et al. C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models[C]. 2023.
+
+\bibitem{ref7}Li Haonan, Zhang Yu, Koto F, et al. CMMLU: Measuring Massive Multitask Language Understanding in Chinese[C]. 2024.
+
+\bibitem{ref8}Chernozhukov V, Chetverikov D, Demirer M, et al. Double/debiased machine learning for treatment and structural parameters[J]. The Econometrics Journal, 2018.
+
+\bibitem{ref9}Hainmueller J. Entropy balancing for causal effects: A multivariate reweighting method to produce balanced samples in observational studies[J]. Political Analysis, 2012.
+
+\bibitem{ref10}Brynjolfsson E, Collis A, Diewert W E, Eggers F, Fox K J. GDP-B: Accounting for the value of new and free goods in the digital economy[R]. 2019.
+
+\end{thebibliography}
+\section{附录}
+
+附录 A  最小数据字典\\
+
+\textit{表 3  最小数据字典}\\
+
+变量\\
+
+含义\\
+
+示例构造\\
+
+task_id\\
+
+唯一任务编号\\
+
+由来源与任务文本哈希生成\\
+
+sector\\
+
+应用部门\\
+
+公共服务、企业支持、制造、教育、代码\\
+
+risk_class\\
+
+安全或经济风险等级\\
+
+低、中、高\\
+
+model\\
+
+模型或 API 端点\\
+
+GPT、Claude、Gemini、通义、DeepSeek 等\\
+
+policy\\
+
+政策组合\\
+
+模型+提示词+上下文+缓存+输出上限\\
+
+input_tokens\\
+
+输入 Token 数\\
+
+服务商 tokenizer 或 API 日志\\
+
+output_tokens\\
+
+输出 Token 数\\
+
+服务商 tokenizer 或 API 日志\\
+
+cache_tokens\\
+
+缓存输入 Token 数\\
+
+若 API 返回则直接记录\\
+
+cost_usd\\
+
+货币成本\\
+
+价格表×Token 数量\\
+
+latency_sec\\
+
+响应延迟\\
+
+API 计时\\
+
+quality\\
+
+任务质量得分\\
+
+专家评分或自动判题\\
+
+hallucination\\
+
+事实错误指示变量\\
+
+专家标注规则\\
+
+human_time_base\\
+
+人工基线时间\\
+
+小规模对照标注实验\\
+
+human_time_ai\\
+
+AI 辅助人工时间\\
+
+受控实验\\
+
+value_weight\\
+
+福利换算因子\\
+
+工资、任务重要性、风险严重度\\
+
+prompt_effort\\
+
+用户努力代理变量\\
+
+提示词长度、具体性、检索深度\\
+
+附录 B  推荐图表目录\\
+
+国家战略到统计建模的漏斗图\\
+
+Token价格—价值—风险三角图\\
+
+难度校准的 Token 响应曲线\\
+
+部门/任务类别 MTP 分布图\\
+
+静默价值分解图\\
+
+基准策略配置前沿图\\
+
+价值权重与风险惩罚稳健性热力图\\
+
+附录 C  提交定位说明\\
+
+本文应定位为具有可执行试点的数据建模框架，而不是完整的全国 Token 卫星账户。国家账户是战略动机与拓展方向，竞赛级经验核心是 MTP 估计、Token 预算配置与政策看板。\\
+
+\section{致谢}
+
+本文在选题构思、数据设计、模型推导和写作修改过程中，参考了统计建模竞赛关于论文要素、排版格式和可视化呈现的相关要求。感谢指导教师、同学及相关资料提供者在选题讨论、标注方案设计和模型验证中的帮助。文中不足之处由本参赛队负责。\\
+
+2026 年    月    日\\
+
+\endgroup
