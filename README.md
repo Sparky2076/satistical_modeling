@@ -2,6 +2,8 @@
 
 本仓库包含两条可区分的主线：**（A）TESSA-PSA v2** — 中文公共服务相关任务库、多厂商 API 跑批、价目与观测表；**（B）历史/并行课题** — 部分省级 processed 数据与微观影响流水线脚本（输入数据需自备）。当前文档与开发重心在 **（A）**。
 
+**参赛就绪（格式 / 可复现 / 答辩）**：见 [`docs/competition_readiness.md`](docs/competition_readiness.md) 与 [`docs/competition_QA_defense.md`](docs/competition_QA_defense.md)。
+
 ---
 
 ## 当前进度（截至 README 更新）
@@ -21,6 +23,7 @@
 | **enriched 主表**                      | **已生成**               | 同步后执行 `python src/tepsa_main.py` 可得到带价目列的 `[task_policy_observations_enriched.csv](data/tessa_psa/task_policy_observations_enriched.csv)`（与观测行数一致）。                                                                                                                                                                                   |
 | **合并表 `task_policy_observations_with_labels.csv`** | **已生成**               | `python src/tepsa_merge_labels.py`：enriched + `human_labels`（`glm_batch_v3`/`v4`/`final` 会自动对齐为 `glm_batch` 以匹配主表）。当前约 **1239/1268** 行匹配到 `quality_score` 等标注列（`spark_batch` 558 行已全覆盖）。                                                                                                                                                                                                                                                    |
 | **宏观预览 `obs_macro_preview.csv`**        | **已生成**               | `python src/tepsa_macro_join_preview.py`：`tepsa_sector` 对齐 `macro_calibration_totals`（`year=2024` 五扇区），列名带 `macro_` 前缀。                                                                                                                                                                                                                          |
+| **基线回归（Python）**                     | **可复现脚本**            | `pip install -r requirements-regression.txt` 后：[`src/tepsa_regression_baseline.py`](src/tepsa_regression_baseline.py) → [`output/regression/`](output/regression/)（含 M1 价目核对 `tepsa_m1_accounting_metrics.csv`）；[`src/tepsa_regression_within_task.py`](src/tepsa_regression_within_task.py) → `output/regression_within_task/`（任务 FE）；[`src/tepsa_regression_ipw.py`](src/tepsa_regression_ipw.py) → `output/regression_ipw/`（可选 IPW）。提纲见 [`docs/tepsa_empirical_chapter_outline.md`](docs/tepsa_empirical_chapter_outline.md)。 |
 | **P3 可复现基线**                         | **已文档化**              | [`appendix/reproducibility_baseline.md`](data/tessa_psa/appendix/reproducibility_baseline.md)（Git、`run_id`、价目日、主表选用）。                                                                                                                                                                                                                              |
 | GitHub 同步                            | **已与 origin/main 对齐** | `git pull` 后包含队友提交的 `runs/` 与观测数据；再推送请以团队约定为准。                                                                                                                                                                                                                                                                                        |
 
@@ -50,6 +53,10 @@
 | `[src/tepsa_merge_labels.py](src/tepsa_merge_labels.py)`                       | 将 `human_labels.csv` 左连接到 enriched 观测表，输出 `task_policy_observations_with_labels.csv`；GLM 导出 `run_id` 别名默认对齐；支持 `--export-queue` 导出待标队列。 |
 | `[src/tepsa_build_human_labels.py](src/tepsa_build_human_labels.py)`           | 从 `human_label _res/*_results_final.csv` 重建 `human_labels.csv`（可选并入 `spark_results_final.csv`）。 |
 | `[src/tepsa_macro_join_preview.py](src/tepsa_macro_join_preview.py)`           | 将 `macro_calibration_totals.csv`（2024 年五扇区）左连接到观测表，输出 `obs_macro_preview.csv`。 |
+| `[src/tepsa_regression_baseline.py](src/tepsa_regression_baseline.py)`         | 对 `obs_macro_preview.csv` 跑 3 套 HC1 OLS + M1 核对指标；可选 `--run-id`、`--min-cell`。 |
+| `[src/tepsa_regression_within_task.py](src/tepsa_regression_within_task.py)` | 同一 `task_id` 多 `policy_id` 子样本，任务固定效应规格；`--min-policies-per-task`。 |
+| `[src/tepsa_regression_ipw.py](src/tepsa_regression_ipw.py)`                   | 二值策略 + logit 倾向得分 + Hajek ATE / overlap；`--treat-policy`、`--outcome`。 |
+| `[src/tepsa_annotation_icc.py](src/tepsa_annotation_icc.py)`                   | 检查 `human_labels.csv` 是否具备双评键；写出 [`output/annotation/icc_report.md`](output/annotation/icc_report.md)；可选依赖见 [`requirements-annotation.txt`](requirements-annotation.txt)。 |
 | `[src/tepsa_task_bank_build.py](src/tepsa_task_bank_build.py)`                 | **重建**任务库：门户数据 + C-Eval + CMMLU（需网络）；一般维护直接编辑 CSV 即可，不必每次全量重跑。                                                       |
 | `[src/tepsa_task_bank_portal_data.py](src/tepsa_task_bank_portal_data.py)`     | 门户类任务 curated 数据，供 `tepsa_task_bank_build.py` 引用。                                                                    |
 | `[src/tepsa_task_bank_benchmark_gen.py](src/tepsa_task_bank_benchmark_gen.py)` | 基准题生成相关辅助逻辑（与任务库构建配合）。                                                                                               |

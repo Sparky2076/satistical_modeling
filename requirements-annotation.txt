@@ -1,0 +1,3 @@
+# Optional: inter-rater reliability (ICC) if you add dual human ratings per (task_id, policy_id, run_id).
+# pip install -r requirements-annotation.txt
+# pingouin>=0.5.4

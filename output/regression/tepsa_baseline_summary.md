@@ -11,7 +11,13 @@
 
 - N = 1267, R² = 0.9996
 
-- *解释*：R² 常接近 1 属预期——`cost_usd` 由价目与 token 近似线性决定，`policy_id` 吸收厂商/档位截距；本式侧重**可复现参数化**，非因果识别主式。
+- **定位（价目—日志核对 / accounting check）**：不把本式当作因果识别或「政策解释力」；高 R² 反映 `cost_usd` 与公开价目×token 的**记账一致性**。
+
+- **核对指标**（补充 R²，便于答辩「过拟合了吗」）：
+
+  - log 残差 RMSE = `0.030023`；MAE = `0.021240`；|残差|中位数 = `0.016098`
+
+  - 美元成本相对误差：均值 `0.0214`，中位数 `0.0160`（由 log 空间拟合反推 `cost`）
 
 ```
                             OLS Regression Results                            
@@ -20,7 +26,7 @@ Dep. Variable:               log_cost   R-squared:                       1.000
 Model:                            OLS   Adj. R-squared:                  1.000
 Method:                 Least Squares   F-statistic:                 5.396e+05
 Date:                Mon, 04 May 2026   Prob (F-statistic):               0.00
-Time:                        12:23:18   Log-Likelihood:                 2644.0
+Time:                        14:33:59   Log-Likelihood:                 2644.0
 No. Observations:                1267   AIC:                            -5274.
 Df Residuals:                    1260   BIC:                            -5238.
 Df Model:                           6                                         
@@ -57,7 +63,7 @@ Dep. Variable:          quality_score   R-squared:                       0.458
 Model:                            OLS   Adj. R-squared:                  0.455
 Method:                 Least Squares   F-statistic:                     185.0
 Date:                Mon, 04 May 2026   Prob (F-statistic):          4.26e-147
-Time:                        12:23:18   Log-Likelihood:                -2503.6
+Time:                        14:33:59   Log-Likelihood:                -2503.6
 No. Observations:                1239   AIC:                             5019.
 Df Residuals:                    1233   BIC:                             5050.
 Df Model:                           5                                         
@@ -93,7 +99,7 @@ Dep. Variable:        value_score_reg   R-squared:                       0.516
 Model:                            OLS   Adj. R-squared:                  0.514
 Method:                 Least Squares   F-statistic:                     903.8
 Date:                Mon, 04 May 2026   Prob (F-statistic):               0.00
-Time:                        12:23:18   Log-Likelihood:                -4035.6
+Time:                        14:33:59   Log-Likelihood:                -4035.6
 No. Observations:                1239   AIC:                             8085.
 Df Residuals:                    1232   BIC:                             8121.
 Df Model:                           6                                         

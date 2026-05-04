@@ -1,0 +1,2 @@
+model,rmse_log_cost,mae_log_cost,median_ae_log_cost,mean_rel_abs_error_cost,median_rel_abs_error_cost,n_obs,r2
+M1_accounting,0.03002328728562315,0.02124045663441526,0.016097859097207845,0.02142338674888609,0.016026739376315245,1267,0.9995634954431594

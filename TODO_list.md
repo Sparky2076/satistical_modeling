@@ -30,6 +30,7 @@
 
 - 附录/脚注素材：已新增 `[appendix/reproducibility_baseline.md](data/tessa_psa/appendix/reproducibility_baseline.md)`（`run_id`、价目日、主表选用；Git HEAD 按文内说明用 `git rev-parse` 填入）。  
 - 宏观 join 预览：运行 `python src/tepsa_macro_join_preview.py` 生成 `[obs_macro_preview.csv](data/tessa_psa/obs_macro_preview.csv)`（`tepsa_sector` 对齐 `macro_calibration_totals` `year=2024` 五扇区）；正式回归可在 Stata/R 中再写权重与稳健性。  
+- **Python 基线回归**：`pip install -r requirements-regression.txt` → `python src/tepsa_regression_baseline.py`（可选 `--run-id ds_batch`），将 `output/regression/tepsa_baseline_summary.md` 链入论文附录或转录为表；章节约稿见 `[docs/tepsa_empirical_chapter_outline.md](docs/tepsa_empirical_chapter_outline.md)`。  
 - 外链巡检：按需打开定价页；已在本仓库 `[appendix/B2_official_pricing_urls.md](data/tessa_psa/appendix/B2_official_pricing_urls.md)` 与 `[docs/tessa_psa_data_sources.md](docs/tessa_psa_data_sources.md)` §6 留「末次核对」占位，复查后改日期。
 
 ## P4 — 仓库与协作（可选）

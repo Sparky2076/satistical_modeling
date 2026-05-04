@@ -8,6 +8,7 @@ Baseline regressions on obs_macro_preview.csv (TESSA-PSA + macro join).
 Writes:
   - output/regression/tepsa_baseline_summary.md
   - output/regression/tepsa_baseline_coefficients.csv
+  - output/regression/tepsa_m1_accounting_metrics.csv (M1 价目核对指标)
 """
 
 from __future__ import annotations
@@ -40,6 +41,8 @@ def _prep_base(df: pd.DataFrame) -> pd.DataFrame:
     d["policy_id"] = d["policy_id"].astype(str).str.strip()
     d["tepsa_sector"] = d["tepsa_sector"].astype(str).str.strip()
     d["run_id"] = d["run_id"].astype(str).str.strip()
+    if "task_id" in d.columns:
+        d["task_id"] = d["task_id"].astype(str).str.strip()
     return d
 
 
@@ -58,6 +61,24 @@ def _drop_sparse_categories(
     vc = d[col].value_counts()
     keep = set(vc[vc >= min_cell].index)
     return d[d[col].isin(keep)].copy()
+
+
+def _m1_accounting_metrics(res) -> dict[str, float]:
+    """Non-R² diagnostics for M1: pricing–log identity should leave small residuals."""
+    y = np.asarray(res.model.endog, dtype=float)
+    fh = np.asarray(res.fittedvalues, dtype=float)
+    r = np.asarray(res.resid, dtype=float)
+    eps = 1e-12
+    c_act = np.exp(y) - eps
+    c_hat = np.exp(fh) - eps
+    rel = np.abs(c_hat - c_act) / np.maximum(c_act, eps)
+    return {
+        "rmse_log_cost": float(np.sqrt(np.mean(r**2))),
+        "mae_log_cost": float(np.mean(np.abs(r))),
+        "median_ae_log_cost": float(np.median(np.abs(r))),
+        "mean_rel_abs_error_cost": float(np.mean(rel)),
+        "median_rel_abs_error_cost": float(np.median(rel)),
+    }
 
 
 def _fit_ols_robust(formula: str, data: pd.DataFrame, model_name: str) -> tuple[object, pd.DataFrame]:
@@ -122,10 +143,21 @@ def run_all(
     else:
         res1, c1 = _fit_ols_robust("log_cost ~ log_tokens + C(policy_id)", d1, "M1_log_cost_policy")
         coef_parts.append(c1)
+        m1m = _m1_accounting_metrics(res1)
         md_lines.append("## M1 `log_cost ~ log_tokens + C(policy_id)`\n")
         md_lines.append(f"- N = {int(res1.nobs)}, R² = {res1.rsquared:.4f}\n")
         md_lines.append(
-            "- *解释*：R² 常接近 1 属预期——`cost_usd` 由价目与 token 近似线性决定，`policy_id` 吸收厂商/档位截距；本式侧重**可复现参数化**，非因果识别主式。\n"
+            "- **定位（价目—日志核对 / accounting check）**：不把本式当作因果识别或「政策解释力」；高 R² 反映 `cost_usd` 与公开价目×token 的**记账一致性**。\n"
+        )
+        md_lines.append("- **核对指标**（补充 R²，便于答辩「过拟合了吗」）：\n")
+        md_lines.append(
+            f"  - log 残差 RMSE = `{m1m['rmse_log_cost']:.6f}`；MAE = `{m1m['mae_log_cost']:.6f}`；|残差|中位数 = `{m1m['median_ae_log_cost']:.6f}`\n"
+        )
+        md_lines.append(
+            f"  - 美元成本相对误差：均值 `{m1m['mean_rel_abs_error_cost']:.4f}`，中位数 `{m1m['median_rel_abs_error_cost']:.4f}`（由 log 空间拟合反推 `cost`）\n"
+        )
+        pd.DataFrame([{"model": "M1_accounting", **m1m, "n_obs": int(res1.nobs), "r2": float(res1.rsquared)}]).to_csv(
+            out_dir / "tepsa_m1_accounting_metrics.csv", index=False, encoding="utf-8"
         )
         md_lines.append("```\n" + res1.summary().as_text() + "\n```\n")
 
@@ -166,6 +198,8 @@ def run_all(
     (out_dir / "tepsa_baseline_summary.md").write_text("\n".join(md_lines), encoding="utf-8")
     print(f"Wrote {out_dir / 'tepsa_baseline_summary.md'}")
     print(f"Wrote {out_dir / 'tepsa_baseline_coefficients.csv'}")
+    if (out_dir / "tepsa_m1_accounting_metrics.csv").exists():
+        print(f"Wrote {out_dir / 'tepsa_m1_accounting_metrics.csv'}")
 
 
 def main() -> None:
