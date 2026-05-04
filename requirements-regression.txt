@@ -1,0 +1,4 @@
+# Baseline OLS for TESSA-PSA (obs_macro_preview). Install: pip install -r requirements-regression.txt
+pandas>=2.0.0
+numpy>=1.24.0
+statsmodels>=0.14.0
