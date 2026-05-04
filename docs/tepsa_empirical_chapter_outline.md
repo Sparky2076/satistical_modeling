@@ -42,6 +42,7 @@
 | Token—质量 | `fig02_token_quality_scatter_*.png` | 结果：质量与规模（注意自动分口径） |
 | 风险—成本—质量 | `fig04_risk_welfare_scatter_*.png` | 结果或稳健性讨论 |
 | 扩展（IPW/回归可视化） | `fig_propensity_overlap_*`、`fig_m1_logcost_fitted_vs_actual_*`、`fig_coef_log_tokens_forest_*`、`fig_policy_sector_quality_heatmap_*`、`fig_within_task_policy_count_hist_*` | 识别敏感性、M1 价目核对、系数对照、异质性、within 样本构造 |
+| 扩展诊断（附录/答辩备选） | `fig_m1_residual_diagnostics_*`、`fig_m1_cost_rel_error_hist_*`、`fig_cost_per_token_by_policy_*`、`fig_latency_cost_and_tokens_*`、`fig_quality_difficulty_risk_box_*`、`fig_value_score_policy_and_tokens_*`、`fig_within_retention_sector_share_*`、`fig_ipw_weight_distribution_*`、`fig_macro_wage_vs_sector_median_cost_*` | 残差与相对误差、单位成本、延迟、质量分层、价值 proxy、扇区保留、IPW 权重、宏观—成本描述 |
 
 出图命令：`pip install -r requirements-viz.txt` → `python scripts/tepsa_figures.py`（可加 `--run-id`）；扩展图加 `--extended`（依赖 `statsmodels`，与 `tepsa_regression_ipw.build_ipw_frame` 共用 IPW 样本定义）。
 
